@@ -1,0 +1,27 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Junior_Detective> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Detective> .
+
+<http://taxonomy.model/Superintendent> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Lead_Detective>,
+        <http://taxonomy.model/Senior_Detective> .
+
+<http://taxonomy.model/Suspect> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Person> .
+
+<http://taxonomy.model/Witness> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Person> .
+
+<http://taxonomy.model/Lead_Detective> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Detective> .
+
+<http://taxonomy.model/Senior_Detective> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Detective> .
+
+<http://taxonomy.model/Detective> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Person> .
+
+<http://taxonomy.model/Person> a owl:Class .
+

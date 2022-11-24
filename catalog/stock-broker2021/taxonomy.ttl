@@ -1,0 +1,38 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Buyer> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Brokerage> .
+
+<http://taxonomy.model/Hired_Brokerage> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Brokerage> .
+
+<http://taxonomy.model/Public_Traded_Company> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Organization> .
+
+<http://taxonomy.model/Seller> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Brokerage> .
+
+<http://taxonomy.model/Stock_Keeper> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Stock_Exchange> .
+
+<http://taxonomy.model/StockholderOrganization> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Organization>,
+        <http://taxonomy.model/StockHolder> .
+
+<http://taxonomy.model/Stockholder_Person> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Person>,
+        <http://taxonomy.model/StockHolder> .
+
+<http://taxonomy.model/Person> a owl:Class .
+
+<http://taxonomy.model/Stock_Exchange> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Organization> .
+
+<http://taxonomy.model/StockHolder> a owl:Class .
+
+<http://taxonomy.model/Brokerage> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Organization> .
+
+<http://taxonomy.model/Organization> a owl:Class .
+
