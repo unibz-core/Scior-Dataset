@@ -48,22 +48,34 @@ Classes items always have the term "classes_". The different measured or calcula
 - `classes_b_tu_classes_types_v`: number of classes with no information about their classifications (i.e., totally unknown classes) before the OntCatOWL execution.
 - `classes_b_pk_classes_types_v`: number of classes with partial information known about their classifications (i.e., partially known classes) before the OntCatOWL execution.
 - `classes_b_tk_classes_types_v`: number of classes with complete information known about their classifications (i.e., totally known classes) before the OntCatOWL execution.
-- `classes_b_tu_classes_types_p`: percentage of totally unknown classes before the OntCatOWL execution with relation to the total number of classes. Calculation formula is: classes_b_tu_classes_types_p  = classes_b_tu_classes_types_v/classes_b_total_classes_number.
-- `classes_b_pk_classes_types_p`: percentage of partially known classes before the OntCatOWL execution with relation to the total number of classes. Calculation formula is: classes_b_pk_classes_types_p  = classes_b_pk_classes_types_v/classes_b_total_classes_number.
-- `classes_b_tk_classes_types_p`: percentage of totally known classes before the OntCatOWL execution with relation to the total number of classes. Calculation formula is: classes_b_tk_classes_types_p  = classes_b_tk_classes_types_v/classes_b_total_classes_number.
+- `classes_b_tu_classes_types_p`: percentage of totally unknown classes before the OntCatOWL execution with relation to the total number of classes.
+	- Calculation formula: classes_b_tu_classes_types_p  = classes_b_tu_classes_types_v/classes_b_total_classes_number.
+- `classes_b_pk_classes_types_p`: percentage of partially known classes before the OntCatOWL execution with relation to the total number of classes.
+	- Calculation formula: classes_b_pk_classes_types_p  = classes_b_pk_classes_types_v/classes_b_total_classes_number.
+- `classes_b_tk_classes_types_p`: percentage of totally known classes before the OntCatOWL execution with relation to the total number of classes.
+	- Calculation formula: classes_b_tk_classes_types_p  = classes_b_tk_classes_types_v/classes_b_total_classes_number.
 - `classes_a_total_classes_number`: total number of classes in the file `taxonomy.ttl` used in the software **after** the execution of OntCatOWL rules. As no class is included or excluded during the execution of the software, classes_b_total_classes_number = classes_a_total_classes_number.
 - `classes_a_tu_classes_types_v`: number of classes with no information about their classifications (i.e., totally unknown classes) after the OntCatOWL execution.
 - `classes_a_pk_classes_types_v`: number of classes with partial information known about their classifications (i.e., partially known classes) after the OntCatOWL execution.
 - `classes_a_tk_classes_types_v`: number of classes with complete information known about their classifications (i.e., totally known classes) after the OntCatOWL execution.
-- `classes_a_tu_classes_types_p`: percentage of totally unknown classes after the OntCatOWL execution with relation to the total number of classes. Calculation formula is: classes_a_tu_classes_types_p  = classes_a_tu_classes_types_v/classes_a_total_classes_number.
-- `classes_a_pk_classes_types_p`: percentage of partially known classes after the OntCatOWL execution with relation to the total number of classes. Calculation formula is: classes_a_pk_classes_types_p  = classes_a_pk_classes_types_v/classes_a_total_classes_number.
-- `classes_a_tk_classes_types_p`: percentage of totally known classes after the OntCatOWL execution with relation to the total number of classes. Calculation formula is: classes_a_tk_classes_types_p  = classes_a_tk_classes_types_v/classes_a_total_classes_number.
-- `diff_tu_classes_types_v_d`: difference (in units) between the number of totally unknown classes before and after the OntCatOWL execution. The calculation formula is: diff_tu_classes_types_v_d = classes_a_tu_classes_types_v - classes_b_tu_classes_types_v.
-- `diff_pk_classes_types_v_d`: difference (in units) between the number of  partially known classes before and after the OntCatOWL execution. The calculation formula is: diff_pk_classes_types_v_d = classes_a_pk_classes_types_v - classes_b_pk_classes_types_v.
-- `diff_tk_classes_types_v_d`: difference (in units) between the number of totally known classes before and after the OntCatOWL execution. The calculation formula is: diff_tk_classes_types_v_d = classes_a_tk_classes_types_v - classes_b_tk_classes_types_v.
-- `diff_tu_classes_types_p_d`: difference (in percentage) between the percentage of totally unknown classes before and after the OntCatOWL execution. The calculation formula is: diff_tu_classes_types_p_d = classes_a_tu_classes_types_p - classes_b_tu_classes_types_p.
-- `diff_pk_classes_types_p_d`: difference (in percentage) between the percentage of  partially known classes before and after the OntCatOWL execution. The calculation formula is: diff_pk_classes_types_p_d = classes_a_pk_classes_types_p - classes_b_pk_classes_types_p.
-- `diff_tk_classes_types_p_d`: difference (in percentage) between the percentage of totally known classes before and after the OntCatOWL execution. The calculation formula is: diff_tk_classes_types_p_d = classes_a_tk_classes_types_p - classes_b_tk_classes_types_p.
+- `classes_a_tu_classes_types_p`: percentage of totally unknown classes after the OntCatOWL execution with relation to the total number of classes.
+	- Calculation formula: classes_a_tu_classes_types_p  = classes_a_tu_classes_types_v/classes_a_total_classes_number.
+- `classes_a_pk_classes_types_p`: percentage of partially known classes after the OntCatOWL execution with relation to the total number of classes.
+	- Calculation formula: classes_a_pk_classes_types_p  = classes_a_pk_classes_types_v/classes_a_total_classes_number.
+- `classes_a_tk_classes_types_p`: percentage of totally known classes after the OntCatOWL execution with relation to the total number of classes.
+	- Calculation formula: classes_a_tk_classes_types_p  = classes_a_tk_classes_types_v/classes_a_total_classes_number.
+- `diff_tu_classes_types_v_d`: difference (in units) between the number of totally unknown classes before and after the OntCatOWL execution.
+	- Calculation formula: diff_tu_classes_types_v_d = classes_a_tu_classes_types_v - classes_b_tu_classes_types_v.
+- `diff_pk_classes_types_v_d`: difference (in units) between the number of  partially known classes before and after the OntCatOWL execution.
+	- Calculation formula: diff_pk_classes_types_v_d = classes_a_pk_classes_types_v - classes_b_pk_classes_types_v.
+- `diff_tk_classes_types_v_d`: difference (in units) between the number of totally known classes before and after the OntCatOWL execution.
+	- Calculation formula: diff_tk_classes_types_v_d = classes_a_tk_classes_types_v - classes_b_tk_classes_types_v.
+- `diff_tu_classes_types_p_d`: difference (in percentage) between the percentage of totally unknown classes before and after the OntCatOWL execution.
+	- Calculation formula: diff_tu_classes_types_p_d = classes_a_tu_classes_types_p - classes_b_tu_classes_types_p.
+- `diff_pk_classes_types_p_d`: difference (in percentage) between the percentage of  partially known classes before and after the OntCatOWL execution.
+	- Calculation formula: diff_pk_classes_types_p_d = classes_a_pk_classes_types_p - classes_b_pk_classes_types_p.
+- `diff_tk_classes_types_p_d`: difference (in percentage) between the percentage of totally known classes before and after the OntCatOWL execution.
+	- Calculation formula: diff_tk_classes_types_p_d = classes_a_tk_classes_types_p - classes_b_tk_classes_types_p.
 
 ##### Classifications
 
@@ -97,17 +109,27 @@ Classifications items always have the term "classif_". The different measured or
 - `classif_a_unknown_classif_types_v`: is the sum of all unknown classifications of all classes after the execution of OntCatOWL rules.
 - `classif_a_known_classif_types_v`: is the sum of all known classifications of all classes after the execution of OntCatOWL rules.
 - `classif_b_total_classif_types_p`: this field must be ignored for this test.
-- `classif_b_unknown_classif_types_p`: percentage of unknown classification types before the OntCatOWL execution in relation to the quantity of all classifications. The calculation formula is: classif_b_unknown_classif_types_p = classif_b_unknown_classif_types_v/classif_b_total_classif_types_v.
-- `classif_b_known_classif_types_p`: percentage of known classification types before the OntCatOWL execution in relation to the quantity of all classifications. The calculation formula is: classif_b_known_classif_types_p = classif_b_known_classif_types_v/classif_b_total_classif_types_v.
+- `classif_b_unknown_classif_types_p`: percentage of unknown classification types before the OntCatOWL execution in relation to the quantity of all classifications.
+	- Calculation formula: classif_b_unknown_classif_types_p = classif_b_unknown_classif_types_v/classif_b_total_classif_types_v.
+- `classif_b_known_classif_types_p`: percentage of known classification types before the OntCatOWL execution in relation to the quantity of all classifications.
+	- Calculation formula: classif_b_known_classif_types_p = classif_b_known_classif_types_v/classif_b_total_classif_types_v.
 - `classif_a_total_classif_types_p`: this field must be ignored for this test.
-- `classif_a_unknown_classif_types_p`: percentage of unknown classification types after the OntCatOWL execution in relation to the quantity of all classifications. The calculation formula is: classif_a_unknown_classif_types_p = classif_a_unknown_classif_types_v/classif_a_total_classif_types_v.
-- `classif_a_known_classif_types_p`: percentage of known classification types after the OntCatOWL execution in relation to the quantity of all classifications. The calculation formula is: classif_a_known_classif_types_p = classif_a_known_classif_types_v/classif_a_total_classif_types_v.
-- `diff_total_classif_types_v_d`: difference in units between the quantity of the total classification types before and after the OntCatOWL execution. The results must always equal zero. The calculation formula is: diff_total_classif_types_v_d = classif_a_total_classif_types_v - classif_b_total_classif_types_v.
-- `diff_unknown_classif_types_v_d`: difference in units between the quantity of unknown classification types before and after the OntCatOWL execution. The calculation formula is: diff_unknown_classif_types_v_d = classif_a_unknown_classif_types_v - classif_b_unknown_classif_types_v.
-- `diff_known_classif_types_v_d`: difference in units between the quantity of known classification types before and after the OntCatOWL execution. The calculation formula is: diff_known_classif_types_v_d = classif_a_known_classif_types_v - classif_b_known_classif_types_v.
-- `diff_total_classif_types_p_d`: difference in percentage between the quantity of the total classification types before and after the OntCatOWL execution. The calculation formula is: diff_total_classif_types_p_d = classif_a_total_classif_types_p - classif_b_total_classif_types_p. The results must always equal zero.
-- `diff_unknown_classif_types_p_d`: difference in percentage between the quantity of unknown classification types before and after the OntCatOWL execution. The calculation formula is: diff_unknown_classif_types_p_d = classif_a_unknown_classif_types_p - classif_b_unknown_classif_types_p.
-- `diff_known_classif_types_p_d`: difference in percentage between the quantity of known classification types before and after the OntCatOWL execution. The calculation formula is: diff_known_classif_types_p_d = classif_a_known_classif_types_p - classif_b_known_classif_types_p.
+- `classif_a_unknown_classif_types_p`: percentage of unknown classification types after the OntCatOWL execution in relation to the quantity of all classifications.
+	- Calculation formula: classif_a_unknown_classif_types_p = classif_a_unknown_classif_types_v/classif_a_total_classif_types_v.
+- `classif_a_known_classif_types_p`: percentage of known classification types after the OntCatOWL execution in relation to the quantity of all classifications.
+	- Calculation formula: classif_a_known_classif_types_p = classif_a_known_classif_types_v/classif_a_total_classif_types_v.
+- `diff_total_classif_types_v_d`: difference in units between the quantity of the total classification types before and after the OntCatOWL execution. The results must always equal zero.
+	- Calculation formula: diff_total_classif_types_v_d = classif_a_total_classif_types_v - classif_b_total_classif_types_v.
+- `diff_unknown_classif_types_v_d`: difference in units between the quantity of unknown classification types before and after the OntCatOWL execution.
+	- Calculation formula: diff_unknown_classif_types_v_d = classif_a_unknown_classif_types_v - classif_b_unknown_classif_types_v.
+- `diff_known_classif_types_v_d`: difference in units between the quantity of known classification types before and after the OntCatOWL execution.
+	- Calculation formula: diff_known_classif_types_v_d = classif_a_known_classif_types_v - classif_b_known_classif_types_v.
+- `diff_total_classif_types_p_d`: difference in percentage between the quantity of the total classification types before and after the OntCatOWL execution.
+	- Calculation formula: diff_total_classif_types_p_d = classif_a_total_classif_types_p - classif_b_total_classif_types_p. The results must always equal zero.
+- `diff_unknown_classif_types_p_d`: difference in percentage between the quantity of unknown classification types before and after the OntCatOWL execution.
+	- Calculation formula: diff_unknown_classif_types_p_d = classif_a_unknown_classif_types_p - classif_b_unknown_classif_types_p.
+- `diff_known_classif_types_p_d`: difference in percentage between the quantity of known classification types before and after the OntCatOWL execution.
+	- Calculation formula: diff_known_classif_types_p_d = classif_a_known_classif_types_p - classif_b_known_classif_types_p.
 
 
 ##### Other Items
