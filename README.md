@@ -178,3 +178,16 @@ To be done. Each execution generates one file of this type.
 #### Test 1 AC Inconsistencies YAML File
 
 Considering an incomplete model as complete may cause inconsistencies—and the catalog models used for this test don’t explicitly present this information. Hence, the execution of Test 1 AC resulted in the detection of inconsistencies in some models. We reported these inconsistencies in the file `test_1_ac_inconsistencies.yaml`, where each item is a dataset with a list of the classes used as input in the executions where the inconsistencies were found. When an inconsistency is detected, the software execution is interrupted, and the next execution starts.
+
+## Contributors
+
+- PhD. Pedro Paulo Favato Barcelos [[GitHub]](https://github.com/pedropaulofb) [[LinkedIn]](https://www.linkedin.com/in/pedro-paulo-favato-barcelos/)
+- PhD. Tiago Prince Sales [[GitHub]](https://github.com/tgoprince) [[LinkedIn]](https://www.linkedin.com/in/tiago-sales/)
+- MSc. Elena Romanenko [[GitHub]](https://github.com/mozzherina) [[LinkedIn]]()
+- Prof. PhD. Giancarlo Guizzardi [[LinkedIn]](https://www.linkedin.com/in/giancarlo-guizzardi-bb51aa75/)
+- Eng. MSc. Gal Engelberg [[LinkedIn]](https://www.linkedin.com/in/gal-engelberg/)
+- Prof. PhD. Dan Klein [[LinkedIn]](https://www.linkedin.com/in/~danklein/)
+
+## Acknowledgements
+
+This work is a collaboration with Accenture Israel Cybersecurity Labs.
