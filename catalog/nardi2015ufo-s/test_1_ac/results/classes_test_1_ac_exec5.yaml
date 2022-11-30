@@ -1,4 +1,26 @@
-Service_Agreement:
+Specialized_Service_Agreement:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Phase
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:SemiRigidType
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type:
+  - gufo:Sortal
+  not_type:
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:PhaseMixin
+  - gufo:RoleMixin
+---
+Service_Provider_On_Negotiation:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -19,74 +41,6 @@ Service_Agreement:
   is_incomplete: false
   is_type: []
   not_type: []
----
-Service_Provider_On_Negotiation:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  detected_in:
-  - ns_s_spe
-  input: false
-  is_incomplete: true
-  is_type:
-  - gufo:NonSortal
-  not_type:
-  - gufo:Sortal
-  - gufo:Kind
-  - gufo:Phase
-  - gufo:Role
-  - gufo:SubKind
----
-Hired_Service_Provider:
-  can_type: []
-  detected_in:
-  - ns_s_spe
-  input: true
-  is_incomplete: true
-  is_type:
-  - gufo:RoleMixin
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  not_type:
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  - gufo:Category
-  - gufo:RigidType
----
-Claimed_Hired_Provider:
-  can_type:
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:Sortal
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:NonRigidType
-  - gufo:AntiRigidType
-  not_type:
-  - gufo:RigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:SubKind
-  - gufo:SemiRigidType
-  - gufo:Mixin
 ---
 Committed_Service_Customer:
   can_type:
@@ -110,30 +64,7 @@ Committed_Service_Customer:
   is_type: []
   not_type: []
 ---
-Agent:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  detected_in:
-  - ns_s_spe
-  input: false
-  is_incomplete: true
-  is_type:
-  - gufo:NonSortal
-  not_type:
-  - gufo:Sortal
-  - gufo:Kind
-  - gufo:Phase
-  - gufo:Role
-  - gufo:SubKind
----
-Specialized_Service_Agreement:
+Target_Customer_On_Negotiation:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -154,6 +85,94 @@ Specialized_Service_Agreement:
   is_incomplete: false
   is_type: []
   not_type: []
+---
+Hired_Service_Provider:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Claimed_Hired_Provider:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Service_Customer:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Service_Agreement:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:Kind
+  - gufo:RigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
 ---
 Target_Customer:
   can_type:
@@ -181,29 +200,6 @@ Service_Provider:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  detected_in:
-  - ns_s_spe
-  input: false
-  is_incomplete: true
-  is_type:
-  - gufo:NonSortal
-  not_type:
-  - gufo:Sortal
-  - gufo:Kind
-  - gufo:Phase
-  - gufo:Role
-  - gufo:SubKind
----
-Target_Customer_On_Negotiation:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
   - gufo:Kind
   - gufo:Mixin
   - gufo:NonRigidType
@@ -222,7 +218,7 @@ Target_Customer_On_Negotiation:
   is_type: []
   not_type: []
 ---
-Service_Customer:
+Agent:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category

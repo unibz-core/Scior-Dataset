@@ -1,26 +1,4 @@
-Person:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Organizational_Customer:
+Employee:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -43,28 +21,73 @@ Organizational_Customer:
   not_type: []
 ---
 Customer:
-  can_type:
+  can_type: []
+  detected_in:
+  - ns_s_spe
+  input: true
+  is_incomplete: true
+  is_type:
+  - gufo:RoleMixin
   - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
   - gufo:NonRigidType
   - gufo:NonSortal
+  not_type:
+  - gufo:Kind
+  - gufo:Mixin
   - gufo:Phase
   - gufo:PhaseMixin
-  - gufo:RigidType
   - gufo:Role
-  - gufo:RoleMixin
   - gufo:SemiRigidType
   - gufo:Sortal
   - gufo:SubKind
+  - gufo:Category
+  - gufo:RigidType
+---
+Personal_Customer:
+  can_type:
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:Sortal
   detected_in: []
   input: false
   is_incomplete: false
-  is_type: []
-  not_type: []
+  is_type:
+  - gufo:NonRigidType
+  - gufo:AntiRigidType
+  not_type:
+  - gufo:RigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:SubKind
+  - gufo:SemiRigidType
+  - gufo:Mixin
 ---
-Organization:
+Organizational_Customer:
+  can_type:
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:Sortal
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type:
+  - gufo:NonRigidType
+  - gufo:AntiRigidType
+  not_type:
+  - gufo:RigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:SubKind
+  - gufo:SemiRigidType
+  - gufo:Mixin
+---
+Person:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -108,7 +131,7 @@ Agent:
   is_type: []
   not_type: []
 ---
-Personal_Customer:
+Organization:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -129,26 +152,3 @@ Personal_Customer:
   is_incomplete: false
   is_type: []
   not_type: []
----
-Employee:
-  can_type: []
-  detected_in:
-  - nk_k_sup
-  input: true
-  is_incomplete: true
-  is_type:
-  - gufo:Role
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind

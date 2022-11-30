@@ -1,4 +1,4 @@
-"\xD3rg\xE3o_Colegiado":
+Company:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -20,29 +20,7 @@
   is_type: []
   not_type: []
 ---
-StateCompany:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-PublicEntity:
+Organization:
   can_type:
   - gufo:Category
   - gufo:Mixin
@@ -65,7 +43,7 @@ PublicEntity:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-Company:
+"\xD3rg\xE3o":
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -110,7 +88,7 @@ PublicOrganization:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-PublicCompany:
+StateCompany:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -132,52 +110,7 @@ PublicCompany:
   is_type: []
   not_type: []
 ---
-NonEmpresarialPublicEntity:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:Kind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-Organization:
-  can_type:
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:RigidType
-  - gufo:SemiRigidType
-  detected_in:
-  - ns_s_spe
-  input: false
-  is_incomplete: true
-  is_type:
-  - gufo:NonSortal
-  not_type:
-  - gufo:Sortal
-  - gufo:Kind
-  - gufo:Phase
-  - gufo:Role
-  - gufo:SubKind
-  - gufo:AntiRigidType
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-PublicAdmnistrativeUnit:
+UnityOfOrganization:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -243,7 +176,97 @@ Foundation:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-UnityOfOrganization:
+OrganizationalUnit:
+  can_type:
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:RigidType
+  - gufo:SemiRigidType
+  detected_in:
+  - ns_s_spe
+  input: false
+  is_incomplete: true
+  is_type:
+  - gufo:NonSortal
+  not_type:
+  - gufo:Sortal
+  - gufo:Kind
+  - gufo:Phase
+  - gufo:Role
+  - gufo:SubKind
+  - gufo:AntiRigidType
+  - gufo:PhaseMixin
+  - gufo:RoleMixin
+---
+"\xD3rg\xE3o_Colegiado":
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+PublicEntity:
+  can_type:
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:RigidType
+  - gufo:SemiRigidType
+  detected_in:
+  - ns_s_spe
+  input: false
+  is_incomplete: true
+  is_type:
+  - gufo:NonSortal
+  not_type:
+  - gufo:Sortal
+  - gufo:Kind
+  - gufo:Phase
+  - gufo:Role
+  - gufo:SubKind
+  - gufo:AntiRigidType
+  - gufo:PhaseMixin
+  - gufo:RoleMixin
+---
+NonEmpresarialPublicEntity:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:Kind
+  - gufo:RigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
+---
+PublicAdmnistrativeUnit:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -287,30 +310,7 @@ MixedEconomyCompany:
   is_type: []
   not_type: []
 ---
-OrganizationalUnit:
-  can_type:
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:RigidType
-  - gufo:SemiRigidType
-  detected_in:
-  - ns_s_spe
-  input: false
-  is_incomplete: true
-  is_type:
-  - gufo:NonSortal
-  not_type:
-  - gufo:Sortal
-  - gufo:Kind
-  - gufo:Phase
-  - gufo:Role
-  - gufo:SubKind
-  - gufo:AntiRigidType
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-"\xD3rg\xE3o":
+PublicCompany:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category

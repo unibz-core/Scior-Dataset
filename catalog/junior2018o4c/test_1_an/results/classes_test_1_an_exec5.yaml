@@ -1,4 +1,4 @@
-Contribution:
+Composition:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -20,7 +20,29 @@ Contribution:
   is_type: []
   not_type: []
 ---
-Composition:
+NonFunctionalConcern:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Relationship:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -64,30 +86,7 @@ Dependency:
   is_type: []
   not_type: []
 ---
-FunctionalConcern:
-  can_type: []
-  detected_in:
-  - nk_k_sup
-  input: true
-  is_incomplete: true
-  is_type:
-  - gufo:SubKind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
----
-Relationship:
+Contribution:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -131,8 +130,17 @@ Concern:
   - gufo:Role
   - gufo:RoleMixin
 ---
-NonFunctionalConcern:
-  can_type:
+FunctionalConcern:
+  can_type: []
+  detected_in:
+  - nk_k_sup
+  input: true
+  is_incomplete: true
+  is_type:
+  - gufo:SubKind
+  - gufo:RigidType
+  - gufo:Sortal
+  not_type:
   - gufo:AntiRigidType
   - gufo:Category
   - gufo:Kind
@@ -141,14 +149,6 @@ NonFunctionalConcern:
   - gufo:NonSortal
   - gufo:Phase
   - gufo:PhaseMixin
-  - gufo:RigidType
   - gufo:Role
   - gufo:RoleMixin
   - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []

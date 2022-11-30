@@ -1,4 +1,4 @@
-Spatial_Entity:
+Device:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -20,7 +20,7 @@ Spatial_Entity:
   is_type: []
   not_type: []
 ---
-Client_Organization:
+Withdrawing_ATM:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -42,7 +42,7 @@ Client_Organization:
   is_type: []
   not_type: []
 ---
-Organization_Member:
+Bank:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -64,7 +64,7 @@ Organization_Member:
   is_type: []
   not_type: []
 ---
-Inactive_Account:
+Withdrawed_Account:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -86,7 +86,29 @@ Inactive_Account:
   is_type: []
   not_type: []
 ---
-Person:
+Client_Person:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Account:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -130,7 +152,7 @@ Accessed_Account:
   is_type: []
   not_type: []
 ---
-Device:
+Person:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -152,7 +174,7 @@ Device:
   is_type: []
   not_type: []
 ---
-Organization:
+Mobile:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -174,7 +196,7 @@ Organization:
   is_type: []
   not_type: []
 ---
-Accessing_Device:
+Inactive_Account:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -196,7 +218,52 @@ Accessing_Device:
   is_type: []
   not_type: []
 ---
-Bank:
+Spatial_Entity:
+  can_type: []
+  detected_in:
+  - ns_s_spe
+  input: true
+  is_incomplete: true
+  is_type:
+  - gufo:Category
+  - gufo:NonSortal
+  - gufo:RigidType
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:Kind
+  - gufo:SubKind
+---
+Organization_Member:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Active_Account:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -262,7 +329,7 @@ ATM:
   is_type: []
   not_type: []
 ---
-Active_Account:
+Accessing_Device:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -283,95 +350,6 @@ Active_Account:
   is_incomplete: false
   is_type: []
   not_type: []
----
-Mobile:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Account:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Withdrawed_Account:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Client_Person:
-  can_type: []
-  detected_in:
-  - nk_k_sup
-  input: true
-  is_incomplete: true
-  is_type:
-  - gufo:Role
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
 ---
 Client:
   can_type:
@@ -395,7 +373,29 @@ Client:
   is_type: []
   not_type: []
 ---
-Withdrawing_ATM:
+Client_Organization:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Organization:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
