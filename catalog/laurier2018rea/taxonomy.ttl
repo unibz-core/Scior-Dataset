@@ -1,0 +1,61 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/consume> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/decrement-event>,
+        <http://taxonomy.model/transformation> .
+
+<http://taxonomy.model/from> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/outside-party> .
+
+<http://taxonomy.model/give> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/decrement-event>,
+        <http://taxonomy.model/transfer> .
+
+<http://taxonomy.model/inflow> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/stock-flow> .
+
+<http://taxonomy.model/inside-party> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/participation> .
+
+<http://taxonomy.model/outflow> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/stock-flow> .
+
+<http://taxonomy.model/produce> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/increment-event>,
+        <http://taxonomy.model/transformation> .
+
+<http://taxonomy.model/take> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/increment-event>,
+        <http://taxonomy.model/transfer> .
+
+<http://taxonomy.model/to> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/outside-party> .
+
+<http://taxonomy.model/transfer-duality> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/duality> .
+
+<http://taxonomy.model/transformation-duality> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/duality> .
+
+<http://taxonomy.model/decrement-event> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/economic-event> .
+
+<http://taxonomy.model/duality> a owl:Class .
+
+<http://taxonomy.model/economic-event> a owl:Class .
+
+<http://taxonomy.model/increment-event> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/economic-event> .
+
+<http://taxonomy.model/outside-party> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/participation> .
+
+<http://taxonomy.model/participation> a owl:Class .
+
+<http://taxonomy.model/stock-flow> a owl:Class .
+
+<http://taxonomy.model/transfer> a owl:Class .
+
+<http://taxonomy.model/transformation> a owl:Class .
+

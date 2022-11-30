@@ -1,0 +1,173 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/After> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/TimeIntervalRelation> .
+
+<http://taxonomy.model/AtomicAgentAction> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/AgentAction> .
+
+<http://taxonomy.model/Before> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/TimeIntervalRelation> .
+
+<http://taxonomy.model/Building> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Place> .
+
+<http://taxonomy.model/Cancelation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/ExecutionState> .
+
+<http://taxonomy.model/Company> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Organization> .
+
+<http://taxonomy.model/ConditionChange> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/ConditionAction> .
+
+<http://taxonomy.model/ConditionCreation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/ConditionAction> .
+
+<http://taxonomy.model/ConditionTermination> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/ConditionAction> .
+
+<http://taxonomy.model/Contains> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/TimeIntervalRelation> .
+
+<http://taxonomy.model/During> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/TimeIntervalRelation> .
+
+<http://taxonomy.model/ExceptionEvent> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/TriggerEvent> .
+
+<http://taxonomy.model/Field> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Place> .
+
+<http://taxonomy.model/FinishedBy> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/TimeIntervalRelation> .
+
+<http://taxonomy.model/Finishes> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/TimeIntervalRelation> .
+
+<http://taxonomy.model/Implement> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Machinery> .
+
+<http://taxonomy.model/Input> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Product> .
+
+<http://taxonomy.model/Interaction> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/ComplexAgentAction> .
+
+<http://taxonomy.model/Interruption> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/ExecutionState> .
+
+<http://taxonomy.model/Meets> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/TimeIntervalRelation> .
+
+<http://taxonomy.model/MetBy> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/TimeIntervalRelation> .
+
+<http://taxonomy.model/ObjectAgentInteraction> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/ComplexAgentAction> .
+
+<http://taxonomy.model/Objective_Situation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Situation> .
+
+<http://taxonomy.model/OperacionalDelay> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/ExecutionState> .
+
+<http://taxonomy.model/Output> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Product> .
+
+<http://taxonomy.model/Overlapped> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/TimeIntervalRelation> .
+
+<http://taxonomy.model/Overlaps> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/TimeIntervalRelation> .
+
+<http://taxonomy.model/PlannedOrdinaryEvent> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/OrdinaryEvent> .
+
+<http://taxonomy.model/Powered> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Machinery> .
+
+<http://taxonomy.model/ResourceChange> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/ResourceParticipation> .
+
+<http://taxonomy.model/ResourceCreation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/ResourceParticipation> .
+
+<http://taxonomy.model/ResourceTermination> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/ResourceParticipation> .
+
+<http://taxonomy.model/ResourceUsage> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/ResourceParticipation> .
+
+<http://taxonomy.model/ServiceOrder> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/NormativeDescription> .
+
+<http://taxonomy.model/StartedBy> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/TimeIntervalRelation> .
+
+<http://taxonomy.model/Starts> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/TimeIntervalRelation> .
+
+<http://taxonomy.model/Tool> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Machinery> .
+
+<http://taxonomy.model/UnplannedOrdinaryEvent> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/OrdinaryEvent> .
+
+<http://taxonomy.model/Vehicle> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Machinery> .
+
+<http://taxonomy.model/Worker> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/PhysicalAgent> .
+
+<http://taxonomy.model/Agent> a owl:Class .
+
+<http://taxonomy.model/NormativeDescription> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/SocialObject> .
+
+<http://taxonomy.model/Organization> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/SocialAgent> .
+
+<http://taxonomy.model/PhysicalAgent> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Agent> .
+
+<http://taxonomy.model/Situation> a owl:Class .
+
+<http://taxonomy.model/SocialAgent> a owl:Class .
+
+<http://taxonomy.model/SocialObject> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/PhysicalObject> .
+
+<http://taxonomy.model/AgentAction> a owl:Class .
+
+<http://taxonomy.model/ComplexAgentAction> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/AgentAction> .
+
+<http://taxonomy.model/OrdinaryEvent> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/TriggerEvent> .
+
+<http://taxonomy.model/PhysicalObject> a owl:Class .
+
+<http://taxonomy.model/Place> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Resource> .
+
+<http://taxonomy.model/Product> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Resource> .
+
+<http://taxonomy.model/TriggerEvent> a owl:Class .
+
+<http://taxonomy.model/ConditionAction> a owl:Class .
+
+<http://taxonomy.model/ExecutionState> a owl:Class .
+
+<http://taxonomy.model/Resource> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/PhysicalObject> .
+
+<http://taxonomy.model/Machinery> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Resource> .
+
+<http://taxonomy.model/ResourceParticipation> a owl:Class .
+
+<http://taxonomy.model/TimeIntervalRelation> a owl:Class .
+
