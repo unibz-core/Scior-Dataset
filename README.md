@@ -12,6 +12,8 @@ The tests were performed using the automation tool named [OntCatOWL-Tester](http
 
 This document presents the structure of the files generated during the OntCatOWL-Tester execution. For a complete comprehension of the tests (regarding scope, objectives, implementation, etc.), please refer to the OntCatOWL-Tester [description file](https://github.com/unibz-core/OntCatOWL-Tester#readme).
 
+The aim of the publication of the resulting datasets is to share with the community data that can be analyzed in different ways, even though all executed tests are totally reproducible.
+
 # Contents
 
 - [OntCatOWL-Dataset](#ontcatowl-dataset)
@@ -55,6 +57,17 @@ As every class must be a root, a leaf, or an intermediate node, note that this f
 
 - is\_root OR is\_leaf OR is\_intermediate != True, or if
 - is\_root AND is\_leaf AND is\_intermediate != False
+
+Hashes Register File (hash_sha256_register.csv)
+
+For traceability, the OntCatOWL-Tester provides a function for generating a SHA256 hash of its generated files and of the files that originated them (for more information, click here–link to be created). The whole dataset contains a single csv register file named `hash_sha256_register.csv`, containing four columns of data that are incremented every time the Tester creates new files. The columns are:
+
+- `file_name`: complete path of the file being hashed
+- `file_hash`: SHA256 hash of the file
+- `source_file_name`: file used as a source for the generation of the file being hashed
+- `source_file_hash`: SHA256 hash of the source file
+
+We could cite as an example of use of this file the case where a user would like to know if he is using the same source data for generating his results, so he can get the SHA256 hash of the files she/he is using check if it exists in the hashes register file.
 
 # Tests - Generated Files, Descriptions and Results
 
