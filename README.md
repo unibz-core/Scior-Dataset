@@ -1,6 +1,6 @@
 # OntCatOWL-Dataset
 
-Dataset with results of OntCatOWL tests performed on the OntoUML/UFO Catalog.
+Collection of datasets that resulted from OntCatOWL tests performed on the OntoUML/UFO Catalog.
 
 # Description
 
@@ -81,8 +81,8 @@ Currently, datasets generated from the execution of two tests are available. Ple
 # Contributors
 
 - PhD. Pedro Paulo Favato Barcelos [[GitHub](https://github.com/pedropaulofb)] [[LinkedIn](https://www.linkedin.com/in/pedropaulofavatobarcelos/)]
-- Tiago Prince Sales [[GitHub](https://github.com/tgoprince)] [[LinkedIn](https://www.linkedin.com/in/tiagosales/)]
-- Elena Romanenko [[GitHub](https://github.com/mozzherina)] [[LinkedIn](https://www.linkedin.com/in/mozzherina/)]
+- PhD. Tiago Prince Sales [[GitHub](https://github.com/tgoprince)] [[LinkedIn](https://www.linkedin.com/in/tiagosales/)]
+- MSc. Elena Romanenko [[GitHub](https://github.com/mozzherina)] [[LinkedIn](https://www.linkedin.com/in/mozzherina/)]
 - Prof. PhD. Giancarlo Guizzardi [[LinkedIn](https://www.linkedin.com/in/giancarloguizzardibb51aa75/)]
 - Eng. MSc. Gal Engelberg [[GitHub](https://github.com/GalEngelberg)] [[LinkedIn](https://www.linkedin.com/in/galengelberg/)]
 - Eng. MSc. Dan Klein [[GitHub](https://github.com/danklein10)] [[LinkedIn](https://www.linkedin.com/in/~danklein/)]
