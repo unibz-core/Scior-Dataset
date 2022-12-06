@@ -16,12 +16,10 @@ The aim of the publication of the resulting datasets is to share with the commun
 
 # Contents
 
-- [OntCatOWL-Dataset](#ontcatowl-dataset)
-- [Description](#description)
-- [Contents](#contents)
 - [Build Generated Files](#build-generated-files)
   - [Taxonomical Graph File (taxonomy\_X.ttl)](#taxonomical-graph-file-taxonomy_xttl)
   - [Taxonomical Graph Information File (classes\_data\_Y.csv)](#taxonomical-graph-information-file-classes_data_ycsv)
+  - [Hashes Register File (hash\_sha256\_register.csv)](#hashes-register-file-hash_sha256_registercsv)
 - [Tests - Generated Files, Descriptions and Results](#tests---generated-files-descriptions-and-results)
 - [Contributors](#contributors)
 - [Acknowledgements](#acknowledgements)
@@ -58,7 +56,7 @@ As every class must be a root, a leaf, or an intermediate node, note that this f
 - is\_root OR is\_leaf OR is\_intermediate != True, or if
 - is\_root AND is\_leaf AND is\_intermediate != False
 
-Hashes Register File (hash_sha256_register.csv)
+## Hashes Register File (hash_sha256_register.csv)
 
 For traceability, the OntCatOWL-Tester provides a function for generating a SHA256 hash of its generated files and of the files that originated them (for more information, click here–link to be created). The whole dataset contains a single csv register file named `hash_sha256_register.csv`, containing four columns of data that are incremented every time the Tester creates new files. The columns are:
 
