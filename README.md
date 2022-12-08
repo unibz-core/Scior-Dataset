@@ -69,14 +69,10 @@ We could cite as an example of use of this file the case where a user would like
 
 # Tests - Generated Files, Descriptions and Results
 
-Currently, datasets generated from the execution of two tests are available. Please use the following links for accessing the tests descriptions and results.
+Currently, datasets generated from the execution of two tests are available. Please use the following links for accessing the tests descriptions.
 
-- Test 1: single class used as input
-  - Description **(link to be created)**
-  - Results **(link to be created)**
-- Test 2: increasing percentage of classes used as input
-  - Description **(link to be created)**
-  - Results **(link to be created)**
+- [Test 1: single class used as input](https://github.com/unibz-core/OntCatOWL-Dataset/blob/main/documentation/OntCatOWL-Dataset-Test1.md)
+- Test 2: increasing percentage of classes used as input **(link to be created)**
 
 # Contributors
 
