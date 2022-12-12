@@ -50,7 +50,7 @@ Classes items (i.e., csv header columns) always have the term "classes\_". The d
 
 ### List of Items
 
-- `classes_b_total_classes_number: total number of classes in the file `taxonomy\_N.ttl` used in the software before the execution of OntCatOWL rules
+- `classes_b_total_classes_number`: total number of classes in the file `taxonomy\_N.ttl` used in the software before the execution of OntCatOWL rules
   - As no class is included or excluded during the execution of the software, classes\_b\_total\_classes\_number = classes\_a\_total\_classes\_number
 - `classes_b_tu_classes_types_`v: number of classes with no information about their classifications (i.e., totally unknown classes) before the OntCatOWL execution
 - `classes_b_pk_classes_types_`v: number of classes with partial information known about their classifications (i.e., partially known classes) before the OntCatOWL execution
@@ -128,7 +128,7 @@ Besides information about classes and their classifications, the _csv_ file also
 
 # Execution Times _csv_ Files
 
-This file registers the time (in seconds) that each individual rule took for being performed and the execution total time.
+This file registers the time (in seconds) that each individual rule took for being performed and the execution total time. The file also contains information about the hardware and software used for executing the test.
 
 A single file entitled `times_XXX_tt001_MM_txYYY.csv` is generated for each model's independent taxonomical graph and it aggregates information about all its OntCatOWL executions (e.g., _times\_aguiar2018rdbs-o\_tt001\_an\_tx001.csv_).
 
@@ -150,15 +150,23 @@ The items registered in the _csv_ files are:
 - `s_nsup_k`: execution time in seconds for the specific OntCatOWL rule of the same name
 - `sub_r_r`: execution time in seconds for the specific OntCatOWL rule of the same name
 - `nrs_ns_r`: execution time in seconds for the specific OntCatOWL rule of the same name
-- `total_time`: sum of the execution times of all fourteen rules implemented in OntCatOWL. I.e., the sum of all other items registered in this file (except for the item "execution"
+- `total_time`: the sum of the execution times of all fourteen rules implemented in OntCatOWL. I.e., the sum of all other items registered in this file (except for the item "execution"
+- `python_version`: Python version used for executing the software
+  - Printed\_string = _platform.python\_version()_
+- `operating_system`: Operating System of the computer in which the Tester was executed
+  - printed string = _platform.system() + " " + platform.release() + " - v" + platform.version()_
+- `processor`: Processor of the computer in which the Tester was executed
+  - printed string = _platform.processor() + " (" + platform.machine() + ")"_
+- `installed_ram`: Amount of RAM memory (in GB) on the computer in which the Tester was executed
+  - printed\_string = _str(round(psutil.virtual\_memory().total / (1024.0 \*\* 3)))_
 
-For the description of each rule, please access this link **(link to be created)****.**
+For the description of each execution rule implemented in the OntCatOWL, please access this link **(link to be created)****.**
 
 # Inconsistencies _csv_ Files
 
 Considering an incomplete model as complete may cause inconsistencies—and the catalog models used for this test don't explicitly state if they intend to represent complete or incomplete information. Hence, the execution of Test 1 AC resulted in the detection of inconsistencies in some models. Inconsistencies may also occur when an OntoUML model is syntactically invalid. However, Test 1 cannot detect this situation as it only uses a single class as input.
 
-We reported all inconsistencies found in the file ` inconsistencies_XXX_tt001_MM_txYYY.csv`, where each item is a dataset with a list of the classes used as input in the executions where the inconsistencies were found (e.g., _inconsistencies\_aguiar2018rdbs-o\_tt001\_ac\_tx001.csv_).
+We reported all inconsistencies found in the file `inconsistencies_XXX_tt001_MM_txYYY.csv`, where each item is a dataset with a list of the classes used as input in the executions where the inconsistencies were found (e.g., _inconsistencies\_aguiar2018rdbs-o\_tt001\_ac\_tx001.csv_).
 
 The _csv_ file contains the following columns:
 
