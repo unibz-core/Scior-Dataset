@@ -13,7 +13,7 @@ Test 2 was executed in both complete and incomplete OntCatOWL modes (more inform
 - [Execution Statistics _csv_ Files](#execution-statistics-csv-files)
 - [Execution Times _csv_ Files](#execution-times-csv-files)
 - [Inconsistencies _csv_ File](#inconsistencies-csv-file)
-- [Results yaml Files](#results-yaml-files)
+- [Results _yaml_ Files](#results-yaml-files)
 - [Results _csv_ Files](#results-csv-files)
 
 # Execution Statistics _csv_ Files
@@ -45,7 +45,7 @@ This file is generated according to the pattern `inconsistencies_XXX_tt002_MM_tx
 
 The OntCatOWL-Tester creates this file only in datasets that Test 2 AC detected inconsistencies during the executions. When OntCatOWL detects an inconsistency, it interrupts the current test's execution, and it starts the next one.
 
-# Results yaml Files
+# Results _yaml_ Files
 
 There are no structural differences between the results _yaml_ files generated for Test 1 and for Test 2. To access the complete description of the [results _yaml_ files in Test 1, click here.](https://github.com/unibz-core/OntCatOWL-Dataset/blob/main/documentation/OntCatOWL-Dataset-Test1.md#results-yaml-files)
 
