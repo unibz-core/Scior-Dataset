@@ -66,8 +66,8 @@ Each `data_XXX_txYYY.csv` file (with XXX being the dataset name and with YYY ran
 The generated _csv_ file contains the following columns:
 
 - `class_name`: name of the OntoUML class as it is in the original model (i.e., without namespace)
-- `stereotype_original`: the class's OntoUML stereotype as was attributed by its modeler
-- `stereotype_gufo`: the class's OntoUML stereotype mapped to a gUFO endurant type **(click here for more information—link to be created)**
+- `ontouml_stereotype`: the class's OntoUML stereotype as was attributed by its modeler
+- `gufo_classification`: the class's OntoUML stereotype mapped to a gUFO endurant type **(click here for more information—link to be created)**
 - `is_root`: Boolean value that shows if the class is a root node in the taxonomical graph (i.e., if it has no superclasses)
 - `is_leaf`: Boolean value that shows if the class is a leaf node in the taxonomical graph (i.e., if it has no subclasses)
 - `is_intermediate`: Boolean value that shows if the class is an intermediate node in the taxonomical graph (i.e., if it has subclasses and superclasses)
