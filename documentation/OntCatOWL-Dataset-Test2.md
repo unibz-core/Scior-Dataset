@@ -58,7 +58,7 @@ There are no structural differences between the results _csv_ files generated fo
 
 This file is generated according to the pattern `simple_XXX_tt002_MM_txYYY_exZZZ_pcKKK.csv` (e.g., _simple_aguiar2018rdbs-o_tt002_an_tx001_ex001_pc005.csv_, for the first execution using 5 percent of classes as input of the taxonomy 001 of the dataset aguiar2018rdbs-o).
 
-## Results _csv_ Files
+## Knowledge Matrix _csv_ Files
 
 There are no structural differences between the knowledge matrix _csv_ files generated for Test 1 and for Test 2. To access the complete description of the [knowledge matrix _csv_ files in Test 1, click here.](https://github.com/unibz-core/OntCatOWL-Dataset/blob/main/documentation/OntCatOWL-Dataset-Test1.md#knowledge-matrix-csv-files)
 
