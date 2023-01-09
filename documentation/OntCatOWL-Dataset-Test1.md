@@ -152,6 +152,7 @@ The items registered in the _csv_ files are:
 - `sub_r_r`: execution time in seconds for the specific OntCatOWL rule of the same name
 - `nrs_ns_r`: execution time in seconds for the specific OntCatOWL rule of the same name
 - `total_time`: the sum of the execution times of all fourteen rules implemented in OntCatOWL. I.e., the sum of all other items registered in this file (except for the item "execution"
+- `scior_version`: Scior version used for executing the software
 - `python_version`: Python version used for executing the software
   - Printed_string = _platform.python_version()_
 - `operating_system`: Operating System of the computer in which the Tester was executed
