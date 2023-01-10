@@ -67,7 +67,7 @@ The generated _csv_ file contains the following columns:
 
 - `class_name`: name of the OntoUML class as it is in the original model (i.e., without namespace)
 - `ontouml_stereotype`: the class's OntoUML stereotype as was attributed by its modeler
-- `gufo_classification`: the class's OntoUML stereotype mapped to a gUFO endurant type **([click here](https://github.com/unibz-core/OntCatOWL-Tester/blob/main/documentation/OntCatOWL-Tester-Build.md#ontouml-stereotype-and-gufo-classification) for more information)**
+- `gufo_classification`: the class's OntoUML stereotype mapped to a gUFO endurant type ([click here](https://github.com/unibz-core/OntCatOWL-Tester/blob/main/documentation/OntCatOWL-Tester-Build.md#ontouml-stereotype-and-gufo-classification) for more information)
 - `is_root`: Boolean value that shows if the class is a root node in the taxonomical graph (i.e., if it has no superclasses)
 - `is_leaf`: Boolean value that shows if the class is a leaf node in the taxonomical graph (i.e., if it has no subclasses)
 - `is_intermediate`: Boolean value that shows if the class is an intermediate node in the taxonomical graph (i.e., if it has subclasses and superclasses)
