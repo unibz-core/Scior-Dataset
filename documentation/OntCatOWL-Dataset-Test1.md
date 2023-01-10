@@ -174,6 +174,8 @@ The items registered in the _csv_ files are:
 - `installed_ram`: Amount of RAM memory (in GB) on the computer in which the Tester was executed
   - printed_string = _str(round(psutil.virtual_memory().total / (1024.0 ** 3)))_
 
+Considering that this file is created only once for each test in a dataset, it will always have only two lines: a first one with the headers and the second one with values.
+
 ## Inconsistencies _csv_ Files
 
 Considering an incomplete model as complete may cause inconsistencies—and the catalog models used for this test don't explicitly state if they intend to represent complete or incomplete information. Hence, the execution of Test 1 AC resulted in the detection of inconsistencies in some models. Inconsistencies may also occur when an OntoUML model is syntactically invalid. However, Test 1 cannot detect this situation as it only uses a single class as input.
