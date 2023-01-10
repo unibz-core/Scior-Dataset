@@ -67,7 +67,7 @@ The generated _csv_ file contains the following columns:
 
 - `class_name`: name of the OntoUML class as it is in the original model (i.e., without namespace)
 - `ontouml_stereotype`: the class's OntoUML stereotype as was attributed by its modeler
-- `gufo_classification`: the class's OntoUML stereotype mapped to a gUFO endurant type **(click here for more information—link to be created)**
+- `gufo_classification`: the class's OntoUML stereotype mapped to a gUFO endurant type **([click here](https://github.com/unibz-core/OntCatOWL-Tester/blob/main/documentation/OntCatOWL-Tester-Build.md#ontouml-stereotype-and-gufo-classification) for more information)**
 - `is_root`: Boolean value that shows if the class is a root node in the taxonomical graph (i.e., if it has no superclasses)
 - `is_leaf`: Boolean value that shows if the class is a leaf node in the taxonomical graph (i.e., if it has no subclasses)
 - `is_intermediate`: Boolean value that shows if the class is an intermediate node in the taxonomical graph (i.e., if it has subclasses and superclasses)
@@ -81,7 +81,7 @@ As every class must be a root, a leaf, or an intermediate node, note that this f
 
 ## Hashes Register _CSV_ File
 
-For traceability, the OntCatOWL-Tester provides a function for generating a SHA256 hash of its generated files and of the files that originated them (for more information, click here–link to be created). The whole dataset contains a single _csv_ register file named `hash_sha256_register.csv`, containing four columns of data that are incremented every time the Tester creates new files. The columns are:
+For traceability, the OntCatOWL-Tester provides a function for generating a SHA256 hash of its generated files and of the files that originated them. The whole dataset contains a single _csv_ register file named `hash_sha256_register.csv`, containing four columns of data that are incremented every time the Tester creates new files. The columns are:
 
 - `file_name`: complete path of the file being hashed
 - `file_hash`: SHA256 hash of the file
