@@ -1,0 +1,59 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Atomic_OE_Activity> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Atomic_Commitment>,
+        <http://taxonomy.model/OE_Activity> .
+
+<http://taxonomy.model/Civil_Defense_Organization_Intention> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Intention> .
+
+<http://taxonomy.model/Complex_OE_Activity> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Complex_Commitment>,
+        <http://taxonomy.model/OE_Activity> .
+
+<http://taxonomy.model/General_OE_Process> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/OE_Process> .
+
+<http://taxonomy.model/Mitigation_activity> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/OE_Activity> .
+
+<http://taxonomy.model/Organization_Holder_Intention> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Intention> .
+
+<http://taxonomy.model/Preventive_activity> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/OE_Activity> .
+
+<http://taxonomy.model/Protect_Intention> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Intention>,
+        <http://taxonomy.model/Open_Commitment> .
+
+<http://taxonomy.model/Specific_OE_Process> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/OE_Process> .
+
+<http://taxonomy.model/Transfer_activity> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/OE_Activity> .
+
+<http://taxonomy.model/Atomic_Commitment> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Commitment> .
+
+<http://taxonomy.model/Closed_Commitment> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Commitment> .
+
+<http://taxonomy.model/Complex_Commitment> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Commitment> .
+
+<http://taxonomy.model/Open_Commitment> a owl:Class .
+
+<http://taxonomy.model/OE_Process> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Intention> .
+
+<http://taxonomy.model/Commitment> a owl:Class .
+
+<http://taxonomy.model/Intention> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Commitment> .
+
+<http://taxonomy.model/OE_Activity> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Closed_Commitment>,
+        <http://taxonomy.model/Intention> .
+

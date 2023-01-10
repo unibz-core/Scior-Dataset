@@ -1,0 +1,103 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/AplleEndocarp> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/ApplePart> .
+
+<http://taxonomy.model/Apple> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/AppleSubstance> .
+
+<http://taxonomy.model/AppleColor> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/AppleQuality> .
+
+<http://taxonomy.model/AppleExocarp> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/ApplePart> .
+
+<http://taxonomy.model/AppleHarvest> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/AppleHandlingActivity> .
+
+<http://taxonomy.model/AppleLowNutritionalFactor> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/AppleNutritionalFactor>,
+        <http://taxonomy.model/ApplePreHarvestPathologyEnablingFactor> .
+
+<http://taxonomy.model/ApplePathology> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/AppleDisposition> .
+
+<http://taxonomy.model/AppleQualityState> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Event> .
+
+<http://taxonomy.model/AppleStain> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/AppleFeature> .
+
+<http://taxonomy.model/AppleStorage> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/AppleHandlingActivity> .
+
+<http://taxonomy.model/AppleTaste> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/AppleQuality> .
+
+<http://taxonomy.model/HoleInApple> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/AppleFeature> .
+
+<http://taxonomy.model/InadequatePhysicalQualityStateOfSpatialEntityDuringAppleHandling> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/ApplePostHarvestPathologyEnablingFactor>,
+        <http://taxonomy.model/PhysicalQualityStateOfSpatialEntityDuringAppleHandling> .
+
+<http://taxonomy.model/InfectedAppleSubstance> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/PathologicalAppleSubstance> .
+
+<http://taxonomy.model/InsectStingInApple> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/AppleFeature>,
+        <http://taxonomy.model/ApplePathologyEnablingFactor> .
+
+<http://taxonomy.model/PathogenSign> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/AppleAspect> .
+
+<http://taxonomy.model/PressureMarkInApple> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/AppleFeature>,
+        <http://taxonomy.model/ApplePathologyEnablingFactor> .
+
+<http://taxonomy.model/AppleDisposition> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/AppleAspect> .
+
+<http://taxonomy.model/AppleNutritionalFactor> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/AppleQuality> .
+
+<http://taxonomy.model/ApplePostHarvestPathologyEnablingFactor> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/ApplePathologyEnablingFactor> .
+
+<http://taxonomy.model/ApplePreHarvestPathologyEnablingFactor> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/ApplePathologyEnablingFactor> .
+
+<http://taxonomy.model/PathologicalAppleSubstance> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/AppleSubstance> .
+
+<http://taxonomy.model/PhysicalQualityState> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Event> .
+
+<http://taxonomy.model/PhysicalQualityStateOfSpatialEntityDuringAppleHandling> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/PhysicalQualityState> .
+
+<http://taxonomy.model/AppleEndurant> a owl:Class .
+
+<http://taxonomy.model/AppleHandlingActivity> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Event> .
+
+<http://taxonomy.model/ApplePart> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/AppleSubstance> .
+
+<http://taxonomy.model/AppleQuality> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/AppleAspect> .
+
+<http://taxonomy.model/AppleSubstance> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/AppleEndurant> .
+
+<http://taxonomy.model/Event> a owl:Class .
+
+<http://taxonomy.model/AppleAspect> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/AppleEndurant> .
+
+<http://taxonomy.model/AppleFeature> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/AppleAspect> .
+
+<http://taxonomy.model/ApplePathologyEnablingFactor> a owl:Class .
+

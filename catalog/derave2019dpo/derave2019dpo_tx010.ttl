@@ -1,0 +1,196 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Automated_Affiliation_Action> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Registration_Action>,
+        <http://taxonomy.model/User_Affiliation_Action> .
+
+<http://taxonomy.model/Centralized_Transaction_Creation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Transaction_Creation> .
+
+<http://taxonomy.model/Decentralized_Transaction_Creation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Transaction_Creation> .
+
+<http://taxonomy.model/Digital_Good_Transfer> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Digital_Delivery>,
+        <http://taxonomy.model/Ownership_Transfer>,
+        <http://taxonomy.model/Platform_Software_Action> .
+
+<http://taxonomy.model/External_Payment> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Transaction_Payment> .
+
+<http://taxonomy.model/In-house_Payment> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Transaction_Payment>,
+        <http://taxonomy.model/User_Action> .
+
+<http://taxonomy.model/Job_acceptance> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Transaction_Creation> .
+
+<http://taxonomy.model/Job_done> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Delivery> .
+
+<http://taxonomy.model/Listing_Creation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/User_Action> .
+
+<http://taxonomy.model/Listing_Search> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Digital_Content_Consumption>,
+        <http://taxonomy.model/User_Action> .
+
+<http://taxonomy.model/MS_Platform_Supported_Interaction> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Platform_Supported_Interaction> .
+
+<http://taxonomy.model/Main_Digital_Content_Consumption> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Digital_Content_Consumption>,
+        <http://taxonomy.model/User_Action> .
+
+<http://taxonomy.model/Manual_Affiliation_Check> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Platform_Company_Action> .
+
+<http://taxonomy.model/Manually-Checked_Affiliation_Action> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Platform_Company_Action>,
+        <http://taxonomy.model/User_Affiliation_Action> .
+
+<http://taxonomy.model/Match_Target_Customer_To_Offering> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Platform_Software_Action> .
+
+<http://taxonomy.model/Meal_Delivery> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Offline_Action>,
+        <http://taxonomy.model/Result-Oriented_Delivery> .
+
+<http://taxonomy.model/Meal_Preparation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Offline_Action>,
+        <http://taxonomy.model/User-Oriented_Delivery> .
+
+<http://taxonomy.model/Offering_Creation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Main_Digital_Content_Creation> .
+
+<http://taxonomy.model/Offline_Good_Transfer> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Offline_Action>,
+        <http://taxonomy.model/Ownership_Transfer> .
+
+<http://taxonomy.model/Offline_Payment> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Offline_Action>,
+        <http://taxonomy.model/Transaction_Payment> .
+
+<http://taxonomy.model/Offline_Service_Delivery> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Service_Delivery> .
+
+<http://taxonomy.model/Peer_Action> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/User_Action> .
+
+<http://taxonomy.model/Physical_Delivery> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Delivery>,
+        <http://taxonomy.model/Offline_Action> .
+
+<http://taxonomy.model/Price_Acceptance> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/User_Action> .
+
+<http://taxonomy.model/Price_Offer_Creation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/User_Action> .
+
+<http://taxonomy.model/Price_Proposal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/User_Action> .
+
+<http://taxonomy.model/Rent_Home> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Outer-Platform_Delivery>,
+        <http://taxonomy.model/Service_Delivery>,
+        <http://taxonomy.model/User-Oriented_Delivery> .
+
+<http://taxonomy.model/Request_Quote> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/User_Action> .
+
+<http://taxonomy.model/Review_Creation_by_Customer> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Review_Creation> .
+
+<http://taxonomy.model/Review_Creation_by_Provider> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Review_Creation> .
+
+<http://taxonomy.model/Send_Message> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/User_Action> .
+
+<http://taxonomy.model/Subscription_Action> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/User_Affiliation_Action> .
+
+<http://taxonomy.model/Subscription_Payment> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Payment_Action> .
+
+<http://taxonomy.model/User_Payment_Action> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/User_Action> .
+
+<http://taxonomy.model/User_Role_Action> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/User_Action> .
+
+<http://taxonomy.model/Digital_Delivery> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Delivery> .
+
+<http://taxonomy.model/Main_Digital_Content_Creation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Digital_Content_Creation>,
+        <http://taxonomy.model/User_Action>,
+        <http://taxonomy.model/User_Affiliation_Action> .
+
+<http://taxonomy.model/Outer-Platform_Delivery> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Delivery> .
+
+<http://taxonomy.model/Product-Oriented_Delivery> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Delivery> .
+
+<http://taxonomy.model/Registration_Action> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Digital_Content_Creation>,
+        <http://taxonomy.model/User_Action>,
+        <http://taxonomy.model/User_Affiliation_Action> .
+
+<http://taxonomy.model/Digital_Content_Consumption> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/User_Action> .
+
+<http://taxonomy.model/Digital_Content_Creation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/User_Action> .
+
+<http://taxonomy.model/Ownership_Transfer> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Delivery> .
+
+<http://taxonomy.model/Payment_Action> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Platform_Supported_Action>,
+        <http://taxonomy.model/User_Action> .
+
+<http://taxonomy.model/Platform_Company_Action> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Platform_Supported_Action> .
+
+<http://taxonomy.model/Platform_Software_Action> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Platform_Supported_Action> .
+
+<http://taxonomy.model/Platform_Supported_Interaction> a owl:Class .
+
+<http://taxonomy.model/Result-Oriented_Delivery> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Delivery>,
+        <http://taxonomy.model/Service_Delivery> .
+
+<http://taxonomy.model/Review_Creation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/User_Action> .
+
+<http://taxonomy.model/User-Oriented_Delivery> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Delivery>,
+        <http://taxonomy.model/Product-Oriented_Delivery>,
+        <http://taxonomy.model/Result-Oriented_Delivery> .
+
+<http://taxonomy.model/Service_Delivery> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Delivery> .
+
+<http://taxonomy.model/Transaction_Creation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Platform_Supported_Interaction>,
+        <http://taxonomy.model/User_Action> .
+
+<http://taxonomy.model/Transaction_Payment> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Payment_Action> .
+
+<http://taxonomy.model/Platform_Supported_Action> a owl:Class .
+
+<http://taxonomy.model/Offline_Action> a owl:Class .
+
+<http://taxonomy.model/User_Affiliation_Action> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/User_Action> .
+
+<http://taxonomy.model/Delivery> a owl:Class .
+
+<http://taxonomy.model/User_Action> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Platform_Supported_Action> .
+

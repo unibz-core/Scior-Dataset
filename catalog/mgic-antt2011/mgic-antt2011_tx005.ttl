@@ -1,0 +1,482 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Acionista_Votante> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Acionista> .
+
+<http://taxonomy.model/Agente_da_ANTT> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Agente> .
+
+<http://taxonomy.model/Agente_de_Órgão_Conveniado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Agente> .
+
+<http://taxonomy.model/Agência_Reguladora_Autorizatária_de_Obra> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Agência_Reguladora> .
+
+<http://taxonomy.model/Agência_Reguladora_Convenente> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Agência_Reguladora>,
+        <http://taxonomy.model/Convenente> .
+
+<http://taxonomy.model/Arrendador_Financeiro> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fonte_de_Capital> .
+
+<http://taxonomy.model/Arrendador_Operacional> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Autor_de_ATe_por_N._de_Infração> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscal_2> .
+
+<http://taxonomy.model/Autor_de_Representação> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Autorizatária> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Outorgado> .
+
+<http://taxonomy.model/Avô> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Parente_Direto>,
+        <http://taxonomy.model/Parente_em_Linha_Reta> .
+
+<http://taxonomy.model/Beneficiário> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Bisavô> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Parente_Direto>,
+        <http://taxonomy.model/Parente_em_Linha_Reta> .
+
+<http://taxonomy.model/Bisneto> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Parente_Direto>,
+        <http://taxonomy.model/Parente_em_Linha_Reta> .
+
+<http://taxonomy.model/Cartório> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa_Jurídica> .
+
+<http://taxonomy.model/Companheiro> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa_Física> .
+
+<http://taxonomy.model/Comprador_Sucata> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Comprador_de_Ativo> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Concessionária_Ferroviária> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Concessionária> .
+
+<http://taxonomy.model/Concessionária_Rodoviária_Compradora> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Comprador>,
+        <http://taxonomy.model/Concessionária_Rodoviária_Convenente> .
+
+<http://taxonomy.model/Concessionária_Rodoviária_Cotadora> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Concessionária_Rodoviária_Convenente>,
+        <http://taxonomy.model/Cotador> .
+
+<http://taxonomy.model/Concessionária_Rodoviária_Fiscalizada> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Concessionária_Rodoviária>,
+        <http://taxonomy.model/Objeto_Fiscalizado> .
+
+<http://taxonomy.model/Concessionária_Rodoviária_Segurada> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Concessionária_Rodoviária> .
+
+<http://taxonomy.model/Concessionária_Rodoviária_Solicitada> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Concessionária_Rodoviária_Convenente>,
+        <http://taxonomy.model/Solicitado> .
+
+<http://taxonomy.model/Contrato_de_Prestação_de_ST_Fiscalizado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Contrato_de_Prestação_de_Serviço_de_Transporte>,
+        <http://taxonomy.model/Objeto_Fiscalizado> .
+
+<http://taxonomy.model/Convenente_Responsável_por_Serviço_Delegado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Convenente>,
+        <http://taxonomy.model/Responsável_por_Serviço_Delegado> .
+
+<http://taxonomy.model/ETRP_Autorizatária_em_RE> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Autorizatária_Especial> .
+
+<http://taxonomy.model/ETRP_de_Fretamento_Contínuo> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Autorizatária_de_TRIIP_por_Fretamento> .
+
+<http://taxonomy.model/ETRP_de_Fretamento_ET> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Autorizatária_de_TRIIP_por_Fretamento> .
+
+<http://taxonomy.model/Emissora_de_Debênture> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Empresa_com_Capital_de_Terceiros> .
+
+<http://taxonomy.model/Empresa_Limitada> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Empresa> .
+
+<http://taxonomy.model/Empresa_Participante_em_Consórcio> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Empresa> .
+
+<http://taxonomy.model/Empresa_SA_Regular> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Empresa>,
+        <http://taxonomy.model/Sociedade_Anônima> .
+
+<http://taxonomy.model/Empresa_com_AFAC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Empresa_Regulada_Fiscalizada> .
+
+<http://taxonomy.model/Empresa_com_Reserva> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Empresa_Regulada_Fiscalizada> .
+
+<http://taxonomy.model/Engenheiro_Responsável> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa_Física> .
+
+<http://taxonomy.model/Entidade_Pública_em_CA_Solicitante> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Entidade_Pública_em_CA>,
+        <http://taxonomy.model/Solicitante> .
+
+<http://taxonomy.model/Entidade_Pública_em_CCT> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Convenente>,
+        <http://taxonomy.model/Entidade_Pública> .
+
+<http://taxonomy.model/Entidade_Recolhedora_de_Impostos> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Entidade_Pública> .
+
+<http://taxonomy.model/Entidade_Responsável_por_Extinção> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Entidade_Pública> .
+
+<http://taxonomy.model/Ex-companheiro> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa_Física> .
+
+<http://taxonomy.model/Expedidor> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Filho> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Parente_Direto> .
+
+<http://taxonomy.model/Fiscal_Autuador> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscal_2> .
+
+<http://taxonomy.model/Fiscal_Conveniado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscal> .
+
+<http://taxonomy.model/Fiscal_Conveniado_2> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscal_2> .
+
+<http://taxonomy.model/Fiscal_da_ANTT> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscal>,
+        <http://taxonomy.model/Fiscal_2> .
+
+<http://taxonomy.model/Fiscal_em_Fiscalização_Individual> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscal_2> .
+
+<http://taxonomy.model/Fiscal_que_Recebe_Obra> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscal_2> .
+
+<http://taxonomy.model/Fornecedor> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Fornecedor_de_Compra> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Infrator_com_RE> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Infrator_Reincidente> .
+
+<http://taxonomy.model/Infrator_com_RG> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Infrator_Reincidente> .
+
+<http://taxonomy.model/Infrator_por_InPraTe_Concessionária> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Concessionária_Rodoviária>,
+        <http://taxonomy.model/Infrator_por_InPraTe> .
+
+<http://taxonomy.model/Infrator_por_InPraTe_com_TAC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Infrator_por_InPraTe>,
+        <http://taxonomy.model/Pessoa_com_TAC> .
+
+<http://taxonomy.model/Infrator_por_InPraTe_com_TRO> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Concessionária_Rodoviária_com_TRO>,
+        <http://taxonomy.model/Infrator_por_InPraTe> .
+
+<http://taxonomy.model/Infrator_por_InPraTo> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Infrator> .
+
+<http://taxonomy.model/Integrante_de_Equipe_de_Fiscalização> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscal_em_Fiscalização_em_Equipe> .
+
+<http://taxonomy.model/Interventor_Concessionária> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Concessionária_Rodoviária>,
+        <http://taxonomy.model/Interventor> .
+
+<http://taxonomy.model/Interventor_Conveniado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Convenente>,
+        <http://taxonomy.model/Interventor> .
+
+<http://taxonomy.model/Interventor_Poder_Público> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Interventor>,
+        <http://taxonomy.model/Poder_Público> .
+
+<http://taxonomy.model/Irmão> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Parente_Direto>,
+        <http://taxonomy.model/Parente_em_Linha_Colateral> .
+
+<http://taxonomy.model/Líder_de_Equipe_de_Fiscalização> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscal_em_Fiscalização_em_Equipe> .
+
+<http://taxonomy.model/Manifestante> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Neto> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Parente_Direto>,
+        <http://taxonomy.model/Parente_em_Linha_Reta> .
+
+<http://taxonomy.model/Operadora_de_MP_Fiscalizada> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Objeto_Fiscalizado>,
+        <http://taxonomy.model/Operadora_de_Meio_de_Pagamento> .
+
+<http://taxonomy.model/Outorgante> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Entidade_Pública> .
+
+<http://taxonomy.model/Pagante> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Pai> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Parente_Direto> .
+
+<http://taxonomy.model/Parente_de_1º_Grau> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Parente> .
+
+<http://taxonomy.model/Parente_de_2º_Grau> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Parente> .
+
+<http://taxonomy.model/Parente_de_3º_Grau> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Parente> .
+
+<http://taxonomy.model/Parente_de_4º_Grau_ou_Maior> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Parente> .
+
+<http://taxonomy.model/Parente_por_Afinidade> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Parente> .
+
+<http://taxonomy.model/Permissionária> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Empresa_Originária_de_Licitação>,
+        <http://taxonomy.model/Outorgado> .
+
+<http://taxonomy.model/Pessoa_com_Imóvel> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Primo> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Parente_em_Linha_Colateral> .
+
+<http://taxonomy.model/Produtor> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Produtor_de_Serviço> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa_Jurídica> .
+
+<http://taxonomy.model/Proprietário_de_Veículo> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Representante_da_Convenente> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa_Física> .
+
+<http://taxonomy.model/Responsável_Técnico> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa_Física> .
+
+<http://taxonomy.model/Responsável_pela_Lavratura_de_TRO> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscal_2> .
+
+<http://taxonomy.model/Responsável_pela_Verificação_de_TRO> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscal_2> .
+
+<http://taxonomy.model/Responsável_por_Adiantamento> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sócio> .
+
+<http://taxonomy.model/Responsável_por_Aporte> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sócio> .
+
+<http://taxonomy.model/Seguradora> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Empresa> .
+
+<http://taxonomy.model/Sobrinho> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Parente_Direto>,
+        <http://taxonomy.model/Parente_em_Linha_Colateral> .
+
+<http://taxonomy.model/Sobrinho-neto> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Parente_Direto>,
+        <http://taxonomy.model/Parente_em_Linha_Colateral> .
+
+<http://taxonomy.model/Sócio_LTDA> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sócio> .
+
+<http://taxonomy.model/Tio> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Parente_Direto>,
+        <http://taxonomy.model/Parente_em_Linha_Colateral> .
+
+<http://taxonomy.model/Tio-avô> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Parente_Direto>,
+        <http://taxonomy.model/Parente_em_Linha_Colateral> .
+
+<http://taxonomy.model/Transportador> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Vendedor> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Órgão_Conveniado_Fiscalizador> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa_Jurídica>,
+        <http://taxonomy.model/Órgão_Conveniado>,
+        <http://taxonomy.model/Órgão_Responsável_por_Fiscalização> .
+
+<http://taxonomy.model/Órgão_Privado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Órgão> .
+
+<http://taxonomy.model/Órgão_Público_com_CNPJ> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa_Jurídica>,
+        <http://taxonomy.model/Órgão_Público> .
+
+<http://taxonomy.model/Órgão_Público_sem_CNPJ> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Órgão_Público> .
+
+<http://taxonomy.model/Acionista> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sócio> .
+
+<http://taxonomy.model/Autorizatária_Especial> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Autorizatária_de_TT>,
+        <http://taxonomy.model/Outorgado> .
+
+<http://taxonomy.model/Comprador> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Concessionária_Rodoviária_com_TRO> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Concessionária_Rodoviária> .
+
+<http://taxonomy.model/Contrato_de_Prestação_de_Serviço_de_Transporte> a owl:Class .
+
+<http://taxonomy.model/Cotador> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Empresa_com_Capital_de_Terceiros> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Empresa_Regulada_Fiscalizada> .
+
+<http://taxonomy.model/Entidade_Pública_em_CA> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Convenente>,
+        <http://taxonomy.model/Entidade_Pública> .
+
+<http://taxonomy.model/Fonte_de_Capital> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Operadora_de_Meio_de_Pagamento> a owl:Class .
+
+<http://taxonomy.model/Pessoa_com_TAC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Poder_Público> a owl:Class .
+
+<http://taxonomy.model/Provedor_de_Serviço> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa_Jurídica> .
+
+<http://taxonomy.model/Responsável_por_Serviço_Delegado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa_Jurídica> .
+
+<http://taxonomy.model/Sociedade_de_Propósito_Específico> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Empresa>,
+        <http://taxonomy.model/Sociedade_Anônima> .
+
+<http://taxonomy.model/Solicitado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Solicitante> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Órgão_Conveniado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Convenente>,
+        <http://taxonomy.model/Órgão_Público> .
+
+<http://taxonomy.model/Órgão_Responsável_por_Fiscalização> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Órgão_Público> .
+
+<http://taxonomy.model/Agente> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa_Física> .
+
+<http://taxonomy.model/Agência_Reguladora> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa_Jurídica> .
+
+<http://taxonomy.model/Autorizatária_de_TRIIP_por_Fretamento> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Autorizatária_de_TT> .
+
+<http://taxonomy.model/Autorizatária_de_TT> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Empresa_Regulada> .
+
+<http://taxonomy.model/Concessionária> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Empresa_Originária_de_Licitação>,
+        <http://taxonomy.model/Empresa_Regulada>,
+        <http://taxonomy.model/Outorgado>,
+        <http://taxonomy.model/Sociedade_de_Propósito_Específico> .
+
+<http://taxonomy.model/Empresa_Originária_de_Licitação> a owl:Class .
+
+<http://taxonomy.model/Fiscal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa_Física> .
+
+<http://taxonomy.model/Fiscal_em_Fiscalização_em_Equipe> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscal_2> .
+
+<http://taxonomy.model/Infrator_Reincidente> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Infrator> .
+
+<http://taxonomy.model/Sociedade_Anônima> a owl:Class .
+
+<http://taxonomy.model/Órgão> a owl:Class .
+
+<http://taxonomy.model/Concessionária_Rodoviária_Convenente> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Concessionária_Rodoviária>,
+        <http://taxonomy.model/Convenente> .
+
+<http://taxonomy.model/Empresa_Regulada> a owl:Class .
+
+<http://taxonomy.model/Empresa_Regulada_Fiscalizada> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Empresa_Regulada> .
+
+<http://taxonomy.model/Infrator> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Infrator_por_InPraTe> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Infrator> .
+
+<http://taxonomy.model/Interventor> a owl:Class .
+
+<http://taxonomy.model/Objeto_Fiscalizado> a owl:Class .
+
+<http://taxonomy.model/Outorgado> a owl:Class .
+
+<http://taxonomy.model/Parente_em_Linha_Reta> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Parente> .
+
+<http://taxonomy.model/Sócio> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Órgão_Público> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Órgão> .
+
+<http://taxonomy.model/Empresa> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa_Jurídica> .
+
+<http://taxonomy.model/Entidade_Pública> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa_Jurídica> .
+
+<http://taxonomy.model/Concessionária_Rodoviária> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Concessionária>,
+        <http://taxonomy.model/Provedor_de_Serviço> .
+
+<http://taxonomy.model/Parente_em_Linha_Colateral> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Parente> .
+
+<http://taxonomy.model/Convenente> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa_Jurídica> .
+
+<http://taxonomy.model/Parente> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa_Física> .
+
+<http://taxonomy.model/Fiscal_2> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa_Física> .
+
+<http://taxonomy.model/Pessoa_Física> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Pessoa_Jurídica> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Parente_Direto> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Parente> .
+
+<http://taxonomy.model/Pessoa> a owl:Class .
+

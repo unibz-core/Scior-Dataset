@@ -1,0 +1,29 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Concept_Defining_Recommendation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Recommendation_Version> .
+
+<http://taxonomy.model/Concept_Referencing_Recommendation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Recommendation_Version> .
+
+<http://taxonomy.model/Indirectly_Recommendation_Referenced_Recomendation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Recommendation_Referenced_Recomendation> .
+
+<http://taxonomy.model/Indirectly_Recommendation_Referencing_Recomendation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Recommendation_Referencing_Recomendation> .
+
+<http://taxonomy.model/Possibly_Problematic_Recommendation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Recommendation_Referencing_Recomendation> .
+
+<http://taxonomy.model/Problematic_Recommendation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Recommendation_Version> .
+
+<http://taxonomy.model/Recommendation_Referenced_Recomendation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Recommendation_Version> .
+
+<http://taxonomy.model/Recommendation_Referencing_Recomendation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Recommendation_Version> .
+
+<http://taxonomy.model/Recommendation_Version> a owl:Class .
+

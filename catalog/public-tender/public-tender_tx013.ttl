@@ -1,0 +1,17 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Bidder_in_Auction> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidder>,
+        <http://taxonomy.model/Company_Participant_of_Public_Auction> .
+
+<http://taxonomy.model/Winner_of_Public_Auction> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Company_Participant_of_Public_Auction> .
+
+<http://taxonomy.model/Bidder> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Company> .
+
+<http://taxonomy.model/Company> a owl:Class .
+
+<http://taxonomy.model/Company_Participant_of_Public_Auction> a owl:Class .
+

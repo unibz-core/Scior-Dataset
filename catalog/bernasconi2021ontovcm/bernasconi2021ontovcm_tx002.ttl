@@ -1,0 +1,44 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Analyst> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Person> .
+
+<http://taxonomy.model/Author> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Researcher> .
+
+<http://taxonomy.model/Bat> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Animal> .
+
+<http://taxonomy.model/In_Vitro_Host> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Cell_Line>,
+        <http://taxonomy.model/Virus_Host> .
+
+<http://taxonomy.model/Living_Host> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Animal>,
+        <http://taxonomy.model/Virus_Host> .
+
+<http://taxonomy.model/Project_Participant> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Researcher> .
+
+<http://taxonomy.model/Sampled_Animal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Animal> .
+
+<http://taxonomy.model/Virus> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Biological_Organism> .
+
+<http://taxonomy.model/Cell_Line> a owl:Class .
+
+<http://taxonomy.model/Biological_Organism> a owl:Class .
+
+<http://taxonomy.model/Person> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Animal> .
+
+<http://taxonomy.model/Researcher> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Person> .
+
+<http://taxonomy.model/Virus_Host> a owl:Class .
+
+<http://taxonomy.model/Animal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Biological_Organism> .
+

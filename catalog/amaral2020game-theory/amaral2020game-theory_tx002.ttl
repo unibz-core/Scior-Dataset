@@ -1,0 +1,28 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Action_Profile> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Value_Event> .
+
+<http://taxonomy.model/Gain_Event> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Impact_Event> .
+
+<http://taxonomy.model/Loss_Event> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Impact_Event>,
+        <http://taxonomy.model/Risk_Event> .
+
+<http://taxonomy.model/Threat_Event> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Risk_Event>,
+        <http://taxonomy.model/Trigger_Event> .
+
+<http://taxonomy.model/Trigger_Event> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Value_Event> .
+
+<http://taxonomy.model/Impact_Event> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Value_Event> .
+
+<http://taxonomy.model/Risk_Event> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Value_Event> .
+
+<http://taxonomy.model/Value_Event> a owl:Class .
+

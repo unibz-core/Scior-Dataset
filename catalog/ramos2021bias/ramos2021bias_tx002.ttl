@@ -1,0 +1,33 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Benefit> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Rational_Value_Component> .
+
+<http://taxonomy.model/Gain> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Psychological_Value>,
+        <http://taxonomy.model/Psychological_Value_Component> .
+
+<http://taxonomy.model/Loss> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Psychological_Value>,
+        <http://taxonomy.model/Psychological_Value_Component> .
+
+<http://taxonomy.model/Rational_Value> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Value> .
+
+<http://taxonomy.model/Sacrifice> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Rational_Value_Component> .
+
+<http://taxonomy.model/Psychological_Value> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Value> .
+
+<http://taxonomy.model/Psychological_Value_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Value_Component> .
+
+<http://taxonomy.model/Rational_Value_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Value_Component> .
+
+<http://taxonomy.model/Value> a owl:Class .
+
+<http://taxonomy.model/Value_Component> a owl:Class .
+

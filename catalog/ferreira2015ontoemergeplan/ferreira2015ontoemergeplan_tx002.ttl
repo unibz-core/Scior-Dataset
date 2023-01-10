@@ -1,0 +1,189 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Abiotic_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Natural_Component> .
+
+<http://taxonomy.model/Atomic_Installation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Installation> .
+
+<http://taxonomy.model/Built_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Environmental_Physical_Component> .
+
+<http://taxonomy.model/Business_Emergency_Human_Resource> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Business_Human_Resource> .
+
+<http://taxonomy.model/Business_Emergency_Material_Resource> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Material_Resource> .
+
+<http://taxonomy.model/Business_Non_Emergency_Human_Resource> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Business_Human_Resource>,
+        <http://taxonomy.model/User> .
+
+<http://taxonomy.model/Businessman> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Holder> .
+
+<http://taxonomy.model/Civil_Defense_Organization> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/EP_Agent> .
+
+<http://taxonomy.model/Complex_Installation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Installation> .
+
+<http://taxonomy.model/EP_Agent_delegatee> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Delegatee>,
+        <http://taxonomy.model/EP_Agent> .
+
+<http://taxonomy.model/EP_Agent_delegator> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Delegator>,
+        <http://taxonomy.model/EP_Agent> .
+
+<http://taxonomy.model/Emergency_Team> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Collective_Social_Agent> .
+
+<http://taxonomy.model/Endangered_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Component>,
+        <http://taxonomy.model/Under_Protection_Component> .
+
+<http://taxonomy.model/Environmental_Social_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Environmental_Component> .
+
+<http://taxonomy.model/Evacuation_Geographical_Region> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Evacuation_Local>,
+        <http://taxonomy.model/Geographical_Region> .
+
+<http://taxonomy.model/Evacuation_Installation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Evacuation_Local>,
+        <http://taxonomy.model/Installation> .
+
+<http://taxonomy.model/Geographical_Point> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Spatial_Location> .
+
+<http://taxonomy.model/Macro_Political_Region> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Political_Region> .
+
+<http://taxonomy.model/Micro_Political_Region> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Political_Region> .
+
+<http://taxonomy.model/Non_Political_Region> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Geographical_Region> .
+
+<http://taxonomy.model/Organization_Holder> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/EP_Agent>,
+        <http://taxonomy.model/Holder>,
+        <http://taxonomy.model/Organization> .
+
+<http://taxonomy.model/Owner> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Holder> .
+
+<http://taxonomy.model/Person_Holder> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Holder>,
+        <http://taxonomy.model/Person> .
+
+<http://taxonomy.model/Political_Body> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Authority> .
+
+<http://taxonomy.model/Protector> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Agent_in_Social_Relation> .
+
+<http://taxonomy.model/Public_Emergency_Human_Resource> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Human_Resource> .
+
+<http://taxonomy.model/Public_Emergency_Material_Resource> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Material_Resource> .
+
+<http://taxonomy.model/Safe_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Under_Protection_Component> .
+
+<http://taxonomy.model/Visitor> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/User> .
+
+<http://taxonomy.model/Agent_in_Social_Relation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Agent> .
+
+<http://taxonomy.model/Authority> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Individual_Social_Agent> .
+
+<http://taxonomy.model/Biotic_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Natural_Component> .
+
+<http://taxonomy.model/Collective_Social_Agent> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Social_Agent> .
+
+<http://taxonomy.model/Component> a owl:Class .
+
+<http://taxonomy.model/Delegatee> a owl:Class .
+
+<http://taxonomy.model/Delegator> a owl:Class .
+
+<http://taxonomy.model/Jurisdiction> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Geographical_Region>,
+        <http://taxonomy.model/Normatized_Social_Object> .
+
+<http://taxonomy.model/Normatized_Social_Object> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Social_Component> .
+
+<http://taxonomy.model/Organization> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Individual_Social_Agent> .
+
+<http://taxonomy.model/Physical_Agent> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Agent> .
+
+<http://taxonomy.model/Social_Agent> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Agent> .
+
+<http://taxonomy.model/Business_Human_Resource> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Human_Resource> .
+
+<http://taxonomy.model/Environmental_Physical_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Environmental_Component> .
+
+<http://taxonomy.model/Evacuation_Local> a owl:Class .
+
+<http://taxonomy.model/Human_Resource> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Person> .
+
+<http://taxonomy.model/Individual_Social_Agent> a owl:Class .
+
+<http://taxonomy.model/Material_Resource> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Physical_Component> .
+
+<http://taxonomy.model/Natural_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Environmental_Physical_Component> .
+
+<http://taxonomy.model/Physical_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Environmental_Component> .
+
+<http://taxonomy.model/Political_Region> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Geographical_Region>,
+        <http://taxonomy.model/Jurisdiction> .
+
+<http://taxonomy.model/Social_Component> a owl:Class .
+
+<http://taxonomy.model/Spatial_Location> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Social_Component> .
+
+<http://taxonomy.model/Under_Protection_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Environmental_Component> .
+
+<http://taxonomy.model/User> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Person> .
+
+<http://taxonomy.model/Installation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Physical_Component> .
+
+<http://taxonomy.model/Person> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Biotic_Component>,
+        <http://taxonomy.model/Physical_Agent> .
+
+<http://taxonomy.model/Agent> a owl:Class .
+
+<http://taxonomy.model/EP_Agent> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Agent> .
+
+<http://taxonomy.model/Environmental_Component> a owl:Class .
+
+<http://taxonomy.model/Geographical_Region> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Spatial_Location> .
+
+<http://taxonomy.model/Holder> a owl:Class .
+

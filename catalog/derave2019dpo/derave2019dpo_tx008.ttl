@@ -1,0 +1,52 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Accepted_Quote_Price> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Proposed_Price> .
+
+<http://taxonomy.model/Booking_Price> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Price> .
+
+<http://taxonomy.model/Feature-Based_Price> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Price_set_by_Provider> .
+
+<http://taxonomy.model/Highest_Price_Offer> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Offering_Price> .
+
+<http://taxonomy.model/Job_Fee> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Price_set_by_Provider> .
+
+<http://taxonomy.model/Market_Price> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Price> .
+
+<http://taxonomy.model/Paid_Price> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Price> .
+
+<http://taxonomy.model/Paid_Transaction_Price> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Price>,
+        <http://taxonomy.model/Transaction_Price> .
+
+<http://taxonomy.model/Price_per_Quantity> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Offering_Price> .
+
+<http://taxonomy.model/Received_Transaction_Price> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Transaction_Price> .
+
+<http://taxonomy.model/Suggested_Price> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Price> .
+
+<http://taxonomy.model/Proposed_Price> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Price> .
+
+<http://taxonomy.model/Price_set_by_Provider> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Offering_Price>,
+        <http://taxonomy.model/Price> .
+
+<http://taxonomy.model/Transaction_Price> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Price> .
+
+<http://taxonomy.model/Offering_Price> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Price> .
+
+<http://taxonomy.model/Price> a owl:Class .
+

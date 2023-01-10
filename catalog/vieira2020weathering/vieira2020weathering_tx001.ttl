@@ -1,0 +1,33 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Meteoric_Water> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Water> .
+
+<http://taxonomy.model/Pore_Water> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pore_Fluid>,
+        <http://taxonomy.model/Water> .
+
+<http://taxonomy.model/Sediment> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Earth_Solid> .
+
+<http://taxonomy.model/Source_Rock> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Rock> .
+
+<http://taxonomy.model/Pore_Fluid> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Earth_Fluid> .
+
+<http://taxonomy.model/Rock> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Earth_Solid> .
+
+<http://taxonomy.model/Earth_Fluid> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Earth_Material> .
+
+<http://taxonomy.model/Earth_Material> a owl:Class .
+
+<http://taxonomy.model/Earth_Solid> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Earth_Material> .
+
+<http://taxonomy.model/Water> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Earth_Fluid> .
+

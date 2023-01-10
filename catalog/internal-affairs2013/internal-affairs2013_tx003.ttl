@@ -1,0 +1,65 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/civil> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/individual> .
+
+<http://taxonomy.model/civilServiceUnit> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/policeIAD> .
+
+<http://taxonomy.model/commandUnit> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/policeIAD> .
+
+<http://taxonomy.model/designatedRegistry> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/registry> .
+
+<http://taxonomy.model/designatedSection> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/section> .
+
+<http://taxonomy.model/generalInspector> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/military> .
+
+<http://taxonomy.model/registryResponsible> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/military> .
+
+<http://taxonomy.model/sectionResponsible> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/military> .
+
+<http://taxonomy.model/serviceUnit> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/policeIAD> .
+
+<http://taxonomy.model/viceInspector> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/military> .
+
+<http://taxonomy.model/Atomic> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/system> .
+
+<http://taxonomy.model/internalAffairDepartment> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/organization> .
+
+<http://taxonomy.model/organization> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Composed> .
+
+<http://taxonomy.model/registry> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/organizationalPart> .
+
+<http://taxonomy.model/section> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/organizationalPart> .
+
+<http://taxonomy.model/Composed> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/system> .
+
+<http://taxonomy.model/individual> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Atomic> .
+
+<http://taxonomy.model/organizationalPart> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Composed> .
+
+<http://taxonomy.model/system> a owl:Class .
+
+<http://taxonomy.model/policeIAD> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/internalAffairDepartment> .
+
+<http://taxonomy.model/military> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/individual> .
+

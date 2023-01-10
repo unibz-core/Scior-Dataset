@@ -1,0 +1,51 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Disclose_Information> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Information_Exchange> .
+
+<http://taxonomy.model/Intentional_Event> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/UFO-B:_Action> .
+
+<http://taxonomy.model/Legally_Defined_Human_Rights_Violation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Abusive_Event>,
+        <http://taxonomy.model/UFO-L:_Legally_Defined_Event> .
+
+<http://taxonomy.model/Observation_Action> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Monitoring_Event> .
+
+<http://taxonomy.model/Receive_Information> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Information_Exchange> .
+
+<http://taxonomy.model/Recording> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Resulting_Event> .
+
+<http://taxonomy.model/UFO-B:_Atomic_event> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/UFO-B:_Event> .
+
+<http://taxonomy.model/UFO-B:_Complex_event> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/UFO-B:_Event> .
+
+<http://taxonomy.model/Abusive_Event> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/UFO-B:_Event> .
+
+<http://taxonomy.model/Resulting_Event> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/UFO-B:_Participation> .
+
+<http://taxonomy.model/UFO-B:_Action> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/UFO-B:_Event> .
+
+<http://taxonomy.model/UFO-L:_Legally_Defined_Event> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/UFO-B:_Event> .
+
+<http://taxonomy.model/Information_Exchange> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Monitoring_Event> .
+
+<http://taxonomy.model/Monitoring_Event> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/UFO-B:_Participation> .
+
+<http://taxonomy.model/UFO-B:_Participation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/UFO-B:_Event> .
+
+<http://taxonomy.model/UFO-B:_Event> a owl:Class .
+

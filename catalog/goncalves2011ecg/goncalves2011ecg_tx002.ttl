@@ -1,0 +1,35 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/CSAAsCEIConductor> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/CEIConductor>,
+        <http://taxonomy.model/ConductingSystemOfAtria> .
+
+<http://taxonomy.model/CSVAsCEIConductor> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/CEIConductor>,
+        <http://taxonomy.model/ConductingSystemOfVentricles> .
+
+<http://taxonomy.model/CSVAsEPsAccumulator> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/ConductingSystemOfVentricles>,
+        <http://taxonomy.model/EPsAccumulator> .
+
+<http://taxonomy.model/SANodeAsCEIConductor> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/CEIConductor>,
+        <http://taxonomy.model/SANode> .
+
+<http://taxonomy.model/SANodeAsCEIGenerator> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/CEIGenerator>,
+        <http://taxonomy.model/SANode> .
+
+<http://taxonomy.model/CEIGenerator> a owl:Class .
+
+<http://taxonomy.model/ConductingSystemOfAtria> a owl:Class .
+
+<http://taxonomy.model/EPsAccumulator> a owl:Class .
+
+<http://taxonomy.model/ConductingSystemOfVentricles> a owl:Class .
+
+<http://taxonomy.model/SANode> a owl:Class .
+
+<http://taxonomy.model/CEIConductor> a owl:Class .
+

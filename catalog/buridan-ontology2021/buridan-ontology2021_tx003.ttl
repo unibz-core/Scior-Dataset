@@ -1,0 +1,31 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/ImproperSupposition> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/SuppositionInConventionalLanguage> .
+
+<http://taxonomy.model/MaterialSupposition> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/ProperSuppositon>,
+        <http://taxonomy.model/Supposition> .
+
+<http://taxonomy.model/MaterialSuppositionForSyncatogramaticTerm> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Supposition> .
+
+<http://taxonomy.model/MentalPersonalSupposition> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Supposition> .
+
+<http://taxonomy.model/PersonalSupposition> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/ProperSuppositon>,
+        <http://taxonomy.model/Supposition> .
+
+<http://taxonomy.model/SimpleSupposition> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/ProperSuppositon> .
+
+<http://taxonomy.model/SuppositionInConventionalLanguage> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Supposition> .
+
+<http://taxonomy.model/ProperSuppositon> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/SuppositionInConventionalLanguage> .
+
+<http://taxonomy.model/Supposition> a owl:Class .
+
