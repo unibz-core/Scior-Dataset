@@ -21,7 +21,7 @@ The aim of the publication of the resulting datasets is to share with the commun
   - [Taxonomical Graph _ttl_ File](#taxonomical-graph-ttl-file)
   - [Taxonomical Graph Information _csv_ File](#taxonomical-graph-information-csv-file)
   - [Hashes Register _CSV_ File](#hashes-register-csv-file)
-- [Tests – Generated Files AND THEIR Descriptions](#tests--generated-files-and-their-descriptions)
+- [Tests – Generated Files and their Descriptions](#tests--generated-files-and-their-descriptions)
 - [Contributors](#contributors)
 - [Acknowledgements](#acknowledgements)
 
@@ -90,7 +90,7 @@ For traceability, the OntCatOWL-Tester provides a function for generating a SHA2
 
 We could cite as an example of use of this file the case where a user would like to know if he is using the same source data for generating his results, so he can get the SHA256 hash of the files she/he is using check if it exists in the hashes register file.
 
-# Tests – Generated Files AND THEIR Descriptions
+# Tests – Generated Files and their Descriptions
 
 Currently, datasets generated from the execution of two tests are available. Please use the following links for accessing the tests descriptions and results.
 
