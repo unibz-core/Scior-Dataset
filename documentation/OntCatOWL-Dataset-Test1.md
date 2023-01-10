@@ -16,6 +16,7 @@ Test 1 was executed in both complete and incomplete OntCatOWL modes (more inform
     - [List of Items](#list-of-items-1)
   - [Other Items](#other-items)
 - [Execution Times _csv_ Files](#execution-times-csv-files)
+- [Settings _csv_ Files](#settings-csv-files)
 - [Inconsistencies _csv_ Files](#inconsistencies-csv-files)
 - [Results _yaml_ Files](#results-yaml-files)
 - [Results _csv_ Files](#results-csv-files)
@@ -129,7 +130,7 @@ Besides information about classes and their classifications, the _csv_ file also
 
 ## Execution Times _csv_ Files
 
-This file registers the time (in seconds) that each individual rule took for being performed and the execution total time. The file also contains information about the hardware and software used for executing the test.
+This file registers the time (in seconds) that each individual rule took for being performed and the execution total time.
 
 A single file entitled `times_XXX_tt001_MM_txYYY.csv` is generated for each model's independent taxonomical graph and it aggregates information about all its OntCatOWL executions (e.g., _times_aguiar2018rdbs-o_tt001_an_tx001.csv_).
 
@@ -152,6 +153,17 @@ The items registered in the _csv_ files are:
 - `sub_r_r`: execution time in seconds for the specific OntCatOWL rule of the same name
 - `nrs_ns_r`: execution time in seconds for the specific OntCatOWL rule of the same name
 - `total_time`: the sum of the execution times of all fourteen rules implemented in OntCatOWL. I.e., the sum of all other items registered in this file (except for the item "execution"
+
+For the description of each execution rule implemented in the OntCatOWL, please access [this link](https://github.com/unibz-core/OntCatOWL/blob/main/documentation/OntCatOWL-ImplementedRules.md).
+
+## Settings _csv_ Files
+
+This file registers the information about the hardware and software used for executing the same test in all taxonomies of the dataset.
+
+A single file entitled `settings_XXX_tt001_MM.csv` is generated once for each model's (e.g., _settings_aguiar2018rdbs-o_tt001_an.csv_).
+
+The items registered in the _csv_ files are:
+
 - `scior_version`: Scior version used for executing the software
 - `python_version`: Python version used for executing the software
   - Printed_string = _platform.python_version()_
@@ -161,8 +173,6 @@ The items registered in the _csv_ files are:
   - printed string = _platform.processor() + " (" + platform.machine() + ")"_
 - `installed_ram`: Amount of RAM memory (in GB) on the computer in which the Tester was executed
   - printed_string = _str(round(psutil.virtual_memory().total / (1024.0 ** 3)))_
-
-For the description of each execution rule implemented in the OntCatOWL, please access [this link](https://github.com/unibz-core/OntCatOWL/blob/main/documentation/OntCatOWL-ImplementedRules.md).
 
 ## Inconsistencies _csv_ Files
 
