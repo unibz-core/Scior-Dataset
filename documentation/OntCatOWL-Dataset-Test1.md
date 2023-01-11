@@ -209,7 +209,7 @@ This file is generated according to the pattern `complete_XXX_tt001_MM_txYYY_exZ
 
 As occurs with the results _yaml_ files, Test 1 generates the _csv_ results files for each of its executions (i.e., the number of these files is going to be the same number of classes that the tested model has). The Tester stores these files in the `results` folder inside the catalog's dataset folder.
 
-This file contains a simplified view of the results presented in the _yaml_ file with the objective of simplifying queries for evaluating possible inconsistencies. If any class has the value "not" in its _classification_final_list_ field, then the model is inconsistent. Valid values are "can" when the classification is unknown, or "is", for known classifications.
+This file contains a simplified view of the results presented in the _yaml_ file with the objective of simplifying queries for evaluating possible divergences between the expected and the effective result (i.e., between the original categorization of the class, as provided by the author, and the result of the OntCatOWL execution). This divergence is occurs if any class has the value "not" in its _classification_final_list_ field. There is a match between the expected value and the execution result when this field has the value "is". The field's value "can" does not represent a match nor a divergence.
 
 - `class_name`: name of the class being evaluated
 - `class_original_classification`: original gUFO classification of the class, obtained from its OntoUML stereotype
