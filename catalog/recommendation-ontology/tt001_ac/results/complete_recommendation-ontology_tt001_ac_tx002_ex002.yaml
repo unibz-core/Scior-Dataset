@@ -1,4 +1,4 @@
-Recommendation_Referenced_Recomendation:
+Indirectly_Recommendation_Referenced_Recomendation:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -43,7 +43,7 @@ Concept_Referencing_Recommendation:
   - gufo:RoleMixin
   - gufo:SemiRigidType
 ---
-Problematic_Recommendation:
+Concept_Defining_Recommendation:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -65,29 +65,29 @@ Problematic_Recommendation:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-Recommendation_Version:
-  can_type: []
+Recommendation_Referenced_Recomendation:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Phase
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:SemiRigidType
+  - gufo:SubKind
   detected_in: []
   input: false
   is_incomplete: false
   is_type:
-  - gufo:Kind
-  - gufo:RigidType
   - gufo:Sortal
   not_type:
-  - gufo:AntiRigidType
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
+  - gufo:Kind
+  - gufo:NonSortal
   - gufo:Category
   - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:SemiRigidType
-  - gufo:SubKind
+  - gufo:PhaseMixin
+  - gufo:RoleMixin
 ---
-Indirectly_Recommendation_Referenced_Recomendation:
+Recommendation_Referencing_Recomendation:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -153,7 +153,7 @@ Indirectly_Recommendation_Referencing_Recomendation:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-Concept_Defining_Recommendation:
+Problematic_Recommendation:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -175,24 +175,24 @@ Concept_Defining_Recommendation:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-Recommendation_Referencing_Recomendation:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
+Recommendation_Version:
+  can_type: []
   detected_in: []
   input: false
   is_incomplete: false
   is_type:
+  - gufo:Kind
+  - gufo:RigidType
   - gufo:Sortal
   not_type:
-  - gufo:Kind
-  - gufo:NonSortal
+  - gufo:AntiRigidType
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
   - gufo:Category
   - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:SemiRigidType
+  - gufo:SubKind

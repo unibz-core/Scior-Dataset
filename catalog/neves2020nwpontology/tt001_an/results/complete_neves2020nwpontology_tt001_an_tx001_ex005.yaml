@@ -1,3 +1,25 @@
+Atmospheric_Pressure:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
 Meteorological_Parameters:
   can_type:
   - gufo:Category
@@ -20,8 +42,17 @@ Meteorological_Parameters:
   - gufo:Role
   - gufo:RoleMixin
 ---
-Relative_Humidity:
-  can_type:
+Precipitation:
+  can_type: []
+  detected_in:
+  - nk_k_sup
+  input: true
+  is_incomplete: true
+  is_type:
+  - gufo:SubKind
+  - gufo:RigidType
+  - gufo:Sortal
+  not_type:
   - gufo:AntiRigidType
   - gufo:Category
   - gufo:Kind
@@ -30,19 +61,11 @@ Relative_Humidity:
   - gufo:NonSortal
   - gufo:Phase
   - gufo:PhaseMixin
-  - gufo:RigidType
   - gufo:Role
   - gufo:RoleMixin
   - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
 ---
-Atmospheric_Pressure:
+Surface_Wind:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -86,7 +109,7 @@ Sea_Surface:
   is_type: []
   not_type: []
 ---
-Surface_Wind:
+Air_Temperature:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -108,7 +131,7 @@ Surface_Wind:
   is_type: []
   not_type: []
 ---
-Temperature:
+Relative_Humidity:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -152,7 +175,7 @@ Cloudiness:
   is_type: []
   not_type: []
 ---
-Air_Temperature:
+Temperature:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -173,26 +196,3 @@ Air_Temperature:
   is_incomplete: false
   is_type: []
   not_type: []
----
-Precipitation:
-  can_type: []
-  detected_in:
-  - nk_k_sup
-  input: true
-  is_incomplete: true
-  is_type:
-  - gufo:SubKind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType

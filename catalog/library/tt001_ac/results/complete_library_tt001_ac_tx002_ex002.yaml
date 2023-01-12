@@ -1,4 +1,4 @@
-Regular:
+Administrative:
   can_type: []
   detected_in:
   - nk_k_sup
@@ -21,7 +21,7 @@ Regular:
   - gufo:SemiRigidType
   - gufo:Phase
 ---
-Administrative:
+Regular:
   can_type: []
   detected_in: []
   input: false
@@ -43,27 +43,27 @@ Administrative:
   - gufo:SemiRigidType
   - gufo:Phase
 ---
-Employee:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:Role
+Undergraduate_Student:
+  can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonSortal
   - gufo:Phase
-  - gufo:PhaseMixin
   - gufo:RigidType
-  - gufo:RoleMixin
+  - gufo:Role
   - gufo:SemiRigidType
   - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type:
+  - gufo:Sortal
+  not_type:
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:PhaseMixin
+  - gufo:RoleMixin
 ---
 Professor:
   can_type: []
@@ -87,7 +87,7 @@ Professor:
   - gufo:SemiRigidType
   - gufo:Phase
 ---
-Graduate_Student:
+Student:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -109,7 +109,7 @@ Graduate_Student:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-Student:
+Graduate_Student:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -153,6 +153,28 @@ Person:
   - gufo:SemiRigidType
   - gufo:SubKind
 ---
+Employee:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:Role
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
+---
 Intern:
   can_type: []
   detected_in: []
@@ -174,25 +196,3 @@ Intern:
   - gufo:SubKind
   - gufo:SemiRigidType
   - gufo:Phase
----
-Undergraduate_Student:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin

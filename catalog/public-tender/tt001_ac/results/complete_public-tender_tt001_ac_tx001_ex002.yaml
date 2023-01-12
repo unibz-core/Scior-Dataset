@@ -1,24 +1,25 @@
-Auction_for_Public_Tender:
+Auction:
   can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
+  detected_in:
+  - ns_s_spe
+  input: false
+  is_incomplete: true
   is_type:
-  - gufo:Kind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
+  - gufo:NonSortal
   - gufo:Category
+  - gufo:RigidType
+  not_type:
+  - gufo:Sortal
+  - gufo:Kind
+  - gufo:Phase
+  - gufo:Role
+  - gufo:SubKind
+  - gufo:AntiRigidType
+  - gufo:PhaseMixin
+  - gufo:RoleMixin
   - gufo:Mixin
   - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
   - gufo:SemiRigidType
-  - gufo:SubKind
 ---
 Public_Auction:
   can_type: []
@@ -43,25 +44,24 @@ Public_Auction:
   - gufo:NonRigidType
   - gufo:SemiRigidType
 ---
-Auction:
+Auction_for_Public_Tender:
   can_type: []
-  detected_in:
-  - ns_s_spe
-  input: false
-  is_incomplete: true
+  detected_in: []
+  input: true
+  is_incomplete: false
   is_type:
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:RigidType
-  not_type:
-  - gufo:Sortal
   - gufo:Kind
-  - gufo:Phase
-  - gufo:Role
-  - gufo:SubKind
+  - gufo:RigidType
+  - gufo:Sortal
+  not_type:
   - gufo:AntiRigidType
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
+  - gufo:Category
   - gufo:Mixin
   - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
   - gufo:SemiRigidType
+  - gufo:SubKind

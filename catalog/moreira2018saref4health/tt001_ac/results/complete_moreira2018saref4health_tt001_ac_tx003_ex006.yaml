@@ -1,4 +1,4 @@
-ECGLead:
+ECGLeadUnipolar:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -19,6 +19,28 @@ ECGLead:
   - gufo:Mixin
   - gufo:PhaseMixin
   - gufo:RoleMixin
+---
+Sensor:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:Kind
+  - gufo:RigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
 ---
 ECGDevice:
   can_type: []
@@ -42,7 +64,7 @@ ECGDevice:
   - gufo:SemiRigidType
   - gufo:SubKind
 ---
-ECGLeadUnipolar:
+ECGLead:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -85,28 +107,6 @@ Device:
   - gufo:Mixin
   - gufo:NonRigidType
   - gufo:SemiRigidType
----
-Sensor:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:Kind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
 ---
 ECGLeadBipolarLimb:
   can_type:

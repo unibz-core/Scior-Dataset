@@ -21,29 +21,7 @@ Media_Backup/Restore:
   - gufo:RoleMixin
   - gufo:SemiRigidType
 ---
-ITSC_Component:
-  can_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:RigidType
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
----
-Site_Model:
+Application-based:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -65,7 +43,7 @@ Site_Model:
   is_type: []
   not_type: []
 ---
-Application-based:
+Host-based:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -131,7 +109,7 @@ Storage-based:
   is_type: []
   not_type: []
 ---
-Local_Replication:
+Remote_Replication:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -152,6 +130,28 @@ Local_Replication:
   is_incomplete: false
   is_type: []
   not_type: []
+---
+ITSC_Component:
+  can_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:RigidType
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
 ---
 DBMS-based:
   can_type:
@@ -197,7 +197,7 @@ Data_Replication:
   - gufo:Role
   - gufo:RoleMixin
 ---
-Host-based:
+Local_Replication:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -219,7 +219,7 @@ Host-based:
   is_type: []
   not_type: []
 ---
-Remote_Replication:
+Site_Model:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category

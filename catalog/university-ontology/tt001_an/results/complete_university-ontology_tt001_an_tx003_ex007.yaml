@@ -1,4 +1,4 @@
-SuspendedStudent:
+RegularStudent:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -20,28 +20,27 @@ SuspendedStudent:
   is_type: []
   not_type: []
 ---
-Professor:
-  can_type: []
-  detected_in:
-  - nk_k_sup
-  input: true
-  is_incomplete: true
-  is_type:
-  - gufo:Role
+SuspendedStudent:
+  can_type:
   - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Sortal
-  not_type:
   - gufo:Category
   - gufo:Kind
   - gufo:Mixin
+  - gufo:NonRigidType
   - gufo:NonSortal
   - gufo:Phase
   - gufo:PhaseMixin
   - gufo:RigidType
+  - gufo:Role
   - gufo:RoleMixin
   - gufo:SemiRigidType
+  - gufo:Sortal
   - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
 ---
 Student:
   can_type:
@@ -65,7 +64,7 @@ Student:
   is_type: []
   not_type: []
 ---
-Person:
+EgressStudent:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -87,7 +86,7 @@ Person:
   is_type: []
   not_type: []
 ---
-DepartmentChief:
+CourseCoordinator:
   can_type: []
   detected_in:
   - nk_k_sup
@@ -110,29 +109,7 @@ DepartmentChief:
   - gufo:SemiRigidType
   - gufo:Phase
 ---
-RegularStudent:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-InactiveProfessor:
+DepartmentChief:
   can_type: []
   detected_in:
   - nk_k_sup
@@ -178,7 +155,7 @@ ActiveProfessor:
   - gufo:SemiRigidType
   - gufo:Phase
 ---
-CourseCoordinator:
+InactiveProfessor:
   can_type: []
   detected_in:
   - nk_k_sup
@@ -201,7 +178,7 @@ CourseCoordinator:
   - gufo:SemiRigidType
   - gufo:Phase
 ---
-EgressStudent:
+Person:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -222,3 +199,26 @@ EgressStudent:
   is_incomplete: false
   is_type: []
   not_type: []
+---
+Professor:
+  can_type: []
+  detected_in:
+  - nk_k_sup
+  input: true
+  is_incomplete: true
+  is_type:
+  - gufo:Role
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind

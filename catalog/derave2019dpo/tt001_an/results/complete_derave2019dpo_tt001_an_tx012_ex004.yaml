@@ -1,4 +1,4 @@
-Transportation_Cost:
+Commission_Fee:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -20,19 +20,14 @@ Transportation_Cost:
   is_type: []
   not_type: []
 ---
-Subscription_Fee:
+Revenue_Stream:
   can_type:
-  - gufo:AntiRigidType
   - gufo:Category
   - gufo:Kind
   - gufo:Mixin
   - gufo:NonRigidType
   - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
   - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
   - gufo:SemiRigidType
   - gufo:Sortal
   - gufo:SubKind
@@ -40,7 +35,12 @@ Subscription_Fee:
   input: false
   is_incomplete: false
   is_type: []
-  not_type: []
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
 ---
 Revenue_Stream_Payed_by_Provider:
   can_type:
@@ -109,7 +109,7 @@ Fixed_Fee:
   is_type: []
   not_type: []
 ---
-Commission_Fee:
+Transportation_Cost:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -131,14 +131,19 @@ Commission_Fee:
   is_type: []
   not_type: []
 ---
-Revenue_Stream:
+Subscription_Fee:
   can_type:
+  - gufo:AntiRigidType
   - gufo:Category
   - gufo:Kind
   - gufo:Mixin
   - gufo:NonRigidType
   - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
   - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
   - gufo:SemiRigidType
   - gufo:Sortal
   - gufo:SubKind
@@ -146,9 +151,4 @@ Revenue_Stream:
   input: false
   is_incomplete: false
   is_type: []
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
+  not_type: []

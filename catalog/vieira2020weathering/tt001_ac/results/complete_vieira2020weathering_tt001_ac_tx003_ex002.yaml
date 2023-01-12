@@ -20,12 +20,34 @@ Sediment_Object:
   - gufo:SemiRigidType
   - gufo:SubKind
 ---
-Geological_Solid_Object:
+Geological_Object:
   can_type: []
   detected_in:
   - ns_s_spe
-  input: true
+  input: false
   is_incomplete: true
+  is_type:
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:RigidType
+  not_type:
+  - gufo:Sortal
+  - gufo:Kind
+  - gufo:Phase
+  - gufo:Role
+  - gufo:SubKind
+  - gufo:AntiRigidType
+  - gufo:PhaseMixin
+  - gufo:RoleMixin
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:SemiRigidType
+---
+Geological_Solid_Object:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
   is_type:
   - gufo:Category
   - gufo:NonSortal
@@ -64,25 +86,3 @@ Rock_Object:
   - gufo:RoleMixin
   - gufo:SemiRigidType
   - gufo:SubKind
----
-Geological_Object:
-  can_type: []
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:RigidType
-  not_type:
-  - gufo:Sortal
-  - gufo:Kind
-  - gufo:Phase
-  - gufo:Role
-  - gufo:SubKind
-  - gufo:AntiRigidType
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:SemiRigidType

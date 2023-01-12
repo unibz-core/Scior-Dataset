@@ -20,11 +20,10 @@ Financial_Resource:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-Human_Resource:
+Resource:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
-  - gufo:Kind
   - gufo:Mixin
   - gufo:NonRigidType
   - gufo:NonSortal
@@ -40,7 +39,8 @@ Human_Resource:
   input: false
   is_incomplete: false
   is_type: []
-  not_type: []
+  not_type:
+  - gufo:Kind
 ---
 Money:
   can_type: []
@@ -64,10 +64,11 @@ Money:
   - gufo:SemiRigidType
   - gufo:SubKind
 ---
-Resource:
+Person:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
+  - gufo:Kind
   - gufo:Mixin
   - gufo:NonRigidType
   - gufo:NonSortal
@@ -83,10 +84,9 @@ Resource:
   input: false
   is_incomplete: false
   is_type: []
-  not_type:
-  - gufo:Kind
+  not_type: []
 ---
-Person:
+Human_Resource:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category

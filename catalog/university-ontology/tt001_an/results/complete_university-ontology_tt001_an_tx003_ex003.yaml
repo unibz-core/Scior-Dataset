@@ -1,4 +1,4 @@
-SuspendedStudent:
+RegularStudent:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -20,7 +20,7 @@ SuspendedStudent:
   is_type: []
   not_type: []
 ---
-Professor:
+SuspendedStudent:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -64,7 +64,29 @@ Student:
   is_type: []
   not_type: []
 ---
-Person:
+EgressStudent:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+CourseCoordinator:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -109,7 +131,7 @@ DepartmentChief:
   - gufo:SemiRigidType
   - gufo:SubKind
 ---
-RegularStudent:
+ActiveProfessor:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -153,7 +175,7 @@ InactiveProfessor:
   is_type: []
   not_type: []
 ---
-ActiveProfessor:
+Person:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -175,29 +197,7 @@ ActiveProfessor:
   is_type: []
   not_type: []
 ---
-CourseCoordinator:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-EgressStudent:
+Professor:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
