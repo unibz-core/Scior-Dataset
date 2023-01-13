@@ -189,7 +189,7 @@ The _csv_ file contains the following columns:
 - `inconsistent_class_name`: the model's class used as input on the test in which the inconsistency was detected
 - `inconsistent_class_stereotype`: the input class's gUFO classification (i.e., its OntoUML stereotype mapped to a gUFO endurant type)
 
-The Scior-Tester creates this file only if Test 1 AC detects at least one inconsistency in a dataset during its execution.
+The Scior-Tester creates this file only if Test 1 detects at least one inconsistency in a dataset during its execution. If created, only one file is created for each test folder. I.e., a single file is going to be created in the `tt001_MM` folder.
 
 ## Results _yaml_ Files
 
