@@ -1,6 +1,6 @@
 # Scior-Dataset
 
-Dataset with results of Scior tests performed on the OntoUML/UFO Catalog.
+Dataset with results of [Scior](https://github.com/unibz-core/Scior) tests using the [Scior-Tester](https://github.com/unibz-core/Scior-Tester) automation tool performed on the [OntoUML/UFO Catalog](https://github.com/unibz-core/ontouml-models-tools).
 
 ## Description
 
