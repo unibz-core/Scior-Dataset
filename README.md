@@ -1,16 +1,16 @@
-# OntCatOWL-Dataset
+# Scior-Dataset
 
-Dataset with results of OntCatOWL tests performed on the OntoUML/UFO Catalog.
+Dataset with results of [Scior](https://github.com/unibz-core/Scior) tests using the [Scior-Tester](https://github.com/unibz-core/Scior-Tester) automation tool performed on the [OntoUML/UFO Catalog](https://github.com/unibz-core/ontouml-models-tools).
 
 ## Description
 
-The OntCatOWL-Dataset is composed of files with results of [OntCatOWL](https://github.com/unibz-core/OntCatOWL) tests performed via the [OntCatOWL-Tester](https://github.com/unibz-core/OntCatOWL-Tester) on the [OntoUML/UFO Catalog](https://github.com/unibz-core/OntCatOWL).
+The Scior-Dataset is composed of files with results of [Scior](https://github.com/unibz-core/Scior) tests performed via the [Scior-Tester](https://github.com/unibz-core/Scior-Tester) on the [OntoUML/UFO Catalog](https://github.com/unibz-core/Scior).
 
 The FAIR Model Catalog for Ontology-Driven Conceptual Modeling Research, short-named OntoUML/UFO Catalog, is a structured and open-source catalog that contains OntoUML and UFO ontology models. The catalog was conceived to allow collaborative work and to be easily accessible to all its users. Its goal is to support empirical research in OntoUML and UFO, as well as for the general conceptual modeling area, by providing high-quality curated, structured, and machine-processable data on why, where, and how different modeling approaches are used. The catalog offers a diverse collection of conceptual models, created by modelers with varying modeling skills, for a range of domains, and for different purposes.
 
-The tests were performed using the automation tool named [OntCatOWL-Tester](https://github.com/unibz-core/OntCatOWL-Tester), which runs over OntCatOWL. OntCatOWL is the abbreviated name for Identification of Ontological Categories for OWL Ontologies, a software that aims to support the semi-automatic semantic improvement of lightweight web ontologies. We aim to reach the referred semantic improvement via the association of [gUFO](https://nemo-ufes.github.io/gufo/)—a lightweight implementation of the [Unified Foundational Ontology (UFO)](https://nemo.inf.ufes.br/wp-content/uploads/ufo_unified_foundational_ontology_2021.pdf)—concepts to the OWL entities. The aim of gUFO is "_to provide a lightweight implementation of the Unified Foundational Ontology (UFO) suitable for Semantic Web OWL 2 DL applications_".
+The tests were performed using the automation tool named [Scior-Tester](https://github.com/unibz-core/Scior-Tester), which runs over Scior. Scior is the abbreviated name for Identification of Ontological Categories for OWL Ontologies, a software that aims to support the semi-automatic semantic improvement of lightweight web ontologies. We aim to reach the referred semantic improvement via the association of [gUFO](https://nemo-ufes.github.io/gufo/)—a lightweight implementation of the [Unified Foundational Ontology (UFO)](https://nemo.inf.ufes.br/wp-content/uploads/ufo_unified_foundational_ontology_2021.pdf)—concepts to the OWL entities. The aim of gUFO is "_to provide a lightweight implementation of the Unified Foundational Ontology (UFO) suitable for Semantic Web OWL 2 DL applications_".
 
-This document presents the structure of the files generated during the OntCatOWL-Tester execution. For a complete comprehension of the tests (regarding scope, objectives, implementation, etc.), please refer to the OntCatOWL-Tester [description file](https://github.com/unibz-core/OntCatOWL-Tester#readme).
+This document presents the structure of the files generated during the Scior-Tester execution. For a complete comprehension of the tests (regarding scope, objectives, implementation, etc.), please refer to the Scior-Tester [description file](https://github.com/unibz-core/Scior-Tester#readme).
 
 The aim of the publication of the resulting datasets is to share with the community data that can be analyzed in different ways, even though all executed tests are totally reproducible.
 
@@ -23,6 +23,7 @@ The aim of the publication of the resulting datasets is to share with the commun
   - [Taxonomies Resume _csv_ File](#taxonomies-resume-csv-file)
   - [Hashes Register _CSV_ File](#hashes-register-csv-file)
 - [Tests – Generated Files and their Descriptions](#tests--generated-files-and-their-descriptions)
+- [Related Respositories](#related-repositories)
 - [Contributors](#contributors)
 - [Acknowledgements](#acknowledgements)
 
@@ -37,7 +38,7 @@ For avoiding long names for files and directories, all content available in the 
    - taxonomy: tx
    - execution: ex
    - percentage: pc
-4. The OntCatOWL parameters must be represented using the following simplifications:
+4. The Scior parameters must be represented using the following simplifications:
    - automatic: a
    - interactive: i
    - complete: c
@@ -50,7 +51,7 @@ For avoiding long names for files and directories, all content available in the 
 
 ## Build Generated Files
 
-The OntCatOWL-Tester creates a directory for each one of the catalog's datasets that are tested. Each directory contains other folders with the results of the tests that were performed, but they also contain two different files generated by the OntCatOWL-Tester to be used as input for the tests. For generating these files, the Tester decomposes the original taxonomy from a dataset in its (possibly multiple) independent taxonomies (isolated group of classes related via specialization/generalization relations between each other). Both files are presented in this document, as well as a hashes register file.
+The Scior-Tester creates a directory for each one of the catalog's datasets that are tested. Each directory contains other folders with the results of the tests that were performed, but they also contain two different files generated by the Scior-Tester to be used as input for the tests. For generating these files, the Tester decomposes the original taxonomy from a dataset in its (possibly multiple) independent taxonomies (isolated group of classes related via specialization/generalization relations between each other). Both files are presented in this document, as well as a hashes register file.
 
 ### Taxonomical Graph _ttl_ File
 
@@ -58,7 +59,7 @@ Each `XXX_txYYY.ttl` file (with XXX being the dataset name and YYY ranging from 
 
 For instance, a single model that has two not connected hierarchical structures of concepts will generate two files, each one containing only the following properties: `rdfs:subClassOf`, `owl:Class`, and `rdf:type`.
 
-For generating the concept's URIs, the OntCatOWL-Tester uses the following namespace for all taxonomies generated for all datasets: _<http://taxonomy.model/>_
+For generating the concept's URIs, the Scior-Tester uses the following namespace for all taxonomies generated for all datasets: _<http://taxonomy.model/>_
 
 ### Taxonomical Graph Information _csv_ File
 
@@ -68,7 +69,7 @@ The generated _csv_ file contains the following columns:
 
 - `class_name`: name of the OntoUML class as it is in the original model (i.e., without namespace)
 - `ontouml_stereotype`: the class's OntoUML stereotype as was attributed by its modeler
-- `gufo_classification`: the class's OntoUML stereotype mapped to a gUFO endurant type ([click here](https://github.com/unibz-core/OntCatOWL-Tester/blob/main/documentation/OntCatOWL-Tester-Build.md#ontouml-stereotype-and-gufo-classification) for more information)
+- `gufo_classification`: the class's OntoUML stereotype mapped to a gUFO endurant type ([click here](https://github.com/unibz-core/Scior-Tester/blob/main/documentation/Scior-Tester-Build.md#ontouml-stereotype-and-gufo-classification) for more information)
 - `is_root`: Boolean value that shows if the class is a root node in the taxonomical graph (i.e., if it has no superclasses)
 - `is_leaf`: Boolean value that shows if the class is a leaf node in the taxonomical graph (i.e., if it has no subclasses)
 - `is_intermediate`: Boolean value that shows if the class is an intermediate node in the taxonomical graph (i.e., if it has subclasses and superclasses)
@@ -92,7 +93,7 @@ The generated csv file contains the following columns:
 
 ### Hashes Register _CSV_ File
 
-For traceability, the OntCatOWL-Tester provides a function for generating a SHA256 hash of its generated files and of the files that originated them. The whole dataset contains a single _csv_ register file named `hash_sha256_register.csv`, containing four columns of data that are incremented every time the Tester creates new files. The columns are:
+For traceability, the Scior-Tester provides a function for generating a SHA256 hash of its generated files and of the files that originated them. The whole dataset contains a single _csv_ register file named `hash_sha256_register.csv`, containing four columns of data that are incremented every time the Tester creates new files. The columns are:
 
 - `file_name`: complete path of the file being hashed
 - `file_hash`: SHA256 hash of the file
@@ -105,8 +106,15 @@ We could cite as an example of use of this file the case where a user would like
 
 Currently, datasets generated from the execution of two tests are available. Please use the following links for accessing the tests descriptions and results.
 
-- [**Test 1:** single class used as input](https://github.com/unibz-core/OntCatOWL-Dataset/blob/main/documentation/OntCatOWL-Dataset-Test1.md)
-- [**Test 2:** increasing percentage of classes used as input](https://github.com/unibz-core/OntCatOWL-Dataset/blob/main/documentation/OntCatOWL-Dataset-Test2.md)
+- [**Test 1:** single class used as input](https://github.com/unibz-core/Scior-Dataset/blob/main/documentation/Scior-Dataset-Test1.md)
+- [**Test 2:** increasing percentage of classes used as input](https://github.com/unibz-core/Scior-Dataset/blob/main/documentation/Scior-Dataset-Test2.md)
+
+## Related Repositories
+
+- [Scior](https://github.com/unibz-core/Scior): software for identification of ontological categories for OWL ontologies.
+- [Scior-Tester](https://github.com/unibz-core/Scior-Tester): used for automating tests on Scior.
+- [Scior-Dataset](https://github.com/unibz-core/Scior-Dataset): contains data resulting from the Scior-Tester.
+- [OntoUML/UFO Catalog](https://github.com/unibz-core/ontouml-models): source of models used for the performed tests.
 
 ## Contributors
 
