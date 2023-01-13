@@ -231,8 +231,8 @@ Scior generates this file according to the pattern `matrix_XXX_tt001_MM_txYYY_ex
 
 Considering the definition of divergence presented in this documentation ([click here](#results-csv-files)), this file presents a list of all taxonomies in the catalog that presented divergences and the corresponding result file that registers this divergence.
 
-- `taxonomy_name`: 
-- `result_file`: 
+- `taxonomy_name`: a string representing the name of the taxonomy file in which the divergence was found.
+- `result_file`: a string representing the name of the results _csv_ file that registers the divergence.
 
 In simple terms, every time that a Result *csv * file has the value "not" in its column `classification_final_list`, this file and the corresponding taxonomy are going to be here reported.
 
