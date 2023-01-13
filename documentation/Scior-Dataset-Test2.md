@@ -62,3 +62,9 @@ This file is generated according to the pattern `simple_XXX_tt002_MM_txYYY_exZZZ
 There are no structural differences between the knowledge matrix _csv_ files generated for Test 1 and for Test 2. To access the complete description of the [knowledge matrix _csv_ files in Test 1, click here.](https://github.com/unibz-core/Scior-Dataset/blob/main/documentation/Scior-Dataset-Test1.md#knowledge-matrix-csv-files)
 
 This file is generated according to the pattern `matrix_XXX_tt002_MM_txYYY_exZZZ_pcKKK.csv` (e.g., _matrix_aguiar2018rdbs-o_tt002_an_tx001_ex001_pc005.csv_, for the first execution using 5 percent of classes as input of the taxonomy 001 of the dataset aguiar2018rdbs-o).
+
+## Divergences _csv_ Files
+
+There are no structural differences between the Divergences _csv_ files generated for Test 1 and for Test 2. To access the complete description of the [Divergences _csv_ files in Test 1, click here.](https://github.com/unibz-core/Scior-Dataset/blob/main/documentation/Scior-Dataset-Test1.md#divergences-csv-files)
+
+This file is generated in the `catalog/` folder according to the pattern `divergences_tt002_MM.csv` (e.g., _divergences_tt002_an.csv_).
