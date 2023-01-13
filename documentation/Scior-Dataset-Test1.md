@@ -21,6 +21,7 @@ Test 1 was executed in both complete and incomplete Scior modes (more informatio
 - [Results _yaml_ Files](#results-yaml-files)
 - [Results _csv_ Files](#results-csv-files)
 - [Knowledge Matrix _csv_ Files](#knowledge-matrix-csv-files)
+- [Divergences _csv_ File](#divergences-csv-file)
 
 ## Execution Summary _csv_ Files
 
@@ -189,7 +190,7 @@ The _csv_ file contains the following columns:
 - `inconsistent_class_name`: the model's class used as input on the test in which the inconsistency was detected
 - `inconsistent_class_stereotype`: the input class's gUFO classification (i.e., its OntoUML stereotype mapped to a gUFO endurant type)
 
-The Scior-Tester creates this file only if Test 1 detects at least one inconsistency in a dataset during its execution. If created, only one file is created for each test folder. I.e., a single file is going to be created in the `tt001_MM` folder.
+The Scior-Tester creates this file only if Test 1 detects at least one inconsistency in a dataset during its execution. If created, only one file is created for each test. I.e., a single file is going to be created in the `catalog/` folder.
 
 ## Results _yaml_ Files
 
@@ -225,3 +226,14 @@ Test 1 generates a _csv_ file containing the knowledge matrix for each of its ex
 The Knowledge Matrix _csv_ File contains a matrix of integers of size 15x15, without headers for columns and for rows. The user must interpret the values in this file according to the Scior’s knowledge matrix [documentation](https://github.com/unibz-core/Scior/blob/main/documentation/Scior-Functioning.md#report-file).
 
 Scior generates this file according to the pattern `matrix_XXX_tt001_MM_txYYY_exZZZ.csv` (e.g., _matrix_aguiar2018rdbs-o_tt001_an_tx001_ex001.csv_, for the first execution of the taxonomy 001 of the dataset aguiar2018rdbs-o).
+
+## Divergences _csv_ File
+
+Considering the definition of divergence presented in this documentation ([click here](#results-csv-files)), this file presents a list of all taxonomies in the catalog that presented divergences and the corresponding result file that registers this divergence.
+
+- `taxonomy_name`: 
+- `result_file`: 
+
+In simple terms, every time that a Result *csv * file has the value "not" in its column `classification_final_list`, this file and the corresponding taxonomy are going to be here reported.
+
+This file is created only in the case that at least one divergency is found (considering the software execution in all datasets). A single file is created in the `catalog/` folder for each test, having the name `divergences_tt001_MM.csv` (e.g., *divergences_tt001_ac.csv*).
