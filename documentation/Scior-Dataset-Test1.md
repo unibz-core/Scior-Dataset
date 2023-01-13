@@ -180,15 +180,16 @@ Considering that this file is created only once for each test in a dataset, it w
 
 Considering an incomplete model as complete may cause inconsistencies—and the catalog models used for this test don't explicitly state if they intend to represent complete or incomplete information. Hence, the execution of Test 1 AC resulted in the detection of inconsistencies in some models. Inconsistencies may also occur when an OntoUML model is syntactically invalid. However, Test 1 cannot detect this situation as it only uses a single class as input.
 
-We reported all inconsistencies found in the file `inconsistencies_XXX_tt001_MM_txYYY.csv`, where each item is a dataset with a list of the classes used as input in the executions where the inconsistencies were found (e.g., _inconsistencies_aguiar2018rdbs-o_tt001_ac_tx001.csv_).
+As an overview of each dataset contains inconsistencies, Test 1 report all inconsistencies found in the file `inconsistencies_tt001_MM.csv`  (e.g., _inconsistencies_tt001_ac.csv_).
 
 The _csv_ file contains the following columns:
 
+- `taxonomy_name`: a string representing name of the taxonomy file in which the inconsistency was detected.
 - `execution_number`: is the first column of the _csv_ file. Registers the number of the execution of the test in which the inconsistency was detected
 - `inconsistent_class_name`: the model's class used as input on the test in which the inconsistency was detected
 - `inconsistent_class_stereotype`: the input class's gUFO classification (i.e., its OntoUML stereotype mapped to a gUFO endurant type)
 
-The Scior-Tester creates this file only in datasets that Test 1 AC detected inconsistencies during the executions. When Scior detects an inconsistency, it interrupts the current test's execution, and it starts the next one.
+The Scior-Tester creates this file only if Test 1 AC detects at least one inconsistency in a dataset during its execution.
 
 ## Results _yaml_ Files
 
