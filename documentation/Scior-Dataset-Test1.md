@@ -21,7 +21,7 @@ Test 1 was executed in both complete and incomplete Scior modes (more informatio
 - [Results _yaml_ Files](#results-yaml-files)
 - [Results _csv_ Files](#results-csv-files)
 - [Knowledge Matrix _csv_ Files](#knowledge-matrix-csv-files)
-- [Divergences _csv_ File](#divergences-csv-file)
+- [Divergences _csv_ Files](#divergences-csv-files)
 
 ## Execution Summary _csv_ Files
 
@@ -227,7 +227,7 @@ The Knowledge Matrix _csv_ File contains a matrix of integers of size 15x15, wit
 
 Scior generates this file according to the pattern `matrix_XXX_tt001_MM_txYYY_exZZZ.csv` (e.g., _matrix_aguiar2018rdbs-o_tt001_an_tx001_ex001.csv_, for the first execution of the taxonomy 001 of the dataset aguiar2018rdbs-o).
 
-## Divergences _csv_ File
+## Divergences _csv_ Files
 
 Considering the definition of divergence presented in this documentation ([click here](#results-csv-files)), this file presents a list of all taxonomies in the catalog that presented divergences and the corresponding result file that registers this divergence.
 
