@@ -91,6 +91,8 @@ The generated csv file contains the following columns:
 - `dataset_name`: a string with the dataset that contains this taxonomy (e.g., _abrahao2018agriculture-operations_)
 - `num_classes`: an integer representing the number of classes that the taxonomy has (e.g., 6)
 
+A single `taxonomies.csv` file, located in the `/catalog` folder is created after the build function is completed.
+
 ### Hashes Register _CSV_ File
 
 For traceability, the Scior-Tester provides a function for generating a SHA256 hash of its generated files and of the files that originated them. The whole dataset contains a single _csv_ register file named `hash_sha256_register.csv`, containing four columns of data that are incremented every time the Tester creates new files. The columns are:
