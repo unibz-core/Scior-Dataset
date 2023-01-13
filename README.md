@@ -23,6 +23,7 @@ The aim of the publication of the resulting datasets is to share with the commun
   - [Taxonomies Resume _csv_ File](#taxonomies-resume-csv-file)
   - [Hashes Register _CSV_ File](#hashes-register-csv-file)
 - [Tests – Generated Files and their Descriptions](#tests--generated-files-and-their-descriptions)
+- [Related Respositories](#related-repositories)
 - [Contributors](#contributors)
 - [Acknowledgements](#acknowledgements)
 
@@ -107,6 +108,13 @@ Currently, datasets generated from the execution of two tests are available. Ple
 
 - [**Test 1:** single class used as input](https://github.com/unibz-core/OntCatOWL-Dataset/blob/main/documentation/OntCatOWL-Dataset-Test1.md)
 - [**Test 2:** increasing percentage of classes used as input](https://github.com/unibz-core/OntCatOWL-Dataset/blob/main/documentation/OntCatOWL-Dataset-Test2.md)
+
+## Related Repositories
+
+- [OntCatOWL](https://github.com/unibz-core/OntCatOWL): software for identification of ontological categories for OWL ontologies.
+- [OntCatOWL-Tester](https://github.com/unibz-core/OntCatOWL-Tester): used for automating tests on OntCatOWL.
+- [OntCatOWL-Dataset](https://github.com/unibz-core/OntCatOWL-Dataset): contains data resulting from the OntCatOWL-Tester.
+- [OntoUML/UFO Catalog](https://github.com/unibz-core/ontouml-models): source of models used for the performed tests.
 
 ## Contributors
 
