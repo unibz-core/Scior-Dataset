@@ -1,59 +1,61 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/A-FP_Binding> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Binding> .
+<http://taxonomy.model/Client_Section_Layer> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Related_Layer_Network>,
+        <http://taxonomy.model/Section_Layer_Network> .
 
-<http://taxonomy.model/Sink_A-FEP_Binding> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Binding> .
+<http://taxonomy.model/Composed_PM_Layer> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Physical_Media_Layer_Network> .
 
-<http://taxonomy.model/Sink_AP_Binding> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Binding> .
+<http://taxonomy.model/LC_Composed_Layer_Network> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Layer_Network> .
 
-<http://taxonomy.model/Sink_LPF-FEP_Bound> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Binding> .
+<http://taxonomy.model/Matrix_Composed_Path_Layer> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Path_Layer_Network_2> .
 
-<http://taxonomy.model/Sink_M-FEP_Binding> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Binding> .
+<http://taxonomy.model/Path-Path_Client_Layer> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Client_Path_Layer> .
 
-<http://taxonomy.model/Sink_M-FP_Binding> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Binding> .
+<http://taxonomy.model/Path-Section_Client_Layer> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Client_Path_Layer> .
 
-<http://taxonomy.model/Sink_PM-FEP_Binding> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Binding> .
+<http://taxonomy.model/Path_Layer_Network> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Path_Layer_Network_2> .
 
-<http://taxonomy.model/Sink_SN-FEP_Binding> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Binding> .
+<http://taxonomy.model/Server_Path_Layer> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Path_Layer_Network_2>,
+        <http://taxonomy.model/Related_Layer_Network> .
 
-<http://taxonomy.model/Sink_SN-FP_Binding> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Binding> .
+<http://taxonomy.model/Server_Physical_Media_Layer> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Physical_Media_Layer_Network>,
+        <http://taxonomy.model/Related_Layer_Network> .
 
-<http://taxonomy.model/Source_A-FEP_Binding> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Binding> .
+<http://taxonomy.model/Server_Section_Layer> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Related_Layer_Network>,
+        <http://taxonomy.model/Section_Layer_Network> .
 
-<http://taxonomy.model/Source_AP_Binding> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Binding> .
+<http://taxonomy.model/Subnetwork_Composed_Path_Layer> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Path_Layer_Network_2> .
 
-<http://taxonomy.model/Source_L-FP_Binding> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Binding> .
+<http://taxonomy.model/Client_Path_Layer> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Path_Layer_Network_2>,
+        <http://taxonomy.model/Related_Layer_Network> .
 
-<http://taxonomy.model/Source_LPF-FEP_Binding> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Binding> .
+<http://taxonomy.model/Physical_Media_Layer_Network> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Transmission_Media_Layer_Network> .
 
-<http://taxonomy.model/Source_M-FEP_Binding> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Binding> .
+<http://taxonomy.model/Section_Layer_Network> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Transmission_Media_Layer_Network> .
 
-<http://taxonomy.model/Source_M-FP_Binding> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Binding> .
+<http://taxonomy.model/Transmission_Media_Layer_Network> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Layer_Network> .
 
-<http://taxonomy.model/Source_PM-FEP_Binding> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Binding> .
+<http://taxonomy.model/Layer_Network> a owl:Class .
 
-<http://taxonomy.model/Source_SN-FEP_Binding> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Binding> .
+<http://taxonomy.model/Path_Layer_Network_2> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Layer_Network> .
 
-<http://taxonomy.model/Source_SN-FP_Binding> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Binding> .
-
-<http://taxonomy.model/Binding> a owl:Class .
+<http://taxonomy.model/Related_Layer_Network> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Layer_Network> .
 

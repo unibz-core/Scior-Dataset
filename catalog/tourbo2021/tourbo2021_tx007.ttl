@@ -1,11 +1,17 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/credit/debit_card_payment> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/payment> .
+<http://taxonomy.model/Line_String> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/geometry> .
 
-<http://taxonomy.model/online_payment> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/payment> .
+<http://taxonomy.model/Multi_Line_String> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/geometry> .
 
-<http://taxonomy.model/payment> a owl:Class .
+<http://taxonomy.model/Multi_point> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/geometry> .
+
+<http://taxonomy.model/Point> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/geometry> .
+
+<http://taxonomy.model/geometry> a owl:Class .
 

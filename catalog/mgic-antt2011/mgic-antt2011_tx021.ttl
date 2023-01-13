@@ -1,14 +1,26 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Infração_Praticada_com_Agravante> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Infração_Praticada> .
+<http://taxonomy.model/CCT_com_Compartilhamento_de_Receita> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Convênio_de_Cooperação_Técnica> .
 
-<http://taxonomy.model/Infração_Praticada_de_Transporte> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Infração_Praticada> .
+<http://taxonomy.model/Convênio_de_Aquisição> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Convênio_com_Participação_da_Concessionária> .
 
-<http://taxonomy.model/Infração_Praticada_de_Trânsito> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Infração_Praticada> .
+<http://taxonomy.model/Convênio_de_Manutenção> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Convênio_com_Participação_da_Concessionária> .
 
-<http://taxonomy.model/Infração_Praticada> a owl:Class .
+<http://taxonomy.model/Convênio_de_Realização_de_Obra> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Convênio_com_Participação_da_Concessionária> .
+
+<http://taxonomy.model/Convênio> a owl:Class .
+
+<http://taxonomy.model/Convênio_de_Cooperação_Técnica> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Convênio_em_Concessão_Rodoviária> .
+
+<http://taxonomy.model/Convênio_em_Concessão_Rodoviária> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Convênio> .
+
+<http://taxonomy.model/Convênio_com_Participação_da_Concessionária> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Convênio_em_Concessão_Rodoviária> .
 

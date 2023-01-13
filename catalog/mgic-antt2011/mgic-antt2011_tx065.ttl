@@ -1,11 +1,49 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Certidão_de_Nascimento> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Reconhecimento_de_Paternidade> .
+<http://taxonomy.model/InPreTe_Utilizada_como_Base> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Infração_Prevista_de_Transporte> .
 
-<http://taxonomy.model/Registro_de_Adoção> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Reconhecimento_de_Paternidade> .
+<http://taxonomy.model/InPreTo_Utilizada_como_Base> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Infração_Prevista_de_Trânsito> .
 
-<http://taxonomy.model/Reconhecimento_de_Paternidade> a owl:Class .
+<http://taxonomy.model/Infração_Contratual> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Infração_Prevista> .
+
+<http://taxonomy.model/Infração_Graduada_por_Grupo> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Infração_Prevista> .
+
+<http://taxonomy.model/Infração_Grave> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Infração_Graduada_por_Natureza> .
+
+<http://taxonomy.model/Infração_Gravíssima> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Infração_Graduada_por_Natureza> .
+
+<http://taxonomy.model/Infração_Leve> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Infração_Graduada_por_Natureza> .
+
+<http://taxonomy.model/Infração_Média> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Infração_Graduada_por_Natureza> .
+
+<http://taxonomy.model/Infração_Prevista_com_MA> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Infração_Prevista> .
+
+<http://taxonomy.model/Infração_Regulamentar> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Infração_Prevista> .
+
+<http://taxonomy.model/Infração_Legal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Infração_Prevista> .
+
+<http://taxonomy.model/Infração_Prevista_de_Transporte> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Infração_Prevista> .
+
+<http://taxonomy.model/Infração_Prevista_de_Trânsito> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Infração_Graduada_por_Natureza>,
+        <http://taxonomy.model/Infração_Legal>,
+        <http://taxonomy.model/Infração_Prevista> .
+
+<http://taxonomy.model/Infração_Graduada_por_Natureza> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Infração_Prevista> .
+
+<http://taxonomy.model/Infração_Prevista> a owl:Class .
 

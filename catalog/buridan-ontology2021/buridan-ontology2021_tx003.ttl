@@ -1,31 +1,51 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/ImproperSupposition> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/SuppositionInConventionalLanguage> .
+<http://taxonomy.model/CategorematicConcept> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Concept> .
 
-<http://taxonomy.model/MaterialSupposition> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/ProperSuppositon>,
-        <http://taxonomy.model/Supposition> .
+<http://taxonomy.model/CategorematicTerm> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/MixedTerm>,
+        <http://taxonomy.model/Spoken-WrittenTerm> .
 
-<http://taxonomy.model/MaterialSuppositionForSyncatogramaticTerm> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Supposition> .
+<http://taxonomy.model/ComplexConcept> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Concept> .
 
-<http://taxonomy.model/MentalPersonalSupposition> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Supposition> .
+<http://taxonomy.model/MentalSuppositum> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Concept> .
 
-<http://taxonomy.model/PersonalSupposition> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/ProperSuppositon>,
-        <http://taxonomy.model/Supposition> .
+<http://taxonomy.model/SemanticallyComplexExpression> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Expression> .
 
-<http://taxonomy.model/SimpleSupposition> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/ProperSuppositon> .
+<http://taxonomy.model/SemanticallyComplexSpoken-WrittenTerm> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Spoken-WrittenTerm> .
 
-<http://taxonomy.model/SuppositionInConventionalLanguage> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Supposition> .
+<http://taxonomy.model/SemanticallySimple_Expression> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Expression> .
 
-<http://taxonomy.model/ProperSuppositon> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/SuppositionInConventionalLanguage> .
+<http://taxonomy.model/Spoken-WrittenSuppositum> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Spoken-WrittenTerm> .
 
-<http://taxonomy.model/Supposition> a owl:Class .
+<http://taxonomy.model/Suppositum> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Term> .
+
+<http://taxonomy.model/SyncategorematicConcept> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Concept> .
+
+<http://taxonomy.model/SyncategorematicTerm> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/MixedTerm>,
+        <http://taxonomy.model/Spoken-WrittenTerm> .
+
+<http://taxonomy.model/Expression> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Spoken-WrittenTerm> .
+
+<http://taxonomy.model/MixedTerm> a owl:Class .
+
+<http://taxonomy.model/Term> a owl:Class .
+
+<http://taxonomy.model/Concept> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Term> .
+
+<http://taxonomy.model/Spoken-WrittenTerm> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Term> .
 

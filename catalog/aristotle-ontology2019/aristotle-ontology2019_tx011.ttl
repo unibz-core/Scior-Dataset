@@ -1,17 +1,23 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Extreme> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Term> .
+<http://taxonomy.model/ContinentPerson> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Person> .
 
-<http://taxonomy.model/MiddleTerm> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Term> .
+<http://taxonomy.model/EvilPerson> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Person> .
 
-<http://taxonomy.model/Predicate> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Term> .
+<http://taxonomy.model/ImpetuousPerson> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/IncontinentPerson> .
 
-<http://taxonomy.model/Subject> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Term> .
+<http://taxonomy.model/VirtuousPerson> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Person> .
 
-<http://taxonomy.model/Term> a owl:Class .
+<http://taxonomy.model/WeakPerson> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/IncontinentPerson> .
+
+<http://taxonomy.model/IncontinentPerson> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Person> .
+
+<http://taxonomy.model/Person> a owl:Class .
 

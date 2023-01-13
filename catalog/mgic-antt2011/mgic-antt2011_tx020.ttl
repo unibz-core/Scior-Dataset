@@ -1,8 +1,142 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Pagamento_de_Compra_de_Produto> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pagamento> .
+<http://taxonomy.model/Comando_Operacional_Temático> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Comando_Operacional>,
+        <http://taxonomy.model/Fiscalização_Eventual> .
 
-<http://taxonomy.model/Pagamento> a owl:Class .
+<http://taxonomy.model/Fiscalização_Autuadora> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização_Apurativa_e_Punitiva> .
+
+<http://taxonomy.model/Fiscalização_Constante> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização_de_Rotina> .
+
+<http://taxonomy.model/Fiscalização_Especial> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização_Direta>,
+        <http://taxonomy.model/Fiscalização_Eventual> .
+
+<http://taxonomy.model/Fiscalização_Indireta_Autuadora> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização_Indireta> .
+
+<http://taxonomy.model/Fiscalização_Individual> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização> .
+
+<http://taxonomy.model/Fiscalização_Orientativa> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização> .
+
+<http://taxonomy.model/Fiscalização_Periódica> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização_de_Rotina> .
+
+<http://taxonomy.model/Fiscalização_Preventiva> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização> .
+
+<http://taxonomy.model/Fiscalização_Relativa_ao_Prestador> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização> .
+
+<http://taxonomy.model/Fiscalização_Relativa_à_Prestação> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização> .
+
+<http://taxonomy.model/Fiscalização_de_Guichê> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização_de_Terminal_Com_PFA> .
+
+<http://taxonomy.model/Fiscalização_de_PEF> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização_de_TRC> .
+
+<http://taxonomy.model/Fiscalização_de_Plataforma> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização_de_Terminal_Com_PFA> .
+
+<http://taxonomy.model/Fiscalização_de_Produtos_Perigosos> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização_de_TRC> .
+
+<http://taxonomy.model/Fiscalização_de_RNTRC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização_de_TRC> .
+
+<http://taxonomy.model/Fiscalização_de_TFP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização> .
+
+<http://taxonomy.model/Fiscalização_de_TRP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização_Rodoviária> .
+
+<http://taxonomy.model/Fiscalização_de_VP_de_Contrato> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização_de_VP> .
+
+<http://taxonomy.model/Fiscalização_de_VP_de_Operadora_de_Rodovia> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização_de_VP> .
+
+<http://taxonomy.model/Fiscalização_de_VP_de_Operadora_do_Meio_de_Pagamento> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização_de_VP> .
+
+<http://taxonomy.model/Fiscalização_de_Órgão_Conveniado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização> .
+
+<http://taxonomy.model/Fiscalização_em_Equipe> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização> .
+
+<http://taxonomy.model/Fiscalização_em_PFR> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização_em_Posto_Fixo> .
+
+<http://taxonomy.model/Fiscalização_em_Terminal_Sem_PFA> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização_Eventual>,
+        <http://taxonomy.model/Fiscalização_de_Terminal> .
+
+<http://taxonomy.model/Fiscalização_por_Denúncia> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização_de_Terminal_Com_PFA> .
+
+<http://taxonomy.model/Fiscalização_por_Equipamento> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização_de_Excesso_de_Peso> .
+
+<http://taxonomy.model/Comando_Operacional> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização_Direta>,
+        <http://taxonomy.model/Fiscalização_em_Rodovia> .
+
+<http://taxonomy.model/Fiscalização_Apurativa> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização> .
+
+<http://taxonomy.model/Fiscalização_Apurativa_e_Punitiva> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização_Apurativa> .
+
+<http://taxonomy.model/Fiscalização_Indireta> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização> .
+
+<http://taxonomy.model/Fiscalização_de_Excesso_de_Peso> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização_de_TRC>,
+        <http://taxonomy.model/Fiscalização_em_PPV>,
+        <http://taxonomy.model/Fiscalização_em_Rodovia> .
+
+<http://taxonomy.model/Fiscalização_em_PPV> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização_de_TRC>,
+        <http://taxonomy.model/Fiscalização_em_Posto_Fixo> .
+
+<http://taxonomy.model/Fiscalização_Rodoviária> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização> .
+
+<http://taxonomy.model/Fiscalização_de_Terminal> a owl:Class .
+
+<http://taxonomy.model/Fiscalização_em_Rodovia> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização_Direta> .
+
+<http://taxonomy.model/Fiscalização_Eventual> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização> .
+
+<http://taxonomy.model/Fiscalização_de_Rotina> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização> .
+
+<http://taxonomy.model/Fiscalização_de_Terminal_Com_PFA> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização_de_Terminal>,
+        <http://taxonomy.model/Fiscalização_em_Posto_Fixo> .
+
+<http://taxonomy.model/Fiscalização_de_VP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização_de_TRC> .
+
+<http://taxonomy.model/Fiscalização_em_Posto_Fixo> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização_Direta>,
+        <http://taxonomy.model/Fiscalização_de_Rotina> .
+
+<http://taxonomy.model/Fiscalização_Direta> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização> .
+
+<http://taxonomy.model/Fiscalização_de_TRC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscalização_Rodoviária> .
+
+<http://taxonomy.model/Fiscalização> a owl:Class .
 

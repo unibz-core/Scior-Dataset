@@ -1,8 +1,23 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Resposta_Final> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Resposta> .
+<http://taxonomy.model/Fiança_Bancária> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Garantia_de_Execução> .
 
-<http://taxonomy.model/Resposta> a owl:Class .
+<http://taxonomy.model/Garantia_em_Caução> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Garantia_de_Execução> .
+
+<http://taxonomy.model/Garantia_em_Dinheiro> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Garantia_de_Execução> .
+
+<http://taxonomy.model/Garantia_em_Seguro> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Garantia_de_Execução> .
+
+<http://taxonomy.model/Título_como_Garantia> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Garantia_de_Execução>,
+        <http://taxonomy.model/Título_da_Dívida_Pública> .
+
+<http://taxonomy.model/Título_da_Dívida_Pública> a owl:Class .
+
+<http://taxonomy.model/Garantia_de_Execução> a owl:Class .
 
