@@ -10,10 +10,12 @@ Test 2 was executed in both complete and incomplete Scior modes (more informatio
 
 - [Execution Statistics _csv_ Files](#execution-statistics-csv-files)
 - [Execution Times _csv_ Files](#execution-times-csv-files)
+- [Settings _csv_ Files](#settings-csv-files)
 - [Inconsistencies _csv_ File](#inconsistencies-csv-file)
 - [Results _yaml_ Files](#results-yaml-files)
 - [Results _csv_ Files](#results-csv-files)
 - [Knowledge Matrix _csv_ Files](#knowledge-matrix-csv-files)
+- [Divergences _csv_ Files](#divergences-csv-files)
 
 ## Execution Statistics _csv_ Files
 
@@ -32,6 +34,24 @@ Just like the previous file, the column `percentage` is the only difference betw
 To access the complete description of the [execution times _csv_ file in Test 1, click here](https://github.com/unibz-core/Scior-Dataset/blob/main/documentation/Scior-Dataset-Test1.md#execution-times-files-execution_times_ncsv).
 
 This file is generated according to the pattern `times_XXX_tt002_MM_txYYY_exZZZ_pcKKK.csv` (e.g., _times_aguiar2018rdbs-o_tt002_an_tx001_ex001_pc005.csv_, for the first execution using 5 percent of classes as input of the taxonomy 001 of the dataset aguiar2018rdbs-o).
+
+## Settings _csv_ Files
+
+This file extends the one presented in Test 1 ([available here](https://github.com/unibz-core/Scior-Dataset/blob/main/documentation/Scior-Dataset-Test1.md#settings-csv-files)), registering not only information about the used hardware and software, but also the configurations set performing Test 2.
+
+A single file entitled `settings_XXX_tt002_MM.csv` is generated once for each model's (e.g., _settings_aguiar2018rdbs-o_tt002_an.csv_).
+
+In addition to the columns described for the Settings _csv_ file in Test 1, the corresponding file for Test 2 is added with the following columns:
+
+- `minimum_allowed_number_classes`
+- `percentage_initial`
+- `percentage_final`
+- `percentage_rate`
+- `number_of_executions_per_dataset_per_percentage`
+
+These columns correspond to the variables that must be set by the user before executing Test 2, as [described here](https://github.com/unibz-core/OntCatOWL-Tester/blob/main/documentation/OntCatOWL-Tester-Test2.md#input-and-configuration).
+
+Considering that this file is created only once for each test in a dataset, it will always have only two lines: a first one with the headers and the second one with values.
 
 ## Inconsistencies _csv_ File
 
