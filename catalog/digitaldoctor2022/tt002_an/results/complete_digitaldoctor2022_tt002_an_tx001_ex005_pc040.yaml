@@ -1,25 +1,3 @@
-Diagnosis:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
 User:
   can_type:
   - gufo:AntiRigidType
@@ -41,6 +19,73 @@ User:
   is_incomplete: false
   is_type: []
   not_type: []
+---
+DoseSchedule:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:Kind
+  - gufo:RigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
+---
+ReportingPatient:
+  can_type: []
+  detected_in:
+  - nk_k_sup
+  input: true
+  is_incomplete: true
+  is_type:
+  - gufo:Role
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
+---
+PrescribedDoseSchedule:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Phase
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:SemiRigidType
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type:
+  - gufo:Sortal
+  not_type:
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:PhaseMixin
+  - gufo:RoleMixin
 ---
 Person:
   can_type:
@@ -64,39 +109,20 @@ Person:
   is_type: []
   not_type: []
 ---
-MedicalHistory:
+Diagnosis:
   can_type:
   - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
   - gufo:NonRigidType
-  - gufo:NonSortal
   - gufo:Phase
-  - gufo:PhaseMixin
   - gufo:RigidType
   - gufo:Role
-  - gufo:RoleMixin
   - gufo:SemiRigidType
-  - gufo:Sortal
   - gufo:SubKind
   detected_in: []
   input: false
   is_incomplete: false
-  is_type: []
-  not_type: []
----
-GeneralPractitioner:
-  can_type: []
-  detected_in:
-  - nk_k_sup
-  input: false
-  is_incomplete: true
   is_type:
   - gufo:Sortal
-  - gufo:NonRigidType
-  - gufo:AntiRigidType
-  - gufo:Role
   not_type:
   - gufo:Kind
   - gufo:NonSortal
@@ -104,12 +130,31 @@ GeneralPractitioner:
   - gufo:Mixin
   - gufo:PhaseMixin
   - gufo:RoleMixin
-  - gufo:RigidType
-  - gufo:SubKind
-  - gufo:SemiRigidType
-  - gufo:Phase
 ---
-Drug:
+RemoteMedicalProcedure:
+  can_type: []
+  detected_in:
+  - nk_k_sup
+  input: true
+  is_incomplete: true
+  is_type:
+  - gufo:SubKind
+  - gufo:RigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+---
+PalliativeProcedure:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -131,7 +176,29 @@ Drug:
   is_type: []
   not_type: []
 ---
-VisitRequest:
+MedicalProcedureTrigger:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type:
+  - gufo:Kind
+---
+MedicalCondition:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -154,186 +221,95 @@ VisitRequest:
   not_type: []
 ---
 MildSymptom:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+MedicalProcedure:
+  can_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:RigidType
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+---
+PhysicalExam:
   can_type: []
   detected_in:
-  - ks_sf_in
   - nk_k_sup
   input: true
   is_incomplete: true
   is_type:
-  - gufo:Phase
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
+  - gufo:SubKind
+  - gufo:RigidType
   - gufo:Sortal
   not_type:
+  - gufo:AntiRigidType
   - gufo:Category
   - gufo:Kind
   - gufo:Mixin
+  - gufo:NonRigidType
   - gufo:NonSortal
+  - gufo:Phase
   - gufo:PhaseMixin
-  - gufo:RigidType
   - gufo:Role
   - gufo:RoleMixin
   - gufo:SemiRigidType
-  - gufo:SubKind
 ---
-NonSevereOutcome:
+MedicalProcedureOutcome:
   can_type: []
-  detected_in:
-  - ks_sf_in
+  detected_in: []
   input: true
-  is_incomplete: true
-  is_type:
-  - gufo:Phase
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonSortal
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-TreatmentPatient:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Prescription:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-PresenceMedicalProcedure:
-  can_type:
-  - gufo:NonRigidType
-  - gufo:RigidType
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
-  input: false
   is_incomplete: false
   is_type:
+  - gufo:Kind
+  - gufo:RigidType
   - gufo:Sortal
   not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
-  - gufo:AntiRigidType
-  - gufo:Phase
-  - gufo:Role
----
-SevereOutcome:
-  can_type: []
-  detected_in:
-  - ks_sf_in
-  input: true
-  is_incomplete: true
-  is_type:
-  - gufo:Phase
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonSortal
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-PrescribedDoseSchedule:
-  can_type:
   - gufo:AntiRigidType
   - gufo:Category
-  - gufo:Kind
   - gufo:Mixin
   - gufo:NonRigidType
   - gufo:NonSortal
   - gufo:Phase
   - gufo:PhaseMixin
-  - gufo:RigidType
   - gufo:Role
   - gufo:RoleMixin
   - gufo:SemiRigidType
-  - gufo:Sortal
   - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
 ---
-DoseSchedule:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-ReportingPatient:
+PreviousIllness:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -378,211 +354,12 @@ Symptom:
   not_type: []
 ---
 PrescribedDrug:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-TherapeuticProcedure:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:SubKind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
----
-MedicalProcedureOutcome:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:Kind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-RemoteMedicalProcedure:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:SubKind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
----
-SevereSymptom:
   can_type: []
   detected_in:
-  - ks_sf_in
   - nk_k_sup
   input: true
   is_incomplete: true
   is_type:
-  - gufo:Phase
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonSortal
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-MedicalCondition:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:Kind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-PreviousIllness:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-MedicalProcedureTrigger:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:SemiRigidType
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:Sortal
-  - gufo:SubKind
----
-MedicalProcedure:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:Kind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-SpecialistMedicalProcedure:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
   - gufo:Role
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -599,74 +376,7 @@ SpecialistMedicalProcedure:
   - gufo:SemiRigidType
   - gufo:SubKind
 ---
-Patient:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-SpecialistDoctor:
-  can_type: []
-  detected_in:
-  - nk_k_sup
-  input: false
-  is_incomplete: true
-  is_type:
-  - gufo:Sortal
-  - gufo:NonRigidType
-  - gufo:AntiRigidType
-  - gufo:Role
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
-  - gufo:RigidType
-  - gufo:SubKind
-  - gufo:SemiRigidType
-  - gufo:Phase
----
-PatientReport:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-PalliativeProcedure:
+NonSevereOutcome:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -710,51 +420,29 @@ NamedEntity:
   - gufo:Kind
   - gufo:SubKind
 ---
-SurgicalProcedure:
+PatientReport:
   can_type:
   - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
   - gufo:NonRigidType
+  - gufo:NonSortal
   - gufo:Phase
+  - gufo:PhaseMixin
   - gufo:RigidType
   - gufo:Role
+  - gufo:RoleMixin
   - gufo:SemiRigidType
+  - gufo:Sortal
   - gufo:SubKind
   detected_in: []
   input: false
   is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
+  is_type: []
+  not_type: []
 ---
-PhysicalExam:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:SubKind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
----
-Doctor:
+TreatmentPatient:
   can_type: []
   detected_in:
   - nk_k_sup
@@ -777,7 +465,209 @@ Doctor:
   - gufo:SemiRigidType
   - gufo:SubKind
 ---
-DiagnosticProcedure:
+VisitRequest:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+PresenceMedicalProcedure:
+  can_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:RigidType
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+---
+SurgicalProcedure:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+SevereSymptom:
+  can_type: []
+  detected_in:
+  - ks_sf_in
+  - nk_k_sup
+  input: true
+  is_incomplete: true
+  is_type:
+  - gufo:Phase
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonSortal
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
+---
+SpecialistMedicalProcedure:
+  can_type: []
+  detected_in:
+  - nk_k_sup
+  input: true
+  is_incomplete: true
+  is_type:
+  - gufo:Role
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
+---
+Doctor:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+MedicalHistory:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Drug:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+SevereOutcome:
+  can_type: []
+  detected_in:
+  - ks_sf_in
+  input: true
+  is_incomplete: true
+  is_type:
+  - gufo:Phase
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonSortal
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
+---
+TherapeuticProcedure:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -786,9 +676,10 @@ DiagnosticProcedure:
   - gufo:Role
   - gufo:SemiRigidType
   - gufo:SubKind
-  detected_in: []
+  detected_in:
+  - nk_k_sup
   input: false
-  is_incomplete: false
+  is_incomplete: true
   is_type:
   - gufo:Sortal
   not_type:
@@ -798,3 +689,116 @@ DiagnosticProcedure:
   - gufo:Mixin
   - gufo:PhaseMixin
   - gufo:RoleMixin
+---
+Prescription:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Patient:
+  can_type: []
+  detected_in:
+  - nk_k_sup
+  input: true
+  is_incomplete: true
+  is_type:
+  - gufo:Role
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
+---
+SpecialistDoctor:
+  can_type: []
+  detected_in:
+  - nk_k_sup
+  input: true
+  is_incomplete: true
+  is_type:
+  - gufo:Role
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
+---
+GeneralPractitioner:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+DiagnosticProcedure:
+  can_type: []
+  detected_in:
+  - nk_k_sup
+  input: true
+  is_incomplete: true
+  is_type:
+  - gufo:SubKind
+  - gufo:RigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType

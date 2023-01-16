@@ -1,4 +1,4 @@
-Overlapped:
+ExceptionEvent:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -20,117 +20,7 @@ Overlapped:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-TimeIntervalRelation:
-  can_type: []
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Kind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-During:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-StartedBy:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-Meets:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-Starts:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-Before:
+OrdinaryEvent:
   can_type: []
   detected_in:
   - nk_k_sup
@@ -153,7 +43,7 @@ Before:
   - gufo:RoleMixin
   - gufo:SemiRigidType
 ---
-Overlaps:
+PlannedOrdinaryEvent:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -175,7 +65,7 @@ Overlaps:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-After:
+UnplannedOrdinaryEvent:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -197,112 +87,24 @@ After:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-Contains:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
+TriggerEvent:
+  can_type: []
   detected_in: []
   input: false
   is_incomplete: false
   is_type:
+  - gufo:Kind
+  - gufo:RigidType
   - gufo:Sortal
   not_type:
-  - gufo:Kind
-  - gufo:NonSortal
+  - gufo:AntiRigidType
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
   - gufo:Category
   - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-Finishes:
-  can_type:
-  - gufo:AntiRigidType
   - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
+  - gufo:NonSortal
   - gufo:SemiRigidType
   - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-FinishedBy:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-MetBy:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-Contemporal:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin

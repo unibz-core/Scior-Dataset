@@ -1,4 +1,4 @@
-DBMS_Item:
+Constraint:
   can_type:
   - gufo:Category
   - gufo:Kind
@@ -20,7 +20,29 @@ DBMS_Item:
   - gufo:Role
   - gufo:RoleMixin
 ---
-Data_File:
+Software_Item:
+  can_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:RigidType
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+---
+Table:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -64,19 +86,14 @@ Derived_Table:
   is_type: []
   not_type: []
 ---
-Primary_Key_Constraint:
+Artifact:
   can_type:
-  - gufo:AntiRigidType
   - gufo:Category
   - gufo:Kind
   - gufo:Mixin
   - gufo:NonRigidType
   - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
   - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
   - gufo:SemiRigidType
   - gufo:Sortal
   - gufo:SubKind
@@ -84,97 +101,14 @@ Primary_Key_Constraint:
   input: false
   is_incomplete: false
   is_type: []
-  not_type: []
----
-Check_Constraint:
-  can_type:
+  not_type:
   - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
   - gufo:Phase
   - gufo:PhaseMixin
-  - gufo:RigidType
   - gufo:Role
   - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
 ---
-Software_System:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-DBMS:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Foreign_Key_Constraint:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Constraint:
+RDBMS_Item:
   can_type:
   - gufo:Category
   - gufo:Kind
@@ -218,315 +152,7 @@ Database:
   is_type: []
   not_type: []
 ---
-RDBMS_Item:
-  can_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:RigidType
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
----
-Relational_Schema:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Schema:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Table:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
 DBMS_Account:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Information_Schema:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Artifact:
-  can_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:RigidType
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
----
-Relational_Database:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Dictionary:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-RDBMS:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Base_Table:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Software_Item:
-  can_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:RigidType
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
----
-Data_Schema:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Column_Constraint:
-  can_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:RigidType
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
----
-Data_Type_Constraint:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -570,3 +196,377 @@ Column_Type_Constraint:
   - gufo:Role
   - gufo:RoleMixin
   - gufo:SemiRigidType
+---
+Data_Type_Constraint:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Software_System:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Foreign_Key_Constraint:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Check_Constraint:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+DBMS_Item:
+  can_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:RigidType
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+---
+Dictionary:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Information_Schema:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Data_Schema:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Relational_Schema:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Relational_Database:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Primary_Key_Constraint:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Schema:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Base_Table:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+RDBMS:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+DBMS:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Data_File:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Column_Constraint:
+  can_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:RigidType
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin

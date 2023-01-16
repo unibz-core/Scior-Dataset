@@ -1,24 +1,68 @@
-Politics:
+Science-Knowledge:
   can_type:
-  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
   - gufo:NonRigidType
-  - gufo:Phase
+  - gufo:NonSortal
   - gufo:RigidType
-  - gufo:Role
   - gufo:SemiRigidType
+  - gufo:Sortal
   - gufo:SubKind
   detected_in: []
   input: false
   is_incomplete: false
-  is_type:
-  - gufo:Sortal
+  is_type: []
   not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
+  - gufo:AntiRigidType
+  - gufo:Phase
   - gufo:PhaseMixin
+  - gufo:Role
   - gufo:RoleMixin
+---
+Agriculture:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+PracticalSciences:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
 ---
 Psychology:
   can_type: []
@@ -43,74 +87,17 @@ Psychology:
   - gufo:RoleMixin
   - gufo:SemiRigidType
 ---
-Ethics:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:SubKind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
----
-Mathematics:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-ProductiveSciences:
-  can_type: []
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Kind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
 FirstPhilosophy-Metaphysics:
-  can_type:
+  can_type: []
+  detected_in:
+  - nk_k_sup
+  input: true
+  is_incomplete: true
+  is_type:
+  - gufo:SubKind
+  - gufo:RigidType
+  - gufo:Sortal
+  not_type:
   - gufo:AntiRigidType
   - gufo:Category
   - gufo:Kind
@@ -119,20 +106,44 @@ FirstPhilosophy-Metaphysics:
   - gufo:NonSortal
   - gufo:Phase
   - gufo:PhaseMixin
-  - gufo:RigidType
   - gufo:Role
   - gufo:RoleMixin
   - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
 ---
-Biology:
+Botany:
   can_type:
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Phase
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:SemiRigidType
+  - gufo:SubKind
+  detected_in:
+  - nk_k_sup
+  input: false
+  is_incomplete: true
+  is_type:
+  - gufo:Sortal
+  not_type:
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:PhaseMixin
+  - gufo:RoleMixin
+---
+NaturalPhilosophy-Physics:
+  can_type: []
+  detected_in:
+  - nk_k_sup
+  input: true
+  is_incomplete: true
+  is_type:
+  - gufo:SubKind
+  - gufo:RigidType
+  - gufo:Sortal
+  not_type:
   - gufo:AntiRigidType
   - gufo:Category
   - gufo:Kind
@@ -141,19 +152,33 @@ Biology:
   - gufo:NonSortal
   - gufo:Phase
   - gufo:PhaseMixin
-  - gufo:RigidType
   - gufo:Role
   - gufo:RoleMixin
   - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
 ---
 Medicine:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Arts:
   can_type: []
   detected_in:
   - nk_k_sup
@@ -177,28 +202,6 @@ Medicine:
   - gufo:SemiRigidType
 ---
 Dance:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:SubKind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
----
-Theatre:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -207,9 +210,10 @@ Theatre:
   - gufo:Role
   - gufo:SemiRigidType
   - gufo:SubKind
-  detected_in: []
+  detected_in:
+  - nk_k_sup
   input: false
-  is_incomplete: false
+  is_incomplete: true
   is_type:
   - gufo:Sortal
   not_type:
@@ -220,7 +224,7 @@ Theatre:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-Botany:
+Mathematics:
   can_type: []
   detected_in:
   - nk_k_sup
@@ -243,205 +247,6 @@ Botany:
   - gufo:RoleMixin
   - gufo:SemiRigidType
 ---
-AstronomicalTheory:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Music:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-Ship-building:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-Arts:
-  can_type: []
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  - gufo:SubKind
-  - gufo:RigidType
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:SemiRigidType
----
-NaturalPhilosophy-Physics:
-  can_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:RigidType
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
----
-Science-Knowledge:
-  can_type: []
-  detected_in:
-  - ns_s_spe
-  input: true
-  is_incomplete: true
-  is_type:
-  - gufo:Category
-  - gufo:NonSortal
-  - gufo:RigidType
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:Kind
-  - gufo:SubKind
----
-Agriculture:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:SubKind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
----
-SpecialSciences:
-  can_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:RigidType
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
----
-PracticalSciences:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:Kind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
 TheoreticalSciences:
   can_type:
   - gufo:Category
@@ -463,3 +268,207 @@ TheoreticalSciences:
   - gufo:PhaseMixin
   - gufo:Role
   - gufo:RoleMixin
+---
+Music:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Phase
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:SemiRigidType
+  - gufo:SubKind
+  detected_in:
+  - nk_k_sup
+  input: false
+  is_incomplete: true
+  is_type:
+  - gufo:Sortal
+  not_type:
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:PhaseMixin
+  - gufo:RoleMixin
+---
+Politics:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Theatre:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Phase
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:SemiRigidType
+  - gufo:SubKind
+  detected_in:
+  - nk_k_sup
+  input: false
+  is_incomplete: true
+  is_type:
+  - gufo:Sortal
+  not_type:
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:PhaseMixin
+  - gufo:RoleMixin
+---
+ProductiveSciences:
+  can_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:RigidType
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+---
+AstronomicalTheory:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Phase
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:SemiRigidType
+  - gufo:SubKind
+  detected_in:
+  - nk_k_sup
+  input: false
+  is_incomplete: true
+  is_type:
+  - gufo:Sortal
+  not_type:
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:PhaseMixin
+  - gufo:RoleMixin
+---
+Ship-building:
+  can_type: []
+  detected_in:
+  - nk_k_sup
+  input: true
+  is_incomplete: true
+  is_type:
+  - gufo:SubKind
+  - gufo:RigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+---
+Ethics:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+SpecialSciences:
+  can_type: []
+  detected_in:
+  - nk_k_sup
+  input: true
+  is_incomplete: true
+  is_type:
+  - gufo:SubKind
+  - gufo:RigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+---
+Biology:
+  can_type: []
+  detected_in:
+  - nk_k_sup
+  input: true
+  is_incomplete: true
+  is_type:
+  - gufo:SubKind
+  - gufo:RigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType

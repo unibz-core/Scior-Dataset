@@ -1,15 +1,16 @@
-Person:
+Organization_Unit:
   can_type: []
   detected_in: []
   input: true
   is_incomplete: false
   is_type:
-  - gufo:Kind
+  - gufo:SubKind
   - gufo:RigidType
   - gufo:Sortal
   not_type:
   - gufo:AntiRigidType
   - gufo:Category
+  - gufo:Kind
   - gufo:Mixin
   - gufo:NonRigidType
   - gufo:NonSortal
@@ -18,15 +19,15 @@ Person:
   - gufo:Role
   - gufo:RoleMixin
   - gufo:SemiRigidType
-  - gufo:SubKind
 ---
-Trainee:
+Car_Needing_Maintenance:
   can_type: []
-  detected_in: []
+  detected_in:
+  - ks_sf_in
   input: true
-  is_incomplete: false
+  is_incomplete: true
   is_type:
-  - gufo:Role
+  - gufo:Phase
   - gufo:AntiRigidType
   - gufo:NonRigidType
   - gufo:Sortal
@@ -35,102 +36,14 @@ Trainee:
   - gufo:Kind
   - gufo:Mixin
   - gufo:NonSortal
-  - gufo:Phase
   - gufo:PhaseMixin
   - gufo:RigidType
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-Car_Scheduled_for_Maintenance:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:Role
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-Car_Rental_Agreement:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:Kind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
   - gufo:Role
   - gufo:RoleMixin
   - gufo:SemiRigidType
   - gufo:SubKind
 ---
-Corporate_Customer:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:Role
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-Junior_Employee:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:Role
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-Receiver_Branch:
+Transferred_Car:
   can_type: []
   detected_in: []
   input: true
@@ -174,49 +87,27 @@ Passenger_Car:
   - gufo:RoleMixin
   - gufo:SemiRigidType
 ---
-Senior_Employee:
+Person:
   can_type: []
   detected_in: []
   input: true
   is_incomplete: false
   is_type:
-  - gufo:Role
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
+  - gufo:Kind
+  - gufo:RigidType
   - gufo:Sortal
   not_type:
+  - gufo:AntiRigidType
   - gufo:Category
-  - gufo:Kind
   - gufo:Mixin
+  - gufo:NonRigidType
   - gufo:NonSortal
   - gufo:Phase
   - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-Governmental_Agency:
-  can_type:
-  - gufo:NonRigidType
-  - gufo:RigidType
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
-  - gufo:AntiRigidType
-  - gufo:Phase
   - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
 ---
 Organization:
   can_type: []
@@ -240,29 +131,7 @@ Organization:
   - gufo:SemiRigidType
   - gufo:SubKind
 ---
-Insurance_Company:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-Sender_Branch:
+Car_Scheduled_for_Maintenance:
   can_type: []
   detected_in: []
   input: true
@@ -280,164 +149,6 @@ Sender_Branch:
   - gufo:Phase
   - gufo:PhaseMixin
   - gufo:RigidType
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-Child:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-Car:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:Kind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-Teenage:
-  can_type: []
-  detected_in:
-  - ks_sf_in
-  input: true
-  is_incomplete: true
-  is_type:
-  - gufo:Phase
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonSortal
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-Car_Needing_Repair:
-  can_type: []
-  detected_in:
-  - ks_sf_in
-  input: true
-  is_incomplete: true
-  is_type:
-  - gufo:Phase
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonSortal
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-Insured_Driver:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:Role
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-Extented_Car_Rental_Agreement:
-  can_type: []
-  detected_in:
-  - ks_sf_in
-  input: true
-  is_incomplete: true
-  is_type:
-  - gufo:Phase
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonSortal
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-Deceased_Person:
-  can_type: []
-  detected_in:
-  - ks_sf_in
-  input: true
-  is_incomplete: true
-  is_type:
-  - gufo:Phase
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonSortal
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
   - gufo:RoleMixin
   - gufo:SemiRigidType
   - gufo:SubKind
@@ -486,51 +197,119 @@ Employee:
   - gufo:SemiRigidType
   - gufo:SubKind
 ---
-Woman:
+Car_Needing_Repair:
   can_type: []
-  detected_in: []
+  detected_in:
+  - ks_sf_in
   input: true
-  is_incomplete: false
+  is_incomplete: true
   is_type:
-  - gufo:SubKind
-  - gufo:RigidType
+  - gufo:Phase
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
   - gufo:Sortal
   not_type:
-  - gufo:AntiRigidType
   - gufo:Category
   - gufo:Kind
   - gufo:Mixin
-  - gufo:NonRigidType
   - gufo:NonSortal
-  - gufo:Phase
   - gufo:PhaseMixin
+  - gufo:RigidType
   - gufo:Role
   - gufo:RoleMixin
   - gufo:SemiRigidType
+  - gufo:SubKind
 ---
-Mid-level_Employee:
+Car_Rental_Agreement:
   can_type: []
   detected_in: []
   input: true
   is_incomplete: false
   is_type:
-  - gufo:Role
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
+  - gufo:Kind
+  - gufo:RigidType
   - gufo:Sortal
   not_type:
+  - gufo:AntiRigidType
   - gufo:Category
-  - gufo:Kind
   - gufo:Mixin
+  - gufo:NonRigidType
   - gufo:NonSortal
   - gufo:Phase
   - gufo:PhaseMixin
-  - gufo:RigidType
+  - gufo:Role
   - gufo:RoleMixin
   - gufo:SemiRigidType
   - gufo:SubKind
+---
+Parent:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Phase
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:SemiRigidType
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type:
+  - gufo:Sortal
+  not_type:
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:PhaseMixin
+  - gufo:RoleMixin
+---
+Cargo_Car:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:SubKind
+  - gufo:RigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
 ---
 Active_Car_Rental_Agreement:
+  can_type: []
+  detected_in:
+  - ks_sf_in
+  input: true
+  is_incomplete: true
+  is_type:
+  - gufo:Phase
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonSortal
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
+---
+Infant:
   can_type: []
   detected_in:
   - ks_sf_in
@@ -575,74 +354,6 @@ Insurable_Item:
   - gufo:Sortal
   - gufo:SubKind
 ---
-Organization_Unit:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:SubKind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
----
-Adult:
-  can_type: []
-  detected_in:
-  - ks_sf_in
-  input: true
-  is_incomplete: true
-  is_type:
-  - gufo:Phase
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonSortal
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-Car_Needing_Maintenance:
-  can_type: []
-  detected_in:
-  - ks_sf_in
-  input: true
-  is_incomplete: true
-  is_type:
-  - gufo:Phase
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonSortal
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
 Closed_Car_Rental_Agreement:
   can_type: []
   detected_in:
@@ -666,274 +377,7 @@ Closed_Car_Rental_Agreement:
   - gufo:SemiRigidType
   - gufo:SubKind
 ---
-Car_Returned_with_Damage:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:Role
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-Functional_Car:
-  can_type: []
-  detected_in:
-  - ks_sf_in
-  input: true
-  is_incomplete: true
-  is_type:
-  - gufo:Phase
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonSortal
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-Cargo_Car:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:SubKind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
----
-Car_Rental_Agreement_Closed_With_Damage:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:Role
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-Licensing_Authority:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:SubKind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
----
-Living_Person:
-  can_type: []
-  detected_in:
-  - ks_sf_in
-  input: true
-  is_incomplete: true
-  is_type:
-  - gufo:Phase
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonSortal
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-Car_Agency:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-Driver:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:Role
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-Man:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:SubKind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
----
-Parent:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:Role
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-Customer:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type:
-  - gufo:Kind
----
-Infant:
-  can_type: []
-  detected_in:
-  - ks_sf_in
-  input: true
-  is_incomplete: true
-  is_type:
-  - gufo:Phase
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonSortal
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-Transferred_Car:
+Senior_Employee:
   can_type: []
   detected_in: []
   input: true
@@ -977,7 +421,495 @@ Service_Depot:
   - gufo:RoleMixin
   - gufo:SemiRigidType
 ---
+Deceased_Person:
+  can_type: []
+  detected_in:
+  - ks_sf_in
+  input: true
+  is_incomplete: true
+  is_type:
+  - gufo:Phase
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonSortal
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
+---
+Receiver_Branch:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:Role
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
+---
+Governmental_Agency:
+  can_type:
+  - gufo:NonRigidType
+  - gufo:RigidType
+  - gufo:SemiRigidType
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type:
+  - gufo:Sortal
+  not_type:
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:PhaseMixin
+  - gufo:RoleMixin
+  - gufo:AntiRigidType
+  - gufo:Phase
+  - gufo:Role
+---
+Customer:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type:
+  - gufo:Kind
+---
+Car:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:Kind
+  - gufo:RigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
+---
+Driver:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:Role
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
+---
+Car_Returned_with_Damage:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:Role
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
+---
+Car_Agency:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:SubKind
+  - gufo:RigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+---
+Licensing_Authority:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:SubKind
+  - gufo:RigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+---
+Sender_Branch:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:Role
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
+---
+Functional_Car:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Phase
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:SemiRigidType
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type:
+  - gufo:Sortal
+  not_type:
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:PhaseMixin
+  - gufo:RoleMixin
+---
 Personal_Customer:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:Role
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
+---
+Living_Person:
+  can_type: []
+  detected_in:
+  - ks_sf_in
+  input: true
+  is_incomplete: true
+  is_type:
+  - gufo:Phase
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonSortal
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
+---
+Insured_Driver:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:Role
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
+---
+Trainee:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:Role
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
+---
+Corporate_Customer:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:Role
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
+---
+Woman:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:SubKind
+  - gufo:RigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+---
+Teenage:
+  can_type: []
+  detected_in:
+  - ks_sf_in
+  input: true
+  is_incomplete: true
+  is_type:
+  - gufo:Phase
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonSortal
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
+---
+Adult:
+  can_type: []
+  detected_in:
+  - ks_sf_in
+  input: true
+  is_incomplete: true
+  is_type:
+  - gufo:Phase
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonSortal
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
+---
+Insurance_Company:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:Role
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
+---
+Man:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:SubKind
+  - gufo:RigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+---
+Car_Rental_Agreement_Closed_With_Damage:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:Role
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
+---
+Mid-level_Employee:
   can_type: []
   detected_in: []
   input: true
@@ -1042,6 +974,73 @@ Spouse:
   - gufo:RoleMixin
   - gufo:SemiRigidType
   - gufo:SubKind
+---
+Junior_Employee:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:Role
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
+---
+Extented_Car_Rental_Agreement:
+  can_type: []
+  detected_in:
+  - ks_sf_in
+  input: true
+  is_incomplete: true
+  is_type:
+  - gufo:Phase
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonSortal
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
+---
+Child:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Phase
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:SemiRigidType
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type:
+  - gufo:Sortal
+  not_type:
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:PhaseMixin
+  - gufo:RoleMixin
 ---
 Car_Scheduled_for_Repair:
   can_type: []

@@ -1,26 +1,4 @@
-Composed:
-  can_type:
-  - gufo:NonRigidType
-  - gufo:RigidType
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
-  - gufo:AntiRigidType
-  - gufo:Phase
-  - gufo:Role
----
-serviceUnit:
+civil:
   can_type: []
   detected_in: []
   input: true
@@ -42,7 +20,29 @@ serviceUnit:
   - gufo:SemiRigidType
   - gufo:SubKind
 ---
-civil:
+military:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Phase
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:SemiRigidType
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type:
+  - gufo:Sortal
+  not_type:
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:PhaseMixin
+  - gufo:RoleMixin
+---
+generalInspector:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -86,7 +86,29 @@ designatedSection:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-civilServiceUnit:
+serviceUnit:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:Role
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
+---
+internalAffairDepartment:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -108,7 +130,73 @@ civilServiceUnit:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-policeIAD:
+Composed:
+  can_type:
+  - gufo:NonRigidType
+  - gufo:RigidType
+  - gufo:SemiRigidType
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type:
+  - gufo:Sortal
+  not_type:
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:PhaseMixin
+  - gufo:RoleMixin
+  - gufo:AntiRigidType
+  - gufo:Phase
+  - gufo:Role
+---
+designatedRegistry:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:Role
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
+---
+viceInspector:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Phase
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:SemiRigidType
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type:
+  - gufo:Sortal
+  not_type:
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:PhaseMixin
+  - gufo:RoleMixin
+---
+registry:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -152,13 +240,10 @@ Atomic:
   - gufo:RoleMixin
   - gufo:SemiRigidType
 ---
-individual:
+organizationalPart:
   can_type:
-  - gufo:AntiRigidType
   - gufo:NonRigidType
-  - gufo:Phase
   - gufo:RigidType
-  - gufo:Role
   - gufo:SemiRigidType
   - gufo:SubKind
   detected_in: []
@@ -173,184 +258,11 @@ individual:
   - gufo:Mixin
   - gufo:PhaseMixin
   - gufo:RoleMixin
----
-internalAffairDepartment:
-  can_type:
   - gufo:AntiRigidType
-  - gufo:NonRigidType
   - gufo:Phase
-  - gufo:RigidType
   - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-viceInspector:
-  can_type: []
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  - gufo:NonRigidType
-  - gufo:AntiRigidType
-  - gufo:Role
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
-  - gufo:RigidType
-  - gufo:SubKind
-  - gufo:SemiRigidType
-  - gufo:Phase
 ---
 registryResponsible:
-  can_type: []
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  - gufo:NonRigidType
-  - gufo:AntiRigidType
-  - gufo:Role
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
-  - gufo:RigidType
-  - gufo:SubKind
-  - gufo:SemiRigidType
-  - gufo:Phase
----
-organization:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:SubKind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
----
-generalInspector:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:Role
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-registry:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-sectionResponsible:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:Role
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-system:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:Kind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-designatedRegistry:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -394,7 +306,29 @@ commandUnit:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-section:
+system:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:Kind
+  - gufo:RigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
+---
+policeIAD:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -416,7 +350,73 @@ section:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-military:
+section:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:SubKind
+  - gufo:RigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+---
+individual:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:SubKind
+  - gufo:RigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+---
+organization:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Phase
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:SemiRigidType
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type:
+  - gufo:Sortal
+  not_type:
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:PhaseMixin
+  - gufo:RoleMixin
+---
+sectionResponsible:
   can_type: []
   detected_in: []
   input: true
@@ -438,24 +438,24 @@ military:
   - gufo:SemiRigidType
   - gufo:SubKind
 ---
-organizationalPart:
-  can_type: []
+civilServiceUnit:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Phase
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:SemiRigidType
+  - gufo:SubKind
   detected_in: []
-  input: true
+  input: false
   is_incomplete: false
   is_type:
-  - gufo:SubKind
-  - gufo:RigidType
   - gufo:Sortal
   not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
   - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
   - gufo:NonSortal
-  - gufo:Phase
+  - gufo:Category
+  - gufo:Mixin
   - gufo:PhaseMixin
-  - gufo:Role
   - gufo:RoleMixin
-  - gufo:SemiRigidType

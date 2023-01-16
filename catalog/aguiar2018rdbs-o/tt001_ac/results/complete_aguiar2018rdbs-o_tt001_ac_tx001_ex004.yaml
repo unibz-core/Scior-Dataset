@@ -1,4 +1,4 @@
-DBMS_Item:
+Constraint:
   can_type:
   - gufo:Category
   - gufo:Kind
@@ -20,7 +20,29 @@ DBMS_Item:
   - gufo:Role
   - gufo:RoleMixin
 ---
-Data_File:
+Software_Item:
+  can_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:RigidType
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+---
+Table:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -64,7 +86,162 @@ Derived_Table:
   is_type: []
   not_type: []
 ---
-Primary_Key_Constraint:
+Artifact:
+  can_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:RigidType
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+---
+RDBMS_Item:
+  can_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:RigidType
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+---
+Database:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+DBMS_Account:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Column_Type_Constraint:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Phase
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:SemiRigidType
+  - gufo:SubKind
+  detected_in:
+  - nk_k_sup
+  input: false
+  is_incomplete: true
+  is_type:
+  - gufo:Sortal
+  not_type:
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:PhaseMixin
+  - gufo:RoleMixin
+---
+Data_Type_Constraint:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Software_System:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Foreign_Key_Constraint:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -110,74 +287,7 @@ Check_Constraint:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-Software_System:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-DBMS:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Foreign_Key_Constraint:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in:
-  - nk_k_sup
-  input: false
-  is_incomplete: true
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-Constraint:
+DBMS_Item:
   can_type:
   - gufo:Category
   - gufo:Kind
@@ -199,117 +309,7 @@ Constraint:
   - gufo:Role
   - gufo:RoleMixin
 ---
-Database:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-RDBMS_Item:
-  can_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:RigidType
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
----
-Relational_Schema:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Schema:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Table:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-DBMS_Account:
+Dictionary:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -353,14 +353,19 @@ Information_Schema:
   is_type: []
   not_type: []
 ---
-Artifact:
+Data_Schema:
   can_type:
+  - gufo:AntiRigidType
   - gufo:Category
   - gufo:Kind
   - gufo:Mixin
   - gufo:NonRigidType
   - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
   - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
   - gufo:SemiRigidType
   - gufo:Sortal
   - gufo:SubKind
@@ -368,12 +373,29 @@ Artifact:
   input: false
   is_incomplete: false
   is_type: []
-  not_type:
+  not_type: []
+---
+Relational_Schema:
+  can_type:
   - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
   - gufo:Phase
   - gufo:PhaseMixin
+  - gufo:RigidType
   - gufo:Role
   - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
 ---
 Relational_Database:
   can_type:
@@ -397,29 +419,30 @@ Relational_Database:
   is_type: []
   not_type: []
 ---
-Dictionary:
+Primary_Key_Constraint:
   can_type:
   - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
   - gufo:NonRigidType
-  - gufo:NonSortal
   - gufo:Phase
-  - gufo:PhaseMixin
   - gufo:RigidType
   - gufo:Role
-  - gufo:RoleMixin
   - gufo:SemiRigidType
-  - gufo:Sortal
   - gufo:SubKind
-  detected_in: []
+  detected_in:
+  - nk_k_sup
   input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
+  is_incomplete: true
+  is_type:
+  - gufo:Sortal
+  not_type:
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:PhaseMixin
+  - gufo:RoleMixin
 ---
-RDBMS:
+Schema:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -463,14 +486,19 @@ Base_Table:
   is_type: []
   not_type: []
 ---
-Software_Item:
+RDBMS:
   can_type:
+  - gufo:AntiRigidType
   - gufo:Category
   - gufo:Kind
   - gufo:Mixin
   - gufo:NonRigidType
   - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
   - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
   - gufo:SemiRigidType
   - gufo:Sortal
   - gufo:SubKind
@@ -478,14 +506,31 @@ Software_Item:
   input: false
   is_incomplete: false
   is_type: []
-  not_type:
+  not_type: []
+---
+DBMS:
+  can_type:
   - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
   - gufo:Phase
   - gufo:PhaseMixin
+  - gufo:RigidType
   - gufo:Role
   - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
 ---
-Data_Schema:
+Data_File:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -529,48 +574,3 @@ Column_Constraint:
   - gufo:Role
   - gufo:RoleMixin
   - gufo:SemiRigidType
----
-Data_Type_Constraint:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Column_Type_Constraint:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in:
-  - nk_k_sup
-  input: false
-  is_incomplete: true
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin

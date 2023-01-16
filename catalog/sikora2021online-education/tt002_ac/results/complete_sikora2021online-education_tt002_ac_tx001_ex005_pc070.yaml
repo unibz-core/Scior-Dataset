@@ -1,48 +1,4 @@
-Podcast:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:Kind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-Follow:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:SubKind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
----
-Creatable:
+Public_Resource:
   can_type: []
   detected_in: []
   input: true
@@ -64,62 +20,41 @@ Creatable:
   - gufo:Kind
   - gufo:SubKind
 ---
-Edit:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-Learning_Path:
+Resource:
   can_type: []
   detected_in: []
   input: true
   is_incomplete: false
   is_type:
-  - gufo:Kind
+  - gufo:Category
+  - gufo:NonSortal
   - gufo:RigidType
-  - gufo:Sortal
   not_type:
   - gufo:AntiRigidType
-  - gufo:Category
   - gufo:Mixin
   - gufo:NonRigidType
-  - gufo:NonSortal
   - gufo:Phase
   - gufo:PhaseMixin
   - gufo:Role
   - gufo:RoleMixin
   - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:Kind
   - gufo:SubKind
 ---
-Video:
+Private_Interaction:
   can_type: []
   detected_in: []
   input: true
   is_incomplete: false
   is_type:
-  - gufo:Kind
+  - gufo:SubKind
   - gufo:RigidType
   - gufo:Sortal
   not_type:
   - gufo:AntiRigidType
   - gufo:Category
+  - gufo:Kind
   - gufo:Mixin
   - gufo:NonRigidType
   - gufo:NonSortal
@@ -128,6 +63,27 @@ Video:
   - gufo:Role
   - gufo:RoleMixin
   - gufo:SemiRigidType
+---
+Viewable:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:Category
+  - gufo:NonSortal
+  - gufo:RigidType
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:Kind
   - gufo:SubKind
 ---
 Interaction:
@@ -152,84 +108,19 @@ Interaction:
   - gufo:SemiRigidType
   - gufo:SubKind
 ---
-Corporate_Resource:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Course:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Upvotable:
+Search:
   can_type: []
   detected_in: []
   input: true
   is_incomplete: false
   is_type:
-  - gufo:Category
-  - gufo:NonSortal
-  - gufo:RigidType
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:Kind
   - gufo:SubKind
----
-Collection:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:Kind
   - gufo:RigidType
   - gufo:Sortal
   not_type:
   - gufo:AntiRigidType
   - gufo:Category
+  - gufo:Kind
   - gufo:Mixin
   - gufo:NonRigidType
   - gufo:NonSortal
@@ -238,31 +129,8 @@ Collection:
   - gufo:Role
   - gufo:RoleMixin
   - gufo:SemiRigidType
-  - gufo:SubKind
 ---
-Deletable:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:Category
-  - gufo:NonSortal
-  - gufo:RigidType
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:Kind
-  - gufo:SubKind
----
-Delete:
+Edit:
   can_type: []
   detected_in: []
   input: true
@@ -306,29 +174,139 @@ Comment:
   - gufo:RoleMixin
   - gufo:SemiRigidType
 ---
-View:
+Video:
   can_type:
   - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
   - gufo:NonRigidType
+  - gufo:NonSortal
   - gufo:Phase
+  - gufo:PhaseMixin
   - gufo:RigidType
   - gufo:Role
+  - gufo:RoleMixin
   - gufo:SemiRigidType
+  - gufo:Sortal
   - gufo:SubKind
   detected_in: []
   input: false
   is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  not_type:
+  is_type: []
+  not_type: []
+---
+Corporate_Resource:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
   - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
   - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Deletable:
+  can_type:
   - gufo:Category
   - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:RigidType
+  - gufo:SemiRigidType
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type:
+  - gufo:NonSortal
+  not_type:
+  - gufo:Sortal
+  - gufo:Kind
+  - gufo:Phase
+  - gufo:Role
+  - gufo:SubKind
+  - gufo:AntiRigidType
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-Commentable:
+Podcast:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:Kind
+  - gufo:RigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
+---
+Collection:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:Kind
+  - gufo:RigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
+---
+Course:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Creatable:
   can_type: []
   detected_in: []
   input: true
@@ -350,7 +328,51 @@ Commentable:
   - gufo:Kind
   - gufo:SubKind
 ---
-Search:
+View:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:SubKind
+  - gufo:RigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+---
+Public_Interaction:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Phase
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:SemiRigidType
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type:
+  - gufo:Sortal
+  not_type:
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:PhaseMixin
+  - gufo:RoleMixin
+---
+Delete:
   can_type: []
   detected_in: []
   input: true
@@ -394,72 +416,6 @@ Creation:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-Book:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Public_Interaction:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:SubKind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
----
-Resource:
-  can_type:
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:RigidType
-  - gufo:SemiRigidType
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:NonSortal
-  not_type:
-  - gufo:Sortal
-  - gufo:Kind
-  - gufo:Phase
-  - gufo:Role
-  - gufo:SubKind
-  - gufo:AntiRigidType
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
 Editable:
   can_type: []
   detected_in: []
@@ -482,7 +438,29 @@ Editable:
   - gufo:Kind
   - gufo:SubKind
 ---
-Public_Resource:
+Learning_Path:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Upvotable:
   can_type: []
   detected_in: []
   input: true
@@ -504,26 +482,26 @@ Public_Resource:
   - gufo:Kind
   - gufo:SubKind
 ---
-Link:
+Commentable:
   can_type: []
   detected_in: []
   input: true
   is_incomplete: false
   is_type:
-  - gufo:Kind
+  - gufo:Category
+  - gufo:NonSortal
   - gufo:RigidType
-  - gufo:Sortal
   not_type:
   - gufo:AntiRigidType
-  - gufo:Category
   - gufo:Mixin
   - gufo:NonRigidType
-  - gufo:NonSortal
   - gufo:Phase
   - gufo:PhaseMixin
   - gufo:Role
   - gufo:RoleMixin
   - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:Kind
   - gufo:SubKind
 ---
 Upvote:
@@ -548,41 +526,18 @@ Upvote:
   - gufo:RoleMixin
   - gufo:SemiRigidType
 ---
-Viewable:
-  can_type:
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:RigidType
-  - gufo:SemiRigidType
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:NonSortal
-  not_type:
-  - gufo:Sortal
-  - gufo:Kind
-  - gufo:Phase
-  - gufo:Role
-  - gufo:SubKind
-  - gufo:AntiRigidType
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-Private_Interaction:
+Book:
   can_type: []
   detected_in: []
   input: true
   is_incomplete: false
   is_type:
-  - gufo:SubKind
+  - gufo:Kind
   - gufo:RigidType
   - gufo:Sortal
   not_type:
   - gufo:AntiRigidType
   - gufo:Category
-  - gufo:Kind
   - gufo:Mixin
   - gufo:NonRigidType
   - gufo:NonSortal
@@ -591,3 +546,48 @@ Private_Interaction:
   - gufo:Role
   - gufo:RoleMixin
   - gufo:SemiRigidType
+  - gufo:SubKind
+---
+Link:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:Kind
+  - gufo:RigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
+---
+Follow:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Phase
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:SemiRigidType
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type:
+  - gufo:Sortal
+  not_type:
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:PhaseMixin
+  - gufo:RoleMixin

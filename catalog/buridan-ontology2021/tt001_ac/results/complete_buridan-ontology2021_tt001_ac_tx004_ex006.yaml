@@ -1,4 +1,4 @@
-LogicalDoctrine:
+PersonalSupposition:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -7,9 +7,10 @@ LogicalDoctrine:
   - gufo:Role
   - gufo:SemiRigidType
   - gufo:SubKind
-  detected_in: []
+  detected_in:
+  - nk_k_sup
   input: false
-  is_incomplete: false
+  is_incomplete: true
   is_type:
   - gufo:Sortal
   not_type:
@@ -20,7 +21,73 @@ LogicalDoctrine:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-PracticalScience:
+MaterialSuppositionForSyncatogramaticTerm:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+MentalPersonalSupposition:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Supposition:
+  can_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:RigidType
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+---
+SimpleSupposition:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -29,9 +96,10 @@ PracticalScience:
   - gufo:Role
   - gufo:SemiRigidType
   - gufo:SubKind
-  detected_in: []
+  detected_in:
+  - nk_k_sup
   input: false
-  is_incomplete: false
+  is_incomplete: true
   is_type:
   - gufo:Sortal
   not_type:
@@ -42,29 +110,29 @@ PracticalScience:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-Science:
-  can_type: []
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Kind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
+ImproperSupposition:
+  can_type:
   - gufo:AntiRigidType
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
   - gufo:Category
+  - gufo:Kind
   - gufo:Mixin
   - gufo:NonRigidType
   - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
   - gufo:SemiRigidType
+  - gufo:Sortal
   - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
 ---
-ScienceInStrictSense:
+ProperSuppositon:
   can_type: []
   detected_in:
   - nk_k_sup
@@ -87,19 +155,14 @@ ScienceInStrictSense:
   - gufo:RoleMixin
   - gufo:SemiRigidType
 ---
-Logic-in-use:
+SuppositionInConventionalLanguage:
   can_type:
-  - gufo:AntiRigidType
   - gufo:Category
   - gufo:Kind
   - gufo:Mixin
   - gufo:NonRigidType
   - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
   - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
   - gufo:SemiRigidType
   - gufo:Sortal
   - gufo:SubKind
@@ -107,26 +170,32 @@ Logic-in-use:
   input: false
   is_incomplete: false
   is_type: []
-  not_type: []
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
 ---
-Logic:
+MaterialSupposition:
   can_type:
   - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
   - gufo:NonRigidType
-  - gufo:NonSortal
   - gufo:Phase
-  - gufo:PhaseMixin
   - gufo:RigidType
   - gufo:Role
-  - gufo:RoleMixin
   - gufo:SemiRigidType
-  - gufo:Sortal
   - gufo:SubKind
-  detected_in: []
+  detected_in:
+  - nk_k_sup
   input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
+  is_incomplete: true
+  is_type:
+  - gufo:Sortal
+  not_type:
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:PhaseMixin
+  - gufo:RoleMixin

@@ -1,25 +1,24 @@
-Economic_Agent:
-  can_type:
+Provider:
+  can_type: []
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type:
+  - gufo:Kind
+  - gufo:RigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:AntiRigidType
   - gufo:Category
   - gufo:Mixin
   - gufo:NonRigidType
-  - gufo:RigidType
-  - gufo:SemiRigidType
-  detected_in:
-  - ns_s_spe
-  input: false
-  is_incomplete: true
-  is_type:
   - gufo:NonSortal
-  not_type:
-  - gufo:Sortal
-  - gufo:Kind
   - gufo:Phase
-  - gufo:Role
-  - gufo:SubKind
-  - gufo:AntiRigidType
   - gufo:PhaseMixin
+  - gufo:Role
   - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
 ---
 Agent:
   can_type:
@@ -44,27 +43,28 @@ Agent:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-Provider:
-  can_type: []
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Kind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
+Economic_Agent:
+  can_type:
   - gufo:Category
   - gufo:Mixin
   - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
+  - gufo:RigidType
   - gufo:SemiRigidType
+  detected_in:
+  - ns_s_spe
+  input: false
+  is_incomplete: true
+  is_type:
+  - gufo:NonSortal
+  not_type:
+  - gufo:Sortal
+  - gufo:Kind
+  - gufo:Phase
+  - gufo:Role
   - gufo:SubKind
+  - gufo:AntiRigidType
+  - gufo:PhaseMixin
+  - gufo:RoleMixin
 ---
 Receiver:
   can_type: []

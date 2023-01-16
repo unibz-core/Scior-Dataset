@@ -1,27 +1,48 @@
-Contrato:
+Credor:
   can_type:
+  - gufo:AntiRigidType
   - gufo:Category
   - gufo:Mixin
   - gufo:NonRigidType
-  - gufo:RigidType
-  - gufo:SemiRigidType
-  detected_in:
-  - ns_s_spe
-  input: false
-  is_incomplete: true
-  is_type:
   - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
   not_type:
-  - gufo:Sortal
   - gufo:Kind
-  - gufo:Phase
-  - gufo:Role
-  - gufo:SubKind
+---
+Empresa_Credor:
+  can_type:
   - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Phase
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:SemiRigidType
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type:
+  - gufo:Sortal
+  not_type:
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-Contrato_Inicial:
+Pessoa:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -43,7 +64,7 @@ Contrato_Inicial:
   is_type: []
   not_type: []
 ---
-Contrato_com_Dispensa:
+Pessoa_Credor:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -65,29 +86,7 @@ Contrato_com_Dispensa:
   is_type: []
   not_type: []
 ---
-"Contrato_com_Licitac\xE3o":
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Contrato_Aditivo:
+Empresa:
   can_type: []
   detected_in: []
   input: true

@@ -1,14 +1,29 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Reshaped_Channel> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Turbidite_Channel> .
+<http://taxonomy.model/Blocked_Load> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Obstacled_Sediment> .
 
-<http://taxonomy.model/Shape-Changing_Channel> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Confining_Channel> .
+<http://taxonomy.model/Captured_Sediment> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Obstacled_Sediment> .
 
-<http://taxonomy.model/Confining_Channel> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Turbidite_Channel> .
+<http://taxonomy.model/Frictioned_Sediment> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Unstable_Sediment> .
 
-<http://taxonomy.model/Turbidite_Channel> a owl:Class .
+<http://taxonomy.model/Transported_Load> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Drawn_Sediment> .
+
+<http://taxonomy.model/Deposited_Sediment> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sediment> .
+
+<http://taxonomy.model/Unstable_Sediment> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Deposited_Sediment> .
+
+<http://taxonomy.model/Drawn_Sediment> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sediment> .
+
+<http://taxonomy.model/Obstacled_Sediment> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Drawn_Sediment> .
+
+<http://taxonomy.model/Sediment> a owl:Class .
 

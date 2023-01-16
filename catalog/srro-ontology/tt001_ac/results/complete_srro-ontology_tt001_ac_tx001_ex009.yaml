@@ -20,7 +20,7 @@ Module:
   is_type: []
   not_type: []
 ---
-UseCase:
+ClassTestCase:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -42,7 +42,51 @@ UseCase:
   is_type: []
   not_type: []
 ---
+NonFunctionalRequirement:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Phase
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:SemiRigidType
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type:
+  - gufo:Sortal
+  not_type:
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:PhaseMixin
+  - gufo:RoleMixin
+---
 EntityType:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+UseTestCase:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -86,29 +130,29 @@ Class:
   is_type: []
   not_type: []
 ---
-BusinessRule:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
+Requirement:
+  can_type: []
   detected_in: []
-  input: false
+  input: true
   is_incomplete: false
   is_type:
+  - gufo:Kind
+  - gufo:RigidType
   - gufo:Sortal
   not_type:
-  - gufo:Kind
-  - gufo:NonSortal
+  - gufo:AntiRigidType
   - gufo:Category
   - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
   - gufo:PhaseMixin
+  - gufo:Role
   - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
 ---
-UseTestCase:
+UseCase:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -130,7 +174,7 @@ UseTestCase:
   is_type: []
   not_type: []
 ---
-TestCase:
+RequirementTestCase:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -175,7 +219,7 @@ Artifact:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-NonFunctionalRequirement:
+BusinessRule:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -196,72 +240,6 @@ NonFunctionalRequirement:
   - gufo:Mixin
   - gufo:PhaseMixin
   - gufo:RoleMixin
----
-ClassTestCase:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Requirement:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:Kind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-RequirementTestCase:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
 ---
 FunctionalRequirement:
   can_type:
@@ -284,3 +262,25 @@ FunctionalRequirement:
   - gufo:Mixin
   - gufo:PhaseMixin
   - gufo:RoleMixin
+---
+TestCase:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []

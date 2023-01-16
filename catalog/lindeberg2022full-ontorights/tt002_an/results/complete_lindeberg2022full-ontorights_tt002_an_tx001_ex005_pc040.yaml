@@ -1,48 +1,114 @@
-Physical_Consequence:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
+Negative_Consequence_On_Agent:
+  can_type: []
   detected_in: []
-  input: false
+  input: true
   is_incomplete: false
   is_type:
+  - gufo:SubKind
+  - gufo:RigidType
   - gufo:Sortal
   not_type:
-  - gufo:Kind
-  - gufo:NonSortal
+  - gufo:AntiRigidType
   - gufo:Category
+  - gufo:Kind
   - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
   - gufo:PhaseMixin
+  - gufo:Role
   - gufo:RoleMixin
+  - gufo:SemiRigidType
 ---
-Psychological_Consequence:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
+Memory:
+  can_type: []
   detected_in: []
-  input: false
+  input: true
   is_incomplete: false
   is_type:
+  - gufo:SubKind
+  - gufo:RigidType
   - gufo:Sortal
   not_type:
-  - gufo:Kind
-  - gufo:NonSortal
+  - gufo:AntiRigidType
   - gufo:Category
+  - gufo:Kind
   - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
   - gufo:PhaseMixin
+  - gufo:Role
   - gufo:RoleMixin
+  - gufo:SemiRigidType
 ---
 Goal_Transfer_From_Sender_To_Influence_Third_Agent:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:SubKind
+  - gufo:RigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+---
+Consequence_On_Collective:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Phase
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:SemiRigidType
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type:
+  - gufo:Sortal
+  not_type:
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:PhaseMixin
+  - gufo:RoleMixin
+---
+Remedy:
+  can_type:
+  - gufo:NonRigidType
+  - gufo:RigidType
+  - gufo:SemiRigidType
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type:
+  - gufo:Sortal
+  not_type:
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:PhaseMixin
+  - gufo:RoleMixin
+  - gufo:AntiRigidType
+  - gufo:Phase
+  - gufo:Role
+---
+Reparation:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -66,11 +132,8 @@ Goal_Transfer_From_Sender_To_Influence_Third_Agent:
 ---
 Goal_Transfer_From_Sender:
   can_type:
-  - gufo:AntiRigidType
   - gufo:NonRigidType
-  - gufo:Phase
   - gufo:RigidType
-  - gufo:Role
   - gufo:SemiRigidType
   - gufo:SubKind
   detected_in: []
@@ -85,50 +148,9 @@ Goal_Transfer_From_Sender:
   - gufo:Mixin
   - gufo:PhaseMixin
   - gufo:RoleMixin
----
-Guarantees_Of_Non-Repetition:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:SubKind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
   - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
   - gufo:Phase
-  - gufo:PhaseMixin
   - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
----
-Consequence_On_Collective:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:SubKind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
 ---
 Positive_Consequence_On_Agent:
   can_type:
@@ -174,95 +196,7 @@ Legal_Consequence:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-Economical_Consequence:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:SubKind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
----
 Integrity_Consequence:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-Justice:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-Truth:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-Territorial_Consequence:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -306,7 +240,73 @@ Consequence_On_Person:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-Negative_Consequence_On_Agent:
+Truth:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:SubKind
+  - gufo:RigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+---
+Psychological_Consequence:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Phase
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:SemiRigidType
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type:
+  - gufo:Sortal
+  not_type:
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:PhaseMixin
+  - gufo:RoleMixin
+---
+Economical_Consequence:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:SubKind
+  - gufo:RigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+---
+Justice:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -350,49 +350,49 @@ Consequence_For_Resulting_Event_Agent:
   - gufo:SemiRigidType
   - gufo:SubKind
 ---
-Memory:
-  can_type: []
+Territorial_Consequence:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Phase
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:SemiRigidType
+  - gufo:SubKind
   detected_in: []
-  input: true
+  input: false
   is_incomplete: false
   is_type:
-  - gufo:SubKind
-  - gufo:RigidType
   - gufo:Sortal
   not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
   - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
   - gufo:NonSortal
-  - gufo:Phase
+  - gufo:Category
+  - gufo:Mixin
   - gufo:PhaseMixin
-  - gufo:Role
   - gufo:RoleMixin
-  - gufo:SemiRigidType
 ---
-Remedy:
-  can_type: []
+Physical_Consequence:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Phase
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:SemiRigidType
+  - gufo:SubKind
   detected_in: []
-  input: true
+  input: false
   is_incomplete: false
   is_type:
-  - gufo:SubKind
-  - gufo:RigidType
   - gufo:Sortal
   not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
   - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
   - gufo:NonSortal
-  - gufo:Phase
+  - gufo:Category
+  - gufo:Mixin
   - gufo:PhaseMixin
-  - gufo:Role
   - gufo:RoleMixin
-  - gufo:SemiRigidType
 ---
 Reputational_Consequence:
   can_type: []
@@ -416,7 +416,7 @@ Reputational_Consequence:
   - gufo:RoleMixin
   - gufo:SemiRigidType
 ---
-Reparation:
+Guarantees_Of_Non-Repetition:
   can_type: []
   detected_in: []
   input: true

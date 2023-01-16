@@ -1,18 +1,20 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/AccidentalParticular-NonSubstantialParticular> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/AccidentalUniversal>,
-        <http://taxonomy.model/Being> .
+<http://taxonomy.model/Health> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/SubordinateGoal> .
 
-<http://taxonomy.model/EssentialParticular-PrimarySubstance> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Being> .
+<http://taxonomy.model/HighestGoal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Goal> .
 
-<http://taxonomy.model/EssentialUniversal-SecondarySubstance> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Being> .
+<http://taxonomy.model/Pleasure> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/SubordinateGoal> .
 
-<http://taxonomy.model/AccidentalUniversal> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Being> .
+<http://taxonomy.model/Wealth> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/SubordinateGoal> .
 
-<http://taxonomy.model/Being> a owl:Class .
+<http://taxonomy.model/Goal> a owl:Class .
+
+<http://taxonomy.model/SubordinateGoal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Goal> .
 

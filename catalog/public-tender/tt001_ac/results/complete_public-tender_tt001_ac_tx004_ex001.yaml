@@ -1,7 +1,30 @@
-Proof_of_Fleet:
+Batch_in_Auction:
+  can_type: []
+  detected_in:
+  - ns_s_spe
+  input: true
+  is_incomplete: true
+  is_type:
+  - gufo:RoleMixin
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  not_type:
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  - gufo:Category
+  - gufo:RigidType
+---
+Service_Batch:
   can_type: []
   detected_in: []
-  input: true
+  input: false
   is_incomplete: false
   is_type:
   - gufo:Kind
@@ -20,24 +43,24 @@ Proof_of_Fleet:
   - gufo:SemiRigidType
   - gufo:SubKind
 ---
-Proof_of_Fleet_in_General_Proposal:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
+Service_Batch_in_Auction:
+  can_type: []
   detected_in: []
   input: false
   is_incomplete: false
   is_type:
+  - gufo:NonRigidType
+  - gufo:AntiRigidType
   - gufo:Sortal
+  - gufo:Role
   not_type:
-  - gufo:Kind
-  - gufo:NonSortal
+  - gufo:RigidType
   - gufo:Category
+  - gufo:Kind
+  - gufo:SubKind
+  - gufo:SemiRigidType
   - gufo:Mixin
+  - gufo:NonSortal
   - gufo:PhaseMixin
   - gufo:RoleMixin
+  - gufo:Phase

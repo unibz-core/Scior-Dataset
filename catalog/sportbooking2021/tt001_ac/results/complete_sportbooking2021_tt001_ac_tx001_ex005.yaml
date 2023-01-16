@@ -1,26 +1,4 @@
-Account:
-  can_type: []
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Kind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-Instructor:
+Owner:
   can_type: []
   detected_in:
   - nk_k_sup
@@ -43,7 +21,7 @@ Instructor:
   - gufo:SemiRigidType
   - gufo:Phase
 ---
-Owner:
+Employee:
   can_type: []
   detected_in: []
   input: false
@@ -87,7 +65,29 @@ Customer:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-Employee:
+ManagementUsers:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:Role
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
+---
+Instructor:
   can_type: []
   detected_in: []
   input: false
@@ -109,24 +109,24 @@ Employee:
   - gufo:SemiRigidType
   - gufo:Phase
 ---
-ManagementUsers:
+Account:
   can_type: []
   detected_in: []
-  input: true
+  input: false
   is_incomplete: false
   is_type:
-  - gufo:Role
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
+  - gufo:Kind
+  - gufo:RigidType
   - gufo:Sortal
   not_type:
+  - gufo:AntiRigidType
   - gufo:Category
-  - gufo:Kind
   - gufo:Mixin
+  - gufo:NonRigidType
   - gufo:NonSortal
   - gufo:Phase
   - gufo:PhaseMixin
-  - gufo:RigidType
+  - gufo:Role
   - gufo:RoleMixin
   - gufo:SemiRigidType
   - gufo:SubKind

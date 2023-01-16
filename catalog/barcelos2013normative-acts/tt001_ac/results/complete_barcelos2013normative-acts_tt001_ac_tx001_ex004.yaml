@@ -20,6 +20,28 @@ Simple_Article:
   is_type: []
   not_type: []
 ---
+Ordinary_Article:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
 Composed_Article:
   can_type:
   - gufo:Category
@@ -42,7 +64,7 @@ Composed_Article:
   - gufo:Role
   - gufo:RoleMixin
 ---
-Article_component_of_Chapter:
+Duration_Clause:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -64,7 +86,7 @@ Article_component_of_Chapter:
   is_type: []
   not_type: []
 ---
-Duration_Clause:
+Article_composed_of_Paragraph:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -109,19 +131,14 @@ Article_composed_of_Item:
   - gufo:RoleMixin
   - gufo:SemiRigidType
 ---
-Article_component_of_Section:
+Article:
   can_type:
-  - gufo:AntiRigidType
   - gufo:Category
   - gufo:Kind
   - gufo:Mixin
   - gufo:NonRigidType
   - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
   - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
   - gufo:SemiRigidType
   - gufo:Sortal
   - gufo:SubKind
@@ -129,29 +146,12 @@ Article_component_of_Section:
   input: false
   is_incomplete: false
   is_type: []
-  not_type: []
----
-Ordinary_Article:
-  can_type:
+  not_type:
   - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
   - gufo:Phase
   - gufo:PhaseMixin
-  - gufo:RigidType
   - gufo:Role
   - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
 ---
 Revocation_Clause:
   can_type:
@@ -175,7 +175,7 @@ Revocation_Clause:
   is_type: []
   not_type: []
 ---
-Article_composed_of_Paragraph:
+Article_component_of_Chapter:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -197,14 +197,19 @@ Article_composed_of_Paragraph:
   is_type: []
   not_type: []
 ---
-Article:
+Article_component_of_Section:
   can_type:
+  - gufo:AntiRigidType
   - gufo:Category
   - gufo:Kind
   - gufo:Mixin
   - gufo:NonRigidType
   - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
   - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
   - gufo:SemiRigidType
   - gufo:Sortal
   - gufo:SubKind
@@ -212,9 +217,4 @@ Article:
   input: false
   is_incomplete: false
   is_type: []
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
+  not_type: []

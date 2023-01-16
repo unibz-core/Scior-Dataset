@@ -1,32 +1,18 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Fretamento> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Objeto_da_Outorga> .
+<http://taxonomy.model/Aquisição_para_Convênio> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Compra_Solicitada>,
+        <http://taxonomy.model/Compra_por_Cotação> .
 
-<http://taxonomy.model/Linha_de_Ônibus_Autorizada_Especial> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Linha_de_Ônibus_Outorgada> .
+<http://taxonomy.model/Compra_por_Licitação> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Compra_de_Produto> .
 
-<http://taxonomy.model/Linha_de_Ônibus_Permissionada> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Linha_de_Ônibus_Outorgada> .
+<http://taxonomy.model/Compra_Solicitada> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Compra_de_Produto> .
 
-<http://taxonomy.model/Lote_Ferroviário_Concedido> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Lote_Ferroviário>,
-        <http://taxonomy.model/Objeto_da_Outorga> .
+<http://taxonomy.model/Compra_por_Cotação> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Compra_de_Produto> .
 
-<http://taxonomy.model/Lote_Rodoviário_Concedido> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Lote_Rodoviário>,
-        <http://taxonomy.model/Objeto_da_Outorga> .
-
-<http://taxonomy.model/Linha_de_Ônibus> a owl:Class .
-
-<http://taxonomy.model/Lote_Ferroviário> a owl:Class .
-
-<http://taxonomy.model/Lote_Rodoviário> a owl:Class .
-
-<http://taxonomy.model/Linha_de_Ônibus_Outorgada> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Linha_de_Ônibus>,
-        <http://taxonomy.model/Objeto_da_Outorga> .
-
-<http://taxonomy.model/Objeto_da_Outorga> a owl:Class .
+<http://taxonomy.model/Compra_de_Produto> a owl:Class .
 

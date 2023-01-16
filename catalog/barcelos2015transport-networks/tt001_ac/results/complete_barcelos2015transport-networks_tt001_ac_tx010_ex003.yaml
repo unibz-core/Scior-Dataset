@@ -1,93 +1,27 @@
-Forwarding_Rule_MC_So:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Fowarding_Rule_Sk_SN:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Forwarding_Rule_MC_Sk:
+Single_Equipment_Site:
   can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:Kind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-Forwarding_Rule:
-  can_type:
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:RigidType
-  - gufo:SemiRigidType
   detected_in:
-  - ns_s_spe
-  input: false
+  - nk_k_sup
+  input: true
   is_incomplete: true
   is_type:
-  - gufo:NonSortal
+  - gufo:Role
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Sortal
   not_type:
-  - gufo:Sortal
+  - gufo:Category
   - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonSortal
   - gufo:Phase
-  - gufo:Role
-  - gufo:SubKind
-  - gufo:AntiRigidType
   - gufo:PhaseMixin
+  - gufo:RigidType
   - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
 ---
-Forwarding_Rule_So-Sk:
+Site:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -109,7 +43,7 @@ Forwarding_Rule_So-Sk:
   is_type: []
   not_type: []
 ---
-Forwarding_Rule_So_SN:
+Multiple_Equipment_Composed_Site:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -131,7 +65,7 @@ Forwarding_Rule_So_SN:
   is_type: []
   not_type: []
 ---
-Forwarding_Rule_Sk-So:
+Source_Site:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -153,7 +87,7 @@ Forwarding_Rule_Sk-So:
   is_type: []
   not_type: []
 ---
-Forwarding_Rule_LC:
+Equipment_Composed_Site:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -175,7 +109,7 @@ Forwarding_Rule_LC:
   is_type: []
   not_type: []
 ---
-Forwarding_Rule_MC_Sk-So:
+Sink_Site:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category

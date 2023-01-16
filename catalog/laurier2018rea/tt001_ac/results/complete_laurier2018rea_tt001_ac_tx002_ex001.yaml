@@ -1,4 +1,4 @@
-produce:
+transformation:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -20,7 +20,7 @@ produce:
   is_type: []
   not_type: []
 ---
-take:
+decrement-event:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -42,29 +42,7 @@ take:
   is_type: []
   not_type: []
 ---
-give:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-economic-event:
+transfer:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -87,6 +65,28 @@ economic-event:
   not_type: []
 ---
 increment-event:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+give:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -131,7 +131,7 @@ consume:
   - gufo:SemiRigidType
   - gufo:SubKind
 ---
-transfer:
+economic-event:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -153,7 +153,7 @@ transfer:
   is_type: []
   not_type: []
 ---
-transformation:
+produce:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -175,7 +175,7 @@ transformation:
   is_type: []
   not_type: []
 ---
-decrement-event:
+take:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category

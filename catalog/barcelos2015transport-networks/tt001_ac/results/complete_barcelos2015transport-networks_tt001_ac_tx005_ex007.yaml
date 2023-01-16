@@ -1,4 +1,4 @@
-Client_Path_Layer:
+Path_NC_Forwarding:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -20,7 +20,7 @@ Client_Path_Layer:
   is_type: []
   not_type: []
 ---
-LC_Composed_Layer_Network:
+Sk_MC_Forwarding:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -42,7 +42,7 @@ LC_Composed_Layer_Network:
   is_type: []
   not_type: []
 ---
-Server_Physical_Media_Layer:
+PM_LC_Forwarding:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -64,7 +64,7 @@ Server_Physical_Media_Layer:
   is_type: []
   not_type: []
 ---
-Matrix_Composed_Path_Layer:
+Int_CFTE_Forwarding:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -86,7 +86,7 @@ Matrix_Composed_Path_Layer:
   is_type: []
   not_type: []
 ---
-Composed_PM_Layer:
+AP_Forwarding:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -108,7 +108,7 @@ Composed_PM_Layer:
   is_type: []
   not_type: []
 ---
-Subnetwork_Composed_Path_Layer:
+So_MC_Forwarding:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -130,74 +130,74 @@ Subnetwork_Composed_Path_Layer:
   is_type: []
   not_type: []
 ---
-Related_Layer_Network:
+Forwarding:
   can_type:
-  - gufo:AntiRigidType
   - gufo:Category
-  - gufo:Kind
   - gufo:Mixin
   - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
   - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
   - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Layer_Network:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Path-Path_Client_Layer:
-  can_type: []
   detected_in:
-  - nk_k_sup
-  input: true
+  - ns_s_spe
+  input: false
   is_incomplete: true
   is_type:
+  - gufo:NonSortal
+  not_type:
+  - gufo:Sortal
+  - gufo:Kind
+  - gufo:Phase
   - gufo:Role
+  - gufo:SubKind
   - gufo:AntiRigidType
+  - gufo:PhaseMixin
+  - gufo:RoleMixin
+---
+So_CFTE_Forwarding:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
   - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+PM_NC_Forwarding:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:Kind
+  - gufo:RigidType
   - gufo:Sortal
   not_type:
+  - gufo:AntiRigidType
   - gufo:Category
-  - gufo:Kind
   - gufo:Mixin
+  - gufo:NonRigidType
   - gufo:NonSortal
   - gufo:Phase
   - gufo:PhaseMixin
-  - gufo:RigidType
+  - gufo:Role
   - gufo:RoleMixin
   - gufo:SemiRigidType
   - gufo:SubKind
 ---
-Client_Section_Layer:
+Sk_CFTE_Forwarding:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -219,7 +219,7 @@ Client_Section_Layer:
   is_type: []
   not_type: []
 ---
-Server_Path_Layer:
+Path_LC_Forwarding:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -241,7 +241,7 @@ Server_Path_Layer:
   is_type: []
   not_type: []
 ---
-Path_Layer_Network_2:
+End_Forwarding:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -263,117 +263,7 @@ Path_Layer_Network_2:
   is_type: []
   not_type: []
 ---
-Path-Section_Client_Layer:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Transmission_Media_Layer_Network:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Physical_Media_Layer_Network:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Path_Layer_Network:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Section_Layer_Network:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Server_Section_Layer:
+Int_MC_Forwarding:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category

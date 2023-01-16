@@ -1,8 +1,17 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Objective_Situation> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Situation> .
+<http://taxonomy.model/AtomicAgentAction> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/AgentAction> .
 
-<http://taxonomy.model/Situation> a owl:Class .
+<http://taxonomy.model/Interaction> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/ComplexAgentAction> .
+
+<http://taxonomy.model/ObjectAgentInteraction> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/ComplexAgentAction> .
+
+<http://taxonomy.model/AgentAction> a owl:Class .
+
+<http://taxonomy.model/ComplexAgentAction> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/AgentAction> .
 

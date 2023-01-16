@@ -1,48 +1,4 @@
-Agent:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:Kind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-EducationalInstitution:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-Participant:
+ActiveStudent:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -86,7 +42,7 @@ ParticipantWithQuestion:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-ParticipantWithanswer:
+Tutor:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -130,7 +86,7 @@ Organization:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-ActiveStudent:
+Participant:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -152,7 +108,29 @@ ActiveStudent:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-Tutor:
+Agent:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:Kind
+  - gufo:RigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
+---
+ParticipantWithanswer:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -174,7 +152,7 @@ Tutor:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-Professor:
+Person:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -218,7 +196,29 @@ Student:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-Person:
+EducationalInstitution:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Phase
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:SemiRigidType
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type:
+  - gufo:Sortal
+  not_type:
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:PhaseMixin
+  - gufo:RoleMixin
+---
+Professor:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType

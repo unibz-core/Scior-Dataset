@@ -1,482 +1,987 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Acionista_Votante> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Acionista> .
+<http://taxonomy.model/Acesso> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Interseção> .
 
-<http://taxonomy.model/Agente_da_ANTT> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Agente> .
+<http://taxonomy.model/Anel_Rodoviário> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Via_de_Tráfego_Rodoviário> .
 
-<http://taxonomy.model/Agente_de_Órgão_Conveniado> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Agente> .
+<http://taxonomy.model/Ativo_Amortizado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Intangível> .
 
-<http://taxonomy.model/Agência_Reguladora_Autorizatária_de_Obra> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Agência_Reguladora> .
+<http://taxonomy.model/Ativo_Depreciado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Depreciável> .
 
-<http://taxonomy.model/Agência_Reguladora_Convenente> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Agência_Reguladora>,
-        <http://taxonomy.model/Convenente> .
+<http://taxonomy.model/Ativo_Sem_Amortização> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Intangível> .
 
-<http://taxonomy.model/Arrendador_Financeiro> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Fonte_de_Capital> .
+<http://taxonomy.model/Ativo_Vendido> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Permanente> .
 
-<http://taxonomy.model/Arrendador_Operacional> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+<http://taxonomy.model/Ativo_com_Valor_Inicial> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Depreciável> .
 
-<http://taxonomy.model/Autor_de_ATe_por_N._de_Infração> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Fiscal_2> .
+<http://taxonomy.model/Ação_Ordinária> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ação> .
 
-<http://taxonomy.model/Autor_de_Representação> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+<http://taxonomy.model/Ação_como_Ativo> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ação>,
+        <http://taxonomy.model/Participação_em_Empresa> .
 
-<http://taxonomy.model/Autorizatária> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Outorgado> .
+<http://taxonomy.model/Balança_Fixa_Dinâmica> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Balança_Fixa> .
 
-<http://taxonomy.model/Avô> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Parente_Direto>,
-        <http://taxonomy.model/Parente_em_Linha_Reta> .
+<http://taxonomy.model/Balança_Fixa_Estática> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Balança_Fixa> .
 
-<http://taxonomy.model/Beneficiário> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+<http://taxonomy.model/Balança_Ideal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Balança> .
 
-<http://taxonomy.model/Bisavô> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Parente_Direto>,
-        <http://taxonomy.model/Parente_em_Linha_Reta> .
+<http://taxonomy.model/Balança_Móvel> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Balança> .
 
-<http://taxonomy.model/Bisneto> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Parente_Direto>,
-        <http://taxonomy.model/Parente_em_Linha_Reta> .
+<http://taxonomy.model/Balança_com_Defeito> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Balança> .
 
-<http://taxonomy.model/Cartório> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa_Jurídica> .
+<http://taxonomy.model/Base_Operacional> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Edificação_de_Rodovia> .
 
-<http://taxonomy.model/Companheiro> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa_Física> .
+<http://taxonomy.model/Bem_Especulativo> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Investimento>,
+        <http://taxonomy.model/Bem_Comprado>,
+        <http://taxonomy.model/Bem_Material> .
 
-<http://taxonomy.model/Comprador_Sucata> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+<http://taxonomy.model/Bem_Imaterial> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Intangível>,
+        <http://taxonomy.model/Bem_Comprado> .
 
-<http://taxonomy.model/Comprador_de_Ativo> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+<http://taxonomy.model/Bem_Imóvel> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bem_Material>,
+        <http://taxonomy.model/Imóvel> .
 
-<http://taxonomy.model/Concessionária_Ferroviária> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Concessionária> .
+<http://taxonomy.model/Bem_Operacional_Alugado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bem_Alugado>,
+        <http://taxonomy.model/Bem_Operacional>,
+        <http://taxonomy.model/Bem_Operacional_Explorado> .
 
-<http://taxonomy.model/Concessionária_Rodoviária_Compradora> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Comprador>,
-        <http://taxonomy.model/Concessionária_Rodoviária_Convenente> .
+<http://taxonomy.model/Bem_Operacional_Arrendado_Explorado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bem_Operacional_Arrendado>,
+        <http://taxonomy.model/Bem_Operacional_Explorado> .
 
-<http://taxonomy.model/Concessionária_Rodoviária_Cotadora> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Concessionária_Rodoviária_Convenente>,
-        <http://taxonomy.model/Cotador> .
+<http://taxonomy.model/Bem_Operacional_Arrendado_Imobilizado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bem_Operacional_Arrendado>,
+        <http://taxonomy.model/Bem_Operacional_Imobilizado> .
 
-<http://taxonomy.model/Concessionária_Rodoviária_Fiscalizada> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Concessionária_Rodoviária>,
-        <http://taxonomy.model/Objeto_Fiscalizado> .
+<http://taxonomy.model/Bem_Operacional_Cedido> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bem_Cedido>,
+        <http://taxonomy.model/Bem_Operacional>,
+        <http://taxonomy.model/Bem_Operacional_Explorado> .
 
-<http://taxonomy.model/Concessionária_Rodoviária_Segurada> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Concessionária_Rodoviária> .
+<http://taxonomy.model/Bem_Operacional_Comprado_Explorado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bem_Operacional_Comprado>,
+        <http://taxonomy.model/Bem_Operacional_Explorado> .
 
-<http://taxonomy.model/Concessionária_Rodoviária_Solicitada> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Concessionária_Rodoviária_Convenente>,
-        <http://taxonomy.model/Solicitado> .
+<http://taxonomy.model/Bem_Operacional_Comprado_Imobilizado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bem_Operacional_Comprado>,
+        <http://taxonomy.model/Bem_Operacional_Imobilizado> .
 
-<http://taxonomy.model/Contrato_de_Prestação_de_ST_Fiscalizado> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Contrato_de_Prestação_de_Serviço_de_Transporte>,
-        <http://taxonomy.model/Objeto_Fiscalizado> .
+<http://taxonomy.model/Bem_Segurado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bem_da_Concessão> .
 
-<http://taxonomy.model/Convenente_Responsável_por_Serviço_Delegado> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Convenente>,
-        <http://taxonomy.model/Responsável_por_Serviço_Delegado> .
+<http://taxonomy.model/Bueiro> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Obra_de_Arte_Corrente_Pontual> .
 
-<http://taxonomy.model/ETRP_Autorizatária_em_RE> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Autorizatária_Especial> .
+<http://taxonomy.model/Call_Box> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Componente_Rodoviário>,
+        <http://taxonomy.model/Elemento_Pontual> .
 
-<http://taxonomy.model/ETRP_de_Fretamento_Contínuo> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Autorizatária_de_TRIIP_por_Fretamento> .
+<http://taxonomy.model/Centro_de_Atendimento_ao_Usuário> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Edificação_de_Rodovia> .
 
-<http://taxonomy.model/ETRP_de_Fretamento_ET> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Autorizatária_de_TRIIP_por_Fretamento> .
+<http://taxonomy.model/Centro_de_Controle_Operacional> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Edificação_de_Rodovia> .
 
-<http://taxonomy.model/Emissora_de_Debênture> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Empresa_com_Capital_de_Terceiros> .
+<http://taxonomy.model/Componente_Rodoviário_Modificado_em_Concessão> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Componente_Rodoviário>,
+        <http://taxonomy.model/Elemento_Rodoviário_Modificado_em_Concessão> .
 
-<http://taxonomy.model/Empresa_Limitada> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Empresa> .
+<http://taxonomy.model/Componente_de_Iluminação_Ideal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Componente_de_Iluminação> .
 
-<http://taxonomy.model/Empresa_Participante_em_Consórcio> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Empresa> .
+<http://taxonomy.model/Componente_de_Iluminação_com_Defeito> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Componente_de_Iluminação> .
 
-<http://taxonomy.model/Empresa_SA_Regular> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Empresa>,
-        <http://taxonomy.model/Sociedade_Anônima> .
+<http://taxonomy.model/Contador_de_Veículo> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Aparelho_de_Fiscalização> .
 
-<http://taxonomy.model/Empresa_com_AFAC> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Empresa_Regulada_Fiscalizada> .
+<http://taxonomy.model/Contorno_Rodoviário> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Via_de_Tráfego_Rodoviário> .
 
-<http://taxonomy.model/Empresa_com_Reserva> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Empresa_Regulada_Fiscalizada> .
+<http://taxonomy.model/Cruzamento_Esconso> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Cruzamento> .
 
-<http://taxonomy.model/Engenheiro_Responsável> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa_Física> .
+<http://taxonomy.model/Cruzamento_Ortogonal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Cruzamento> .
 
-<http://taxonomy.model/Entidade_Pública_em_CA_Solicitante> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Entidade_Pública_em_CA>,
-        <http://taxonomy.model/Solicitante> .
+<http://taxonomy.model/Cruzamento_com_Ilhas> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Cruzamento> .
 
-<http://taxonomy.model/Entidade_Pública_em_CCT> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Convenente>,
-        <http://taxonomy.model/Entidade_Pública> .
+<http://taxonomy.model/Curva> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Componente_Rodoviário>,
+        <http://taxonomy.model/Elemento_Linear> .
 
-<http://taxonomy.model/Entidade_Recolhedora_de_Impostos> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Entidade_Pública> .
+<http://taxonomy.model/Câmera_CFTV> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Aparelho_de_Fiscalização> .
 
-<http://taxonomy.model/Entidade_Responsável_por_Extinção> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Entidade_Pública> .
+<http://taxonomy.model/Descida_D'água> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Obra_de_Arte_Corrente_Pontual> .
 
-<http://taxonomy.model/Ex-companheiro> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa_Física> .
+<http://taxonomy.model/Detector_de_Altura> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Elemento_Pontual> .
 
-<http://taxonomy.model/Expedidor> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+<http://taxonomy.model/Dissipador_de_Energia> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Obra_de_Arte_Corrente_Pontual> .
 
-<http://taxonomy.model/Filho> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Parente_Direto> .
+<http://taxonomy.model/Distrito> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Região_Política> .
 
-<http://taxonomy.model/Fiscal_Autuador> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Fiscal_2> .
+<http://taxonomy.model/Drenagem_Subterrânea> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sistema_de_Drenagem> .
 
-<http://taxonomy.model/Fiscal_Conveniado> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Fiscal> .
+<http://taxonomy.model/Drenagem_Superficial> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sistema_de_Drenagem> .
 
-<http://taxonomy.model/Fiscal_Conveniado_2> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Fiscal_2> .
+<http://taxonomy.model/Drenagem_de_Transposição_de_Talvegues> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sistema_de_Drenagem> .
 
-<http://taxonomy.model/Fiscal_da_ANTT> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Fiscal>,
-        <http://taxonomy.model/Fiscal_2> .
+<http://taxonomy.model/Drenagem_de_Travessia_Urbana> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sistema_de_Drenagem> .
 
-<http://taxonomy.model/Fiscal_em_Fiscalização_Individual> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Fiscal_2> .
+<http://taxonomy.model/Drenagem_do_Pavimento> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sistema_de_Drenagem> .
 
-<http://taxonomy.model/Fiscal_que_Recebe_Obra> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Fiscal_2> .
+<http://taxonomy.model/Dreno> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Obra_de_Arte_Corrente_Pontual> .
 
-<http://taxonomy.model/Fornecedor> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+<http://taxonomy.model/Edificação_Rodoviária_de_Apoio> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Edificação_de_Rodovia> .
 
-<http://taxonomy.model/Fornecedor_de_Compra> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+<http://taxonomy.model/Entroncamento_em_T> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Entroncamento> .
 
-<http://taxonomy.model/Infrator_com_RE> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Infrator_Reincidente> .
+<http://taxonomy.model/Entroncamento_em_Y> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Entroncamento> .
 
-<http://taxonomy.model/Infrator_com_RG> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Infrator_Reincidente> .
+<http://taxonomy.model/Escada> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Obra_de_Arte_Corrente_Pontual> .
 
-<http://taxonomy.model/Infrator_por_InPraTe_Concessionária> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Concessionária_Rodoviária>,
-        <http://taxonomy.model/Infrator_por_InPraTe> .
+<http://taxonomy.model/Estado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Região_Política> .
 
-<http://taxonomy.model/Infrator_por_InPraTe_com_TAC> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Infrator_por_InPraTe>,
-        <http://taxonomy.model/Pessoa_com_TAC> .
+<http://taxonomy.model/Estação_Meteoreológica> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Componente_Rodoviário>,
+        <http://taxonomy.model/Elemento_Pontual> .
 
-<http://taxonomy.model/Infrator_por_InPraTe_com_TRO> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Concessionária_Rodoviária_com_TRO>,
-        <http://taxonomy.model/Infrator_por_InPraTe> .
+<http://taxonomy.model/Faixa_de_Domínio_Ideal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Faixa_de_Domínio> .
 
-<http://taxonomy.model/Infrator_por_InPraTo> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Infrator> .
+<http://taxonomy.model/Faixa_de_Domínio_Utilizada> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Faixa_de_Domínio> .
 
-<http://taxonomy.model/Integrante_de_Equipe_de_Fiscalização> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Fiscal_em_Fiscalização_em_Equipe> .
+<http://taxonomy.model/Faixa_de_Domínio_com_Defeito> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Faixa_de_Domínio> .
 
-<http://taxonomy.model/Interventor_Concessionária> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Concessionária_Rodoviária>,
-        <http://taxonomy.model/Interventor> .
+<http://taxonomy.model/Filial> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Estabelecimento> .
 
-<http://taxonomy.model/Interventor_Conveniado> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Convenente>,
-        <http://taxonomy.model/Interventor> .
+<http://taxonomy.model/Imóvel_Desapropriado_com_Laudo_de_Avaliação> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Imóvel_Desapropriado> .
 
-<http://taxonomy.model/Interventor_Poder_Público> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Interventor>,
-        <http://taxonomy.model/Poder_Público> .
+<http://taxonomy.model/Imóvel_Edificado_Alugado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bem_Alugado>,
+        <http://taxonomy.model/Imóvel_Edificado>,
+        <http://taxonomy.model/Imóvel_Edificado_Explorado> .
 
-<http://taxonomy.model/Irmão> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Parente_Direto>,
-        <http://taxonomy.model/Parente_em_Linha_Colateral> .
+<http://taxonomy.model/Imóvel_Edificado_Arrendado_Explorado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Imóvel_Edificado_Arrendado>,
+        <http://taxonomy.model/Imóvel_Edificado_Explorado> .
 
-<http://taxonomy.model/Líder_de_Equipe_de_Fiscalização> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Fiscal_em_Fiscalização_em_Equipe> .
+<http://taxonomy.model/Imóvel_Edificado_Arrendado_Imobilizado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Imóvel_Edificado_Arrendado>,
+        <http://taxonomy.model/Imóvel_Edificado_Imobilizado> .
 
-<http://taxonomy.model/Manifestante> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+<http://taxonomy.model/Imóvel_Edificado_Cedido> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bem_Cedido>,
+        <http://taxonomy.model/Imóvel_Edificado>,
+        <http://taxonomy.model/Imóvel_Edificado_Explorado> .
 
-<http://taxonomy.model/Neto> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Parente_Direto>,
-        <http://taxonomy.model/Parente_em_Linha_Reta> .
+<http://taxonomy.model/Imóvel_Edificado_Comprado_Explorado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Imóvel_Edificado_Comprado>,
+        <http://taxonomy.model/Imóvel_Edificado_Explorado> .
 
-<http://taxonomy.model/Operadora_de_MP_Fiscalizada> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Objeto_Fiscalizado>,
-        <http://taxonomy.model/Operadora_de_Meio_de_Pagamento> .
+<http://taxonomy.model/Imóvel_Edificado_Comprado_Imobilizado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Imóvel_Edificado_Comprado>,
+        <http://taxonomy.model/Imóvel_Edificado_Imobilizado> .
 
-<http://taxonomy.model/Outorgante> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Entidade_Pública> .
+<http://taxonomy.model/Imóvel_Edificado_Construído_Explorado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Imóvel_Edificado_Construído>,
+        <http://taxonomy.model/Imóvel_Edificado_Explorado> .
 
-<http://taxonomy.model/Pagante> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+<http://taxonomy.model/Imóvel_Edificado_Construído_Imobilizado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Imóvel_Edificado_Construído>,
+        <http://taxonomy.model/Imóvel_Edificado_Imobilizado> .
 
-<http://taxonomy.model/Pai> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Parente_Direto> .
+<http://taxonomy.model/Intersecção_Explorada> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Interseção> .
 
-<http://taxonomy.model/Parente_de_1º_Grau> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Parente> .
+<http://taxonomy.model/Interseção_Ferroviária> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Interseção> .
 
-<http://taxonomy.model/Parente_de_2º_Grau> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Parente> .
+<http://taxonomy.model/Interseção_Ideal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Interseção> .
 
-<http://taxonomy.model/Parente_de_3º_Grau> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Parente> .
+<http://taxonomy.model/Interseção_Rodoferroviária> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Interseção> .
 
-<http://taxonomy.model/Parente_de_4º_Grau_ou_Maior> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Parente> .
+<http://taxonomy.model/Interseção_Rodoviária> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Interseção> .
 
-<http://taxonomy.model/Parente_por_Afinidade> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Parente> .
+<http://taxonomy.model/Interseção_com_Defeito> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Interseção> .
 
-<http://taxonomy.model/Permissionária> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Empresa_Originária_de_Licitação>,
-        <http://taxonomy.model/Outorgado> .
+<http://taxonomy.model/Interseção_em_Desnível> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Interseção> .
 
-<http://taxonomy.model/Pessoa_com_Imóvel> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+<http://taxonomy.model/Interseção_em_Nível> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Interseção> .
 
-<http://taxonomy.model/Primo> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Parente_em_Linha_Colateral> .
+<http://taxonomy.model/Legenda> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Inscrição_no_Pavimento> .
 
-<http://taxonomy.model/Produtor> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+<http://taxonomy.model/Linha_Contínua> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Marca_Longitudinal> .
 
-<http://taxonomy.model/Produtor_de_Serviço> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa_Jurídica> .
+<http://taxonomy.model/Linha_Tracejada> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Marca_Longitudinal> .
 
-<http://taxonomy.model/Proprietário_de_Veículo> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+<http://taxonomy.model/Marca_Transversal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Marca_de_Sinalização> .
 
-<http://taxonomy.model/Representante_da_Convenente> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa_Física> .
+<http://taxonomy.model/Marca_de_Canalização> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Marca_de_Sinalização> .
 
-<http://taxonomy.model/Responsável_Técnico> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa_Física> .
+<http://taxonomy.model/Marca_de_Delimitação> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Marca_de_Sinalização> .
 
-<http://taxonomy.model/Responsável_pela_Lavratura_de_TRO> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Fiscal_2> .
+<http://taxonomy.model/Matriz> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Estabelecimento> .
 
-<http://taxonomy.model/Responsável_pela_Verificação_de_TRO> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Fiscal_2> .
+<http://taxonomy.model/Meio_Fio> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Obra_de_Arte_Corrente_Linear> .
 
-<http://taxonomy.model/Responsável_por_Adiantamento> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Sócio> .
+<http://taxonomy.model/Município> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Região_Política> .
 
-<http://taxonomy.model/Responsável_por_Aporte> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Sócio> .
+<http://taxonomy.model/Muro> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Obra_de_Arte_Corrente_Linear> .
 
-<http://taxonomy.model/Seguradora> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Empresa> .
+<http://taxonomy.model/Obra_da_Concessão> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Explorado>,
+        <http://taxonomy.model/Bem_Construído> .
 
-<http://taxonomy.model/Sobrinho> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Parente_Direto>,
-        <http://taxonomy.model/Parente_em_Linha_Colateral> .
+<http://taxonomy.model/PFR_Fiscalizador> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Posto_de_Fiscalização_Rodoviária> .
 
-<http://taxonomy.model/Sobrinho-neto> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Parente_Direto>,
-        <http://taxonomy.model/Parente_em_Linha_Colateral> .
+<http://taxonomy.model/PPV_Fiscalizador> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Posto_de_Pesagem_Veicular> .
 
-<http://taxonomy.model/Sócio_LTDA> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Sócio> .
+<http://taxonomy.model/PPV_Fixo> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Posto_de_Pesagem_Veicular> .
 
-<http://taxonomy.model/Tio> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Parente_Direto>,
-        <http://taxonomy.model/Parente_em_Linha_Colateral> .
+<http://taxonomy.model/PPV_Móvel> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Posto_de_Pesagem_Veicular> .
 
-<http://taxonomy.model/Tio-avô> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Parente_Direto>,
-        <http://taxonomy.model/Parente_em_Linha_Colateral> .
+<http://taxonomy.model/Parada_de_Ônibus> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Componente_Rodoviário>,
+        <http://taxonomy.model/Elemento_Pontual> .
 
-<http://taxonomy.model/Transportador> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+<http://taxonomy.model/Passagem_de_Pedestre> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Componente_Rodoviário>,
+        <http://taxonomy.model/Elemento_Pontual> .
 
-<http://taxonomy.model/Vendedor> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+<http://taxonomy.model/Passarela> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ponte> .
 
-<http://taxonomy.model/Órgão_Conveniado_Fiscalizador> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa_Jurídica>,
-        <http://taxonomy.model/Órgão_Conveniado>,
-        <http://taxonomy.model/Órgão_Responsável_por_Fiscalização> .
+<http://taxonomy.model/País> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Região_Política> .
 
-<http://taxonomy.model/Órgão_Privado> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Órgão> .
+<http://taxonomy.model/Ponte_Estaiada> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ponte_Suspensa> .
 
-<http://taxonomy.model/Órgão_Público_com_CNPJ> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa_Jurídica>,
-        <http://taxonomy.model/Órgão_Público> .
+<http://taxonomy.model/Ponte_Estática> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ponte> .
 
-<http://taxonomy.model/Órgão_Público_sem_CNPJ> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Órgão_Público> .
+<http://taxonomy.model/Ponte_Ferroviária> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ponte> .
 
-<http://taxonomy.model/Acionista> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Sócio> .
+<http://taxonomy.model/Ponte_Ideal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ponte> .
 
-<http://taxonomy.model/Autorizatária_Especial> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Autorizatária_de_TT>,
-        <http://taxonomy.model/Outorgado> .
+<http://taxonomy.model/Ponte_Móvel> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ponte> .
 
-<http://taxonomy.model/Comprador> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+<http://taxonomy.model/Ponte_Rodoviária> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ponte> .
 
-<http://taxonomy.model/Concessionária_Rodoviária_com_TRO> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Concessionária_Rodoviária> .
+<http://taxonomy.model/Ponte_Utilitária> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ponte> .
 
-<http://taxonomy.model/Contrato_de_Prestação_de_Serviço_de_Transporte> a owl:Class .
+<http://taxonomy.model/Ponte_com_Defeito> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ponte> .
 
-<http://taxonomy.model/Cotador> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+<http://taxonomy.model/Ponte_em_Arco> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ponte> .
 
-<http://taxonomy.model/Empresa_com_Capital_de_Terceiros> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Empresa_Regulada_Fiscalizada> .
+<http://taxonomy.model/Ponte_em_Caixão> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ponte_em_Viga> .
 
-<http://taxonomy.model/Entidade_Pública_em_CA> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Convenente>,
-        <http://taxonomy.model/Entidade_Pública> .
+<http://taxonomy.model/Ponte_em_Laje> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ponte_em_Viga> .
 
-<http://taxonomy.model/Fonte_de_Capital> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+<http://taxonomy.model/Ponte_em_Treliça> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ponte_em_Viga> .
 
-<http://taxonomy.model/Operadora_de_Meio_de_Pagamento> a owl:Class .
+<http://taxonomy.model/Posto_da_PRF> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Edificação_de_Rodovia> .
 
-<http://taxonomy.model/Pessoa_com_TAC> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+<http://taxonomy.model/Posto_de_Fiscalização_Fazendária> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Edificação_de_Rodovia> .
 
-<http://taxonomy.model/Poder_Público> a owl:Class .
+<http://taxonomy.model/Posto_de_Fiscalização_da_ANTT> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Posto_de_Fiscalização_Rodoviária> .
 
-<http://taxonomy.model/Provedor_de_Serviço> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa_Jurídica> .
+<http://taxonomy.model/Posto_de_Fiscalização_de_OC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Posto_de_Fiscalização_Rodoviária> .
 
-<http://taxonomy.model/Responsável_por_Serviço_Delegado> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa_Jurídica> .
+<http://taxonomy.model/Praça_Bidirecional> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Praça_de_Pedágio> .
 
-<http://taxonomy.model/Sociedade_de_Propósito_Específico> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Empresa>,
-        <http://taxonomy.model/Sociedade_Anônima> .
+<http://taxonomy.model/Praça_Unidirecional> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Praça_de_Pedágio> .
 
-<http://taxonomy.model/Solicitado> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+<http://taxonomy.model/Praça_de_Pedágio_Autorizada> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Praça_de_Pedágio> .
 
-<http://taxonomy.model/Solicitante> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+<http://taxonomy.model/Praça_de_Pedágio_Auxiliar> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Praça_de_Pedágio> .
 
-<http://taxonomy.model/Órgão_Conveniado> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Convenente>,
-        <http://taxonomy.model/Órgão_Público> .
+<http://taxonomy.model/Produto_Adquirido_em_Convênio> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Produto> .
 
-<http://taxonomy.model/Órgão_Responsável_por_Fiscalização> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Órgão_Público> .
+<http://taxonomy.model/Produto_Cotado_Coletivamente> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Produto_Cotado> .
 
-<http://taxonomy.model/Agente> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa_Física> .
+<http://taxonomy.model/Produto_Cotado_Individualmente> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Produto_Cotado> .
 
-<http://taxonomy.model/Agência_Reguladora> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa_Jurídica> .
+<http://taxonomy.model/Quota_como_Ativo> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Participação_em_Empresa> .
 
-<http://taxonomy.model/Autorizatária_de_TRIIP_por_Fretamento> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Autorizatária_de_TT> .
+<http://taxonomy.model/Radar> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Aparelho_de_Fiscalização> .
 
-<http://taxonomy.model/Autorizatária_de_TT> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Empresa_Regulada> .
+<http://taxonomy.model/Rampa> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Componente_Rodoviário>,
+        <http://taxonomy.model/Elemento_Linear> .
 
-<http://taxonomy.model/Concessionária> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Empresa_Originária_de_Licitação>,
-        <http://taxonomy.model/Empresa_Regulada>,
-        <http://taxonomy.model/Outorgado>,
-        <http://taxonomy.model/Sociedade_de_Propósito_Específico> .
+<http://taxonomy.model/Rodovia_Arterial> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Rodovia> .
 
-<http://taxonomy.model/Empresa_Originária_de_Licitação> a owl:Class .
+<http://taxonomy.model/Rodovia_Coletora> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Rodovia> .
 
-<http://taxonomy.model/Fiscal> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa_Física> .
+<http://taxonomy.model/Rodovia_Diagonal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Rodovia_Federal> .
 
-<http://taxonomy.model/Fiscal_em_Fiscalização_em_Equipe> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Fiscal_2> .
+<http://taxonomy.model/Rodovia_Estadual> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Rodovia> .
 
-<http://taxonomy.model/Infrator_Reincidente> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Infrator> .
+<http://taxonomy.model/Rodovia_Local> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Rodovia> .
 
-<http://taxonomy.model/Sociedade_Anônima> a owl:Class .
+<http://taxonomy.model/Rodovia_Longitudinal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Rodovia_Federal> .
 
-<http://taxonomy.model/Órgão> a owl:Class .
+<http://taxonomy.model/Rodovia_Municipal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Rodovia> .
 
-<http://taxonomy.model/Concessionária_Rodoviária_Convenente> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Concessionária_Rodoviária>,
-        <http://taxonomy.model/Convenente> .
+<http://taxonomy.model/Rodovia_Radial> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Rodovia_Federal> .
 
-<http://taxonomy.model/Empresa_Regulada> a owl:Class .
+<http://taxonomy.model/Rodovia_Transversal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Rodovia_Federal> .
 
-<http://taxonomy.model/Empresa_Regulada_Fiscalizada> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Empresa_Regulada> .
+<http://taxonomy.model/Rodovia_Vicinal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Rodovia> .
 
-<http://taxonomy.model/Infrator> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+<http://taxonomy.model/Rodovia_com_Fiscalização> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Rodovia> .
 
-<http://taxonomy.model/Infrator_por_InPraTe> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Infrator> .
+<http://taxonomy.model/Rodovia_de_Ligação> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Rodovia_Federal> .
 
-<http://taxonomy.model/Interventor> a owl:Class .
+<http://taxonomy.model/Rotatória> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Interseção> .
 
-<http://taxonomy.model/Objeto_Fiscalizado> a owl:Class .
+<http://taxonomy.model/Sarjeta> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Obra_de_Arte_Corrente_Pontual> .
 
-<http://taxonomy.model/Outorgado> a owl:Class .
+<http://taxonomy.model/Segmento_Homogêneo> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Elemento_Linear> .
 
-<http://taxonomy.model/Parente_em_Linha_Reta> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Parente> .
+<http://taxonomy.model/Serviço_Executado_em_Concessão_Rodoviária> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Serviço_Executado>,
+        <http://taxonomy.model/Serviço_em_Concessão_Rodoviária> .
 
-<http://taxonomy.model/Sócio> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+<http://taxonomy.model/Serviço_de_Conservação> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Serviço_com_Intervenção> .
 
-<http://taxonomy.model/Órgão_Público> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Órgão> .
+<http://taxonomy.model/Serviço_de_Manutenção_Delegado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Serviço_Delegado>,
+        <http://taxonomy.model/Serviço_de_Manutenção> .
 
-<http://taxonomy.model/Empresa> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa_Jurídica> .
+<http://taxonomy.model/Serviço_de_Melhoramento> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Serviço_com_Intervenção> .
 
-<http://taxonomy.model/Entidade_Pública> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa_Jurídica> .
+<http://taxonomy.model/Serviço_de_Monitoração> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Serviço_de_Operação> .
 
-<http://taxonomy.model/Concessionária_Rodoviária> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Concessionária>,
-        <http://taxonomy.model/Provedor_de_Serviço> .
+<http://taxonomy.model/Serviço_de_Recuperação> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Serviço_com_Intervenção> .
 
-<http://taxonomy.model/Parente_em_Linha_Colateral> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Parente> .
+<http://taxonomy.model/Serviços_de_Auxílio_aos_Usuários> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Serviço_de_Operação> .
 
-<http://taxonomy.model/Convenente> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa_Jurídica> .
+<http://taxonomy.model/Seta_Direcional> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Inscrição_no_Pavimento> .
 
-<http://taxonomy.model/Parente> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa_Física> .
+<http://taxonomy.model/Sinalização_Aérea> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sinalização_por_Placa> .
 
-<http://taxonomy.model/Fiscal_2> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa_Física> .
+<http://taxonomy.model/Sinalização_Permanente> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sinalização_Rodoviária> .
 
-<http://taxonomy.model/Pessoa_Física> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+<http://taxonomy.model/Sinalização_Rodoviária_Ideal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sinalização_Rodoviária> .
 
-<http://taxonomy.model/Pessoa_Jurídica> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+<http://taxonomy.model/Sinalização_Rodoviária_com_Defeito> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sinalização_Rodoviária> .
 
-<http://taxonomy.model/Parente_Direto> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Parente> .
+<http://taxonomy.model/Sinalização_Semafórica> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Elemento_Pontual>,
+        <http://taxonomy.model/Sinalização_Rodoviária> .
 
-<http://taxonomy.model/Pessoa> a owl:Class .
+<http://taxonomy.model/Sinalização_Temporária> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sinalização_Rodoviária> .
+
+<http://taxonomy.model/Sinalização_Turística> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sinalização_por_Placa> .
+
+<http://taxonomy.model/Sinalização_Vertical> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sinalização_por_Placa> .
+
+<http://taxonomy.model/Sinalização_de_Advertência> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sinalização_por_Placa> .
+
+<http://taxonomy.model/Sinalização_de_Educação> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sinalização_por_Placa> .
+
+<http://taxonomy.model/Sinalização_de_Indicação> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sinalização_por_Placa> .
+
+<http://taxonomy.model/Sinalização_de_Obra> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sinalização_por_Placa> .
+
+<http://taxonomy.model/Sinalização_de_Regulamentação> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sinalização_por_Placa> .
+
+<http://taxonomy.model/Sinalização_de_Serviço_Auxiliar> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sinalização_por_Placa> .
+
+<http://taxonomy.model/Sistema_de_Drenagem_Ideal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sistema_de_Drenagem> .
+
+<http://taxonomy.model/Sistema_de_Drenagem_com_Defeito> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sistema_de_Drenagem> .
+
+<http://taxonomy.model/Símbolo> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Inscrição_no_Pavimento> .
+
+<http://taxonomy.model/Terreno_Alugado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bem_Alugado>,
+        <http://taxonomy.model/Terreno>,
+        <http://taxonomy.model/Terreno_Explorado> .
+
+<http://taxonomy.model/Terreno_Arrendado_Explorado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Terreno_Arrendado>,
+        <http://taxonomy.model/Terreno_Explorado> .
+
+<http://taxonomy.model/Terreno_Arrendado_Imobilizado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Terreno_Arrendado>,
+        <http://taxonomy.model/Terreno_Imobilizado> .
+
+<http://taxonomy.model/Terreno_Cedido> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bem_Cedido>,
+        <http://taxonomy.model/Terreno>,
+        <http://taxonomy.model/Terreno_Explorado> .
+
+<http://taxonomy.model/Terreno_Comprado_Explorado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Terreno_Comprado>,
+        <http://taxonomy.model/Terreno_Explorado> .
+
+<http://taxonomy.model/Terreno_Comprado_Imobilizado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Terreno_Comprado>,
+        <http://taxonomy.model/Terreno_Imobilizado> .
+
+<http://taxonomy.model/Trecho_Duplicado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_com_Canteiro_Central> .
+
+<http://taxonomy.model/Trecho_Físico_Estadual> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Rodoviário_Físico> .
+
+<http://taxonomy.model/Trecho_Físico_Federal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Rodoviário_Físico> .
+
+<http://taxonomy.model/Trecho_Multifaixas> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Pavimentado> .
+
+<http://taxonomy.model/Trecho_Natural_Implantação> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Leito_Natural> .
+
+<http://taxonomy.model/Trecho_Pista_Tripla> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_com_Canteiro_Central> .
+
+<http://taxonomy.model/Trecho_Planejada_Implantação> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Planejado> .
+
+<http://taxonomy.model/Trecho_Rodoviário_Concedido_com_Serviço> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Rodoviário_Concedido> .
+
+<http://taxonomy.model/Trecho_Rodoviário_Físico_Ideal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Rodoviário_Físico> .
+
+<http://taxonomy.model/Trecho_Rodoviário_Físico_com_Atendimento> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Rodoviário_Físico> .
+
+<http://taxonomy.model/Trecho_Rodoviário_Físico_com_Defeito> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Rodoviário_Físico> .
+
+<http://taxonomy.model/Trecho_Rodoviário_Multipista> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Rodoviário_Físico> .
+
+<http://taxonomy.model/Trecho_Rodoviário_com_Acidente> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Rodoviário_Físico> .
+
+<http://taxonomy.model/Trecho_Rodoviário_em_Obra> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Rodoviário_Físico> .
+
+<http://taxonomy.model/Trecho_Travessia> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Rodoviário_Físico> .
+
+<http://taxonomy.model/Trecho_com_Cooperação_Técnica> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Rodoviário_Concedido> .
+
+<http://taxonomy.model/Trecho_com_Manutenção_Conveniada> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Rodoviário_Concedido> .
+
+<http://taxonomy.model/Trecho_de_Monitoração> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Elemento_Linear> .
+
+<http://taxonomy.model/Trecho_em_Obra_de_Duplicação> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Pavimentado> .
+
+<http://taxonomy.model/Trecho_em_Obra_de_Pavimentação> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Implantado> .
+
+<http://taxonomy.model/Trevo_Completo> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trevo> .
+
+<http://taxonomy.model/Trevo_Incompleto> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trevo> .
+
+<http://taxonomy.model/Túnel_Ideal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Túnel> .
+
+<http://taxonomy.model/Túnel_com_Defeito> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Túnel> .
+
+<http://taxonomy.model/Unidade_de_Conservação> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Área_de_Preservação_Ambiental> .
+
+<http://taxonomy.model/Variante> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Via_de_Tráfego_Rodoviário> .
+
+<http://taxonomy.model/Via_Aérea> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Via> .
+
+<http://taxonomy.model/Via_Fluvial> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Via_Aquática> .
+
+<http://taxonomy.model/Via_Lacustre> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Via_Aquática> .
+
+<http://taxonomy.model/Via_Lateral> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Via_de_Tráfego_Rodoviário> .
+
+<http://taxonomy.model/Via_Marginal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Via_de_Tráfego_Rodoviário> .
+
+<http://taxonomy.model/Via_Marítima> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Via_Aquática> .
+
+<http://taxonomy.model/Via_Modificada_em_Concessão> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Elemento_Rodoviário_Modificado_em_Concessão>,
+        <http://taxonomy.model/Via_de_Tráfego_Rodoviário> .
+
+<http://taxonomy.model/Via_de_Tráfego_Ferroviário> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Via_Terrestre> .
+
+<http://taxonomy.model/Área_Destinada_a_Reforma_Agrária> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Área> .
+
+<http://taxonomy.model/Área_Estadual> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Área_Pública> .
+
+<http://taxonomy.model/Área_Indígena> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Área_Protegida> .
+
+<http://taxonomy.model/Área_Livre> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Área> .
+
+<http://taxonomy.model/Área_Municipal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Área_Pública> .
+
+<http://taxonomy.model/Área_Privada> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Área> .
+
+<http://taxonomy.model/Área_Quilombola> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Área_Protegida> .
+
+<http://taxonomy.model/Área_da_União> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Área_Pública> .
+
+<http://taxonomy.model/Área_de_Interesse_Público> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Área> .
+
+<http://taxonomy.model/Área_de_Preservação_Permanente> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Área_de_Preservação_Ambiental> .
+
+<http://taxonomy.model/Bem_da_Concessão> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Explorado> .
+
+<http://taxonomy.model/Elemento_de_Utilidade_Pública> a owl:Class .
+
+<http://taxonomy.model/Imóvel_Desapropriado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Elemento_de_Utilidade_Pública>,
+        <http://taxonomy.model/Imóvel_em_Área_de_Interesse_Público> .
+
+<http://taxonomy.model/Imóvel_em_Área_de_Interesse_Público> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Imóvel> .
+
+<http://taxonomy.model/Ponte_Suspensa> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ponte> .
+
+<http://taxonomy.model/Produto_Solicitado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Produto> .
+
+<http://taxonomy.model/Serviço_Delegado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Serviço> .
+
+<http://taxonomy.model/Serviço_Executado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Serviço> .
+
+<http://taxonomy.model/Serviço_de_Manutenção> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Serviço_com_Intervenção> .
+
+<http://taxonomy.model/Trecho_Implantado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Plataforma> .
+
+<http://taxonomy.model/Trecho_Leito_Natural> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Rodoviário_Físico> .
+
+<http://taxonomy.model/Trecho_Planejado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Rodoviário_Físico> .
+
+<http://taxonomy.model/Trecho_Rodoviário_em_Lote> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Rodoviário_Físico> .
+
+<http://taxonomy.model/Ativo_Investimento> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Permanente> .
+
+<http://taxonomy.model/Ação> a owl:Class .
+
+<http://taxonomy.model/Balança_Fixa> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Balança> .
+
+<http://taxonomy.model/Bem_Construído> a owl:Class .
+
+<http://taxonomy.model/Bem_Operacional_Arrendado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bem_Arrendado>,
+        <http://taxonomy.model/Bem_Operacional> .
+
+<http://taxonomy.model/Bem_Operacional_Comprado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bem_Comprado>,
+        <http://taxonomy.model/Bem_Operacional> .
+
+<http://taxonomy.model/Bem_Operacional_Imobilizado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Depreciável> .
+
+<http://taxonomy.model/Componente_de_Iluminação> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Componente_Rodoviário>,
+        <http://taxonomy.model/Elemento_Pontual> .
+
+<http://taxonomy.model/Elemento_Rodoviário_Modificado_em_Concessão> a owl:Class .
+
+<http://taxonomy.model/Entroncamento> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Interseção> .
+
+<http://taxonomy.model/Estabelecimento> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Imóvel_Edificado> .
+
+<http://taxonomy.model/Imóvel_Edificado_Arrendado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bem_Arrendado>,
+        <http://taxonomy.model/Imóvel_Edificado> .
+
+<http://taxonomy.model/Imóvel_Edificado_Comprado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bem_Comprado>,
+        <http://taxonomy.model/Imóvel_Edificado> .
+
+<http://taxonomy.model/Imóvel_Edificado_Construído> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bem_Construído>,
+        <http://taxonomy.model/Imóvel_Edificado> .
+
+<http://taxonomy.model/Marca_Longitudinal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Marca_de_Sinalização> .
+
+<http://taxonomy.model/Obra_de_Arte_Corrente> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Componente_Rodoviário> .
+
+<http://taxonomy.model/Obra_de_Arte_Especial> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Componente_Rodoviário>,
+        <http://taxonomy.model/Elemento_Linear> .
+
+<http://taxonomy.model/Participação_em_Empresa> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Investimento>,
+        <http://taxonomy.model/Bem_Comprado> .
+
+<http://taxonomy.model/Produto_Cotado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Produto_Solicitado> .
+
+<http://taxonomy.model/Serviço_de_Operação> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Serviço_em_Concessão_Rodoviária> .
+
+<http://taxonomy.model/Sinalização_Horizontal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Elemento_Linear>,
+        <http://taxonomy.model/Sinalização_Rodoviária> .
+
+<http://taxonomy.model/Terreno_Arrendado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bem_Arrendado>,
+        <http://taxonomy.model/Terreno> .
+
+<http://taxonomy.model/Terreno_Comprado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bem_Comprado>,
+        <http://taxonomy.model/Terreno> .
+
+<http://taxonomy.model/Terreno_Imobilizado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Imobilizado> .
+
+<http://taxonomy.model/Trecho_Plataforma> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Rodoviário_Físico> .
+
+<http://taxonomy.model/Trecho_com_Canteiro_Central> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Pavimentado> .
+
+<http://taxonomy.model/Trevo> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Interseção> .
+
+<http://taxonomy.model/Túnel> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Obra_de_Arte_Especial> .
+
+<http://taxonomy.model/Via_Terrestre> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Via> .
+
+<http://taxonomy.model/Área_de_Preservação_Ambiental> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Área_Protegida> .
+
+<http://taxonomy.model/Aparelho_de_Fiscalização> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Componente_Rodoviário>,
+        <http://taxonomy.model/Elemento_Pontual> .
+
+<http://taxonomy.model/Ativo_Imobilizado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Permanente> .
+
+<http://taxonomy.model/Bem_Alugado> a owl:Class .
+
+<http://taxonomy.model/Bem_Arrendado> a owl:Class .
+
+<http://taxonomy.model/Bem_Cedido> a owl:Class .
+
+<http://taxonomy.model/Bem_Material> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Produto> .
+
+<http://taxonomy.model/Cruzamento> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Interseção> .
+
+<http://taxonomy.model/Elemento_Espacial> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Elemento_Georreferenciado> .
+
+<http://taxonomy.model/Elemento_Georreferenciado> a owl:Class .
+
+<http://taxonomy.model/Faixa_de_Domínio> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Elemento_Linear> .
+
+<http://taxonomy.model/Imóvel_Edificado_Imobilizado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Depreciável>,
+        <http://taxonomy.model/Ativo_Imobilizado> .
+
+<http://taxonomy.model/Inscrição_no_Pavimento> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sinalização_Horizontal> .
+
+<http://taxonomy.model/Obra_de_Arte_Corrente_Linear> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Elemento_Linear>,
+        <http://taxonomy.model/Obra_de_Arte_Corrente> .
+
+<http://taxonomy.model/Ponte_em_Viga> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ponte> .
+
+<http://taxonomy.model/Posto_de_Fiscalização_Rodoviária> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Edificação_de_Rodovia> .
+
+<http://taxonomy.model/Posto_de_Pesagem_Veicular> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Edificação_de_Rodovia> .
+
+<http://taxonomy.model/Serviço> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Produto> .
+
+<http://taxonomy.model/Serviço_em_Concessão_Rodoviária> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Serviço> .
+
+<http://taxonomy.model/Trecho_Pavimentado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Plataforma> .
+
+<http://taxonomy.model/Trecho_Rodoviário_Concedido> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Rodoviário_em_Lote> .
+
+<http://taxonomy.model/Via> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Elemento_Linear> .
+
+<http://taxonomy.model/Via_Aquática> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Via> .
+
+<http://taxonomy.model/Área_Protegida> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Área> .
+
+<http://taxonomy.model/Área_Pública> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Área> .
+
+<http://taxonomy.model/Ativo_Depreciável> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Imobilizado> .
+
+<http://taxonomy.model/Ativo_Intangível> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Permanente> .
+
+<http://taxonomy.model/Ativo_Permanente> a owl:Class .
+
+<http://taxonomy.model/Balança> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Elemento_Pontual> .
+
+<http://taxonomy.model/Bem_Operacional> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bem_Material> .
+
+<http://taxonomy.model/Bem_Operacional_Explorado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Explorado> .
+
+<http://taxonomy.model/Imóvel> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Elemento_Espacial> .
+
+<http://taxonomy.model/Marca_de_Sinalização> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sinalização_Horizontal> .
+
+<http://taxonomy.model/Praça_de_Pedágio> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Edificação_de_Rodovia> .
+
+<http://taxonomy.model/Produto> a owl:Class .
+
+<http://taxonomy.model/Região_Política> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Elemento_Espacial> .
+
+<http://taxonomy.model/Serviço_com_Intervenção> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Serviço_em_Concessão_Rodoviária> .
+
+<http://taxonomy.model/Terreno> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Imóvel> .
+
+<http://taxonomy.model/Terreno_Explorado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Explorado> .
+
+<http://taxonomy.model/Ativo_Explorado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Intangível> .
+
+<http://taxonomy.model/Imóvel_Edificado_Explorado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Explorado> .
+
+<http://taxonomy.model/Rodovia_Federal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Rodovia> .
+
+<http://taxonomy.model/Bem_Comprado> a owl:Class .
+
+<http://taxonomy.model/Obra_de_Arte_Corrente_Pontual> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Elemento_Pontual>,
+        <http://taxonomy.model/Obra_de_Arte_Corrente> .
+
+<http://taxonomy.model/Área> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Elemento_Espacial> .
+
+<http://taxonomy.model/Imóvel_Edificado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Imóvel> .
+
+<http://taxonomy.model/Sinalização_Rodoviária> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Componente_Rodoviário> .
+
+<http://taxonomy.model/Sistema_de_Drenagem> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Obra_de_Arte_Corrente_Linear> .
+
+<http://taxonomy.model/Via_de_Tráfego_Rodoviário> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Via_Terrestre> .
+
+<http://taxonomy.model/Rodovia> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Via_de_Tráfego_Rodoviário> .
+
+<http://taxonomy.model/Edificação_de_Rodovia> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Componente_Rodoviário>,
+        <http://taxonomy.model/Elemento_Pontual>,
+        <http://taxonomy.model/Imóvel_Edificado> .
+
+<http://taxonomy.model/Sinalização_por_Placa> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Elemento_Pontual>,
+        <http://taxonomy.model/Sinalização_Rodoviária> .
+
+<http://taxonomy.model/Elemento_Linear> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Elemento_Georreferenciado> .
+
+<http://taxonomy.model/Ponte> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Obra_de_Arte_Especial> .
+
+<http://taxonomy.model/Elemento_Pontual> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Elemento_Georreferenciado> .
+
+<http://taxonomy.model/Interseção> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Componente_Rodoviário>,
+        <http://taxonomy.model/Elemento_Linear> .
+
+<http://taxonomy.model/Trecho_Rodoviário_Físico> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Elemento_Linear> .
+
+<http://taxonomy.model/Componente_Rodoviário> a owl:Class .
 

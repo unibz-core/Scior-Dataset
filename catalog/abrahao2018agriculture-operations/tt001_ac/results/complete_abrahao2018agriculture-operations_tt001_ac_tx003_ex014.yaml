@@ -1,4 +1,4 @@
-Output:
+StartedBy:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -20,7 +20,7 @@ Output:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-Product:
+Finishes:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -42,30 +42,7 @@ Product:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-ServiceOrder:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in:
-  - nk_k_sup
-  input: false
-  is_incomplete: true
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-Input:
+FinishedBy:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -87,7 +64,7 @@ Input:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-Implement:
+Meets:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -109,7 +86,7 @@ Implement:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-Building:
+After:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -131,7 +108,7 @@ Building:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-Resource:
+Contains:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -153,7 +130,7 @@ Resource:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-Machinery:
+Overlaps:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -175,7 +152,7 @@ Machinery:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-Powered:
+MetBy:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -197,7 +174,7 @@ Powered:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-Field:
+Overlapped:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -219,85 +196,18 @@ Field:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-PhysicalObject:
-  can_type: []
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Kind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-NormativeDescription:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-Place:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-SocialObject:
+TimeIntervalRelation:
   can_type: []
   detected_in: []
   input: true
   is_incomplete: false
   is_type:
-  - gufo:SubKind
+  - gufo:Kind
   - gufo:RigidType
   - gufo:Sortal
   not_type:
   - gufo:AntiRigidType
   - gufo:Category
-  - gufo:Kind
   - gufo:Mixin
   - gufo:NonRigidType
   - gufo:NonSortal
@@ -306,8 +216,9 @@ SocialObject:
   - gufo:Role
   - gufo:RoleMixin
   - gufo:SemiRigidType
+  - gufo:SubKind
 ---
-Tool:
+Contemporal:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -329,7 +240,51 @@ Tool:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-Vehicle:
+Before:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Phase
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:SemiRigidType
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type:
+  - gufo:Sortal
+  not_type:
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:PhaseMixin
+  - gufo:RoleMixin
+---
+During:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Phase
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:SemiRigidType
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type:
+  - gufo:Sortal
+  not_type:
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:PhaseMixin
+  - gufo:RoleMixin
+---
+Starts:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType

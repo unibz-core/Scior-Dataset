@@ -1,4 +1,4 @@
-Investment_Platform_(Evans_and_Gawer_2016):
+Paid_Price:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -20,7 +20,7 @@ Investment_Platform_(Evans_and_Gawer_2016):
   is_type: []
   not_type: []
 ---
-Crowdfunding_Platform_(Haas_and_Blohm__2014):
+Booking_Price:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -42,7 +42,7 @@ Crowdfunding_Platform_(Haas_and_Blohm__2014):
   is_type: []
   not_type: []
 ---
-One-Sided_Platform:
+Highest_Price_Offer:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -64,29 +64,7 @@ One-Sided_Platform:
   is_type: []
   not_type: []
 ---
-Digital_Platform_(Offering):
-  can_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:RigidType
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
----
-Sharing_Platform_(Frenken_and_Schor__2017):
+Price_set_by_Provider:
   can_type: []
   detected_in:
   - nk_k_sup
@@ -109,7 +87,7 @@ Sharing_Platform_(Frenken_and_Schor__2017):
   - gufo:RoleMixin
   - gufo:SemiRigidType
 ---
-One-Sided_Platform_(Filistrucchi_et_al._2014):
+Received_Transaction_Price:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -131,7 +109,7 @@ One-Sided_Platform_(Filistrucchi_et_al._2014):
   is_type: []
   not_type: []
 ---
-On-Demand_Platform_(Mamonova_2018):
+Suggested_Price:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -153,7 +131,7 @@ On-Demand_Platform_(Mamonova_2018):
   is_type: []
   not_type: []
 ---
-Multi-Sided_Platform_(Hagiu_and_Wright_2015):
+Price:
   can_type:
   - gufo:Category
   - gufo:Kind
@@ -175,7 +153,30 @@ Multi-Sided_Platform_(Hagiu_and_Wright_2015):
   - gufo:Role
   - gufo:RoleMixin
 ---
-Second-Hand_P2P_platform_(Acquier_et_al._2017):
+Job_Fee:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Phase
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:SemiRigidType
+  - gufo:SubKind
+  detected_in:
+  - nk_k_sup
+  input: false
+  is_incomplete: true
+  is_type:
+  - gufo:Sortal
+  not_type:
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:PhaseMixin
+  - gufo:RoleMixin
+---
+Price_per_Quantity:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -197,7 +198,7 @@ Second-Hand_P2P_platform_(Acquier_et_al._2017):
   is_type: []
   not_type: []
 ---
-Two-Sided_Platform:
+Proposed_Price:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -219,7 +220,29 @@ Two-Sided_Platform:
   is_type: []
   not_type: []
 ---
-Multi-Sided_Transaction_platform_(Evans_and_Gawer_2016):
+Market_Price:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Offering_Price:
   can_type:
   - gufo:Category
   - gufo:Kind
@@ -241,36 +264,42 @@ Multi-Sided_Transaction_platform_(Evans_and_Gawer_2016):
   - gufo:Role
   - gufo:RoleMixin
 ---
-"Digital_Marketplace_(T\uFFFDusher_and_Laudien_2018)":
+Feature-Based_Price:
   can_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:RigidType
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type:
   - gufo:AntiRigidType
+  - gufo:NonRigidType
   - gufo:Phase
-  - gufo:PhaseMixin
+  - gufo:RigidType
   - gufo:Role
+  - gufo:SemiRigidType
+  - gufo:SubKind
+  detected_in:
+  - nk_k_sup
+  input: false
+  is_incomplete: true
+  is_type:
+  - gufo:Sortal
+  not_type:
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-P2P_Sharing_and_CC_Platform_(Chasin_et_al._2018):
+Transaction_Price:
   can_type:
+  - gufo:AntiRigidType
   - gufo:Category
   - gufo:Kind
   - gufo:Mixin
   - gufo:NonRigidType
   - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
   - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
   - gufo:SemiRigidType
   - gufo:Sortal
   - gufo:SubKind
@@ -278,9 +307,48 @@ P2P_Sharing_and_CC_Platform_(Chasin_et_al._2018):
   input: false
   is_incomplete: false
   is_type: []
-  not_type:
+  not_type: []
+---
+Paid_Transaction_Price:
+  can_type:
   - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
   - gufo:Phase
   - gufo:PhaseMixin
+  - gufo:RigidType
   - gufo:Role
   - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Accepted_Quote_Price:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []

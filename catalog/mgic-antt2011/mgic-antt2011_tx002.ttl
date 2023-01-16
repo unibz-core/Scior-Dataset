@@ -1,67 +1,85 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Arrendamento_Financeiro_Imobilizado> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Arrendamento_Financeiro>,
-        <http://taxonomy.model/Investimento_em_Imobilizado> .
+<http://taxonomy.model/Atividade_Extraordinária> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Atividade_Operacional> .
 
-<http://taxonomy.model/Arrendamento_Financeiro_Intangível> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Arrendamento_Financeiro>,
-        <http://taxonomy.model/Investimento_em_Intangível> .
+<http://taxonomy.model/Atividade_Financeira> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Atividade_Não_Operacional> .
 
-<http://taxonomy.model/Arrendamento_Operacional> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Arrendamento>,
-        <http://taxonomy.model/Investimento_em_Intangível> .
+<http://taxonomy.model/Atividade_Ordinária> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Atividade_Operacional> .
 
-<http://taxonomy.model/Cessão_de_Bens> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Aquisição_de_Permanente> .
+<http://taxonomy.model/Exploração_Utilidades> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Exploração_de_Faixa_de_Domínio> .
 
-<http://taxonomy.model/Compra_Especulativa> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Compra_de_Bem> .
+<http://taxonomy.model/Exploração_de_Acesso> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Exploração_de_FD_com_Projeto_de_Engenharia>,
+        <http://taxonomy.model/Exploração_de_Faixa_de_Domínio_sem_Receita> .
 
-<http://taxonomy.model/Compra_Imobilizado> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Compra_de_Bem>,
-        <http://taxonomy.model/Investimento_em_Imobilizado> .
+<http://taxonomy.model/Exploração_de_Faixa_de_Domínio_Especial> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Exploração_de_Faixa_de_Domínio> .
 
-<http://taxonomy.model/Compra_Intangível> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Compra_de_Bem>,
-        <http://taxonomy.model/Investimento_em_Intangível> .
+<http://taxonomy.model/Exploração_de_Publicidade> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Exploração_da_Faixa_de_Domínio_com_Receita> .
 
-<http://taxonomy.model/Construção_de_Imobilizado> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Construção>,
-        <http://taxonomy.model/Investimento_em_Imobilizado> .
+<http://taxonomy.model/Indenização_de_Extinção_de_Concessão> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fonte_de_Receita_Rodoviária> .
 
-<http://taxonomy.model/Construção_de_Intangível> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Construção>,
-        <http://taxonomy.model/Investimento_em_Intangível> .
+<http://taxonomy.model/Pagamento_de_Pedágio> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Receita_Rodoviária_Ordinária> .
 
-<http://taxonomy.model/Emissão_de_Debênture> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Obrigação_Financeira> .
+<http://taxonomy.model/Receita_Acessória> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Receita_Rodoviária_Extraordinária> .
 
-<http://taxonomy.model/Empréstimo> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Obrigação_Financeira> .
+<http://taxonomy.model/Receita_Alternativa> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Receita_Rodoviária_Extraordinária> .
 
-<http://taxonomy.model/Financiamento> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Obrigação_Financeira> .
+<http://taxonomy.model/Receita_Complementar> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Receita_Rodoviária_Extraordinária> .
 
-<http://taxonomy.model/Arrendamento> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Aquisição_de_Permanente> .
+<http://taxonomy.model/Receita_de_Aplicações_Financeiras> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fonte_de_Receita_Rodoviária> .
 
-<http://taxonomy.model/Arrendamento_Financeiro> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Arrendamento>,
-        <http://taxonomy.model/Obrigação_Financeira> .
+<http://taxonomy.model/Receita_de_Convênio> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Receita_Rodoviária_Extraordinária> .
 
-<http://taxonomy.model/Construção> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Aquisição_de_Permanente> .
+<http://taxonomy.model/Receita_de_Projeto_Associado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Receita_Rodoviária_Extraordinária> .
 
-<http://taxonomy.model/Compra_de_Bem> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Aquisição_de_Permanente> .
+<http://taxonomy.model/Venda_de_Ativo> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Atividade_Não_Operacional>,
+        <http://taxonomy.model/Receita_Rodoviária_Extraordinária> .
 
-<http://taxonomy.model/Investimento_em_Imobilizado> a owl:Class .
+<http://taxonomy.model/Venda_de_Sucata> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Atividade_Não_Operacional>,
+        <http://taxonomy.model/Receita_Rodoviária_Extraordinária> .
 
-<http://taxonomy.model/Aquisição_de_Permanente> a owl:Class .
+<http://taxonomy.model/Exploração_da_Faixa_de_Domínio_com_Receita> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Exploração_de_Faixa_de_Domínio>,
+        <http://taxonomy.model/Receita_Rodoviária_Extraordinária> .
 
-<http://taxonomy.model/Investimento_em_Intangível> a owl:Class .
+<http://taxonomy.model/Exploração_de_FD_com_Projeto_de_Engenharia> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Exploração_de_Faixa_de_Domínio> .
 
-<http://taxonomy.model/Obrigação_Financeira> a owl:Class .
+<http://taxonomy.model/Exploração_de_Faixa_de_Domínio_sem_Receita> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Exploração_de_Faixa_de_Domínio> .
+
+<http://taxonomy.model/Receita_Rodoviária_Ordinária> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fonte_de_Receita_Rodoviária> .
+
+<http://taxonomy.model/Atividade> a owl:Class .
+
+<http://taxonomy.model/Atividade_Operacional> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Atividade> .
+
+<http://taxonomy.model/Atividade_Não_Operacional> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Atividade> .
+
+<http://taxonomy.model/Fonte_de_Receita_Rodoviária> a owl:Class .
+
+<http://taxonomy.model/Exploração_de_Faixa_de_Domínio> a owl:Class .
+
+<http://taxonomy.model/Receita_Rodoviária_Extraordinária> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fonte_de_Receita_Rodoviária> .
 

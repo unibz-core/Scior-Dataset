@@ -1,26 +1,4 @@
-Frictioned_Sediment:
-  can_type:
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:Sortal
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:NonRigidType
-  - gufo:AntiRigidType
-  not_type:
-  - gufo:RigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:SubKind
-  - gufo:SemiRigidType
-  - gufo:Mixin
----
-Transported_Load:
+Obstacled_Loaded_Water:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -42,7 +20,7 @@ Transported_Load:
   is_type: []
   not_type: []
 ---
-Blocked_Load:
+Unloading_Vehicle:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -64,7 +42,7 @@ Blocked_Load:
   is_type: []
   not_type: []
 ---
-Captured_Sediment:
+Sediment_Receiver:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -86,7 +64,7 @@ Captured_Sediment:
   is_type: []
   not_type: []
 ---
-Drawn_Sediment:
+Vehicle:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -108,53 +86,119 @@ Drawn_Sediment:
   is_type: []
   not_type: []
 ---
-Sediment:
+Still_Water:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
+  - gufo:Kind
   - gufo:Mixin
   - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
   - gufo:PhaseMixin
   - gufo:RigidType
+  - gufo:Role
   - gufo:RoleMixin
   - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Tractive_Water:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Channel_Sculptor:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Erosive_Agent:
+  can_type: []
   detected_in:
-  - ns_s_spe
+  - nk_k_sup
   input: false
   is_incomplete: true
   is_type:
-  - gufo:NonSortal
-  not_type:
   - gufo:Sortal
-  - gufo:Kind
-  - gufo:Phase
+  - gufo:NonRigidType
+  - gufo:AntiRigidType
   - gufo:Role
+  not_type:
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:PhaseMixin
+  - gufo:RoleMixin
+  - gufo:RigidType
   - gufo:SubKind
+  - gufo:SemiRigidType
+  - gufo:Phase
 ---
-Deposited_Sediment:
+Frictioning_Water:
   can_type: []
   detected_in:
-  - ns_s_spe
+  - nk_k_sup
   input: true
   is_incomplete: true
   is_type:
-  - gufo:RoleMixin
+  - gufo:Role
   - gufo:AntiRigidType
   - gufo:NonRigidType
-  - gufo:NonSortal
+  - gufo:Sortal
   not_type:
+  - gufo:Category
   - gufo:Kind
   - gufo:Mixin
+  - gufo:NonSortal
   - gufo:Phase
   - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  - gufo:Category
   - gufo:RigidType
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
 ---
-Obstacled_Sediment:
+Low_Energy_Water:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -176,24 +220,90 @@ Obstacled_Sediment:
   is_type: []
   not_type: []
 ---
-Unstable_Sediment:
+High_Energy_Water:
   can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
   - gufo:NonSortal
   - gufo:Phase
   - gufo:PhaseMixin
+  - gufo:RigidType
   - gufo:Role
   - gufo:RoleMixin
+  - gufo:SemiRigidType
   - gufo:Sortal
+  - gufo:SubKind
   detected_in: []
   input: false
   is_incomplete: false
-  is_type:
-  - gufo:NonRigidType
+  is_type: []
+  not_type: []
+---
+Water:
+  can_type:
   - gufo:AntiRigidType
-  not_type:
-  - gufo:RigidType
   - gufo:Category
   - gufo:Kind
-  - gufo:SubKind
-  - gufo:SemiRigidType
   - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Moving_Water:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Water_Stream:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []

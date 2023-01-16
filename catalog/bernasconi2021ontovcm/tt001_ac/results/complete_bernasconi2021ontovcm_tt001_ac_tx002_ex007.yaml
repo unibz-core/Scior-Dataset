@@ -1,4 +1,4 @@
-Sampled_Animal:
+Full_Consensus_Sequence:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -20,7 +20,30 @@ Sampled_Animal:
   is_type: []
   not_type: []
 ---
-Virus:
+Sequence:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  detected_in:
+  - ns_s_spe
+  input: false
+  is_incomplete: true
+  is_type:
+  - gufo:NonSortal
+  not_type:
+  - gufo:Sortal
+  - gufo:Kind
+  - gufo:Phase
+  - gufo:Role
+  - gufo:SubKind
+---
+Codon:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -42,7 +65,7 @@ Virus:
   is_type: []
   not_type: []
 ---
-Biological_Organism:
+Reference_Sequence:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -64,7 +87,7 @@ Biological_Organism:
   is_type: []
   not_type: []
 ---
-Animal:
+Protein:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -86,7 +109,7 @@ Animal:
   is_type: []
   not_type: []
 ---
-Author:
+Nucleotide_Subsequence:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -108,7 +131,7 @@ Author:
   is_type: []
   not_type: []
 ---
-Analyst:
+Virus_Sequence:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -130,7 +153,7 @@ Analyst:
   is_type: []
   not_type: []
 ---
-Project_Participant:
+Coding_Region:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -152,157 +175,25 @@ Project_Participant:
   is_type: []
   not_type: []
 ---
-Living_Host:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-In_Vitro_Host:
+Regular_Sequence:
   can_type: []
   detected_in:
-  - nk_k_sup
+  - ns_s_spe
   input: true
   is_incomplete: true
   is_type:
-  - gufo:Role
+  - gufo:RoleMixin
   - gufo:AntiRigidType
   - gufo:NonRigidType
-  - gufo:Sortal
+  - gufo:NonSortal
   not_type:
-  - gufo:Category
   - gufo:Kind
   - gufo:Mixin
-  - gufo:NonSortal
   - gufo:Phase
   - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-Virus_Host:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
   - gufo:Role
-  - gufo:RoleMixin
   - gufo:SemiRigidType
   - gufo:Sortal
   - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Cell_Line:
-  can_type:
-  - gufo:AntiRigidType
   - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
   - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Person:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Bat:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Researcher:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
