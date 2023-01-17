@@ -188,7 +188,7 @@ The _csv_ file contains the following columns:
 - `taxonomy_name`: a string representing name of the taxonomy file in which the inconsistency was detected.
 - `execution_number`: is the first column of the _csv_ file. Registers the number of the execution of the test in which the inconsistency was detected
 - `inconsistent_class_name`: the model's class used as input on the test in which the inconsistency was detected
-- `inconsistent_class_stereotype`: the input class's gUFO classification (i.e., its OntoUML stereotype mapped to a gUFO endurant type)
+- `inconsistent_class_classification`: the input class's gUFO classification (i.e., its OntoUML stereotype mapped to a gUFO endurant type)
 
 The Scior-Tester creates this file only if Test 1 detects at least one inconsistency in a dataset during its execution. If created, only one file is created for each test. I.e., a single file is going to be created in the `catalog/` folder.
 
