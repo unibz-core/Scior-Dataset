@@ -89,7 +89,11 @@ The generated csv file contains the following columns:
 
 - `taxonomy_name`: a string with the name of the dataset file (e.g., _abrahao2018agriculture-operations_tx001.ttl_)
 - `dataset_name`: a string with the dataset that contains this taxonomy (e.g., _abrahao2018agriculture-operations_)
-- `num_classes`: an integer representing the number of classes that the taxonomy has (e.g., 6)
+- `num_mapped_classes`: an integer representing the number of classes that the taxonomy has that have classifications different than the string "other"
+- `num_other_classes`: an integer representing the number of classes that the taxonomy has that are classified with the string "other"
+- `num_classes`: an integer representing the number of classes that the taxonomy has
+
+Note that the sum of `num_mapped_classes` and `num_other_classes` must equal `num_classes`. These fields classifications are related to the mapping process ([described here](https://github.com/unibz-core/OntCatOWL-Tester/blob/main/documentation/OntCatOWL-Tester-Build.md#ontouml-stereotype-and-gufo-classification)).
 
 A single `taxonomies.csv` file, located in the `/catalog` folder is created after the build function is completed.
 
