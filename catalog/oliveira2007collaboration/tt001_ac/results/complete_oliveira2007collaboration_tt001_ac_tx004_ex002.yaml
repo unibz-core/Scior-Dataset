@@ -1,4 +1,4 @@
-VerbalLanguage:
+RealSite:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -20,33 +20,32 @@ VerbalLanguage:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-NonVerbalLanguage:
-  can_type: []
-  detected_in:
-  - nk_k_sup
-  input: true
-  is_incomplete: true
-  is_type:
-  - gufo:SubKind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
+VirtualSite:
+  can_type:
   - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
   - gufo:NonRigidType
-  - gufo:NonSortal
   - gufo:Phase
-  - gufo:PhaseMixin
+  - gufo:RigidType
   - gufo:Role
-  - gufo:RoleMixin
   - gufo:SemiRigidType
----
-Language:
-  can_type: []
+  - gufo:SubKind
   detected_in: []
   input: false
+  is_incomplete: false
+  is_type:
+  - gufo:Sortal
+  not_type:
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:PhaseMixin
+  - gufo:RoleMixin
+---
+Site:
+  can_type: []
+  detected_in: []
+  input: true
   is_incomplete: false
   is_type:
   - gufo:Kind
@@ -54,13 +53,13 @@ Language:
   - gufo:Sortal
   not_type:
   - gufo:AntiRigidType
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
   - gufo:Category
   - gufo:Mixin
   - gufo:NonRigidType
   - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
   - gufo:SemiRigidType
   - gufo:SubKind

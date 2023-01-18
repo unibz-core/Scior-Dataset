@@ -1,26 +1,4 @@
-Purchase:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:Kind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-Production:
+Provenance:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -42,7 +20,7 @@ Production:
   is_type: []
   not_type: []
 ---
-ValueActivity:
+ValueObject:
   can_type:
   - gufo:Category
   - gufo:Mixin
@@ -65,7 +43,29 @@ ValueActivity:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-Sale:
+EndProduct:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:Kind
+  - gufo:RigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
+---
+RawProduct:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -87,7 +87,7 @@ Sale:
   is_type: []
   not_type: []
 ---
-Receipt:
+DeclaredProvenance:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -109,7 +109,29 @@ Receipt:
   is_type: []
   not_type: []
 ---
-Payment:
+GeographicIndication:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+CounterObject:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category

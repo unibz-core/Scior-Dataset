@@ -1,4 +1,26 @@
-FederalArea:
+Soil:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Pantanal:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -21,7 +43,29 @@ FederalArea:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-IndiandLand:
+MaterialEntity:
+  can_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:RigidType
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+---
+CostalZone:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -44,7 +88,7 @@ IndiandLand:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-PatanalRegion:
+WhiteWater:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -66,29 +110,30 @@ PatanalRegion:
   is_type: []
   not_type: []
 ---
-Location:
+Caatinga:
   can_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
+  - gufo:AntiRigidType
   - gufo:NonRigidType
-  - gufo:NonSortal
+  - gufo:Phase
   - gufo:RigidType
+  - gufo:Role
   - gufo:SemiRigidType
-  - gufo:Sortal
   - gufo:SubKind
-  detected_in: []
+  detected_in:
+  - nk_k_sup
   input: false
-  is_incomplete: false
-  is_type: []
+  is_incomplete: true
+  is_type:
+  - gufo:Sortal
   not_type:
-  - gufo:AntiRigidType
-  - gufo:Phase
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
   - gufo:PhaseMixin
-  - gufo:Role
   - gufo:RoleMixin
 ---
-Tropical:
+Capoeira:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -110,95 +155,7 @@ Tropical:
   is_type: []
   not_type: []
 ---
-CerradoRegion:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Country:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Semiarid:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-SpatialLocation:
-  can_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:RigidType
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
----
-PublicLocation:
+MacroEcosystem:
   can_type: []
   detected_in:
   - nk_k_sup
@@ -221,7 +178,7 @@ PublicLocation:
   - gufo:RoleMixin
   - gufo:SemiRigidType
 ---
-AraucariasRegion:
+Microorganism:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -243,29 +200,7 @@ AraucariasRegion:
   is_type: []
   not_type: []
 ---
-GeographicSpace:
-  can_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:RigidType
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
----
-CollectionLocation:
+EntityInStudy:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -287,7 +222,7 @@ CollectionLocation:
   is_type: []
   not_type: []
 ---
-State:
+Researcher:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -309,7 +244,7 @@ State:
   is_type: []
   not_type: []
 ---
-CostalRegion:
+AssistantInCollection:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -331,51 +266,7 @@ CostalRegion:
   is_type: []
   not_type: []
 ---
-Thorp:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Community:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-DevoluteLand:
+Amazonia:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -398,7 +289,7 @@ DevoluteLand:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-PrivateLocation:
+Restinga:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -420,7 +311,7 @@ PrivateLocation:
   is_type: []
   not_type: []
 ---
-ConservationUnity:
+Sandy:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -442,7 +333,7 @@ ConservationUnity:
   is_type: []
   not_type: []
 ---
-Village:
+Saltwater:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -464,7 +355,7 @@ Village:
   is_type: []
   not_type: []
 ---
-City:
+Humous:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -486,7 +377,7 @@ City:
   is_type: []
   not_type: []
 ---
-AtlanticRegion:
+ResponsibleForCollection:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -508,7 +399,227 @@ AtlanticRegion:
   is_type: []
   not_type: []
 ---
-FederalLand:
+BlackWater:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+AbioticEntity:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+BioticEntity:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Plant:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Forest:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Lowland:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Field:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Vegetation:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+ParticipantInCollection:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Rocky:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Cerrado:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -531,7 +642,7 @@ FederalLand:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-CaatingaRegion:
+BrackishWater:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -553,29 +664,7 @@ CaatingaRegion:
   is_type: []
   not_type: []
 ---
-CocaisRegion:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-CityLand:
+Biome:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -598,7 +687,7 @@ CityLand:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-TropicalWetAndDry:
+MesoEcosystem:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -620,7 +709,7 @@ TropicalWetAndDry:
   is_type: []
   not_type: []
 ---
-FieldsRegion:
+Clayey:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -642,7 +731,29 @@ FieldsRegion:
   is_type: []
   not_type: []
 ---
-SocialPoliticalRegion:
+ClassifiedEntity:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Ecosystem:
   can_type:
   - gufo:Category
   - gufo:Kind
@@ -664,7 +775,7 @@ SocialPoliticalRegion:
   - gufo:Role
   - gufo:RoleMixin
 ---
-ClimateRegion:
+Clearwater:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -686,7 +797,7 @@ ClimateRegion:
   is_type: []
   not_type: []
 ---
-AmazonicRegion:
+CollectedEntity:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -708,7 +819,7 @@ AmazonicRegion:
   is_type: []
   not_type: []
 ---
-Settlement:
+Animal:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -730,7 +841,7 @@ Settlement:
   is_type: []
   not_type: []
 ---
-HumidSubtropical:
+ObjectClassifier:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -752,7 +863,7 @@ HumidSubtropical:
   is_type: []
   not_type: []
 ---
-Equatorial:
+Litholic:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -774,7 +885,7 @@ Equatorial:
   is_type: []
   not_type: []
 ---
-PhytophysiognomicRegion:
+Air:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -796,7 +907,95 @@ PhytophysiognomicRegion:
   is_type: []
   not_type: []
 ---
-StateLand:
+MicorEcosystem:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Igapo:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Person:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Freshwater:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+MataAtlantica:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -819,7 +1018,7 @@ StateLand:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-Temperate:
+Water:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -841,7 +1040,29 @@ Temperate:
   is_type: []
   not_type: []
 ---
-GeographicPoint:
+Hydromorphic:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+ResearcherParticipant:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category

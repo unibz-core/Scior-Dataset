@@ -1,4 +1,4 @@
-Decrement_Event:
+Revenue_Account:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -20,7 +20,7 @@ Decrement_Event:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-Debit_Event:
+Expense_Account:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -42,7 +42,7 @@ Debit_Event:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-Credit_Event:
+Asset_Account:
   can_type: []
   detected_in:
   - nk_k_sup
@@ -65,29 +65,7 @@ Credit_Event:
   - gufo:RoleMixin
   - gufo:SemiRigidType
 ---
-Economic_Event:
-  can_type: []
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Kind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-Increment_Event:
+Liability_Account:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -108,3 +86,47 @@ Increment_Event:
   - gufo:Mixin
   - gufo:PhaseMixin
   - gufo:RoleMixin
+---
+Equity_Account:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Phase
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:SemiRigidType
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type:
+  - gufo:Sortal
+  not_type:
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:PhaseMixin
+  - gufo:RoleMixin
+---
+General_Ledger_Account:
+  can_type: []
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type:
+  - gufo:Kind
+  - gufo:RigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:SemiRigidType
+  - gufo:SubKind

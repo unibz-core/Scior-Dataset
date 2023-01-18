@@ -1,14 +1,17 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/SpatialRegion> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/SpatialEntity> .
+<http://taxonomy.model/PrototypicalApplePathogenSignPhotograph> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/ApplePathogenInfectionPhotograph> .
 
-<http://taxonomy.model/StorageFacility> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Building>,
-        <http://taxonomy.model/SpatialEntity> .
+<http://taxonomy.model/PrototypicalAppleSymptomsPhotograph> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/AppleSymptomsPhotograph> .
 
-<http://taxonomy.model/Building> a owl:Class .
+<http://taxonomy.model/ApplePathogenInfectionPhotograph> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Photograph> .
 
-<http://taxonomy.model/SpatialEntity> a owl:Class .
+<http://taxonomy.model/AppleSymptomsPhotograph> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Photograph> .
+
+<http://taxonomy.model/Photograph> a owl:Class .
 

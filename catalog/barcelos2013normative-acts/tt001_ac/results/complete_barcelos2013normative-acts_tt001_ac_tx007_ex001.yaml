@@ -1,4 +1,4 @@
-Composed_Section:
+General_Part:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -7,43 +7,21 @@ Composed_Section:
   - gufo:Role
   - gufo:SemiRigidType
   - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-Component_Section:
-  can_type: []
   detected_in:
   - nk_k_sup
-  input: true
+  input: false
   is_incomplete: true
   is_type:
-  - gufo:SubKind
-  - gufo:RigidType
   - gufo:Sortal
   not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
   - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
   - gufo:NonSortal
-  - gufo:Phase
+  - gufo:Category
+  - gufo:Mixin
   - gufo:PhaseMixin
-  - gufo:Role
   - gufo:RoleMixin
-  - gufo:SemiRigidType
 ---
-Section:
+Part:
   can_type: []
   detected_in: []
   input: false
@@ -65,7 +43,7 @@ Section:
   - gufo:SemiRigidType
   - gufo:SubKind
 ---
-Subsection:
+Special_Part:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -87,7 +65,7 @@ Subsection:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-Simple_Section:
+Multiple_Part:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -108,3 +86,25 @@ Simple_Section:
   - gufo:Mixin
   - gufo:PhaseMixin
   - gufo:RoleMixin
+---
+Double_Part:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:SubKind
+  - gufo:RigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType

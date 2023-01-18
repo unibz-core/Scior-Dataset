@@ -1,4 +1,4 @@
-FloodForecaster:
+FloodDefenseManager:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -20,7 +20,7 @@ FloodForecaster:
   is_type: []
   not_type: []
 ---
-WeatherForecaster:
+FloodDefenseOrganization:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -42,7 +42,7 @@ WeatherForecaster:
   is_type: []
   not_type: []
 ---
-HighWaterController:
+FloodManagementOrganization:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -87,7 +87,7 @@ HighWaterProtectionImplementer:
   - gufo:SemiRigidType
   - gufo:SubKind
 ---
-FloodEvacuationManager:
+HighWaterProtectionMeasureEvaluator:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -109,7 +109,7 @@ FloodEvacuationManager:
   is_type: []
   not_type: []
 ---
-FloodDefenseOrganization:
+FloodForecaster:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -131,7 +131,7 @@ FloodDefenseOrganization:
   is_type: []
   not_type: []
 ---
-Organization:
+WeatherForecaster:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -154,50 +154,6 @@ Organization:
   not_type: []
 ---
 EvacuationOrganization:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-FloodDefenseManager:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-HighWaterProtectionMeasureEvaluator:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -263,7 +219,7 @@ FloodEvacuationImplementer:
   is_type: []
   not_type: []
 ---
-FloodDefenseMeasuresImplementer:
+FloodEvacuationManager:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -285,7 +241,51 @@ FloodDefenseMeasuresImplementer:
   is_type: []
   not_type: []
 ---
-FloodManagementOrganization:
+Organization:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+HighWaterController:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+FloodDefenseMeasuresImplementer:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category

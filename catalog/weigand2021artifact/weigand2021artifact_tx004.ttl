@@ -1,11 +1,17 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Assertive_(factagenic)> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Communicative_acts> .
+<http://taxonomy.model/Artefact_design> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Plan_Description> .
 
-<http://taxonomy.model/Directive_(actagenic)> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Communicative_acts> .
+<http://taxonomy.model/Design_object> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Object_Description> .
 
-<http://taxonomy.model/Communicative_acts> a owl:Class .
+<http://taxonomy.model/Object_Description> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Normative_Description> .
+
+<http://taxonomy.model/Plan_Description> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Normative_Description> .
+
+<http://taxonomy.model/Normative_Description> a owl:Class .
 

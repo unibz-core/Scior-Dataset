@@ -1,18 +1,26 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Aquisição_para_Convênio> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Compra_Solicitada>,
-        <http://taxonomy.model/Compra_por_Cotação> .
+<http://taxonomy.model/PAAIAP_Finalizado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/PAAIAP> .
 
-<http://taxonomy.model/Compra_por_Licitação> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Compra_de_Produto> .
+<http://taxonomy.model/PAAIAP_com_TAC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/PAAIAP> .
 
-<http://taxonomy.model/Compra_Solicitada> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Compra_de_Produto> .
+<http://taxonomy.model/PAAIAP_em_Aberto> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/PAAIAP> .
 
-<http://taxonomy.model/Compra_por_Cotação> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Compra_de_Produto> .
+<http://taxonomy.model/PAAI_de_Trânsito> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/PAAIAP> .
 
-<http://taxonomy.model/Compra_de_Produto> a owl:Class .
+<http://taxonomy.model/PA_Ordinário> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/PAAI_de_Transporte> .
+
+<http://taxonomy.model/PA_Simplificado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/PAAI_de_Transporte> .
+
+<http://taxonomy.model/PAAI_de_Transporte> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/PAAIAP> .
+
+<http://taxonomy.model/PAAIAP> a owl:Class .
 

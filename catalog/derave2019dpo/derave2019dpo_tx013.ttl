@@ -1,52 +1,32 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Accepted_Quote_Price> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Proposed_Price> .
+<http://taxonomy.model/Digital_File> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Main_Digital_Content> .
 
-<http://taxonomy.model/Booking_Price> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Price> .
+<http://taxonomy.model/Digital_Message> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Main_Digital_Content> .
 
-<http://taxonomy.model/Feature-Based_Price> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Price_set_by_Provider> .
+<http://taxonomy.model/Listing_Description> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Offering_Description> .
 
-<http://taxonomy.model/Highest_Price_Offer> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Offering_Price> .
+<http://taxonomy.model/Offering_description_of_Ownership_transfer> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Offering_Description> .
 
-<http://taxonomy.model/Job_Fee> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Price_set_by_Provider> .
+<http://taxonomy.model/Personal_Data> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Main_Digital_Content> .
 
-<http://taxonomy.model/Market_Price> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Price> .
+<http://taxonomy.model/Physical_Offering_Description> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Offering_Description> .
 
-<http://taxonomy.model/Paid_Price> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Price> .
+<http://taxonomy.model/Review_Content> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Digital_Content> .
 
-<http://taxonomy.model/Paid_Transaction_Price> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Price>,
-        <http://taxonomy.model/Transaction_Price> .
+<http://taxonomy.model/Digital_Content> a owl:Class .
 
-<http://taxonomy.model/Price_per_Quantity> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Offering_Price> .
+<http://taxonomy.model/Offering_Description> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Main_Digital_Content> .
 
-<http://taxonomy.model/Received_Transaction_Price> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Transaction_Price> .
-
-<http://taxonomy.model/Suggested_Price> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Price> .
-
-<http://taxonomy.model/Proposed_Price> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Price> .
-
-<http://taxonomy.model/Price_set_by_Provider> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Offering_Price>,
-        <http://taxonomy.model/Price> .
-
-<http://taxonomy.model/Transaction_Price> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Price> .
-
-<http://taxonomy.model/Offering_Price> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Price> .
-
-<http://taxonomy.model/Price> a owl:Class .
+<http://taxonomy.model/Main_Digital_Content> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Digital_Content> .
 
