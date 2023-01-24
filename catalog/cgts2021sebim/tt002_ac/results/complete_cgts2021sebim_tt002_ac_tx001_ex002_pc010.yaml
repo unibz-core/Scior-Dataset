@@ -1,4 +1,4 @@
-IndoorEnvironmentQuality:
+EnergyAtmosphere:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -42,6 +42,50 @@ LEEDGold:
   is_type: []
   not_type: []
 ---
+WaterEfficiency:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+IndoorEnvironmentQuality:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
 LEEDSilver:
   can_type:
   - gufo:AntiRigidType
@@ -64,7 +108,7 @@ LEEDSilver:
   is_type: []
   not_type: []
 ---
-EnergyAtmosphere:
+LEEDPlatinum:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -85,51 +129,6 @@ EnergyAtmosphere:
   is_incomplete: false
   is_type: []
   not_type: []
----
-LocationTransportation:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-IntegrativeProcess:
-  can_type: []
-  detected_in:
-  - nk_k_sup
-  input: true
-  is_incomplete: true
-  is_type:
-  - gufo:SubKind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
 ---
 Certification:
   can_type:
@@ -153,7 +152,7 @@ Certification:
   - gufo:Role
   - gufo:RoleMixin
 ---
-LEEDPlatinum:
+SustainableSite:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -197,7 +196,7 @@ LEEDCertified:
   is_type: []
   not_type: []
 ---
-MaterialResource:
+IntegrativeProcess:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -219,7 +218,7 @@ MaterialResource:
   is_type: []
   not_type: []
 ---
-WaterEfficiency:
+LocationTransportation:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -263,8 +262,17 @@ CertificationArea:
   - gufo:Role
   - gufo:RoleMixin
 ---
-SustainableSite:
-  can_type:
+MaterialResource:
+  can_type: []
+  detected_in:
+  - nk_k_sup
+  input: true
+  is_incomplete: true
+  is_type:
+  - gufo:SubKind
+  - gufo:RigidType
+  - gufo:Sortal
+  not_type:
   - gufo:AntiRigidType
   - gufo:Category
   - gufo:Kind
@@ -273,14 +281,6 @@ SustainableSite:
   - gufo:NonSortal
   - gufo:Phase
   - gufo:PhaseMixin
-  - gufo:RigidType
   - gufo:Role
   - gufo:RoleMixin
   - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []

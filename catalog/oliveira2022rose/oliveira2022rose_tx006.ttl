@@ -1,11 +1,20 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Loss_Event_Type> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Risk_Event_Type> .
+<http://taxonomy.model/Attacker> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Threat_Object>,
+        <http://taxonomy.model/UFO::Agent> .
 
-<http://taxonomy.model/Threat_Event_Type> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Risk_Event_Type> .
+<http://taxonomy.model/Risk_Assessor> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/UFO::Agent> .
 
-<http://taxonomy.model/Risk_Event_Type> a owl:Class .
+<http://taxonomy.model/Risk_Subject> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/UFO::Agent> .
+
+<http://taxonomy.model/Value_Subject> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/UFO::Agent> .
+
+<http://taxonomy.model/Threat_Object> a owl:Class .
+
+<http://taxonomy.model/UFO::Agent> a owl:Class .
 

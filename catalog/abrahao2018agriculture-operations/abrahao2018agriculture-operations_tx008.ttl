@@ -1,44 +1,17 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/After> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/TimeIntervalRelation> .
+<http://taxonomy.model/AtomicAgentAction> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/AgentAction> .
 
-<http://taxonomy.model/Before> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/TimeIntervalRelation> .
+<http://taxonomy.model/Interaction> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/ComplexAgentAction> .
 
-<http://taxonomy.model/Contains> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/TimeIntervalRelation> .
+<http://taxonomy.model/ObjectAgentInteraction> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/ComplexAgentAction> .
 
-<http://taxonomy.model/Contemporal> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/TimeIntervalRelation> .
+<http://taxonomy.model/AgentAction> a owl:Class .
 
-<http://taxonomy.model/During> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/TimeIntervalRelation> .
-
-<http://taxonomy.model/FinishedBy> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/TimeIntervalRelation> .
-
-<http://taxonomy.model/Finishes> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/TimeIntervalRelation> .
-
-<http://taxonomy.model/Meets> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/TimeIntervalRelation> .
-
-<http://taxonomy.model/MetBy> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/TimeIntervalRelation> .
-
-<http://taxonomy.model/Overlapped> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/TimeIntervalRelation> .
-
-<http://taxonomy.model/Overlaps> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/TimeIntervalRelation> .
-
-<http://taxonomy.model/StartedBy> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/TimeIntervalRelation> .
-
-<http://taxonomy.model/Starts> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/TimeIntervalRelation> .
-
-<http://taxonomy.model/TimeIntervalRelation> a owl:Class .
+<http://taxonomy.model/ComplexAgentAction> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/AgentAction> .
 

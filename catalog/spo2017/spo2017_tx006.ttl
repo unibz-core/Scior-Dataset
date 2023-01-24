@@ -1,0 +1,55 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Closed_Commitment> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Commitment> .
+
+<http://taxonomy.model/Composite_Intended_Activity> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Intended_Activity> .
+
+<http://taxonomy.model/General_Intended_Process> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Intended_Process> .
+
+<http://taxonomy.model/General_Project_Process> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Project_Process> .
+
+<http://taxonomy.model/Organizational_Intended_Process> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Intended_Process> .
+
+<http://taxonomy.model/Project_Activity> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Intended_Activity> .
+
+<http://taxonomy.model/Scheduled_Activity> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Appointment>,
+        <http://taxonomy.model/Intended_Activity> .
+
+<http://taxonomy.model/Scheduled_Process> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Appointment>,
+        <http://taxonomy.model/Intended_Process> .
+
+<http://taxonomy.model/Simple_Intended_Activity> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Intended_Activity> .
+
+<http://taxonomy.model/Specific_Intended_Process> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Intended_Process> .
+
+<http://taxonomy.model/Specific_Project_Process> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Project_Process> .
+
+<http://taxonomy.model/Appointment> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Commitment> .
+
+<http://taxonomy.model/Intention> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Commitment> .
+
+<http://taxonomy.model/Project_Process> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Intended_Process> .
+
+<http://taxonomy.model/Commitment> a owl:Class .
+
+<http://taxonomy.model/Intended_Activity> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Intention> .
+
+<http://taxonomy.model/Intended_Process> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Intention> .
+

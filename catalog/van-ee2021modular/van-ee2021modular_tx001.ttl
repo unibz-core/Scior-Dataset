@@ -1,0 +1,92 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/(E)_E-Installaties> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/BuildingElement> .
+
+<http://taxonomy.model/(E)_Wanden> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/BuildingElement> .
+
+<http://taxonomy.model/(F)_Vloeren> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/BuildingElement> .
+
+<http://taxonomy.model/(G)_Daken> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/BuildingElement> .
+
+<http://taxonomy.model/(L)_LosLeveren> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/BuildingElement> .
+
+<http://taxonomy.model/(Q)_Afwerking> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/BuildingElement> .
+
+<http://taxonomy.model/(S)_Sanitair> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/BuildingElement> .
+
+<http://taxonomy.model/(W)_W-Installaties> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/BuildingElement> .
+
+<http://taxonomy.model/(Y)_Kozijnen> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/BuildingElement> .
+
+<http://taxonomy.model/(Z)_Fundering> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/BuildingElement> .
+
+<http://taxonomy.model/Attribute> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/ClassifiedObject>,
+        <http://taxonomy.model/Property>,
+        <http://taxonomy.model/PropertyValue> .
+
+<http://taxonomy.model/House> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Building> .
+
+<http://taxonomy.model/Housing_Block> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Building> .
+
+<http://taxonomy.model/Module> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Assembly> .
+
+<http://taxonomy.model/RangedAttribute> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/ClassifiedObject>,
+        <http://taxonomy.model/Property>,
+        <http://taxonomy.model/PropertyValue> .
+
+<http://taxonomy.model/componentConnection> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/ClassifiedObject> .
+
+<http://taxonomy.model/element> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Component> .
+
+<http://taxonomy.model/externalProducts> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Product> .
+
+<http://taxonomy.model/internalProducts> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Product> .
+
+<http://taxonomy.model/ProductModel> a owl:Class .
+
+<http://taxonomy.model/ProductOrServiceModel> a owl:Class .
+
+<http://taxonomy.model/Building> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Assembly> .
+
+<http://taxonomy.model/Product> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Component>,
+        <http://taxonomy.model/ProductModel>,
+        <http://taxonomy.model/ProductOrServiceModel> .
+
+<http://taxonomy.model/PropertyValue> a owl:Class .
+
+<http://taxonomy.model/Assembly> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Component> .
+
+<http://taxonomy.model/Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/ClassifiedObject> .
+
+<http://taxonomy.model/Property> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Property> .
+
+<http://taxonomy.model/ClassifiedObject> a owl:Class .
+
+<http://taxonomy.model/BuildingElement> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Assembly> .
+

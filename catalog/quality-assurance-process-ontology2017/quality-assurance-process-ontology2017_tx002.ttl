@@ -1,0 +1,35 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Adherence_Evaluation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Performed_Composite_Activity> .
+
+<http://taxonomy.model/Artifact_Evaluation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Performed_Simple_Activity> .
+
+<http://taxonomy.model/Noncompliance_Closing> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Performed_Simple_Activity> .
+
+<http://taxonomy.model/Noncompliance_Control> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Performed_Composite_Activity> .
+
+<http://taxonomy.model/Noncompliance_Identification> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Performed_Simple_Activity> .
+
+<http://taxonomy.model/Noncompliance_Resolution> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Performed_Simple_Activity> .
+
+<http://taxonomy.model/Process_Evaluation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Performed_Simple_Activity> .
+
+<http://taxonomy.model/Quality_Assurance_Planning> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Performed_Composite_Activity> .
+
+<http://taxonomy.model/Performed_Activity> a owl:Class .
+
+<http://taxonomy.model/Performed_Composite_Activity> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Performed_Activity> .
+
+<http://taxonomy.model/Performed_Simple_Activity> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Performed_Activity> .
+

@@ -1,26 +1,4 @@
-Human_Rights_Responsibility:
-  can_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:RigidType
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
----
-Perpetration_by_ommission:
+Alleged_Human_Rights_Violation:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -42,7 +20,7 @@ Perpetration_by_ommission:
   is_type: []
   not_type: []
 ---
-Perpetration_by_commission:
+Human_Rights_Violation:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -64,7 +42,7 @@ Perpetration_by_commission:
   is_type: []
   not_type: []
 ---
-Failed_Responsibility_To_Promote:
+Benign_Human_Rights_Problem:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -86,17 +64,32 @@ Failed_Responsibility_To_Promote:
   is_type: []
   not_type: []
 ---
-Failed_Responsibility_To_Respect:
+Confirmed_Human_Rights_Violation:
   can_type: []
   detected_in:
+  - ks_sf_in
   - nk_k_sup
   input: true
   is_incomplete: true
   is_type:
-  - gufo:SubKind
-  - gufo:RigidType
+  - gufo:Phase
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
   - gufo:Sortal
   not_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonSortal
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
+---
+Possible_Human_Rights_Violation:
+  can_type:
   - gufo:AntiRigidType
   - gufo:Category
   - gufo:Kind
@@ -105,11 +98,19 @@ Failed_Responsibility_To_Respect:
   - gufo:NonSortal
   - gufo:Phase
   - gufo:PhaseMixin
+  - gufo:RigidType
   - gufo:Role
   - gufo:RoleMixin
   - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
 ---
-Failed_Responsibility_To_Protect:
+Human_Rights_Problem:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category

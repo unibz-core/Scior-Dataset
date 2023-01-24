@@ -1,4 +1,26 @@
-Company_Pensioner:
+Old_Age_Pensioner:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Phase
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:SemiRigidType
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type:
+  - gufo:Sortal
+  not_type:
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:PhaseMixin
+  - gufo:RoleMixin
+---
+Bachelor_Degree_Student:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -66,7 +88,29 @@ Study_Interrupted:
   - gufo:SemiRigidType
   - gufo:SubKind
 ---
-Master_Degree_Student:
+"Citizen\xB4s_Role":
+  can_type: []
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type:
+  - gufo:Kind
+  - gufo:RigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
+---
+Enterpreneur:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -132,7 +176,7 @@ Student:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-Bachelor_Degree_Student:
+Secondary_School_Student:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -153,50 +197,6 @@ Bachelor_Degree_Student:
   - gufo:Mixin
   - gufo:PhaseMixin
   - gufo:RoleMixin
----
-Old_Age_Pensioner:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-Enterpreneur:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:Role
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
 ---
 Employee:
   can_type:
@@ -220,29 +220,30 @@ Employee:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-"Citizen\xB4s_Role":
+On_an_Exchange_Stay:
   can_type: []
-  detected_in: []
-  input: false
-  is_incomplete: false
+  detected_in:
+  - ks_sf_in
+  input: true
+  is_incomplete: true
   is_type:
-  - gufo:Kind
-  - gufo:RigidType
+  - gufo:Phase
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
   - gufo:Sortal
   not_type:
-  - gufo:AntiRigidType
   - gufo:Category
+  - gufo:Kind
   - gufo:Mixin
-  - gufo:NonRigidType
   - gufo:NonSortal
-  - gufo:Phase
   - gufo:PhaseMixin
+  - gufo:RigidType
   - gufo:Role
   - gufo:RoleMixin
   - gufo:SemiRigidType
   - gufo:SubKind
 ---
-Secondary_School_Student:
+Master_Degree_Student:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -264,7 +265,7 @@ Secondary_School_Student:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-On_an_Exchange_Stay:
+Company_Pensioner:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType

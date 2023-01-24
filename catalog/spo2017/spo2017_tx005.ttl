@@ -1,0 +1,92 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Artifact_Change> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Artifact_Participation>,
+        <http://taxonomy.model/Change> .
+
+<http://taxonomy.model/Artifact_Creation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Artifact_Participation>,
+        <http://taxonomy.model/Creation> .
+
+<http://taxonomy.model/Artifact_Usage> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Artifact_Participation>,
+        <http://taxonomy.model/Usage> .
+
+<http://taxonomy.model/Atomic_Action> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Action> .
+
+<http://taxonomy.model/Hardware_Resource_Participation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Change> .
+
+<http://taxonomy.model/Performed_Composite_Activity> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Performed_Activity> .
+
+<http://taxonomy.model/Performed_General_Process> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Performed_Process> .
+
+<http://taxonomy.model/Performed_Organizational_Process> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Performed_Process> .
+
+<http://taxonomy.model/Performed_Project_Activity> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Performed_Activity> .
+
+<http://taxonomy.model/Performed_Project_Process> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Performed_Process> .
+
+<http://taxonomy.model/Performed_Simple_Activity> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Performed_Activity> .
+
+<http://taxonomy.model/Performed_Specific_Process> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Performed_Process> .
+
+<http://taxonomy.model/Procedure_Participation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Change> .
+
+<http://taxonomy.model/Software_Resource_Participation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Change> .
+
+<http://taxonomy.model/Stakeholder_Main_Participation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Stakeholder_Participation> .
+
+<http://taxonomy.model/Action_Contribution> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Agent_Participation> .
+
+<http://taxonomy.model/Agent_Participation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Participation> .
+
+<http://taxonomy.model/Complex_Action> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Action> .
+
+<http://taxonomy.model/Creation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Object_Participation> .
+
+<http://taxonomy.model/Stakeholder_Participation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Action_Contribution> .
+
+<http://taxonomy.model/Usage> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Object_Participation> .
+
+<http://taxonomy.model/Event> a owl:Class .
+
+<http://taxonomy.model/Participation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Event> .
+
+<http://taxonomy.model/Action> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Event> .
+
+<http://taxonomy.model/Artifact_Participation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Object_Participation> .
+
+<http://taxonomy.model/Performed_Activity> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Action> .
+
+<http://taxonomy.model/Change> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Object_Participation> .
+
+<http://taxonomy.model/Object_Participation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Participation> .
+
+<http://taxonomy.model/Performed_Process> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Complex_Action> .
+

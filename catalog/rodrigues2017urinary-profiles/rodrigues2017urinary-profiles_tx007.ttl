@@ -1,29 +1,38 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Agent> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Object> .
+<http://taxonomy.model/Dismorphic_RBC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Urinary_Analyte> .
 
-<http://taxonomy.model/Base> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Object> .
+<http://taxonomy.model/Nephritic-Defining_Albumin> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Albumin>,
+        <http://taxonomy.model/Nephritic-Defining_Content> .
 
-<http://taxonomy.model/Nephritic_Urine> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Profiled_Urine> .
+<http://taxonomy.model/Nephritic-Defining_Hemoglobin> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Hemoglobin>,
+        <http://taxonomy.model/Nephritic-Defining_Content> .
 
-<http://taxonomy.model/Product> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Object> .
+<http://taxonomy.model/Nephritic-Defining_RBC_Cast> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Nephritic-Defining_Content>,
+        <http://taxonomy.model/RBC_Cast> .
 
-<http://taxonomy.model/Spermatozoa_Contaminate_Urine> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Profiled_Urine> .
+<http://taxonomy.model/Albumin> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Urinary_Analyte> .
 
-<http://taxonomy.model/Vehicle> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Urine> .
+<http://taxonomy.model/Hemoglobin> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Urinary_Analyte> .
 
-<http://taxonomy.model/Profiled_Urine> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Urine> .
+<http://taxonomy.model/Profile-Defining_Content> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Urinary_Content> .
 
-<http://taxonomy.model/Urine> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Object> .
+<http://taxonomy.model/RBC_Cast> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Urinary_Analyte> .
 
-<http://taxonomy.model/Object> a owl:Class .
+<http://taxonomy.model/Urinary_Content> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Urinary_Analyte> .
+
+<http://taxonomy.model/Nephritic-Defining_Content> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Profile-Defining_Content> .
+
+<http://taxonomy.model/Urinary_Analyte> a owl:Class .
 

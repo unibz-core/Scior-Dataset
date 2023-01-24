@@ -1,14 +1,50 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Cancelation> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/ExecutionState> .
+<http://taxonomy.model/Building> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Place> .
 
-<http://taxonomy.model/Interruption> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/ExecutionState> .
+<http://taxonomy.model/Field> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Place> .
 
-<http://taxonomy.model/OperacionalDelay> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/ExecutionState> .
+<http://taxonomy.model/Implement> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Machinery> .
 
-<http://taxonomy.model/ExecutionState> a owl:Class .
+<http://taxonomy.model/Input> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Product> .
+
+<http://taxonomy.model/Output> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Product> .
+
+<http://taxonomy.model/Powered> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Machinery> .
+
+<http://taxonomy.model/ServiceOrder> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/NormativeDescription> .
+
+<http://taxonomy.model/Tool> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Machinery> .
+
+<http://taxonomy.model/Vehicle> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Machinery> .
+
+<http://taxonomy.model/NormativeDescription> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/SocialObject> .
+
+<http://taxonomy.model/SocialObject> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/PhysicalObject> .
+
+<http://taxonomy.model/PhysicalObject> a owl:Class .
+
+<http://taxonomy.model/Place> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Resource> .
+
+<http://taxonomy.model/Product> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Resource> .
+
+<http://taxonomy.model/Resource> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/PhysicalObject> .
+
+<http://taxonomy.model/Machinery> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Resource> .
 

@@ -1,0 +1,38 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Organization_Stakeholder> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Organization>,
+        <http://taxonomy.model/Stakeholder> .
+
+<http://taxonomy.model/Person_Stakeholder> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Person>,
+        <http://taxonomy.model/Stakeholder> .
+
+<http://taxonomy.model/Project_Stakeholder> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Stakeholder> .
+
+<http://taxonomy.model/Team_Stakeholder> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Stakeholder>,
+        <http://taxonomy.model/Team> .
+
+<http://taxonomy.model/Organization> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Social_Agent> .
+
+<http://taxonomy.model/Person> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Physical_Agent> .
+
+<http://taxonomy.model/Physical_Agent> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Agent> .
+
+<http://taxonomy.model/Team> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Social_Agent> .
+
+<http://taxonomy.model/Social_Agent> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Agent> .
+
+<http://taxonomy.model/Agent> a owl:Class .
+
+<http://taxonomy.model/Stakeholder> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Agent> .
+

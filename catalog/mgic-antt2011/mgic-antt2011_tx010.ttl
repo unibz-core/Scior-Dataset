@@ -1,235 +1,35 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Alínea_Composta> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Alínea> .
+<http://taxonomy.model/Contrato_de_Arrendamento> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Contrato> .
 
-<http://taxonomy.model/Alínea_Simples> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Alínea> .
+<http://taxonomy.model/Contrato_de_Autorização> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Contrato_de_Outorga> .
 
-<http://taxonomy.model/Alínea_Vetada> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Alínea>,
-        <http://taxonomy.model/Elemento_Vetado> .
+<http://taxonomy.model/Contrato_de_Autorização_Especial> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Contrato_de_Outorga> .
 
-<http://taxonomy.model/Apostila> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Ato_Normativo> .
+<http://taxonomy.model/Contrato_de_Concessão_Ferroviária> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Contrato_de_Outorga> .
 
-<http://taxonomy.model/Artigo_Componente_de_Capítulo> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Artigo> .
+<http://taxonomy.model/Contrato_de_Concessão_Rodoviária> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Contrato_de_Outorga> .
 
-<http://taxonomy.model/Artigo_Componente_de_Seção> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Artigo> .
+<http://taxonomy.model/Contrato_de_Convênio> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Contrato> .
 
-<http://taxonomy.model/Artigo_Composto_por_Incisos> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Artigo_Composto> .
+<http://taxonomy.model/Contrato_de_Permissão> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Contrato_de_Outorga> .
 
-<http://taxonomy.model/Artigo_Composto_por_Parágrafos> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Artigo_Composto> .
+<http://taxonomy.model/Contrato_de_Receita_Extraórdinária_com_Projeto_de_Engenharia> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Contrato_de_Receita_Extraodrinária> .
 
-<http://taxonomy.model/Artigo_Legal_com_Infração_Definida> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Artigo_Legal> .
+<http://taxonomy.model/Contrato_de_Receita_Extraodrinária> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Contrato> .
 
-<http://taxonomy.model/Artigo_Ordinário> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Artigo> .
+<http://taxonomy.model/Contrato> a owl:Class .
 
-<http://taxonomy.model/Artigo_Regulamentar_com_Infração_Definida> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Artigo_Regulamentar> .
-
-<http://taxonomy.model/Artigo_Simples> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Artigo> .
-
-<http://taxonomy.model/Artigo_Vetado> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Artigo>,
-        <http://taxonomy.model/Elemento_Vetado> .
-
-<http://taxonomy.model/Artigo_de_Alteração> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Artigo> .
-
-<http://taxonomy.model/Artigo_de_Inclusão> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Artigo> .
-
-<http://taxonomy.model/Ato_Normativo_Base_de_Fiscalização> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Ato_Normativo> .
-
-<http://taxonomy.model/Capítulo_Componente> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Capítulo> .
-
-<http://taxonomy.model/Capítulo_Composto_por_Artigo> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Capítulo> .
-
-<http://taxonomy.model/Capítulo_Composto_por_Seção> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Capítulo> .
-
-<http://taxonomy.model/Cláusula_de_Revogação> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Artigo> .
-
-<http://taxonomy.model/Cláusula_de_Vigência> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Artigo> .
-
-<http://taxonomy.model/Constituição> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Ato_Normativo> .
-
-<http://taxonomy.model/Decreto_Autônomo> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Decreto> .
-
-<http://taxonomy.model/Decreto_Legislativo> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Ato_Normativo> .
-
-<http://taxonomy.model/Decreto_Regulamentar> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Decreto> .
-
-<http://taxonomy.model/Decreto_Singular> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Decreto> .
-
-<http://taxonomy.model/Elemento_Alterado> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Elemento_Componente_de_Ato_Normativo>,
-        <http://taxonomy.model/Elemento_Modificado> .
-
-<http://taxonomy.model/Elemento_Incluído> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Elemento_Componente_de_Ato_Normativo>,
-        <http://taxonomy.model/Elemento_Modificado> .
-
-<http://taxonomy.model/Elemento_Original> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Elemento_Alterável> .
-
-<http://taxonomy.model/Elemento_Revogado> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Elemento_Modificado> .
-
-<http://taxonomy.model/Emenda_à_Constituição> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Ato_Normativo> .
-
-<http://taxonomy.model/Inciso_Componente_de_Artigo> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Inciso> .
-
-<http://taxonomy.model/Inciso_Componente_de_Parágrafo> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Inciso> .
-
-<http://taxonomy.model/Inciso_Composto> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Inciso> .
-
-<http://taxonomy.model/Inciso_Simples> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Inciso> .
-
-<http://taxonomy.model/Inciso_Vetado> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Elemento_Vetado>,
-        <http://taxonomy.model/Inciso> .
-
-<http://taxonomy.model/Lei_Complementar> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Ato_Normativo> .
-
-<http://taxonomy.model/Lei_Delegada> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Ato_Normativo> .
-
-<http://taxonomy.model/Lei_Ordinária> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Ato_Normativo> .
-
-<http://taxonomy.model/Livro_Componente> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Livro> .
-
-<http://taxonomy.model/Medida_Provisória> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Ato_Normativo> .
-
-<http://taxonomy.model/Parte_Especial> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Parte_Dupla> .
-
-<http://taxonomy.model/Parte_Geral> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Parte_Dupla> .
-
-<http://taxonomy.model/Parte_Múltipla> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Parte> .
-
-<http://taxonomy.model/Parágrafo_Composto> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Parágrafo> .
-
-<http://taxonomy.model/Parágrafo_Simples> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Parágrafo> .
-
-<http://taxonomy.model/Parágrafo_Vetado> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Elemento_Vetado>,
-        <http://taxonomy.model/Parágrafo> .
-
-<http://taxonomy.model/Portaria> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Ato_Normativo> .
-
-<http://taxonomy.model/Resolução_da_ANTT> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Resolução> .
-
-<http://taxonomy.model/Seção_Componente> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Seção> .
-
-<http://taxonomy.model/Seção_Composta> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Seção> .
-
-<http://taxonomy.model/Subseção> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Seção_Simples> .
-
-<http://taxonomy.model/Título_Componente> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Título> .
-
-<http://taxonomy.model/Artigo_Legal> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Artigo> .
-
-<http://taxonomy.model/Artigo_Regulamentar> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Artigo> .
-
-<http://taxonomy.model/Livro> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Elemento_de_Agrupamento> .
-
-<http://taxonomy.model/Resolução> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Ato_Normativo> .
-
-<http://taxonomy.model/Seção_Simples> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Seção> .
-
-<http://taxonomy.model/Título> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Elemento_de_Agrupamento> .
-
-<http://taxonomy.model/Artigo_Composto> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Artigo> .
-
-<http://taxonomy.model/Parte> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Elemento_de_Agrupamento> .
-
-<http://taxonomy.model/Parte_Dupla> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Parte> .
-
-<http://taxonomy.model/Alínea> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Elemento_de_Discriminação> .
-
-<http://taxonomy.model/Capítulo> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Elemento_de_Agrupamento> .
-
-<http://taxonomy.model/Decreto> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Ato_Normativo> .
-
-<http://taxonomy.model/Elemento_Modificado> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Elemento_Alterável> .
-
-<http://taxonomy.model/Elemento_de_Discriminação> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Elemento_Componente_de_Ato_Normativo> .
-
-<http://taxonomy.model/Parágrafo> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Elemento_de_Discriminação> .
-
-<http://taxonomy.model/Seção> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Elemento_de_Agrupamento> .
-
-<http://taxonomy.model/Elemento_Alterável> a owl:Class .
-
-<http://taxonomy.model/Elemento_Vetado> a owl:Class .
-
-<http://taxonomy.model/Elemento_Componente_de_Ato_Normativo> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Elemento_Alterável> .
-
-<http://taxonomy.model/Elemento_de_Agrupamento> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Elemento_Componente_de_Ato_Normativo> .
-
-<http://taxonomy.model/Inciso> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Elemento_de_Discriminação> .
-
-<http://taxonomy.model/Artigo> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Elemento_Componente_de_Ato_Normativo> .
-
-<http://taxonomy.model/Ato_Normativo> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Elemento_Alterável> .
+<http://taxonomy.model/Contrato_de_Outorga> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Contrato> .
 

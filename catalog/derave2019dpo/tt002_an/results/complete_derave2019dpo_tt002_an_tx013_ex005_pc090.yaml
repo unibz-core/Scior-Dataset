@@ -1,4 +1,4 @@
-Offering_Price:
+Listing_Description:
   can_type: []
   detected_in: []
   input: true
@@ -20,7 +20,7 @@ Offering_Price:
   - gufo:RoleMixin
   - gufo:SemiRigidType
 ---
-Received_Transaction_Price:
+Main_Digital_Content:
   can_type: []
   detected_in: []
   input: true
@@ -42,7 +42,7 @@ Received_Transaction_Price:
   - gufo:RoleMixin
   - gufo:SemiRigidType
 ---
-Proposed_Price:
+Digital_File:
   can_type: []
   detected_in: []
   input: true
@@ -64,19 +64,18 @@ Proposed_Price:
   - gufo:RoleMixin
   - gufo:SemiRigidType
 ---
-Job_Fee:
+Digital_Content:
   can_type: []
   detected_in: []
   input: true
   is_incomplete: false
   is_type:
-  - gufo:SubKind
+  - gufo:Kind
   - gufo:RigidType
   - gufo:Sortal
   not_type:
   - gufo:AntiRigidType
   - gufo:Category
-  - gufo:Kind
   - gufo:Mixin
   - gufo:NonRigidType
   - gufo:NonSortal
@@ -85,30 +84,9 @@ Job_Fee:
   - gufo:Role
   - gufo:RoleMixin
   - gufo:SemiRigidType
----
-Paid_Transaction_Price:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
   - gufo:SubKind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
 ---
-Suggested_Price:
+Personal_Data:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -130,7 +108,7 @@ Suggested_Price:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-Market_Price:
+Physical_Offering_Description:
   can_type: []
   detected_in: []
   input: true
@@ -152,7 +130,7 @@ Market_Price:
   - gufo:RoleMixin
   - gufo:SemiRigidType
 ---
-Accepted_Quote_Price:
+Offering_description_of_Ownership_transfer:
   can_type: []
   detected_in: []
   input: true
@@ -174,7 +152,7 @@ Accepted_Quote_Price:
   - gufo:RoleMixin
   - gufo:SemiRigidType
 ---
-Price_set_by_Provider:
+Review_Content:
   can_type: []
   detected_in: []
   input: true
@@ -196,7 +174,7 @@ Price_set_by_Provider:
   - gufo:RoleMixin
   - gufo:SemiRigidType
 ---
-Transaction_Price:
+Offering_Description:
   can_type: []
   detected_in: []
   input: true
@@ -218,117 +196,7 @@ Transaction_Price:
   - gufo:RoleMixin
   - gufo:SemiRigidType
 ---
-Booking_Price:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:SubKind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
----
-Price:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:Kind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-Paid_Price:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-Highest_Price_Offer:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:SubKind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
----
-Feature-Based_Price:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:SubKind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
----
-Price_per_Quantity:
+Digital_Message:
   can_type: []
   detected_in: []
   input: true

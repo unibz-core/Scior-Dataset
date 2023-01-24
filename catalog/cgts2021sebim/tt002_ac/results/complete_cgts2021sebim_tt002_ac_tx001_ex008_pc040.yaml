@@ -1,4 +1,4 @@
-IndoorEnvironmentQuality:
+EnergyAtmosphere:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -7,9 +7,10 @@ IndoorEnvironmentQuality:
   - gufo:Role
   - gufo:SemiRigidType
   - gufo:SubKind
-  detected_in: []
+  detected_in:
+  - nk_k_sup
   input: false
-  is_incomplete: false
+  is_incomplete: true
   is_type:
   - gufo:Sortal
   not_type:
@@ -21,6 +22,50 @@ IndoorEnvironmentQuality:
   - gufo:RoleMixin
 ---
 LEEDGold:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:Role
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
+---
+IndoorEnvironmentQuality:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:SubKind
+  - gufo:RigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+---
+WaterEfficiency:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -44,10 +89,9 @@ LEEDGold:
 ---
 LEEDSilver:
   can_type: []
-  detected_in:
-  - nk_k_sup
+  detected_in: []
   input: true
-  is_incomplete: true
+  is_incomplete: false
   is_type:
   - gufo:Role
   - gufo:AntiRigidType
@@ -65,7 +109,7 @@ LEEDSilver:
   - gufo:SemiRigidType
   - gufo:SubKind
 ---
-EnergyAtmosphere:
+LEEDPlatinum:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -86,50 +130,6 @@ EnergyAtmosphere:
   - gufo:Mixin
   - gufo:PhaseMixin
   - gufo:RoleMixin
----
-LocationTransportation:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:SubKind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
----
-IntegrativeProcess:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:SubKind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
 ---
 Certification:
   can_type: []
@@ -153,7 +153,7 @@ Certification:
   - gufo:SemiRigidType
   - gufo:SubKind
 ---
-LEEDPlatinum:
+SustainableSite:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -197,7 +197,7 @@ LEEDCertified:
   - gufo:SemiRigidType
   - gufo:SubKind
 ---
-MaterialResource:
+IntegrativeProcess:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -219,7 +219,7 @@ MaterialResource:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-WaterEfficiency:
+LocationTransportation:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -244,28 +244,6 @@ WaterEfficiency:
 CertificationArea:
   can_type: []
   detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  - gufo:SubKind
-  - gufo:RigidType
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:SemiRigidType
----
-SustainableSite:
-  can_type: []
-  detected_in: []
   input: true
   is_incomplete: false
   is_type:
@@ -284,3 +262,25 @@ SustainableSite:
   - gufo:Role
   - gufo:RoleMixin
   - gufo:SemiRigidType
+---
+MaterialResource:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Phase
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:SemiRigidType
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type:
+  - gufo:Sortal
+  not_type:
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:PhaseMixin
+  - gufo:RoleMixin

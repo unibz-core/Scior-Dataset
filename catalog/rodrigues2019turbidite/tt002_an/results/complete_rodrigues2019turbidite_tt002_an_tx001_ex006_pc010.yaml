@@ -1,29 +1,8 @@
-Inner_Bank:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Arriving_Point:
+Deposition_Bank:
   can_type: []
   detected_in:
   - nk_k_sup
+  - s_nsup_k
   input: true
   is_incomplete: true
   is_type:
@@ -43,73 +22,30 @@ Arriving_Point:
   - gufo:SemiRigidType
   - gufo:SubKind
 ---
-Erosion_Patient:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
+Depositing_Place:
+  can_type: []
+  detected_in:
+  - nk_k_sup
   input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Obstacle_Inner_Bank:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
+  is_incomplete: true
+  is_type:
   - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Obstacle:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
   - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
+  - gufo:AntiRigidType
   - gufo:Role
+  not_type:
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:PhaseMixin
   - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
+  - gufo:RigidType
   - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
+  - gufo:SemiRigidType
+  - gufo:Phase
 ---
-Outer_Bank:
+Inner_Bank:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -153,7 +89,7 @@ Bank:
   is_type: []
   not_type: []
 ---
-Frictionality_Pressed_Outer_Bank:
+Obstacle:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -175,7 +111,7 @@ Frictionality_Pressed_Outer_Bank:
   is_type: []
   not_type: []
 ---
-Inner_Bank_with_Deposited_Sediment:
+Arriving_Point:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -197,7 +133,51 @@ Inner_Bank_with_Deposited_Sediment:
   is_type: []
   not_type: []
 ---
-Depositing_Place:
+Outer_Bank:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Obstacle_Inner_Bank:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type: []
+---
+Erosion_Patient:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -241,7 +221,30 @@ Eroded_Bank:
   is_type: []
   not_type: []
 ---
-Deposition_Bank:
+Inner_Bank_with_Deposited_Sediment:
+  can_type: []
+  detected_in:
+  - nk_k_sup
+  input: false
+  is_incomplete: true
+  is_type:
+  - gufo:Sortal
+  - gufo:NonRigidType
+  - gufo:AntiRigidType
+  - gufo:Role
+  not_type:
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:PhaseMixin
+  - gufo:RoleMixin
+  - gufo:RigidType
+  - gufo:SubKind
+  - gufo:SemiRigidType
+  - gufo:Phase
+---
+Frictionality_Pressed_Outer_Bank:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category

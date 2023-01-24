@@ -1,4 +1,4 @@
-Mapped_Variable:
+Mapped_Foreign_Key:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -44,29 +44,6 @@ Mapped_Primary_Key:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-Mapped_Foreign_Key:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in:
-  - nk_k_sup
-  input: false
-  is_incomplete: true
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
 Instance_Variable:
   can_type: []
   detected_in:
@@ -90,3 +67,26 @@ Instance_Variable:
   - gufo:Role
   - gufo:RoleMixin
   - gufo:SemiRigidType
+---
+Mapped_Variable:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Phase
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:SemiRigidType
+  - gufo:SubKind
+  detected_in:
+  - nk_k_sup
+  input: false
+  is_incomplete: true
+  is_type:
+  - gufo:Sortal
+  not_type:
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:PhaseMixin
+  - gufo:RoleMixin

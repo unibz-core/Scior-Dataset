@@ -1,32 +1,42 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Fretamento> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Objeto_da_Outorga> .
+<http://taxonomy.model/COFINS> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Imposto_Federal>,
+        <http://taxonomy.model/Imposto_sobre_Serviço> .
 
-<http://taxonomy.model/Linha_de_Ônibus_Autorizada_Especial> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Linha_de_Ônibus_Outorgada> .
+<http://taxonomy.model/CSLL> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Imposto_Federal>,
+        <http://taxonomy.model/Imposto_sobre_Resultado> .
 
-<http://taxonomy.model/Linha_de_Ônibus_Permissionada> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Linha_de_Ônibus_Outorgada> .
+<http://taxonomy.model/ICMS> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Imposto_Estadual>,
+        <http://taxonomy.model/Imposto_sobre_Serviço> .
 
-<http://taxonomy.model/Lote_Ferroviário_Concedido> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Lote_Ferroviário>,
-        <http://taxonomy.model/Objeto_da_Outorga> .
+<http://taxonomy.model/IR> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Imposto_Federal>,
+        <http://taxonomy.model/Imposto_sobre_Resultado> .
 
-<http://taxonomy.model/Lote_Rodoviário_Concedido> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Lote_Rodoviário>,
-        <http://taxonomy.model/Objeto_da_Outorga> .
+<http://taxonomy.model/ISSQN> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Imposto_Municipal>,
+        <http://taxonomy.model/Imposto_sobre_Serviço> .
 
-<http://taxonomy.model/Linha_de_Ônibus> a owl:Class .
+<http://taxonomy.model/PIS> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Imposto_Federal>,
+        <http://taxonomy.model/Imposto_sobre_Serviço> .
 
-<http://taxonomy.model/Lote_Ferroviário> a owl:Class .
+<http://taxonomy.model/Imposto_Estadual> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Imposto> .
 
-<http://taxonomy.model/Lote_Rodoviário> a owl:Class .
+<http://taxonomy.model/Imposto_Municipal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Imposto> .
 
-<http://taxonomy.model/Linha_de_Ônibus_Outorgada> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Linha_de_Ônibus>,
-        <http://taxonomy.model/Objeto_da_Outorga> .
+<http://taxonomy.model/Imposto_sobre_Resultado> a owl:Class .
 
-<http://taxonomy.model/Objeto_da_Outorga> a owl:Class .
+<http://taxonomy.model/Imposto> a owl:Class .
+
+<http://taxonomy.model/Imposto_Federal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Imposto> .
+
+<http://taxonomy.model/Imposto_sobre_Serviço> a owl:Class .
 

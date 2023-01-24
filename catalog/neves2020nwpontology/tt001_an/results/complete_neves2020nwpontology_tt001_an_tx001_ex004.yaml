@@ -1,4 +1,4 @@
-Atmospheric_Pressure:
+Surface_Wind:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -19,52 +19,8 @@ Atmospheric_Pressure:
   - gufo:Mixin
   - gufo:PhaseMixin
   - gufo:RoleMixin
----
-Meteorological_Parameters:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:Kind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
 ---
 Precipitation:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-Surface_Wind:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -108,7 +64,7 @@ Sea_Surface:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-Air_Temperature:
+Temperature:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType
@@ -152,6 +108,28 @@ Relative_Humidity:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
+Meteorological_Parameters:
+  can_type: []
+  detected_in: []
+  input: true
+  is_incomplete: false
+  is_type:
+  - gufo:Kind
+  - gufo:RigidType
+  - gufo:Sortal
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+  - gufo:SemiRigidType
+  - gufo:SubKind
+---
 Cloudiness:
   can_type:
   - gufo:AntiRigidType
@@ -174,7 +152,29 @@ Cloudiness:
   - gufo:PhaseMixin
   - gufo:RoleMixin
 ---
-Temperature:
+Atmospheric_Pressure:
+  can_type:
+  - gufo:AntiRigidType
+  - gufo:NonRigidType
+  - gufo:Phase
+  - gufo:RigidType
+  - gufo:Role
+  - gufo:SemiRigidType
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type:
+  - gufo:Sortal
+  not_type:
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:PhaseMixin
+  - gufo:RoleMixin
+---
+Air_Temperature:
   can_type:
   - gufo:AntiRigidType
   - gufo:NonRigidType

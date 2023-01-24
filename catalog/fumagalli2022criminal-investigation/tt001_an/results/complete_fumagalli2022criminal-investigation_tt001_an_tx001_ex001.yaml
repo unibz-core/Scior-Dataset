@@ -1,4 +1,4 @@
-Lead_Detective:
+Superintendent:
   can_type: []
   detected_in:
   - nk_k_sup
@@ -21,7 +21,30 @@ Lead_Detective:
   - gufo:SemiRigidType
   - gufo:Phase
 ---
-Suspect:
+Senior_Detective:
+  can_type: []
+  detected_in:
+  - nk_k_sup
+  input: false
+  is_incomplete: true
+  is_type:
+  - gufo:Sortal
+  - gufo:NonRigidType
+  - gufo:AntiRigidType
+  - gufo:Role
+  not_type:
+  - gufo:Kind
+  - gufo:NonSortal
+  - gufo:Category
+  - gufo:Mixin
+  - gufo:PhaseMixin
+  - gufo:RoleMixin
+  - gufo:RigidType
+  - gufo:SubKind
+  - gufo:SemiRigidType
+  - gufo:Phase
+---
+Witness:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -43,7 +66,7 @@ Suspect:
   is_type: []
   not_type: []
 ---
-Witness:
+Person:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -88,7 +111,7 @@ Junior_Detective:
   - gufo:SemiRigidType
   - gufo:Phase
 ---
-Superintendent:
+Lead_Detective:
   can_type: []
   detected_in:
   - nk_k_sup
@@ -111,7 +134,7 @@ Superintendent:
   - gufo:SemiRigidType
   - gufo:Phase
 ---
-Person:
+Suspect:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -132,29 +155,6 @@ Person:
   is_incomplete: false
   is_type: []
   not_type: []
----
-Senior_Detective:
-  can_type: []
-  detected_in:
-  - nk_k_sup
-  input: false
-  is_incomplete: true
-  is_type:
-  - gufo:Sortal
-  - gufo:NonRigidType
-  - gufo:AntiRigidType
-  - gufo:Role
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
-  - gufo:RigidType
-  - gufo:SubKind
-  - gufo:SemiRigidType
-  - gufo:Phase
 ---
 Detective:
   can_type: []
