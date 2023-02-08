@@ -1,0 +1,40 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Assumption> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Proposition> .
+
+<http://taxonomy.model/FUnctional_Requirement> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Requirement> .
+
+<http://taxonomy.model/Functional_Requirement> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Requirement>,
+        <http://taxonomy.model/Requirements> .
+
+<http://taxonomy.model/Hardgoal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Goal> .
+
+<http://taxonomy.model/Non-Functional_Requirement> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Requirements> .
+
+<http://taxonomy.model/Product_Quality_Requirement> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Non-functional_Requirement> .
+
+<http://taxonomy.model/Softgoal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Goal> .
+
+<http://taxonomy.model/Non-functional_Requirement> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Requirement> .
+
+<http://taxonomy.model/Proposition> a owl:Class .
+
+<http://taxonomy.model/Requirement> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Goal>,
+        <http://taxonomy.model/Requirements> .
+
+<http://taxonomy.model/Requirements> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Goal> .
+
+<http://taxonomy.model/Goal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Proposition> .
+

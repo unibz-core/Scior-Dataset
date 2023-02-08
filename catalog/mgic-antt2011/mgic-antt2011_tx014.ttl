@@ -1,0 +1,32 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Fretamento> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Objeto_da_Outorga> .
+
+<http://taxonomy.model/Linha_de_�nibus_Autorizada_Especial> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Linha_de_�nibus_Outorgada> .
+
+<http://taxonomy.model/Linha_de_�nibus_Permissionada> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Linha_de_�nibus_Outorgada> .
+
+<http://taxonomy.model/Lote_Ferrovi�rio_Concedido> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Lote_Ferrovi�rio>,
+        <http://taxonomy.model/Objeto_da_Outorga> .
+
+<http://taxonomy.model/Lote_Rodovi�rio_Concedido> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Lote_Rodovi�rio>,
+        <http://taxonomy.model/Objeto_da_Outorga> .
+
+<http://taxonomy.model/Linha_de_�nibus> a owl:Class .
+
+<http://taxonomy.model/Lote_Ferrovi�rio> a owl:Class .
+
+<http://taxonomy.model/Lote_Rodovi�rio> a owl:Class .
+
+<http://taxonomy.model/Linha_de_�nibus_Outorgada> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Linha_de_�nibus>,
+        <http://taxonomy.model/Objeto_da_Outorga> .
+
+<http://taxonomy.model/Objeto_da_Outorga> a owl:Class .
+

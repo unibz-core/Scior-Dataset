@@ -1,0 +1,35 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Estimated_Process> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Cost_Estimated_Process>,
+        <http://taxonomy.model/Duration_Estimated_Process>,
+        <http://taxonomy.model/Project_Process>,
+        <http://taxonomy.model/Scheduled_Process> .
+
+<http://taxonomy.model/General_Intended_Process> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Intended_Process> .
+
+<http://taxonomy.model/General_Project_Process> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Project_Process> .
+
+<http://taxonomy.model/Specific_Intended_Process> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Intended_Process> .
+
+<http://taxonomy.model/Specific_Project_Process> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Project_Process> .
+
+<http://taxonomy.model/Cost_Estimated_Process> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Project_Process> .
+
+<http://taxonomy.model/Duration_Estimated_Process> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Project_Process> .
+
+<http://taxonomy.model/Scheduled_Process> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Intended_Process> .
+
+<http://taxonomy.model/Intended_Process> a owl:Class .
+
+<http://taxonomy.model/Project_Process> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Intended_Process> .
+

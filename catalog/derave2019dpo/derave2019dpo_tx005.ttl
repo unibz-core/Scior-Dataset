@@ -1,0 +1,43 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Booking> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Transaction> .
+
+<http://taxonomy.model/Centralized_Transaction> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Transaction> .
+
+<http://taxonomy.model/Decentralized_Transaction> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Transaction> .
+
+<http://taxonomy.model/Immediate_Acces_Transaction> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Transaction> .
+
+<http://taxonomy.model/Investment> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/MS_User_Affiliation> .
+
+<http://taxonomy.model/Quoted_Transaction> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Transaction> .
+
+<http://taxonomy.model/Registration> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/MS_User_Affiliation>,
+        <http://taxonomy.model/One-Sided_Platform_User_Affiliation>,
+        <http://taxonomy.model/User_Affiliation_Agreement> .
+
+<http://taxonomy.model/Subscription> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/MS_User_Affiliation>,
+        <http://taxonomy.model/One-Sided_Platform_User_Affiliation>,
+        <http://taxonomy.model/User_Affiliation_Agreement> .
+
+<http://taxonomy.model/One-Sided_Platform_User_Affiliation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/User_Affiliation_Agreement> .
+
+<http://taxonomy.model/MS_User_Affiliation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/User_Affiliation_Agreement> .
+
+<http://taxonomy.model/Transaction> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/MS_User_Affiliation>,
+        <http://taxonomy.model/User_Affiliation_Agreement> .
+
+<http://taxonomy.model/User_Affiliation_Agreement> a owl:Class .
+

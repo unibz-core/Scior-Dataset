@@ -1,0 +1,482 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Acionista_Votante> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Acionista> .
+
+<http://taxonomy.model/Agente_da_ANTT> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Agente> .
+
+<http://taxonomy.model/Agente_de_�rg�o_Conveniado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Agente> .
+
+<http://taxonomy.model/Ag�ncia_Reguladora_Autorizat�ria_de_Obra> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ag�ncia_Reguladora> .
+
+<http://taxonomy.model/Ag�ncia_Reguladora_Convenente> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ag�ncia_Reguladora>,
+        <http://taxonomy.model/Convenente> .
+
+<http://taxonomy.model/Arrendador_Financeiro> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fonte_de_Capital> .
+
+<http://taxonomy.model/Arrendador_Operacional> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Autor_de_ATe_por_N._de_Infra��o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscal_2> .
+
+<http://taxonomy.model/Autor_de_Representa��o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Autorizat�ria> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Outorgado> .
+
+<http://taxonomy.model/Av�> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Parente_Direto>,
+        <http://taxonomy.model/Parente_em_Linha_Reta> .
+
+<http://taxonomy.model/Benefici�rio> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Bisav�> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Parente_Direto>,
+        <http://taxonomy.model/Parente_em_Linha_Reta> .
+
+<http://taxonomy.model/Bisneto> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Parente_Direto>,
+        <http://taxonomy.model/Parente_em_Linha_Reta> .
+
+<http://taxonomy.model/Cart�rio> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa_Jur�dica> .
+
+<http://taxonomy.model/Companheiro> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa_F�sica> .
+
+<http://taxonomy.model/Comprador_Sucata> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Comprador_de_Ativo> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Concession�ria_Ferrovi�ria> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Concession�ria> .
+
+<http://taxonomy.model/Concession�ria_Rodovi�ria_Compradora> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Comprador>,
+        <http://taxonomy.model/Concession�ria_Rodovi�ria_Convenente> .
+
+<http://taxonomy.model/Concession�ria_Rodovi�ria_Cotadora> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Concession�ria_Rodovi�ria_Convenente>,
+        <http://taxonomy.model/Cotador> .
+
+<http://taxonomy.model/Concession�ria_Rodovi�ria_Fiscalizada> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Concession�ria_Rodovi�ria>,
+        <http://taxonomy.model/Objeto_Fiscalizado> .
+
+<http://taxonomy.model/Concession�ria_Rodovi�ria_Segurada> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Concession�ria_Rodovi�ria> .
+
+<http://taxonomy.model/Concession�ria_Rodovi�ria_Solicitada> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Concession�ria_Rodovi�ria_Convenente>,
+        <http://taxonomy.model/Solicitado> .
+
+<http://taxonomy.model/Contrato_de_Presta��o_de_ST_Fiscalizado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Contrato_de_Presta��o_de_Servi�o_de_Transporte>,
+        <http://taxonomy.model/Objeto_Fiscalizado> .
+
+<http://taxonomy.model/Convenente_Respons�vel_por_Servi�o_Delegado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Convenente>,
+        <http://taxonomy.model/Respons�vel_por_Servi�o_Delegado> .
+
+<http://taxonomy.model/ETRP_Autorizat�ria_em_RE> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Autorizat�ria_Especial> .
+
+<http://taxonomy.model/ETRP_de_Fretamento_Cont�nuo> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Autorizat�ria_de_TRIIP_por_Fretamento> .
+
+<http://taxonomy.model/ETRP_de_Fretamento_ET> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Autorizat�ria_de_TRIIP_por_Fretamento> .
+
+<http://taxonomy.model/Emissora_de_Deb�nture> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Empresa_com_Capital_de_Terceiros> .
+
+<http://taxonomy.model/Empresa_Limitada> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Empresa> .
+
+<http://taxonomy.model/Empresa_Participante_em_Cons�rcio> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Empresa> .
+
+<http://taxonomy.model/Empresa_SA_Regular> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Empresa>,
+        <http://taxonomy.model/Sociedade_An�nima> .
+
+<http://taxonomy.model/Empresa_com_AFAC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Empresa_Regulada_Fiscalizada> .
+
+<http://taxonomy.model/Empresa_com_Reserva> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Empresa_Regulada_Fiscalizada> .
+
+<http://taxonomy.model/Engenheiro_Respons�vel> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa_F�sica> .
+
+<http://taxonomy.model/Entidade_P�blica_em_CA_Solicitante> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Entidade_P�blica_em_CA>,
+        <http://taxonomy.model/Solicitante> .
+
+<http://taxonomy.model/Entidade_P�blica_em_CCT> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Convenente>,
+        <http://taxonomy.model/Entidade_P�blica> .
+
+<http://taxonomy.model/Entidade_Recolhedora_de_Impostos> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Entidade_P�blica> .
+
+<http://taxonomy.model/Entidade_Respons�vel_por_Extin��o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Entidade_P�blica> .
+
+<http://taxonomy.model/Ex-companheiro> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa_F�sica> .
+
+<http://taxonomy.model/Expedidor> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Filho> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Parente_Direto> .
+
+<http://taxonomy.model/Fiscal_Autuador> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscal_2> .
+
+<http://taxonomy.model/Fiscal_Conveniado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscal> .
+
+<http://taxonomy.model/Fiscal_Conveniado_2> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscal_2> .
+
+<http://taxonomy.model/Fiscal_da_ANTT> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscal>,
+        <http://taxonomy.model/Fiscal_2> .
+
+<http://taxonomy.model/Fiscal_em_Fiscaliza��o_Individual> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscal_2> .
+
+<http://taxonomy.model/Fiscal_que_Recebe_Obra> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscal_2> .
+
+<http://taxonomy.model/Fornecedor> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Fornecedor_de_Compra> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Infrator_com_RE> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Infrator_Reincidente> .
+
+<http://taxonomy.model/Infrator_com_RG> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Infrator_Reincidente> .
+
+<http://taxonomy.model/Infrator_por_InPraTe_Concession�ria> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Concession�ria_Rodovi�ria>,
+        <http://taxonomy.model/Infrator_por_InPraTe> .
+
+<http://taxonomy.model/Infrator_por_InPraTe_com_TAC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Infrator_por_InPraTe>,
+        <http://taxonomy.model/Pessoa_com_TAC> .
+
+<http://taxonomy.model/Infrator_por_InPraTe_com_TRO> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Concession�ria_Rodovi�ria_com_TRO>,
+        <http://taxonomy.model/Infrator_por_InPraTe> .
+
+<http://taxonomy.model/Infrator_por_InPraTo> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Infrator> .
+
+<http://taxonomy.model/Integrante_de_Equipe_de_Fiscaliza��o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscal_em_Fiscaliza��o_em_Equipe> .
+
+<http://taxonomy.model/Interventor_Concession�ria> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Concession�ria_Rodovi�ria>,
+        <http://taxonomy.model/Interventor> .
+
+<http://taxonomy.model/Interventor_Conveniado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Convenente>,
+        <http://taxonomy.model/Interventor> .
+
+<http://taxonomy.model/Interventor_Poder_P�blico> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Interventor>,
+        <http://taxonomy.model/Poder_P�blico> .
+
+<http://taxonomy.model/Irm�o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Parente_Direto>,
+        <http://taxonomy.model/Parente_em_Linha_Colateral> .
+
+<http://taxonomy.model/L�der_de_Equipe_de_Fiscaliza��o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscal_em_Fiscaliza��o_em_Equipe> .
+
+<http://taxonomy.model/Manifestante> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Neto> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Parente_Direto>,
+        <http://taxonomy.model/Parente_em_Linha_Reta> .
+
+<http://taxonomy.model/Operadora_de_MP_Fiscalizada> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Objeto_Fiscalizado>,
+        <http://taxonomy.model/Operadora_de_Meio_de_Pagamento> .
+
+<http://taxonomy.model/Outorgante> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Entidade_P�blica> .
+
+<http://taxonomy.model/Pagante> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Pai> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Parente_Direto> .
+
+<http://taxonomy.model/Parente_de_1�_Grau> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Parente> .
+
+<http://taxonomy.model/Parente_de_2�_Grau> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Parente> .
+
+<http://taxonomy.model/Parente_de_3�_Grau> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Parente> .
+
+<http://taxonomy.model/Parente_de_4�_Grau_ou_Maior> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Parente> .
+
+<http://taxonomy.model/Parente_por_Afinidade> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Parente> .
+
+<http://taxonomy.model/Permission�ria> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Empresa_Origin�ria_de_Licita��o>,
+        <http://taxonomy.model/Outorgado> .
+
+<http://taxonomy.model/Pessoa_com_Im�vel> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Primo> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Parente_em_Linha_Colateral> .
+
+<http://taxonomy.model/Produtor> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Produtor_de_Servi�o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa_Jur�dica> .
+
+<http://taxonomy.model/Propriet�rio_de_Ve�culo> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Representante_da_Convenente> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa_F�sica> .
+
+<http://taxonomy.model/Respons�vel_T�cnico> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa_F�sica> .
+
+<http://taxonomy.model/Respons�vel_pela_Lavratura_de_TRO> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscal_2> .
+
+<http://taxonomy.model/Respons�vel_pela_Verifica��o_de_TRO> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscal_2> .
+
+<http://taxonomy.model/Respons�vel_por_Adiantamento> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/S�cio> .
+
+<http://taxonomy.model/Respons�vel_por_Aporte> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/S�cio> .
+
+<http://taxonomy.model/Seguradora> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Empresa> .
+
+<http://taxonomy.model/Sobrinho> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Parente_Direto>,
+        <http://taxonomy.model/Parente_em_Linha_Colateral> .
+
+<http://taxonomy.model/Sobrinho-neto> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Parente_Direto>,
+        <http://taxonomy.model/Parente_em_Linha_Colateral> .
+
+<http://taxonomy.model/S�cio_LTDA> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/S�cio> .
+
+<http://taxonomy.model/Tio> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Parente_Direto>,
+        <http://taxonomy.model/Parente_em_Linha_Colateral> .
+
+<http://taxonomy.model/Tio-av�> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Parente_Direto>,
+        <http://taxonomy.model/Parente_em_Linha_Colateral> .
+
+<http://taxonomy.model/Transportador> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Vendedor> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/�rg�o_Conveniado_Fiscalizador> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa_Jur�dica>,
+        <http://taxonomy.model/�rg�o_Conveniado>,
+        <http://taxonomy.model/�rg�o_Respons�vel_por_Fiscaliza��o> .
+
+<http://taxonomy.model/�rg�o_Privado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/�rg�o> .
+
+<http://taxonomy.model/�rg�o_P�blico_com_CNPJ> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa_Jur�dica>,
+        <http://taxonomy.model/�rg�o_P�blico> .
+
+<http://taxonomy.model/�rg�o_P�blico_sem_CNPJ> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/�rg�o_P�blico> .
+
+<http://taxonomy.model/Acionista> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/S�cio> .
+
+<http://taxonomy.model/Autorizat�ria_Especial> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Autorizat�ria_de_TT>,
+        <http://taxonomy.model/Outorgado> .
+
+<http://taxonomy.model/Comprador> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Concession�ria_Rodovi�ria_com_TRO> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Concession�ria_Rodovi�ria> .
+
+<http://taxonomy.model/Contrato_de_Presta��o_de_Servi�o_de_Transporte> a owl:Class .
+
+<http://taxonomy.model/Cotador> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Empresa_com_Capital_de_Terceiros> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Empresa_Regulada_Fiscalizada> .
+
+<http://taxonomy.model/Entidade_P�blica_em_CA> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Convenente>,
+        <http://taxonomy.model/Entidade_P�blica> .
+
+<http://taxonomy.model/Fonte_de_Capital> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Operadora_de_Meio_de_Pagamento> a owl:Class .
+
+<http://taxonomy.model/Pessoa_com_TAC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Poder_P�blico> a owl:Class .
+
+<http://taxonomy.model/Provedor_de_Servi�o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa_Jur�dica> .
+
+<http://taxonomy.model/Respons�vel_por_Servi�o_Delegado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa_Jur�dica> .
+
+<http://taxonomy.model/Sociedade_de_Prop�sito_Espec�fico> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Empresa>,
+        <http://taxonomy.model/Sociedade_An�nima> .
+
+<http://taxonomy.model/Solicitado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Solicitante> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/�rg�o_Conveniado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Convenente>,
+        <http://taxonomy.model/�rg�o_P�blico> .
+
+<http://taxonomy.model/�rg�o_Respons�vel_por_Fiscaliza��o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/�rg�o_P�blico> .
+
+<http://taxonomy.model/Agente> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa_F�sica> .
+
+<http://taxonomy.model/Ag�ncia_Reguladora> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa_Jur�dica> .
+
+<http://taxonomy.model/Autorizat�ria_de_TRIIP_por_Fretamento> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Autorizat�ria_de_TT> .
+
+<http://taxonomy.model/Autorizat�ria_de_TT> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Empresa_Regulada> .
+
+<http://taxonomy.model/Concession�ria> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Empresa_Origin�ria_de_Licita��o>,
+        <http://taxonomy.model/Empresa_Regulada>,
+        <http://taxonomy.model/Outorgado>,
+        <http://taxonomy.model/Sociedade_de_Prop�sito_Espec�fico> .
+
+<http://taxonomy.model/Empresa_Origin�ria_de_Licita��o> a owl:Class .
+
+<http://taxonomy.model/Fiscal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa_F�sica> .
+
+<http://taxonomy.model/Fiscal_em_Fiscaliza��o_em_Equipe> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fiscal_2> .
+
+<http://taxonomy.model/Infrator_Reincidente> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Infrator> .
+
+<http://taxonomy.model/Sociedade_An�nima> a owl:Class .
+
+<http://taxonomy.model/�rg�o> a owl:Class .
+
+<http://taxonomy.model/Concession�ria_Rodovi�ria_Convenente> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Concession�ria_Rodovi�ria>,
+        <http://taxonomy.model/Convenente> .
+
+<http://taxonomy.model/Empresa_Regulada> a owl:Class .
+
+<http://taxonomy.model/Empresa_Regulada_Fiscalizada> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Empresa_Regulada> .
+
+<http://taxonomy.model/Infrator> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Infrator_por_InPraTe> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Infrator> .
+
+<http://taxonomy.model/Interventor> a owl:Class .
+
+<http://taxonomy.model/Objeto_Fiscalizado> a owl:Class .
+
+<http://taxonomy.model/Outorgado> a owl:Class .
+
+<http://taxonomy.model/Parente_em_Linha_Reta> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Parente> .
+
+<http://taxonomy.model/S�cio> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/�rg�o_P�blico> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/�rg�o> .
+
+<http://taxonomy.model/Empresa> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa_Jur�dica> .
+
+<http://taxonomy.model/Entidade_P�blica> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa_Jur�dica> .
+
+<http://taxonomy.model/Concession�ria_Rodovi�ria> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Concession�ria>,
+        <http://taxonomy.model/Provedor_de_Servi�o> .
+
+<http://taxonomy.model/Parente_em_Linha_Colateral> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Parente> .
+
+<http://taxonomy.model/Convenente> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa_Jur�dica> .
+
+<http://taxonomy.model/Parente> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa_F�sica> .
+
+<http://taxonomy.model/Fiscal_2> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa_F�sica> .
+
+<http://taxonomy.model/Pessoa_F�sica> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Pessoa_Jur�dica> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa> .
+
+<http://taxonomy.model/Parente_Direto> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Parente> .
+
+<http://taxonomy.model/Pessoa> a owl:Class .
+

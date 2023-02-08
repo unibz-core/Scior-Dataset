@@ -1,0 +1,1291 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/A_-_LPF_Source_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Adaptation_Source>,
+        <http://taxonomy.model/Bound_Transport_Function> .
+
+<http://taxonomy.model/A_-_Layer_Processor_Sink_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Adaptation_Sink>,
+        <http://taxonomy.model/Bound_Transport_Function> .
+
+<http://taxonomy.model/A_Sk_-_Termination_Sink_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Adaptation_Sink>,
+        <http://taxonomy.model/Bound_Transport_Function> .
+
+<http://taxonomy.model/A_Sk_-_Uni_Matrix_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Adaptation_Sink>,
+        <http://taxonomy.model/Bound_Transport_Function> .
+
+<http://taxonomy.model/A_Sk_-_Uni_Subnetwork_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Adaptation_Sink> .
+
+<http://taxonomy.model/A_Sk_Input_-_Sk_AP_Bound> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Adaptation_Sink_Input>,
+        <http://taxonomy.model/Bound_Input-Output> .
+
+<http://taxonomy.model/A_Sk_Output_-_A-FP_Bound> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Adaptation_Sink_Output>,
+        <http://taxonomy.model/Bound_Input-Output>,
+        <http://taxonomy.model/Possible_Ingress_LC> .
+
+<http://taxonomy.model/A_Sk_Output_-_Sk_A-FEP_Bound> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Adaptation_Sink_Output> .
+
+<http://taxonomy.model/A_Sk_Output_-_Sk_LP-FP_Bound> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Adaptation_Sink_Output> .
+
+<http://taxonomy.model/A_So_-_Adaptation_Sink_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Adaptation_Source>,
+        <http://taxonomy.model/Bound_Transport_Function> .
+
+<http://taxonomy.model/A_So_-_Termination_Source_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Adaptation_Source>,
+        <http://taxonomy.model/Bound_Transport_Function> .
+
+<http://taxonomy.model/A_So_-_Uni_Matrix_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Adaptation_Source>,
+        <http://taxonomy.model/Bound_Transport_Function> .
+
+<http://taxonomy.model/A_So_-_Uni_Subnetwork_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Adaptation_Source> .
+
+<http://taxonomy.model/A_So_Input_-_A-FP_Bound> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Adaptation_Source_Input>,
+        <http://taxonomy.model/Bound_Input-Output>,
+        <http://taxonomy.model/Possible_Egress_LC> .
+
+<http://taxonomy.model/A_So_Input_-_So_A-FEP_Bound> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Adaptation_Source_Input> .
+
+<http://taxonomy.model/A_So_Input_-_So_L-FP_Bound> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Adaptation_Source_Input> .
+
+<http://taxonomy.model/A_So_Output_-_So_AP_Bound> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Adaptation_Source_Output>,
+        <http://taxonomy.model/Bound_Input-Output> .
+
+<http://taxonomy.model/Active_Bidirectional_AP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_AP>,
+        <http://taxonomy.model/Connected_Reference_Point> .
+
+<http://taxonomy.model/Active_Bidirectional_PM-FEP_-_PM_LC_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_PM-FEP>,
+        <http://taxonomy.model/Connected_Reference_Point> .
+
+<http://taxonomy.model/Active_Bidirectional_PM-FEP_-_PM_NC_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_PM-FEP>,
+        <http://taxonomy.model/Connected_Reference_Point> .
+
+<http://taxonomy.model/Active_Bidirectional_Path_FEP_-_Path_NC_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_Path_FEP>,
+        <http://taxonomy.model/Connected_Reference_Point> .
+
+<http://taxonomy.model/Active_End_Bidirectional_SN-FEP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_SN-FEP>,
+        <http://taxonomy.model/Connected_Reference_Point> .
+
+<http://taxonomy.model/Active_Intermediate_Bidirectional_M-FP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_M-FP>,
+        <http://taxonomy.model/Connected_Reference_Point> .
+
+<http://taxonomy.model/Active_Intermediate_Bidirectional_SN-FP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_SN-FP>,
+        <http://taxonomy.model/Connected_Reference_Point> .
+
+<http://taxonomy.model/Active_Path_Bidirectional_M-FEP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_M-FEP>,
+        <http://taxonomy.model/Connected_Reference_Point> .
+
+<http://taxonomy.model/Active_Path_Bidirectional_M-FP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_M-FP>,
+        <http://taxonomy.model/Connected_Reference_Point> .
+
+<http://taxonomy.model/Active_Path_Bidirectional_SN-FEP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_SN-FEP>,
+        <http://taxonomy.model/Connected_Reference_Point> .
+
+<http://taxonomy.model/Active_Path_Bidirectional_SN-FP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_SN-FP>,
+        <http://taxonomy.model/Connected_Reference_Point> .
+
+<http://taxonomy.model/Active_Possible_Bi_LC_Connected_RP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Connected_Reference_Point>,
+        <http://taxonomy.model/Possible_Bi_LC_Connected_RP> .
+
+<http://taxonomy.model/Active_Sink_AP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Connected_Reference_Point>,
+        <http://taxonomy.model/Sink_AP> .
+
+<http://taxonomy.model/Active_Sk_M-FEP_-_Sk_MC_connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Connected_Reference_Point>,
+        <http://taxonomy.model/Sink_M-FEP> .
+
+<http://taxonomy.model/Active_Sk_M-FP_-_Int_MC_connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Connected_Reference_Point>,
+        <http://taxonomy.model/Sink_M-FP> .
+
+<http://taxonomy.model/Active_Sk_M-FP_-_Sk_MC_connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Connected_Reference_Point>,
+        <http://taxonomy.model/Sink_M-FP> .
+
+<http://taxonomy.model/Active_Sk_PM-FEP_-_PM_LC_connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Connected_Reference_Point>,
+        <http://taxonomy.model/Sink_PM-FEP> .
+
+<http://taxonomy.model/Active_Sk_PM-FEP_-_PM_NC_connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Connected_Reference_Point>,
+        <http://taxonomy.model/Sink_PM-FEP> .
+
+<http://taxonomy.model/Active_Sk_Path-FEP_-_Path_NC_connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Connected_Reference_Point>,
+        <http://taxonomy.model/Sink_Path_FEP> .
+
+<http://taxonomy.model/Active_Sk_SN-FEP_-_End_CFTE_connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Connected_Reference_Point>,
+        <http://taxonomy.model/Sink_SN-FEP> .
+
+<http://taxonomy.model/Active_Sk_SN-FEP_-_Sk_CFTE_connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Connected_Reference_Point>,
+        <http://taxonomy.model/Sink_SN-FEP> .
+
+<http://taxonomy.model/Active_Sk_SN-FP_-_Int_CFTE_connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Connected_Reference_Point>,
+        <http://taxonomy.model/Sink_SN-FP> .
+
+<http://taxonomy.model/Active_Sk_SN-FP_-_Sk_CFTE_connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Connected_Reference_Point>,
+        <http://taxonomy.model/Sink_SN-FP> .
+
+<http://taxonomy.model/Active_So_M-FEP_-_So_MC_connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Connected_Reference_Point>,
+        <http://taxonomy.model/Source_M-FEP> .
+
+<http://taxonomy.model/Active_So_M-FP_-_Int_MC_connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Connected_Reference_Point>,
+        <http://taxonomy.model/Source_M-FP> .
+
+<http://taxonomy.model/Active_So_M-FP_-_So_MC_connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Connected_Reference_Point>,
+        <http://taxonomy.model/Source_M-FP> .
+
+<http://taxonomy.model/Active_So_PM-FEP_-_PM_LC_connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Connected_Reference_Point>,
+        <http://taxonomy.model/Source_PM-FEP> .
+
+<http://taxonomy.model/Active_So_PM-FEP_-_PM_NC_connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Connected_Reference_Point>,
+        <http://taxonomy.model/Source_PM-FEP> .
+
+<http://taxonomy.model/Active_So_Path-FEP_-_Path_NC_connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Connected_Reference_Point>,
+        <http://taxonomy.model/Source_Path_FEP> .
+
+<http://taxonomy.model/Active_So_SN-FEP_-_End_CFTE_connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Connected_Reference_Point>,
+        <http://taxonomy.model/Source_SN-FEP> .
+
+<http://taxonomy.model/Active_So_SN-FEP_-_So_CFTE_connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Connected_Reference_Point>,
+        <http://taxonomy.model/Source_SN-FEP> .
+
+<http://taxonomy.model/Active_So_SN-FP_-_Int_CFTE_connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Connected_Reference_Point>,
+        <http://taxonomy.model/Source_SN-FP> .
+
+<http://taxonomy.model/Active_So_SN-FP_-_So_CFTE_connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Connected_Reference_Point>,
+        <http://taxonomy.model/Source_SN-FP> .
+
+<http://taxonomy.model/Active_Source_AP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Connected_Reference_Point>,
+        <http://taxonomy.model/Source_AP> .
+
+<http://taxonomy.model/Adaptation_Sink_-_A_So_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Adaptation_Sink>,
+        <http://taxonomy.model/Bound_Transport_Function> .
+
+<http://taxonomy.model/Adaptation_Sink_-_T_Sk_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Adaptation_Sink>,
+        <http://taxonomy.model/Bound_Transport_Function> .
+
+<http://taxonomy.model/Adaptation_Sk_Bidirectional_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Adaptation_Sink> .
+
+<http://taxonomy.model/Adaptation_So_Bidirectional_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Adaptation_Source> .
+
+<http://taxonomy.model/Adaptation_Source_-_T_So_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Adaptation_Source>,
+        <http://taxonomy.model/Bound_Transport_Function> .
+
+<http://taxonomy.model/Ag_PM_-_Bidirectional_Termination_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Aggregated_Physical_Media>,
+        <http://taxonomy.model/Bound_Transport_Function> .
+
+<http://taxonomy.model/Bi_A_-_Bi_Matrix_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_Adaptation>,
+        <http://taxonomy.model/Bound_Transport_Function> .
+
+<http://taxonomy.model/Bi_A_-_Bi_Subnetwork_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_Adaptation> .
+
+<http://taxonomy.model/Bi_A_-_Bidirectional_Termination_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_Adaptation>,
+        <http://taxonomy.model/Bound_Transport_Function> .
+
+<http://taxonomy.model/Bi_End_CFTE> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_CFTE> .
+
+<http://taxonomy.model/Bi_Intermediate_CFTE> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_CFTE> .
+
+<http://taxonomy.model/Bi_Intermediate_MC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_MC> .
+
+<http://taxonomy.model/Bi_M_-_Bidirectional_Termination_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_Matrix>,
+        <http://taxonomy.model/Bound_Transport_Function> .
+
+<http://taxonomy.model/Bi_Matrix_-_A_Bi_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_Matrix>,
+        <http://taxonomy.model/Bound_Transport_Function> .
+
+<http://taxonomy.model/Bi_PM_LC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_LC> .
+
+<http://taxonomy.model/Bi_Path_CFTE> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_CFTE> .
+
+<http://taxonomy.model/Bi_Path_LC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_LC> .
+
+<http://taxonomy.model/Bi_Path_MC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_MC> .
+
+<http://taxonomy.model/Bi_SN_-_Bidirectional_Termination_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_Connected_Subnetwork>,
+        <http://taxonomy.model/Bound_Transport_Function> .
+
+<http://taxonomy.model/Bi_Subnetwork_-_A_Bi_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_Connected_Subnetwork> .
+
+<http://taxonomy.model/Bi_Termination_-_Bidirectional_A_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_Termination>,
+        <http://taxonomy.model/Bound_Transport_Function> .
+
+<http://taxonomy.model/Bidirectional_A-FEP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_Path_FEP>,
+        <http://taxonomy.model/Possible_Bi_LC_Connected_RP> .
+
+<http://taxonomy.model/Bidirectional_A-FP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/A-FP>,
+        <http://taxonomy.model/Possible_Bi_LC_Connected_RP> .
+
+<http://taxonomy.model/Bidirectional_Access_Transport_Entity> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Access_Transport_Entity> .
+
+<http://taxonomy.model/Bidirectional_Adaptation_-_Bi_A_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_Adaptation>,
+        <http://taxonomy.model/Bound_Transport_Function> .
+
+<http://taxonomy.model/Bidirectional_Adaptation_-_Bi_T_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_Adaptation>,
+        <http://taxonomy.model/Bound_Transport_Function> .
+
+<http://taxonomy.model/Bidirectional_Adaptation_-_LPF_Bi_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_Adaptation> .
+
+<http://taxonomy.model/Bidirectional_LPF_-_Bi_Termination_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_Layer_Processor_Function> .
+
+<http://taxonomy.model/Bidirectional_Layer_Processor_-_A_Bi_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_Layer_Processor_Function> .
+
+<http://taxonomy.model/Bidirectional_PM_NC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_NC> .
+
+<http://taxonomy.model/Bidirectional_Path_NC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_NC> .
+
+<http://taxonomy.model/Bidirectional_Sink-Source_Matrix> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_Matrix> .
+
+<http://taxonomy.model/Bidirectional_Termination_-_Ag_PM_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_Termination>,
+        <http://taxonomy.model/Bound_Transport_Function> .
+
+<http://taxonomy.model/Bidirectional_Termination_-_Bi_A_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_Termination>,
+        <http://taxonomy.model/Bound_Transport_Function> .
+
+<http://taxonomy.model/Bidirectional_Termination_-_Bi_LPF_Connection> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_Termination> .
+
+<http://taxonomy.model/Bidirectional_Termination_-_Bi_M_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_Termination>,
+        <http://taxonomy.model/Bound_Transport_Function> .
+
+<http://taxonomy.model/Bidirectional_Termination_-_Bi_SN_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_Termination>,
+        <http://taxonomy.model/Bound_Transport_Function> .
+
+<http://taxonomy.model/Co-located_Termination> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Termination_Function> .
+
+<http://taxonomy.model/Component_LPF> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Layer_Processor_Function> .
+
+<http://taxonomy.model/Component_Matrix> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Matrix> .
+
+<http://taxonomy.model/Component_Subnetwork> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Subnetwork> .
+
+<http://taxonomy.model/Composed_AG> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Access_Group> .
+
+<http://taxonomy.model/Composed_Topological_Layer> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Topological_Layer> .
+
+<http://taxonomy.model/Connected_Relatable_TC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Relatable_Topological_Components> .
+
+<http://taxonomy.model/Defined_Geographical_Element> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Geographical_Element> .
+
+<http://taxonomy.model/Directly_Connected_Transport_Entity> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Transport_Entity> .
+
+<http://taxonomy.model/Egress_LC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Possible_Egress_LC> .
+
+<http://taxonomy.model/Egress_MC_Sk> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/T_Sk_Input_-_Sk_M-FEP_Bound> .
+
+<http://taxonomy.model/Egress_MC_Sk-So> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/A_So_Input_-_So_M-FP_Bound> .
+
+<http://taxonomy.model/Egress_MC_So> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/A_So_Input_-_So_M-FP_Bound> .
+
+<http://taxonomy.model/Egress_SN_Sk> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/T_Sk_Input_-_Sk_SN-FEP_Bound> .
+
+<http://taxonomy.model/Egress_SN_Sk-So> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/T_Sk_Input_-_Sk_SN-FEP_Bound> .
+
+<http://taxonomy.model/Egress_SN_Sk-So_2> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/A_So_Input_-_So_SN-FP_Bound> .
+
+<http://taxonomy.model/Egress_SN_So> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/A_So_Input_-_So_SN-FP_Bound> .
+
+<http://taxonomy.model/End_CFTE_Bi_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/End_CFTE> .
+
+<http://taxonomy.model/Forwarding_Function_CFTE_Sk> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Forwarding_Function_CFTE> .
+
+<http://taxonomy.model/Forwarding_Function_CFTE_Sk-So> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Forwarding_Function_CFTE> .
+
+<http://taxonomy.model/Forwarding_Function_CFTE_So> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Forwarding_Function_CFTE> .
+
+<http://taxonomy.model/Forwarding_Function_CFTE_So-Sk> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Forwarding_Function_CFTE> .
+
+<http://taxonomy.model/Forwarding_Function_LC_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Forwarding_Function_LC> .
+
+<http://taxonomy.model/Forwarding_Function_Sk-So_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Forwarding_Function_Matrix> .
+
+<http://taxonomy.model/Forwarding_Function_Sk_M_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Forwarding_Function_Matrix> .
+
+<http://taxonomy.model/Forwarding_Function_So_M_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Forwarding_Function_Matrix> .
+
+<http://taxonomy.model/Geographical_Element_With_Alias> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Geographical_Element> .
+
+<http://taxonomy.model/Ingress_LC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Possible_Ingress_LC> .
+
+<http://taxonomy.model/Ingress_MC_Sk> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/A_Sk_Output_-_Sk_M-FP_Bound> .
+
+<http://taxonomy.model/Ingress_MC_Sk-So> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/A_Sk_Output_-_Sk_M-FP_Bound> .
+
+<http://taxonomy.model/Ingress_MC_So> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/T_So_Output_-_So_M-FEP_Bound> .
+
+<http://taxonomy.model/Ingress_SN_Sk> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/A_Sk_Output_-_Sk_SN-FP_Bound> .
+
+<http://taxonomy.model/Ingress_SN_Sk-So> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/A_Sk_Output_-_Sk_SN-FP_Bound> .
+
+<http://taxonomy.model/Ingress_SN_So> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/T_So_Output_-_So_SN-FEP_Bound> .
+
+<http://taxonomy.model/Ingress_SN_So-Sk> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/T_So_Output_-_So_SN-FEP_Bound> .
+
+<http://taxonomy.model/Intermediate_CFTE_Bi_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Intermediate_CFTE> .
+
+<http://taxonomy.model/Intermediate_MC_Bi_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Intermediate_MC> .
+
+<http://taxonomy.model/LPF_-_Sk_L-FEP_Bound> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Layer_Processor_Sink_Output> .
+
+<http://taxonomy.model/LPF_-_Termination_Sink_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bound_Transport_Function>,
+        <http://taxonomy.model/Layer_Processor_Function_Sink> .
+
+<http://taxonomy.model/LPF_-_Termination_Source_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bound_Transport_Function>,
+        <http://taxonomy.model/Layer_Processor_Function_Source> .
+
+<http://taxonomy.model/LPF_Input_-_So_L-FEP_Bound> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Layer_Processor_Source_Input> .
+
+<http://taxonomy.model/LPF_Output_-_So_L-FP_Bound> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Layer_Processor_Source_Output>,
+        <http://taxonomy.model/Possible_Ingress_LC> .
+
+<http://taxonomy.model/LPF_Sk_Bidirectional_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Layer_Processor_Function_Sink> .
+
+<http://taxonomy.model/LPF_So_Bidirectional_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Layer_Processor_Function_Source> .
+
+<http://taxonomy.model/LP_Input_-_Sk_LP-FP_Bound> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Layer_Processor_Sink_Input>,
+        <http://taxonomy.model/Possible_Egress_LC> .
+
+<http://taxonomy.model/Layer_Processor_Sink_-_A_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bound_Transport_Function>,
+        <http://taxonomy.model/Layer_Processor_Function_Sink> .
+
+<http://taxonomy.model/Layer_Processor_Source_-_A_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bound_Transport_Function>,
+        <http://taxonomy.model/Layer_Processor_Function_Source> .
+
+<http://taxonomy.model/M_Input_-_Sk_M-FP_Bound> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bound_Input-Output>,
+        <http://taxonomy.model/Matrix_Input> .
+
+<http://taxonomy.model/M_Input_-_So_M-FEP_Bound> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Matrix_Input> .
+
+<http://taxonomy.model/M_Output_-_Sk_M-FEP_Bound> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Matrix_Output> .
+
+<http://taxonomy.model/M_Output_-_So_M-FP_Bound> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bound_Input-Output>,
+        <http://taxonomy.model/Matrix_Output>,
+        <http://taxonomy.model/Possible_Ingress_LC> .
+
+<http://taxonomy.model/Mapped_TF_Input> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Input> .
+
+<http://taxonomy.model/Mapped_TF_Output> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Output> .
+
+<http://taxonomy.model/Module_Mapped_TF_Input> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Input> .
+
+<http://taxonomy.model/Module_Mapped_TF_Output> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Output> .
+
+<http://taxonomy.model/NC_Supported_by_CFTE> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Network_Connection> .
+
+<http://taxonomy.model/NC_Supported_by_LC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Network_Connection> .
+
+<http://taxonomy.model/NC_Supported_by_MC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Network_Connection> .
+
+<http://taxonomy.model/PM_-_Termination_Sink_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bound_Transport_Function>,
+        <http://taxonomy.model/Single_Physical_Media> .
+
+<http://taxonomy.model/PM_-_Termination_Source_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bound_Transport_Function>,
+        <http://taxonomy.model/Single_Physical_Media> .
+
+<http://taxonomy.model/PM_Interface_Bound_Input> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/PM_Input_-_So_PM-FEP_Bound> .
+
+<http://taxonomy.model/PM_Interface_Bound_Output> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/PM_Output_-_Sk_PM-FEP_Bound> .
+
+<http://taxonomy.model/PM_LC_Bi_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/PM_LC> .
+
+<http://taxonomy.model/Path-Path_Layers_AF> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Adaptation_Function> .
+
+<http://taxonomy.model/Path-Section_Layers_AF> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Adaptation_Function> .
+
+<http://taxonomy.model/Path_Bidirectional_Matrix> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_Matrix> .
+
+<http://taxonomy.model/Path_Connected_Reference_Point> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Directly_Bound_Reference_Point> .
+
+<http://taxonomy.model/Path_LC_Bi_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Path_LC> .
+
+<http://taxonomy.model/Physical_Media_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Single_Physical_Media> .
+
+<http://taxonomy.model/Physical_Media_Layer_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Physical_Media> .
+
+<http://taxonomy.model/SN_-_Termination_Sink_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Unidirectional_Subnetwork> .
+
+<http://taxonomy.model/SN_-_Termination_Source_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Unidirectional_Subnetwork> .
+
+<http://taxonomy.model/SN_Input_-_So_S-FEP_Bound> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Subnetwork_Input> .
+
+<http://taxonomy.model/SN_Intput_-_Sk_SN-FP_Bound> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bound_Input-Output>,
+        <http://taxonomy.model/Possible_Egress_LC>,
+        <http://taxonomy.model/Subnetwork_Input> .
+
+<http://taxonomy.model/SN_Output_-_Sk_S-FEP_Bound> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Subnetwork_Output> .
+
+<http://taxonomy.model/SN_Outtput_-_So_SN-FP_Bound> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bound_Input-Output>,
+        <http://taxonomy.model/Possible_Ingress_LC>,
+        <http://taxonomy.model/Subnetwork_Output> .
+
+<http://taxonomy.model/Section-Physical_Media_Layers_AF> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Adaptation_Function> .
+
+<http://taxonomy.model/Section_Layer_Termination> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Transmission_Media_Layer_Termination> .
+
+<http://taxonomy.model/Single_AG> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Access_Group> .
+
+<http://taxonomy.model/Single_Termination> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Termination_Function> .
+
+<http://taxonomy.model/Sink_A-FEP_Bi_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sink_A-FEP> .
+
+<http://taxonomy.model/Sink_AP_Bi_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sink_AP> .
+
+<http://taxonomy.model/Sink_Active_RP_-_Path_LC_connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Connected_Reference_Point>,
+        <http://taxonomy.model/LC_Connected_RP> .
+
+<http://taxonomy.model/Sink_CFTE_Bi_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sink_CFTE> .
+
+<http://taxonomy.model/Sink_LP-FP_Bi_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sink_LP-FP> .
+
+<http://taxonomy.model/Sink_LPF-FEP_Bi_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sink_LPF-FEP> .
+
+<http://taxonomy.model/Sink_M-FEP_Bi_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sink_M-FEP> .
+
+<http://taxonomy.model/Sink_M-FP_Bi_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sink_M-FP> .
+
+<http://taxonomy.model/Sink_MC_Bi_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sink_MC> .
+
+<http://taxonomy.model/Sink_PM-FEP_Bi_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sink_PM-FEP> .
+
+<http://taxonomy.model/Sink_SN-FEP_Bi_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sink_SN-FEP> .
+
+<http://taxonomy.model/Sink_SN-FP_Bi_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sink_SN-FP> .
+
+<http://taxonomy.model/Sk_Matrix_Bi_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sink_Matrix> .
+
+<http://taxonomy.model/So_Matrix_Bi_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Source_Matrix> .
+
+<http://taxonomy.model/Source_A-FEP_Bi_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Source_A-FEP> .
+
+<http://taxonomy.model/Source_AP_Bi_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Source_AP> .
+
+<http://taxonomy.model/Source_Active_RP_-_Path_LC_connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Connected_Reference_Point>,
+        <http://taxonomy.model/LC_Connected_RP> .
+
+<http://taxonomy.model/Source_CFTE_Bi_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Source_CFTE> .
+
+<http://taxonomy.model/Source_LP-FP_Bi_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Source_LP-FP> .
+
+<http://taxonomy.model/Source_LPF-FEP_Bi_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Source_LPF-FEP> .
+
+<http://taxonomy.model/Source_M-FEP_Bi_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Source_M-FEP> .
+
+<http://taxonomy.model/Source_M-FP_Bi_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Source_M-FP> .
+
+<http://taxonomy.model/Source_MC_Bi_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Source_MC> .
+
+<http://taxonomy.model/Source_PM-FEP_Bi_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Source_PM-FEP> .
+
+<http://taxonomy.model/Source_SN-FEP_Bi_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Source_SN-FEP> .
+
+<http://taxonomy.model/Source_SN-FP_Bi_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Source_SN-FP> .
+
+<http://taxonomy.model/Supporting_Access_Transport_Entity> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Access_Transport_Entity> .
+
+<http://taxonomy.model/Supporting_CFTE> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Channel_Forwarding_Transport_Entity> .
+
+<http://taxonomy.model/Supporting_LC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Link_Connection> .
+
+<http://taxonomy.model/Supporting_MC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Matrix_Connection> .
+
+<http://taxonomy.model/Supporting_NC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Network_Connection> .
+
+<http://taxonomy.model/TE_Connected_Reference_Point> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Directly_Bound_Reference_Point> .
+
+<http://taxonomy.model/T_Sk_-_Adaptation_Sink_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bound_Transport_Function>,
+        <http://taxonomy.model/Termination_Sink> .
+
+<http://taxonomy.model/T_Sk_Input_-_Sk_A-FEP_Bound> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Possible_Egress_LC>,
+        <http://taxonomy.model/Termination_Sink_Input> .
+
+<http://taxonomy.model/T_Sk_Input_-_Sk_LPF-FEP_Bound> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Possible_Egress_LC>,
+        <http://taxonomy.model/Termination_Sink_Input> .
+
+<http://taxonomy.model/T_Sk_Input_-_Sk_PM-FEP_Bound> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Possible_Egress_LC>,
+        <http://taxonomy.model/Termination_Sink_Input> .
+
+<http://taxonomy.model/T_Sk_Output_-_Sk_AP_Bound> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bound_Input-Output>,
+        <http://taxonomy.model/Termination_Sink_Output> .
+
+<http://taxonomy.model/T_So_-_Adaptation_Source_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bound_Transport_Function>,
+        <http://taxonomy.model/Termination_Source> .
+
+<http://taxonomy.model/T_So_Input_-_So_AP_Bound> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bound_Input-Output>,
+        <http://taxonomy.model/Termination_Source_Input> .
+
+<http://taxonomy.model/T_So_Output_-_So_A-FEP_Bound> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Possible_Ingress_LC>,
+        <http://taxonomy.model/Termination_Source_Output> .
+
+<http://taxonomy.model/T_So_Output_-_So_LPF-FEP_Bound> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Possible_Ingress_LC>,
+        <http://taxonomy.model/Termination_Source_Output> .
+
+<http://taxonomy.model/T_So_Output_-_So_PM-FEP_Bound> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Possible_Ingress_LC>,
+        <http://taxonomy.model/Termination_Source_Output> .
+
+<http://taxonomy.model/Termination_Sink_-_A_Sk_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bound_Transport_Function>,
+        <http://taxonomy.model/Termination_Sink> .
+
+<http://taxonomy.model/Termination_Sink_-_LPF_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bound_Transport_Function>,
+        <http://taxonomy.model/Termination_Sink> .
+
+<http://taxonomy.model/Termination_Sink_-_M_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bound_Transport_Function>,
+        <http://taxonomy.model/Path_Layer_Termination>,
+        <http://taxonomy.model/Termination_Sink> .
+
+<http://taxonomy.model/Termination_Sink_-_PM_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bound_Transport_Function>,
+        <http://taxonomy.model/Physical_Media_Layer_Termination>,
+        <http://taxonomy.model/Termination_Sink> .
+
+<http://taxonomy.model/Termination_Sink_-_SN_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bound_Transport_Function>,
+        <http://taxonomy.model/Path_Layer_Termination>,
+        <http://taxonomy.model/Termination_Sink> .
+
+<http://taxonomy.model/Termination_Sk_Bidirectional_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Termination_Sink> .
+
+<http://taxonomy.model/Termination_So_Bidirectional_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Termination_Source> .
+
+<http://taxonomy.model/Termination_Source_-_A_So_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bound_Transport_Function>,
+        <http://taxonomy.model/Termination_Source> .
+
+<http://taxonomy.model/Termination_Source_-_LPF_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bound_Transport_Function>,
+        <http://taxonomy.model/Termination_Source> .
+
+<http://taxonomy.model/Termination_Source_-_M_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bound_Transport_Function>,
+        <http://taxonomy.model/Path_Layer_Termination>,
+        <http://taxonomy.model/Termination_Source> .
+
+<http://taxonomy.model/Termination_Source_-_PM_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bound_Transport_Function>,
+        <http://taxonomy.model/Physical_Media_Layer_Termination>,
+        <http://taxonomy.model/Termination_Source> .
+
+<http://taxonomy.model/Termination_Source_-_SN_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bound_Transport_Function>,
+        <http://taxonomy.model/Path_Layer_Termination>,
+        <http://taxonomy.model/Termination_Source> .
+
+<http://taxonomy.model/Topological_Link> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Relatable_Topological_Components>,
+        <http://taxonomy.model/Topological_Component> .
+
+<http://taxonomy.model/Topological_M_Representation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Topological_Subnetwork> .
+
+<http://taxonomy.model/Topological_SN_Representation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Topological_Subnetwork> .
+
+<http://taxonomy.model/Transport_Function_Equipment_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Transport_Function> .
+
+<http://taxonomy.model/Transport_Function_Module_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Transport_Function> .
+
+<http://taxonomy.model/Uni_A-FP_Bi_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Unidirectional_A-FP> .
+
+<http://taxonomy.model/Uni_Sk-So_Matrix_Bi_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Unidirectional_Sink-Source_Matrix> .
+
+<http://taxonomy.model/Uni_Subnetwork_-_A_Sk_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Unidirectional_Subnetwork> .
+
+<http://taxonomy.model/Uni_Subnetwork_-_A_So_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Unidirectional_Subnetwork> .
+
+<http://taxonomy.model/Unidirectional_Access_Transport_Entity_Bidirectional_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Unidirectional_Access_Transport_Entity> .
+
+<http://taxonomy.model/Unidirectional_PM_NC_Bidirectional_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Unidirectional_PM_NC> .
+
+<http://taxonomy.model/Unidirectional_Path_NC_Bidirectional_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Unidirectional_Path_NC> .
+
+<http://taxonomy.model/Adaptation_Sink_Input> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Input> .
+
+<http://taxonomy.model/Adaptation_Source_Output> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Output> .
+
+<http://taxonomy.model/Aggregated_Physical_Media> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Physical_Media> .
+
+<http://taxonomy.model/Bidirectional_AP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Access_Point> .
+
+<http://taxonomy.model/Bidirectional_M-FEP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_Path_FEP> .
+
+<http://taxonomy.model/End_CFTE> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Unidirectional_CFTE> .
+
+<http://taxonomy.model/Forwarding_Function_LC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Forwarding_Function> .
+
+<http://taxonomy.model/Intermediate_CFTE> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Unidirectional_CFTE> .
+
+<http://taxonomy.model/Intermediate_MC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Unidirectional_MC> .
+
+<http://taxonomy.model/Layer_Processor_Sink_Input> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Input> .
+
+<http://taxonomy.model/Layer_Processor_Sink_Output> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Output> .
+
+<http://taxonomy.model/Layer_Processor_Source_Input> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Input> .
+
+<http://taxonomy.model/Layer_Processor_Source_Output> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Output> .
+
+<http://taxonomy.model/M_-_Termination_Sink_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bound_Transport_Function>,
+        <http://taxonomy.model/Unidirectional_Matrix> .
+
+<http://taxonomy.model/M_-_Termination_Source_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bound_Transport_Function>,
+        <http://taxonomy.model/Unidirectional_Matrix> .
+
+<http://taxonomy.model/PM_Input_-_So_PM-FEP_Bound> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Physical_Media_Input> .
+
+<http://taxonomy.model/PM_LC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Unidirectional_LC> .
+
+<http://taxonomy.model/PM_Output_-_Sk_PM-FEP_Bound> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Physical_Media_Output> .
+
+<http://taxonomy.model/Path_LC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Unidirectional_LC> .
+
+<http://taxonomy.model/Physical_Media_Input> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Input> .
+
+<http://taxonomy.model/Physical_Media_Output> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Output> .
+
+<http://taxonomy.model/Sink_A-FEP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Possible_LC_Connected_RP>,
+        <http://taxonomy.model/Sink_Path_FEP> .
+
+<http://taxonomy.model/Sink_CFTE> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Unidirectional_CFTE> .
+
+<http://taxonomy.model/Sink_LP-FP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/LP-FP>,
+        <http://taxonomy.model/Possible_LC_Connected_RP> .
+
+<http://taxonomy.model/Sink_LPF-FEP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Possible_LC_Connected_RP>,
+        <http://taxonomy.model/Sink_Path_FEP> .
+
+<http://taxonomy.model/Sink_MC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Unidirectional_MC> .
+
+<http://taxonomy.model/Sink_Matrix> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Connected_Unidirectional_Matrix>,
+        <http://taxonomy.model/M_-_Termination_Sink_Connected>,
+        <http://taxonomy.model/Uni_Matrix_-_A_Sk_Connected> .
+
+<http://taxonomy.model/Source_A-FEP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Possible_LC_Connected_RP>,
+        <http://taxonomy.model/Source_Path_FEP> .
+
+<http://taxonomy.model/Source_CFTE> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Unidirectional_CFTE> .
+
+<http://taxonomy.model/Source_LP-FP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/LP-FP>,
+        <http://taxonomy.model/Possible_LC_Connected_RP> .
+
+<http://taxonomy.model/Source_LPF-FEP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Possible_LC_Connected_RP>,
+        <http://taxonomy.model/Source_Path_FEP> .
+
+<http://taxonomy.model/Source_MC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Unidirectional_MC> .
+
+<http://taxonomy.model/Source_Matrix> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Connected_Unidirectional_Matrix>,
+        <http://taxonomy.model/M_-_Termination_Source_Connected>,
+        <http://taxonomy.model/Uni_Matrix_-_A_So_Connected> .
+
+<http://taxonomy.model/T_Sk_Input_-_Sk_M-FEP_Bound> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Possible_Egress_LC>,
+        <http://taxonomy.model/Termination_Sink_Input> .
+
+<http://taxonomy.model/T_So_Output_-_So_M-FEP_Bound> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Possible_Ingress_LC>,
+        <http://taxonomy.model/Termination_Source_Output> .
+
+<http://taxonomy.model/Termination_Sink_Output> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Output> .
+
+<http://taxonomy.model/Termination_Source_Input> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Input> .
+
+<http://taxonomy.model/Topological_Layer> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Topological_Component> .
+
+<http://taxonomy.model/Unidirectional_A-FP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/A-FP>,
+        <http://taxonomy.model/Possible_LC_Connected_RP> .
+
+<http://taxonomy.model/Unidirectional_Access_Transport_Entity> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Access_Transport_Entity> .
+
+<http://taxonomy.model/Unidirectional_PM_NC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Unidirectional_NC> .
+
+<http://taxonomy.model/Unidirectional_Path_NC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Unidirectional_NC> .
+
+<http://taxonomy.model/Unidirectional_Sink-Source_Matrix> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Connected_Unidirectional_Matrix>,
+        <http://taxonomy.model/Uni_Matrix_-_A_Sk_Connected>,
+        <http://taxonomy.model/Uni_Matrix_-_A_So_Connected> .
+
+<http://taxonomy.model/A-FP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Forwarding_Point> .
+
+<http://taxonomy.model/A_Sk_Output_-_Sk_M-FP_Bound> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Adaptation_Sink_Output>,
+        <http://taxonomy.model/Bound_Input-Output>,
+        <http://taxonomy.model/Possible_Egress_LC> .
+
+<http://taxonomy.model/A_Sk_Output_-_Sk_SN-FP_Bound> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Adaptation_Sink_Output>,
+        <http://taxonomy.model/Bound_Input-Output> .
+
+<http://taxonomy.model/A_So_Input_-_So_M-FP_Bound> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Adaptation_Source_Input>,
+        <http://taxonomy.model/Bound_Input-Output> .
+
+<http://taxonomy.model/A_So_Input_-_So_SN-FP_Bound> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Adaptation_Source_Input>,
+        <http://taxonomy.model/Bound_Input-Output> .
+
+<http://taxonomy.model/Access_Group> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Relatable_Topological_Components>,
+        <http://taxonomy.model/Topological_Component> .
+
+<http://taxonomy.model/Bidirectional_Connected_Subnetwork> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Subnetwork> .
+
+<http://taxonomy.model/Bidirectional_FEP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Forwarding_End_Point> .
+
+<http://taxonomy.model/Bidirectional_LC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Link_Connection> .
+
+<http://taxonomy.model/Bidirectional_Layer_Processor_Function> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Layer_Processor_Function> .
+
+<http://taxonomy.model/Bidirectional_M-FP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/M-FP>,
+        <http://taxonomy.model/Possible_Bi_LC_Connected_RP> .
+
+<http://taxonomy.model/Bidirectional_MC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Matrix_Connection> .
+
+<http://taxonomy.model/Bidirectional_NC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Network_Connection> .
+
+<http://taxonomy.model/Bidirectional_PM-FEP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_FEP> .
+
+<http://taxonomy.model/Bidirectional_SN-FEP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_Path_FEP> .
+
+<http://taxonomy.model/Bidirectional_SN-FP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Possible_Bi_LC_Connected_RP>,
+        <http://taxonomy.model/SN-FP> .
+
+<http://taxonomy.model/Directly_Bound_Reference_Point> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Reference_Point> .
+
+<http://taxonomy.model/LC_Connected_RP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Possible_LC_Connected_RP> .
+
+<http://taxonomy.model/LP-FP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Forwarding_Point> .
+
+<http://taxonomy.model/Matrix_Input> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Input> .
+
+<http://taxonomy.model/Matrix_Output> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Output> .
+
+<http://taxonomy.model/Physical_Media_Layer_Termination> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Transmission_Media_Layer_Termination> .
+
+<http://taxonomy.model/Sink_AP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Access_Point> .
+
+<http://taxonomy.model/Sink_FEP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Forwarding_End_Point> .
+
+<http://taxonomy.model/Sink_M-FEP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sink_Path_FEP> .
+
+<http://taxonomy.model/Source_AP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Access_Point> .
+
+<http://taxonomy.model/Source_FEP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Forwarding_End_Point> .
+
+<http://taxonomy.model/Source_M-FEP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Source_Path_FEP> .
+
+<http://taxonomy.model/Subnetwork_Input> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Input> .
+
+<http://taxonomy.model/Subnetwork_Output> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Output> .
+
+<http://taxonomy.model/T_Sk_Input_-_Sk_SN-FEP_Bound> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Possible_Egress_LC>,
+        <http://taxonomy.model/Termination_Sink_Input> .
+
+<http://taxonomy.model/T_So_Output_-_So_SN-FEP_Bound> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Possible_Ingress_LC>,
+        <http://taxonomy.model/Termination_Source_Output> .
+
+<http://taxonomy.model/Topological_Subnetwork> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Relatable_Topological_Components>,
+        <http://taxonomy.model/Topological_Component> .
+
+<http://taxonomy.model/Transmission_Media_Layer_Termination> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Termination_Function> .
+
+<http://taxonomy.model/Uni_Matrix_-_A_Sk_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bound_Transport_Function>,
+        <http://taxonomy.model/Connected_Unidirectional_Matrix> .
+
+<http://taxonomy.model/Uni_Matrix_-_A_So_Connected> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bound_Transport_Function>,
+        <http://taxonomy.model/Connected_Unidirectional_Matrix> .
+
+<http://taxonomy.model/Unidirectional_LC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Link_Connection> .
+
+<http://taxonomy.model/Unidirectional_NC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Network_Connection> .
+
+<http://taxonomy.model/Unidirectional_Port> a owl:Class .
+
+<http://taxonomy.model/Access_Point> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Reference_Point> .
+
+<http://taxonomy.model/Access_Transport_Entity> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Transport_Entity> .
+
+<http://taxonomy.model/Bidirectional_CFTE> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Channel_Forwarding_Transport_Entity> .
+
+<http://taxonomy.model/Channel_Forwarding_Transport_Entity> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Transport_Entity> .
+
+<http://taxonomy.model/Forwarding_End_Point> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Reference_Point> .
+
+<http://taxonomy.model/Forwarding_Function> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Transport_Function> .
+
+<http://taxonomy.model/Forwarding_Function_Matrix> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Forwarding_Function> .
+
+<http://taxonomy.model/Layer_Processor_Function_Sink> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Layer_Processor_Function> .
+
+<http://taxonomy.model/Layer_Processor_Function_Source> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Layer_Processor_Function> .
+
+<http://taxonomy.model/Link_Connection> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Transport_Entity> .
+
+<http://taxonomy.model/M-FP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Forwarding_Point> .
+
+<http://taxonomy.model/Matrix> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Geographical_Element>,
+        <http://taxonomy.model/Transport_Function> .
+
+<http://taxonomy.model/Matrix_Connection> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Transport_Entity> .
+
+<http://taxonomy.model/Physical_Media> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Transport_Function> .
+
+<http://taxonomy.model/SN-FP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Forwarding_Point> .
+
+<http://taxonomy.model/Single_Physical_Media> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Physical_Media> .
+
+<http://taxonomy.model/Sink_M-FP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/M-FP>,
+        <http://taxonomy.model/Possible_LC_Connected_RP> .
+
+<http://taxonomy.model/Sink_PM-FEP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sink_FEP> .
+
+<http://taxonomy.model/Sink_SN-FEP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sink_Path_FEP> .
+
+<http://taxonomy.model/Sink_SN-FP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Possible_LC_Connected_RP>,
+        <http://taxonomy.model/SN-FP> .
+
+<http://taxonomy.model/Source_M-FP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/M-FP>,
+        <http://taxonomy.model/Possible_LC_Connected_RP> .
+
+<http://taxonomy.model/Source_PM-FEP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Source_FEP> .
+
+<http://taxonomy.model/Source_SN-FEP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Source_Path_FEP> .
+
+<http://taxonomy.model/Source_SN-FP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Possible_LC_Connected_RP>,
+        <http://taxonomy.model/SN-FP> .
+
+<http://taxonomy.model/Subnetwork> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Transport_Function> .
+
+<http://taxonomy.model/Transport_Processing_Function> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Geographical_Element>,
+        <http://taxonomy.model/Transport_Function> .
+
+<http://taxonomy.model/Unidirectional_MC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Matrix_Connection> .
+
+<http://taxonomy.model/Unidirectional_Matrix> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Matrix> .
+
+<http://taxonomy.model/Architectural_Component> a owl:Class .
+
+<http://taxonomy.model/Bidirectional_Matrix> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Matrix> .
+
+<http://taxonomy.model/Bidirectional_Path_FEP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bidirectional_FEP> .
+
+<http://taxonomy.model/Forwarding_Function_CFTE> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Forwarding_Function> .
+
+<http://taxonomy.model/Forwarding_Point> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Reference_Point> .
+
+<http://taxonomy.model/Layer_Processor_Function> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Transport_Processing_Function> .
+
+<http://taxonomy.model/Path_Layer_Termination> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Termination_Function> .
+
+<http://taxonomy.model/Reference_Point> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Architectural_Component> .
+
+<http://taxonomy.model/Relatable_Topological_Components> a owl:Class .
+
+<http://taxonomy.model/Topological_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Architectural_Component> .
+
+<http://taxonomy.model/Unidirectional_CFTE> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Channel_Forwarding_Transport_Entity> .
+
+<http://taxonomy.model/Unidirectional_Subnetwork> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Subnetwork> .
+
+<http://taxonomy.model/Adaptation_Sink_Output> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Output> .
+
+<http://taxonomy.model/Adaptation_Source_Input> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Input> .
+
+<http://taxonomy.model/Connected_Unidirectional_Matrix> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Unidirectional_Matrix> .
+
+<http://taxonomy.model/Possible_Bi_LC_Connected_RP> a owl:Class .
+
+<http://taxonomy.model/Sink_Path_FEP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sink_FEP> .
+
+<http://taxonomy.model/Source_Path_FEP> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Source_FEP> .
+
+<http://taxonomy.model/Termination_Sink_Input> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Input>,
+        <http://taxonomy.model/Unidirectional_Port> .
+
+<http://taxonomy.model/Termination_Source_Output> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Output>,
+        <http://taxonomy.model/Unidirectional_Port> .
+
+<http://taxonomy.model/Adaptation_Function> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Transport_Processing_Function> .
+
+<http://taxonomy.model/Bidirectional_Adaptation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Adaptation_Function> .
+
+<http://taxonomy.model/Bidirectional_Termination> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Termination_Function> .
+
+<http://taxonomy.model/Geographical_Element> a owl:Class .
+
+<http://taxonomy.model/Network_Connection> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Transport_Entity> .
+
+<http://taxonomy.model/Transport_Entity> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Architectural_Component> .
+
+<http://taxonomy.model/Adaptation_Sink> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Adaptation_Function> .
+
+<http://taxonomy.model/Adaptation_Source> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Adaptation_Function> .
+
+<http://taxonomy.model/Termination_Function> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Transport_Processing_Function> .
+
+<http://taxonomy.model/Termination_Sink> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Termination_Function> .
+
+<http://taxonomy.model/Termination_Source> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Termination_Function> .
+
+<http://taxonomy.model/Transport_Function> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Architectural_Component> .
+
+<http://taxonomy.model/Possible_Egress_LC> a owl:Class .
+
+<http://taxonomy.model/Possible_Ingress_LC> a owl:Class .
+
+<http://taxonomy.model/Input> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Geographical_Element> .
+
+<http://taxonomy.model/Output> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Geographical_Element> .
+
+<http://taxonomy.model/Possible_LC_Connected_RP> a owl:Class .
+
+<http://taxonomy.model/Bound_Input-Output> a owl:Class .
+
+<http://taxonomy.model/Connected_Reference_Point> a owl:Class .
+
+<http://taxonomy.model/Bound_Transport_Function> a owl:Class .
+

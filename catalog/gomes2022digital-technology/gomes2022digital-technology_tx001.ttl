@@ -1,0 +1,36 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Component_Part> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Object> .
+
+<http://taxonomy.model/Data_File> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bitstring> .
+
+<http://taxonomy.model/Hybrid> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Object> .
+
+<http://taxonomy.model/Material> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Object> .
+
+<http://taxonomy.model/Physical_Object> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Object> .
+
+<http://taxonomy.model/Program_File> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bitstring> .
+
+<http://taxonomy.model/Nonmaterial> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Object>,
+        <http://taxonomy.model/Social_Object> .
+
+<http://taxonomy.model/Social_Object> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Object> .
+
+<http://taxonomy.model/Syntactic_Object> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Nonmaterial> .
+
+<http://taxonomy.model/Bitstring> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Syntactic_Object> .
+
+<http://taxonomy.model/Object> a owl:Class .
+

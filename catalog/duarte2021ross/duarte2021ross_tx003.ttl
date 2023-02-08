@@ -1,0 +1,36 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Business_Requirements_Specification> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Artifact> .
+
+<http://taxonomy.model/Hardware_Equipment> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/System_Element> .
+
+<http://taxonomy.model/Machine> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Artifact> .
+
+<http://taxonomy.model/Program> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/System_Element> .
+
+<http://taxonomy.model/Program_Specification> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Artifact> .
+
+<http://taxonomy.model/SubSystem> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Software_System>,
+        <http://taxonomy.model/System_Component> .
+
+<http://taxonomy.model/System_Requirements_Specification> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Artifact> .
+
+<http://taxonomy.model/Software_System> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Artifact> .
+
+<http://taxonomy.model/System_Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Artifact> .
+
+<http://taxonomy.model/System_Element> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/System_Component> .
+
+<http://taxonomy.model/Artifact> a owl:Class .
+

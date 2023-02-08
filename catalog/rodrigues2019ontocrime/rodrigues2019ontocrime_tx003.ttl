@@ -1,0 +1,35 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Legal_Care_Relator> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Legal_Relator> .
+
+<http://taxonomy.model/Lex_Posterior_Relator> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Norm_Relator> .
+
+<http://taxonomy.model/Lex_Specialis_Relator> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Norm_Relator> .
+
+<http://taxonomy.model/Lex_Superior_Relator> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Norm_Relator> .
+
+<http://taxonomy.model/Obligation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Permission> .
+
+<http://taxonomy.model/Prohibition> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Permission> .
+
+<http://taxonomy.model/Qualification> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Legal_Relator> .
+
+<http://taxonomy.model/Social_Relator> a owl:Class .
+
+<http://taxonomy.model/Permission> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Qualification> .
+
+<http://taxonomy.model/Legal_Relator> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Social_Relator> .
+
+<http://taxonomy.model/Norm_Relator> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Legal_Relator> .
+

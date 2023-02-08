@@ -1,0 +1,51 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/CategorematicConcept> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Concept> .
+
+<http://taxonomy.model/CategorematicTerm> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/MixedTerm>,
+        <http://taxonomy.model/Spoken-WrittenTerm> .
+
+<http://taxonomy.model/ComplexConcept> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Concept> .
+
+<http://taxonomy.model/MentalSuppositum> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Concept> .
+
+<http://taxonomy.model/SemanticallyComplexExpression> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Expression> .
+
+<http://taxonomy.model/SemanticallyComplexSpoken-WrittenTerm> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Spoken-WrittenTerm> .
+
+<http://taxonomy.model/SemanticallySimple_Expression> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Expression> .
+
+<http://taxonomy.model/Spoken-WrittenSuppositum> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Spoken-WrittenTerm> .
+
+<http://taxonomy.model/Suppositum> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Term> .
+
+<http://taxonomy.model/SyncategorematicConcept> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Concept> .
+
+<http://taxonomy.model/SyncategorematicTerm> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/MixedTerm>,
+        <http://taxonomy.model/Spoken-WrittenTerm> .
+
+<http://taxonomy.model/Expression> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Spoken-WrittenTerm> .
+
+<http://taxonomy.model/MixedTerm> a owl:Class .
+
+<http://taxonomy.model/Term> a owl:Class .
+
+<http://taxonomy.model/Concept> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Term> .
+
+<http://taxonomy.model/Spoken-WrittenTerm> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Term> .
+

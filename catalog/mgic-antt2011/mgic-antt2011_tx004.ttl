@@ -1,0 +1,42 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/COFINS> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Imposto_Federal>,
+        <http://taxonomy.model/Imposto_sobre_Servi�o> .
+
+<http://taxonomy.model/CSLL> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Imposto_Federal>,
+        <http://taxonomy.model/Imposto_sobre_Resultado> .
+
+<http://taxonomy.model/ICMS> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Imposto_Estadual>,
+        <http://taxonomy.model/Imposto_sobre_Servi�o> .
+
+<http://taxonomy.model/IR> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Imposto_Federal>,
+        <http://taxonomy.model/Imposto_sobre_Resultado> .
+
+<http://taxonomy.model/ISSQN> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Imposto_Municipal>,
+        <http://taxonomy.model/Imposto_sobre_Servi�o> .
+
+<http://taxonomy.model/PIS> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Imposto_Federal>,
+        <http://taxonomy.model/Imposto_sobre_Servi�o> .
+
+<http://taxonomy.model/Imposto_Estadual> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Imposto> .
+
+<http://taxonomy.model/Imposto_Municipal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Imposto> .
+
+<http://taxonomy.model/Imposto_sobre_Resultado> a owl:Class .
+
+<http://taxonomy.model/Imposto> a owl:Class .
+
+<http://taxonomy.model/Imposto_Federal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Imposto> .
+
+<http://taxonomy.model/Imposto_sobre_Servi�o> a owl:Class .
+

@@ -1,0 +1,17 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Booking_Conversation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Transaction_Conversation> .
+
+<http://taxonomy.model/Listing_Conversation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Inter-User_Conversation> .
+
+<http://taxonomy.model/Digital_Communication> a owl:Class .
+
+<http://taxonomy.model/Transaction_Conversation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Inter-User_Conversation> .
+
+<http://taxonomy.model/Inter-User_Conversation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Digital_Communication> .
+

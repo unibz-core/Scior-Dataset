@@ -1,0 +1,74 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Anulled_Tender> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Completed_Tender> .
+
+<http://taxonomy.model/Concession_Tender> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Tender> .
+
+<http://taxonomy.model/Construction_Tender> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Tender> .
+
+<http://taxonomy.model/Disposal_Tender> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Tender> .
+
+<http://taxonomy.model/Empty_Tender> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Tender_Without_Winner> .
+
+<http://taxonomy.model/Failed_Tender> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Tender_Without_Winner> .
+
+<http://taxonomy.model/Lease_Tender> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Tender> .
+
+<http://taxonomy.model/Permission_Tender_in_Auction> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Permission_Tender> .
+
+<http://taxonomy.model/Permission_Tender_in_External_Phase> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Tender_in_External_Phase> .
+
+<http://taxonomy.model/Purchase_Tender> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Tender> .
+
+<http://taxonomy.model/Service_Tender> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Tender> .
+
+<http://taxonomy.model/Suspended_Tender> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Tender_in_External_Phase> .
+
+<http://taxonomy.model/Tended_With_Winner> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Completed_Tender> .
+
+<http://taxonomy.model/Tender_in_Call_for_Tender> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Publication_Context>,
+        <http://taxonomy.model/Tender_in_External_Phase> .
+
+<http://taxonomy.model/Tender_in_Homologation_Process> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Tender_in_External_Phase> .
+
+<http://taxonomy.model/Tender_in_Internal_Phase> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Tender> .
+
+<http://taxonomy.model/Tender_in_Proposal_Reviewing> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Tender_in_External_Phase> .
+
+<http://taxonomy.model/Tender_in_Qualification> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Tender_in_External_Phase> .
+
+<http://taxonomy.model/Permission_Tender> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Tender> .
+
+<http://taxonomy.model/Publication_Context> a owl:Class .
+
+<http://taxonomy.model/Tender_Without_Winner> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Completed_Tender> .
+
+<http://taxonomy.model/Completed_Tender> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Tender> .
+
+<http://taxonomy.model/Tender_in_External_Phase> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Tender> .
+
+<http://taxonomy.model/Tender> a owl:Class .
+

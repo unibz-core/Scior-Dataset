@@ -1,0 +1,115 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Diagnosis> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/MedicalProcedureOutcome> .
+
+<http://taxonomy.model/DiagnosticProcedure> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/PresenceMedicalProcedure>,
+        <http://taxonomy.model/RemoteMedicalProcedure> .
+
+<http://taxonomy.model/GeneralPractitioner> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Doctor> .
+
+<http://taxonomy.model/MedicalHistory> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/NamedEntity> .
+
+<http://taxonomy.model/MildSymptom> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Symptom> .
+
+<http://taxonomy.model/NonSevereOutcome> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/MedicalProcedureOutcome> .
+
+<http://taxonomy.model/PalliativeProcedure> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/PresenceMedicalProcedure> .
+
+<http://taxonomy.model/PhysicalExam> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/PresenceMedicalProcedure> .
+
+<http://taxonomy.model/PrescribedDoseSchedule> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/DoseSchedule> .
+
+<http://taxonomy.model/PrescribedDrug> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Drug> .
+
+<http://taxonomy.model/Prescription> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/NamedEntity> .
+
+<http://taxonomy.model/PreviousIllness> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/MedicalCondition>,
+        <http://taxonomy.model/MedicalProcedureTrigger> .
+
+<http://taxonomy.model/SevereOutcome> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/MedicalProcedureOutcome>,
+        <http://taxonomy.model/MedicalProcedureTrigger> .
+
+<http://taxonomy.model/SevereSymptom> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/MedicalProcedureTrigger>,
+        <http://taxonomy.model/Symptom> .
+
+<http://taxonomy.model/SpecialistDoctor> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Doctor> .
+
+<http://taxonomy.model/SpecialistMedicalProcedure> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/PresenceMedicalProcedure> .
+
+<http://taxonomy.model/SurgicalProcedure> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/PresenceMedicalProcedure> .
+
+<http://taxonomy.model/TherapeuticProcedure> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/PresenceMedicalProcedure>,
+        <http://taxonomy.model/RemoteMedicalProcedure> .
+
+<http://taxonomy.model/TreatmentPatient> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/ReportingPatient> .
+
+<http://taxonomy.model/VisitRequest> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/MedicalProcedureTrigger>,
+        <http://taxonomy.model/PatientReport> .
+
+<http://taxonomy.model/DoseSchedule> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/NamedEntity> .
+
+<http://taxonomy.model/Drug> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/NamedEntity> .
+
+<http://taxonomy.model/MedicalCondition> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/NamedEntity> .
+
+<http://taxonomy.model/Patient> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/User> .
+
+<http://taxonomy.model/Person> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/NamedEntity> .
+
+<http://taxonomy.model/ReportingPatient> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Patient> .
+
+<http://taxonomy.model/Doctor> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/User> .
+
+<http://taxonomy.model/MedicalProcedure> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/NamedEntity> .
+
+<http://taxonomy.model/PatientReport> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/NamedEntity> .
+
+<http://taxonomy.model/RemoteMedicalProcedure> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/MedicalProcedure> .
+
+<http://taxonomy.model/Symptom> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/PatientReport> .
+
+<http://taxonomy.model/User> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Person> .
+
+<http://taxonomy.model/MedicalProcedureOutcome> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/NamedEntity> .
+
+<http://taxonomy.model/MedicalProcedureTrigger> a owl:Class .
+
+<http://taxonomy.model/PresenceMedicalProcedure> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/MedicalProcedure> .
+
+<http://taxonomy.model/NamedEntity> a owl:Class .
+

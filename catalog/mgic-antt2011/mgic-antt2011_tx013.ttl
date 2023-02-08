@@ -1,0 +1,67 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Arrendamento_Financeiro_Imobilizado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Arrendamento_Financeiro>,
+        <http://taxonomy.model/Investimento_em_Imobilizado> .
+
+<http://taxonomy.model/Arrendamento_Financeiro_Intang�vel> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Arrendamento_Financeiro>,
+        <http://taxonomy.model/Investimento_em_Intang�vel> .
+
+<http://taxonomy.model/Arrendamento_Operacional> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Arrendamento>,
+        <http://taxonomy.model/Investimento_em_Intang�vel> .
+
+<http://taxonomy.model/Cess�o_de_Bens> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Aquisi��o_de_Permanente> .
+
+<http://taxonomy.model/Compra_Especulativa> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Compra_de_Bem> .
+
+<http://taxonomy.model/Compra_Imobilizado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Compra_de_Bem>,
+        <http://taxonomy.model/Investimento_em_Imobilizado> .
+
+<http://taxonomy.model/Compra_Intang�vel> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Compra_de_Bem>,
+        <http://taxonomy.model/Investimento_em_Intang�vel> .
+
+<http://taxonomy.model/Constru��o_de_Imobilizado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Constru��o>,
+        <http://taxonomy.model/Investimento_em_Imobilizado> .
+
+<http://taxonomy.model/Constru��o_de_Intang�vel> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Constru��o>,
+        <http://taxonomy.model/Investimento_em_Intang�vel> .
+
+<http://taxonomy.model/Emiss�o_de_Deb�nture> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Obriga��o_Financeira> .
+
+<http://taxonomy.model/Empr�stimo> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Obriga��o_Financeira> .
+
+<http://taxonomy.model/Financiamento> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Obriga��o_Financeira> .
+
+<http://taxonomy.model/Arrendamento> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Aquisi��o_de_Permanente> .
+
+<http://taxonomy.model/Arrendamento_Financeiro> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Arrendamento>,
+        <http://taxonomy.model/Obriga��o_Financeira> .
+
+<http://taxonomy.model/Constru��o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Aquisi��o_de_Permanente> .
+
+<http://taxonomy.model/Compra_de_Bem> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Aquisi��o_de_Permanente> .
+
+<http://taxonomy.model/Investimento_em_Imobilizado> a owl:Class .
+
+<http://taxonomy.model/Aquisi��o_de_Permanente> a owl:Class .
+
+<http://taxonomy.model/Investimento_em_Intang�vel> a owl:Class .
+
+<http://taxonomy.model/Obriga��o_Financeira> a owl:Class .
+

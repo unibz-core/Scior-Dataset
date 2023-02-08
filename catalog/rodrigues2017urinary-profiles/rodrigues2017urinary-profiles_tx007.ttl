@@ -1,0 +1,36 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Urinary_Content_Change> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Urinary_Content_Transformation> .
+
+<http://taxonomy.model/Urinary_Content_Creation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Urinary_Content_Appearance>,
+        <http://taxonomy.model/Urinary_Content_Transformation> .
+
+<http://taxonomy.model/Urinary_Content_Destruction> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Urinary_Content_Disappearance>,
+        <http://taxonomy.model/Urinary_Content_Transformation> .
+
+<http://taxonomy.model/Urinary_Content_Entrance> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Urinary_Content_Appearance>,
+        <http://taxonomy.model/Urinary_Content_Transportation> .
+
+<http://taxonomy.model/Urinary_Content_Escape> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Urinary_Content_Disappearance>,
+        <http://taxonomy.model/Urinary_Content_Transportation> .
+
+<http://taxonomy.model/Urinary_Content_Appearance> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Urinary_Event> .
+
+<http://taxonomy.model/Urinary_Content_Disappearance> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Urinary_Event> .
+
+<http://taxonomy.model/Urinary_Content_Transportation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Urinary_Event> .
+
+<http://taxonomy.model/Urinary_Content_Transformation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Urinary_Event> .
+
+<http://taxonomy.model/Urinary_Event> a owl:Class .
+

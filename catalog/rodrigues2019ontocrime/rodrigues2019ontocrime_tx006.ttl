@@ -1,0 +1,76 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Comissive_Crime> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Crime>,
+        <http://taxonomy.model/Criminal_Act> .
+
+<http://taxonomy.model/Deprive_Liberty> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Punishment_Act> .
+
+<http://taxonomy.model/Felony_Omission> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/CulpableEvent>,
+        <http://taxonomy.model/LegalFelonyOmission>,
+        <http://taxonomy.model/UnlawfulEvent> .
+
+<http://taxonomy.model/Fine> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Punishment_Act> .
+
+<http://taxonomy.model/Pure_Omissive_Crime> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/CulpableEvent>,
+        <http://taxonomy.model/LegalOmission>,
+        <http://taxonomy.model/UnlawfulEvent> .
+
+<http://taxonomy.model/Restrict_Right> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Punishment_Act> .
+
+<http://taxonomy.model/Able_Guarantor_Participation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Able_Agent_Participation> .
+
+<http://taxonomy.model/Action_Contribution> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Agent_Participation> .
+
+<http://taxonomy.model/Crime> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/CulpableEvent>,
+        <http://taxonomy.model/TypicalEvent>,
+        <http://taxonomy.model/UnlawfulEvent> .
+
+<http://taxonomy.model/Criminal_Act> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Legal_Act>,
+        <http://taxonomy.model/TypicalEvent> .
+
+<http://taxonomy.model/Event> a owl:Class .
+
+<http://taxonomy.model/LegalFelonyOmission> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Able_Guarantor_Participation>,
+        <http://taxonomy.model/TypicalEvent> .
+
+<http://taxonomy.model/LegalOmission> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Able_Agent_Participation>,
+        <http://taxonomy.model/TypicalEvent> .
+
+<http://taxonomy.model/Able_Agent_Participation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Legal_Event> .
+
+<http://taxonomy.model/Agent_Participation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Event> .
+
+<http://taxonomy.model/Legal_Act> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Action_Contribution>,
+        <http://taxonomy.model/Legal_Event> .
+
+<http://taxonomy.model/CulpableEvent> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Legal_Event> .
+
+<http://taxonomy.model/Punishment_Act> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Legal_Act> .
+
+<http://taxonomy.model/UnlawfulEvent> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Legal_Event> .
+
+<http://taxonomy.model/TypicalEvent> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Legal_Event> .
+
+<http://taxonomy.model/Legal_Event> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Agent_Participation> .
+

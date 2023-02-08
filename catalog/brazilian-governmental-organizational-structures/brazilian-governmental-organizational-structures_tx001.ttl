@@ -1,0 +1,48 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Autarchy> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/NonEmpresarialPublicEntity> .
+
+<http://taxonomy.model/Foundation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/NonEmpresarialPublicEntity> .
+
+<http://taxonomy.model/MixedEconomyCompany> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/StateCompany> .
+
+<http://taxonomy.model/PublicAdmnistrativeUnit> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/OrganizationalUnit>,
+        <http://taxonomy.model/UnityOfOrganization> .
+
+<http://taxonomy.model/PublicCompany> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/StateCompany> .
+
+<http://taxonomy.model/�rg�o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/PublicOrganization> .
+
+<http://taxonomy.model/�rg�o_Colegiado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/OrganizationalUnit> .
+
+<http://taxonomy.model/Company> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Organization> .
+
+<http://taxonomy.model/UnityOfOrganization> a owl:Class .
+
+<http://taxonomy.model/NonEmpresarialPublicEntity> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/PublicEntity> .
+
+<http://taxonomy.model/Organization> a owl:Class .
+
+<http://taxonomy.model/PublicEntity> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/PublicOrganization> .
+
+<http://taxonomy.model/PublicOrganization> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Organization>,
+        <http://taxonomy.model/OrganizationalUnit> .
+
+<http://taxonomy.model/StateCompany> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Company>,
+        <http://taxonomy.model/PublicEntity> .
+
+<http://taxonomy.model/OrganizationalUnit> a owl:Class .
+

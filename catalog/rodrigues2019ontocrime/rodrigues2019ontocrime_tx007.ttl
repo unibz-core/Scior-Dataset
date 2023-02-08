@@ -1,0 +1,76 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Abstract_Object> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Crime_Object>,
+        <http://taxonomy.model/Social_Object> .
+
+<http://taxonomy.model/Ancient_Rule> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Legal_Rule> .
+
+<http://taxonomy.model/CNPJ> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Register> .
+
+<http://taxonomy.model/CPF> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Register> .
+
+<http://taxonomy.model/General_Rule> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Legal_Rule> .
+
+<http://taxonomy.model/Incriminating> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Legal_Rule> .
+
+<http://taxonomy.model/Inferior_Rule> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Legal_Rule> .
+
+<http://taxonomy.model/Material_Object> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Crime_Object>,
+        <http://taxonomy.model/Physical_Object> .
+
+<http://taxonomy.model/Non_Incriminating> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Legal_Rule> .
+
+<http://taxonomy.model/Positive_Law> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Legal_Normative_Description> .
+
+<http://taxonomy.model/Principle> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Legal_Norm> .
+
+<http://taxonomy.model/Recent_Rule> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Legal_Rule> .
+
+<http://taxonomy.model/Specific_Rule> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Legal_Rule> .
+
+<http://taxonomy.model/Superior_Rule> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Legal_Rule> .
+
+<http://taxonomy.model/Legal_Object> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Object> .
+
+<http://taxonomy.model/Normative_Description> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Social_Object> .
+
+<http://taxonomy.model/Physical_Object> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Object> .
+
+<http://taxonomy.model/Crime_Object> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Legal_Object> .
+
+<http://taxonomy.model/Legal_Norm> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Legal_Normative_Description> .
+
+<http://taxonomy.model/Legal_Normative_Description> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Normative_Description> .
+
+<http://taxonomy.model/Register> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Social_Object> .
+
+<http://taxonomy.model/Object> a owl:Class .
+
+<http://taxonomy.model/Social_Object> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Object> .
+
+<http://taxonomy.model/Legal_Rule> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Legal_Norm> .
+

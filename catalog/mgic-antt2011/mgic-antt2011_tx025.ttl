@@ -1,0 +1,85 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Atividade_Extraordin�ria> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Atividade_Operacional> .
+
+<http://taxonomy.model/Atividade_Financeira> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Atividade_N�o_Operacional> .
+
+<http://taxonomy.model/Atividade_Ordin�ria> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Atividade_Operacional> .
+
+<http://taxonomy.model/Explora��o_Utilidades> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Explora��o_de_Faixa_de_Dom�nio> .
+
+<http://taxonomy.model/Explora��o_de_Acesso> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Explora��o_de_FD_com_Projeto_de_Engenharia>,
+        <http://taxonomy.model/Explora��o_de_Faixa_de_Dom�nio_sem_Receita> .
+
+<http://taxonomy.model/Explora��o_de_Faixa_de_Dom�nio_Especial> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Explora��o_de_Faixa_de_Dom�nio> .
+
+<http://taxonomy.model/Explora��o_de_Publicidade> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Explora��o_da_Faixa_de_Dom�nio_com_Receita> .
+
+<http://taxonomy.model/Indeniza��o_de_Extin��o_de_Concess�o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fonte_de_Receita_Rodovi�ria> .
+
+<http://taxonomy.model/Pagamento_de_Ped�gio> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Receita_Rodovi�ria_Ordin�ria> .
+
+<http://taxonomy.model/Receita_Acess�ria> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Receita_Rodovi�ria_Extraordin�ria> .
+
+<http://taxonomy.model/Receita_Alternativa> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Receita_Rodovi�ria_Extraordin�ria> .
+
+<http://taxonomy.model/Receita_Complementar> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Receita_Rodovi�ria_Extraordin�ria> .
+
+<http://taxonomy.model/Receita_de_Aplica��es_Financeiras> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fonte_de_Receita_Rodovi�ria> .
+
+<http://taxonomy.model/Receita_de_Conv�nio> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Receita_Rodovi�ria_Extraordin�ria> .
+
+<http://taxonomy.model/Receita_de_Projeto_Associado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Receita_Rodovi�ria_Extraordin�ria> .
+
+<http://taxonomy.model/Venda_de_Ativo> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Atividade_N�o_Operacional>,
+        <http://taxonomy.model/Receita_Rodovi�ria_Extraordin�ria> .
+
+<http://taxonomy.model/Venda_de_Sucata> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Atividade_N�o_Operacional>,
+        <http://taxonomy.model/Receita_Rodovi�ria_Extraordin�ria> .
+
+<http://taxonomy.model/Explora��o_da_Faixa_de_Dom�nio_com_Receita> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Explora��o_de_Faixa_de_Dom�nio>,
+        <http://taxonomy.model/Receita_Rodovi�ria_Extraordin�ria> .
+
+<http://taxonomy.model/Explora��o_de_FD_com_Projeto_de_Engenharia> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Explora��o_de_Faixa_de_Dom�nio> .
+
+<http://taxonomy.model/Explora��o_de_Faixa_de_Dom�nio_sem_Receita> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Explora��o_de_Faixa_de_Dom�nio> .
+
+<http://taxonomy.model/Receita_Rodovi�ria_Ordin�ria> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fonte_de_Receita_Rodovi�ria> .
+
+<http://taxonomy.model/Atividade> a owl:Class .
+
+<http://taxonomy.model/Atividade_Operacional> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Atividade> .
+
+<http://taxonomy.model/Atividade_N�o_Operacional> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Atividade> .
+
+<http://taxonomy.model/Fonte_de_Receita_Rodovi�ria> a owl:Class .
+
+<http://taxonomy.model/Explora��o_de_Faixa_de_Dom�nio> a owl:Class .
+
+<http://taxonomy.model/Receita_Rodovi�ria_Extraordin�ria> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Fonte_de_Receita_Rodovi�ria> .
+

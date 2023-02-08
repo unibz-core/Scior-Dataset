@@ -1,0 +1,27 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Estimated_Activity> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Cost_Estimated_Activity>,
+        <http://taxonomy.model/Duration_Estimated_Activity>,
+        <http://taxonomy.model/Project_Activity>,
+        <http://taxonomy.model/Scheduled_Activity>,
+        <http://taxonomy.model/Scope_Estimated_Activity> .
+
+<http://taxonomy.model/Cost_Estimated_Activity> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Project_Activity> .
+
+<http://taxonomy.model/Duration_Estimated_Activity> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Project_Activity> .
+
+<http://taxonomy.model/Scheduled_Activity> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Intended_Activity> .
+
+<http://taxonomy.model/Scope_Estimated_Activity> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Project_Activity> .
+
+<http://taxonomy.model/Intended_Activity> a owl:Class .
+
+<http://taxonomy.model/Project_Activity> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Intended_Activity> .
+

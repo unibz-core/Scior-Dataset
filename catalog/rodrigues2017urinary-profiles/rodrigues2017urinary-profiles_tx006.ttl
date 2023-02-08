@@ -1,0 +1,38 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Dismorphic_RBC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Urinary_Analyte> .
+
+<http://taxonomy.model/Nephritic-Defining_Albumin> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Albumin>,
+        <http://taxonomy.model/Nephritic-Defining_Content> .
+
+<http://taxonomy.model/Nephritic-Defining_Hemoglobin> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Hemoglobin>,
+        <http://taxonomy.model/Nephritic-Defining_Content> .
+
+<http://taxonomy.model/Nephritic-Defining_RBC_Cast> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Nephritic-Defining_Content>,
+        <http://taxonomy.model/RBC_Cast> .
+
+<http://taxonomy.model/Albumin> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Urinary_Analyte> .
+
+<http://taxonomy.model/Hemoglobin> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Urinary_Analyte> .
+
+<http://taxonomy.model/Profile-Defining_Content> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Urinary_Content> .
+
+<http://taxonomy.model/RBC_Cast> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Urinary_Analyte> .
+
+<http://taxonomy.model/Urinary_Content> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Urinary_Analyte> .
+
+<http://taxonomy.model/Nephritic-Defining_Content> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Profile-Defining_Content> .
+
+<http://taxonomy.model/Urinary_Analyte> a owl:Class .
+

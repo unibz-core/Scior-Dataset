@@ -1,0 +1,41 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Article> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Document> .
+
+<http://taxonomy.model/Book> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Document> .
+
+<http://taxonomy.model/Chapter> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Document> .
+
+<http://taxonomy.model/Newspaper> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Document> .
+
+<http://taxonomy.model/Object> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Artifact> .
+
+<http://taxonomy.model/Patent> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Document> .
+
+<http://taxonomy.model/Proceedings> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Document> .
+
+<http://taxonomy.model/Sound_Recording> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Recording> .
+
+<http://taxonomy.model/Video_Recording> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Recording> .
+
+<http://taxonomy.model/Artifact> a owl:Class .
+
+<http://taxonomy.model/Recording> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Work> .
+
+<http://taxonomy.model/Work> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Artifact> .
+
+<http://taxonomy.model/Document> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Work> .
+

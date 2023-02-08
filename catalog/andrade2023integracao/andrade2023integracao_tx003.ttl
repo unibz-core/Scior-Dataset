@@ -1,0 +1,54 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Artigo_de_Evento_Publicado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Artigo_Publicado> .
+
+<http://taxonomy.model/Artigo_de_Peri�dico_Publicado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Artigo_Publicado> .
+
+<http://taxonomy.model/Autor_Cient�fico_Afilidado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Autor_Cient�fico>,
+        <http://taxonomy.model/Colaborador_Afiliado> .
+
+<http://taxonomy.model/Autor_Cient�fico_Independente> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Autor_Cient�fico> .
+
+<http://taxonomy.model/Cap�tulo_de_Livro_Publicado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Texto_Cient�fico_Publicado> .
+
+<http://taxonomy.model/Evento> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ve�culos_de_Publica��o_Cient�fica> .
+
+<http://taxonomy.model/Peri�dico> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ve�culos_de_Publica��o_Cient�fica> .
+
+<http://taxonomy.model/Resumo_Publicado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Texto_Cient�fico> .
+
+<http://taxonomy.model/Colaborador_Afiliado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pessoa_F�sica> .
+
+<http://taxonomy.model/Texto_Cient�fico_Editado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Texto_Cient�fico> .
+
+<http://taxonomy.model/Texto_Cient�fico_Publicado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Entidades_Avali�veis>,
+        <http://taxonomy.model/Texto_Cient�fico_Editado> .
+
+<http://taxonomy.model/Artigo_Publicado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Texto_Cient�fico> .
+
+<http://taxonomy.model/Autor_Cient�fico> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Entidades_Avali�veis>,
+        <http://taxonomy.model/Pessoa_F�sica> .
+
+<http://taxonomy.model/Pessoa_F�sica> a owl:Class .
+
+<http://taxonomy.model/Ve�culos_de_Publica��o_Cient�fica> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Entidades_Avali�veis> .
+
+<http://taxonomy.model/Entidades_Avali�veis> a owl:Class .
+
+<http://taxonomy.model/Texto_Cient�fico> a owl:Class .
+

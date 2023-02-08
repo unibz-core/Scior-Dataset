@@ -1,0 +1,27 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Aggravating> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Circumstance> .
+
+<http://taxonomy.model/Allowed_Situation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Qualified_Situation> .
+
+<http://taxonomy.model/Disallowed_Situation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Qualified_Situation> .
+
+<http://taxonomy.model/Mandatory_Situation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Qualified_Situation>,
+        <http://taxonomy.model/Situation> .
+
+<http://taxonomy.model/Mitigating> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Circumstance> .
+
+<http://taxonomy.model/Circumstance> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Qualified_Situation> .
+
+<http://taxonomy.model/Situation> a owl:Class .
+
+<http://taxonomy.model/Qualified_Situation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Situation> .
+

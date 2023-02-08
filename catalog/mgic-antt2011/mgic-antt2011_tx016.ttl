@@ -1,0 +1,987 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Acesso> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Interse��o> .
+
+<http://taxonomy.model/Anel_Rodovi�rio> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Via_de_Tr�fego_Rodovi�rio> .
+
+<http://taxonomy.model/Ativo_Amortizado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Intang�vel> .
+
+<http://taxonomy.model/Ativo_Depreciado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Depreci�vel> .
+
+<http://taxonomy.model/Ativo_Sem_Amortiza��o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Intang�vel> .
+
+<http://taxonomy.model/Ativo_Vendido> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Permanente> .
+
+<http://taxonomy.model/Ativo_com_Valor_Inicial> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Depreci�vel> .
+
+<http://taxonomy.model/A��o_Ordin�ria> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/A��o> .
+
+<http://taxonomy.model/A��o_como_Ativo> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/A��o>,
+        <http://taxonomy.model/Participa��o_em_Empresa> .
+
+<http://taxonomy.model/Balan�a_Fixa_Din�mica> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Balan�a_Fixa> .
+
+<http://taxonomy.model/Balan�a_Fixa_Est�tica> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Balan�a_Fixa> .
+
+<http://taxonomy.model/Balan�a_Ideal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Balan�a> .
+
+<http://taxonomy.model/Balan�a_M�vel> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Balan�a> .
+
+<http://taxonomy.model/Balan�a_com_Defeito> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Balan�a> .
+
+<http://taxonomy.model/Base_Operacional> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Edifica��o_de_Rodovia> .
+
+<http://taxonomy.model/Bem_Especulativo> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Investimento>,
+        <http://taxonomy.model/Bem_Comprado>,
+        <http://taxonomy.model/Bem_Material> .
+
+<http://taxonomy.model/Bem_Imaterial> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Intang�vel>,
+        <http://taxonomy.model/Bem_Comprado> .
+
+<http://taxonomy.model/Bem_Im�vel> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bem_Material>,
+        <http://taxonomy.model/Im�vel> .
+
+<http://taxonomy.model/Bem_Operacional_Alugado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bem_Alugado>,
+        <http://taxonomy.model/Bem_Operacional>,
+        <http://taxonomy.model/Bem_Operacional_Explorado> .
+
+<http://taxonomy.model/Bem_Operacional_Arrendado_Explorado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bem_Operacional_Arrendado>,
+        <http://taxonomy.model/Bem_Operacional_Explorado> .
+
+<http://taxonomy.model/Bem_Operacional_Arrendado_Imobilizado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bem_Operacional_Arrendado>,
+        <http://taxonomy.model/Bem_Operacional_Imobilizado> .
+
+<http://taxonomy.model/Bem_Operacional_Cedido> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bem_Cedido>,
+        <http://taxonomy.model/Bem_Operacional>,
+        <http://taxonomy.model/Bem_Operacional_Explorado> .
+
+<http://taxonomy.model/Bem_Operacional_Comprado_Explorado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bem_Operacional_Comprado>,
+        <http://taxonomy.model/Bem_Operacional_Explorado> .
+
+<http://taxonomy.model/Bem_Operacional_Comprado_Imobilizado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bem_Operacional_Comprado>,
+        <http://taxonomy.model/Bem_Operacional_Imobilizado> .
+
+<http://taxonomy.model/Bem_Segurado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bem_da_Concess�o> .
+
+<http://taxonomy.model/Bueiro> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Obra_de_Arte_Corrente_Pontual> .
+
+<http://taxonomy.model/Call_Box> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Componente_Rodovi�rio>,
+        <http://taxonomy.model/Elemento_Pontual> .
+
+<http://taxonomy.model/Centro_de_Atendimento_ao_Usu�rio> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Edifica��o_de_Rodovia> .
+
+<http://taxonomy.model/Centro_de_Controle_Operacional> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Edifica��o_de_Rodovia> .
+
+<http://taxonomy.model/Componente_Rodovi�rio_Modificado_em_Concess�o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Componente_Rodovi�rio>,
+        <http://taxonomy.model/Elemento_Rodovi�rio_Modificado_em_Concess�o> .
+
+<http://taxonomy.model/Componente_de_Ilumina��o_Ideal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Componente_de_Ilumina��o> .
+
+<http://taxonomy.model/Componente_de_Ilumina��o_com_Defeito> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Componente_de_Ilumina��o> .
+
+<http://taxonomy.model/Contador_de_Ve�culo> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Aparelho_de_Fiscaliza��o> .
+
+<http://taxonomy.model/Contorno_Rodovi�rio> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Via_de_Tr�fego_Rodovi�rio> .
+
+<http://taxonomy.model/Cruzamento_Esconso> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Cruzamento> .
+
+<http://taxonomy.model/Cruzamento_Ortogonal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Cruzamento> .
+
+<http://taxonomy.model/Cruzamento_com_Ilhas> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Cruzamento> .
+
+<http://taxonomy.model/Curva> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Componente_Rodovi�rio>,
+        <http://taxonomy.model/Elemento_Linear> .
+
+<http://taxonomy.model/C�mera_CFTV> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Aparelho_de_Fiscaliza��o> .
+
+<http://taxonomy.model/Descida_D'�gua> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Obra_de_Arte_Corrente_Pontual> .
+
+<http://taxonomy.model/Detector_de_Altura> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Elemento_Pontual> .
+
+<http://taxonomy.model/Dissipador_de_Energia> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Obra_de_Arte_Corrente_Pontual> .
+
+<http://taxonomy.model/Distrito> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Regi�o_Pol�tica> .
+
+<http://taxonomy.model/Drenagem_Subterr�nea> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sistema_de_Drenagem> .
+
+<http://taxonomy.model/Drenagem_Superficial> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sistema_de_Drenagem> .
+
+<http://taxonomy.model/Drenagem_de_Transposi��o_de_Talvegues> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sistema_de_Drenagem> .
+
+<http://taxonomy.model/Drenagem_de_Travessia_Urbana> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sistema_de_Drenagem> .
+
+<http://taxonomy.model/Drenagem_do_Pavimento> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sistema_de_Drenagem> .
+
+<http://taxonomy.model/Dreno> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Obra_de_Arte_Corrente_Pontual> .
+
+<http://taxonomy.model/Edifica��o_Rodovi�ria_de_Apoio> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Edifica��o_de_Rodovia> .
+
+<http://taxonomy.model/Entroncamento_em_T> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Entroncamento> .
+
+<http://taxonomy.model/Entroncamento_em_Y> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Entroncamento> .
+
+<http://taxonomy.model/Escada> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Obra_de_Arte_Corrente_Pontual> .
+
+<http://taxonomy.model/Estado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Regi�o_Pol�tica> .
+
+<http://taxonomy.model/Esta��o_Meteoreol�gica> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Componente_Rodovi�rio>,
+        <http://taxonomy.model/Elemento_Pontual> .
+
+<http://taxonomy.model/Faixa_de_Dom�nio_Ideal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Faixa_de_Dom�nio> .
+
+<http://taxonomy.model/Faixa_de_Dom�nio_Utilizada> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Faixa_de_Dom�nio> .
+
+<http://taxonomy.model/Faixa_de_Dom�nio_com_Defeito> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Faixa_de_Dom�nio> .
+
+<http://taxonomy.model/Filial> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Estabelecimento> .
+
+<http://taxonomy.model/Im�vel_Desapropriado_com_Laudo_de_Avalia��o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Im�vel_Desapropriado> .
+
+<http://taxonomy.model/Im�vel_Edificado_Alugado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bem_Alugado>,
+        <http://taxonomy.model/Im�vel_Edificado>,
+        <http://taxonomy.model/Im�vel_Edificado_Explorado> .
+
+<http://taxonomy.model/Im�vel_Edificado_Arrendado_Explorado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Im�vel_Edificado_Arrendado>,
+        <http://taxonomy.model/Im�vel_Edificado_Explorado> .
+
+<http://taxonomy.model/Im�vel_Edificado_Arrendado_Imobilizado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Im�vel_Edificado_Arrendado>,
+        <http://taxonomy.model/Im�vel_Edificado_Imobilizado> .
+
+<http://taxonomy.model/Im�vel_Edificado_Cedido> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bem_Cedido>,
+        <http://taxonomy.model/Im�vel_Edificado>,
+        <http://taxonomy.model/Im�vel_Edificado_Explorado> .
+
+<http://taxonomy.model/Im�vel_Edificado_Comprado_Explorado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Im�vel_Edificado_Comprado>,
+        <http://taxonomy.model/Im�vel_Edificado_Explorado> .
+
+<http://taxonomy.model/Im�vel_Edificado_Comprado_Imobilizado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Im�vel_Edificado_Comprado>,
+        <http://taxonomy.model/Im�vel_Edificado_Imobilizado> .
+
+<http://taxonomy.model/Im�vel_Edificado_Constru�do_Explorado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Im�vel_Edificado_Constru�do>,
+        <http://taxonomy.model/Im�vel_Edificado_Explorado> .
+
+<http://taxonomy.model/Im�vel_Edificado_Constru�do_Imobilizado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Im�vel_Edificado_Constru�do>,
+        <http://taxonomy.model/Im�vel_Edificado_Imobilizado> .
+
+<http://taxonomy.model/Intersec��o_Explorada> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Interse��o> .
+
+<http://taxonomy.model/Interse��o_Ferrovi�ria> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Interse��o> .
+
+<http://taxonomy.model/Interse��o_Ideal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Interse��o> .
+
+<http://taxonomy.model/Interse��o_Rodoferrovi�ria> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Interse��o> .
+
+<http://taxonomy.model/Interse��o_Rodovi�ria> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Interse��o> .
+
+<http://taxonomy.model/Interse��o_com_Defeito> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Interse��o> .
+
+<http://taxonomy.model/Interse��o_em_Desn�vel> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Interse��o> .
+
+<http://taxonomy.model/Interse��o_em_N�vel> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Interse��o> .
+
+<http://taxonomy.model/Legenda> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Inscri��o_no_Pavimento> .
+
+<http://taxonomy.model/Linha_Cont�nua> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Marca_Longitudinal> .
+
+<http://taxonomy.model/Linha_Tracejada> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Marca_Longitudinal> .
+
+<http://taxonomy.model/Marca_Transversal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Marca_de_Sinaliza��o> .
+
+<http://taxonomy.model/Marca_de_Canaliza��o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Marca_de_Sinaliza��o> .
+
+<http://taxonomy.model/Marca_de_Delimita��o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Marca_de_Sinaliza��o> .
+
+<http://taxonomy.model/Matriz> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Estabelecimento> .
+
+<http://taxonomy.model/Meio_Fio> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Obra_de_Arte_Corrente_Linear> .
+
+<http://taxonomy.model/Munic�pio> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Regi�o_Pol�tica> .
+
+<http://taxonomy.model/Muro> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Obra_de_Arte_Corrente_Linear> .
+
+<http://taxonomy.model/Obra_da_Concess�o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Explorado>,
+        <http://taxonomy.model/Bem_Constru�do> .
+
+<http://taxonomy.model/PFR_Fiscalizador> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Posto_de_Fiscaliza��o_Rodovi�ria> .
+
+<http://taxonomy.model/PPV_Fiscalizador> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Posto_de_Pesagem_Veicular> .
+
+<http://taxonomy.model/PPV_Fixo> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Posto_de_Pesagem_Veicular> .
+
+<http://taxonomy.model/PPV_M�vel> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Posto_de_Pesagem_Veicular> .
+
+<http://taxonomy.model/Parada_de_�nibus> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Componente_Rodovi�rio>,
+        <http://taxonomy.model/Elemento_Pontual> .
+
+<http://taxonomy.model/Passagem_de_Pedestre> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Componente_Rodovi�rio>,
+        <http://taxonomy.model/Elemento_Pontual> .
+
+<http://taxonomy.model/Passarela> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ponte> .
+
+<http://taxonomy.model/Pa�s> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Regi�o_Pol�tica> .
+
+<http://taxonomy.model/Ponte_Estaiada> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ponte_Suspensa> .
+
+<http://taxonomy.model/Ponte_Est�tica> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ponte> .
+
+<http://taxonomy.model/Ponte_Ferrovi�ria> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ponte> .
+
+<http://taxonomy.model/Ponte_Ideal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ponte> .
+
+<http://taxonomy.model/Ponte_M�vel> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ponte> .
+
+<http://taxonomy.model/Ponte_Rodovi�ria> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ponte> .
+
+<http://taxonomy.model/Ponte_Utilit�ria> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ponte> .
+
+<http://taxonomy.model/Ponte_com_Defeito> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ponte> .
+
+<http://taxonomy.model/Ponte_em_Arco> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ponte> .
+
+<http://taxonomy.model/Ponte_em_Caix�o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ponte_em_Viga> .
+
+<http://taxonomy.model/Ponte_em_Laje> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ponte_em_Viga> .
+
+<http://taxonomy.model/Ponte_em_Treli�a> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ponte_em_Viga> .
+
+<http://taxonomy.model/Posto_da_PRF> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Edifica��o_de_Rodovia> .
+
+<http://taxonomy.model/Posto_de_Fiscaliza��o_Fazend�ria> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Edifica��o_de_Rodovia> .
+
+<http://taxonomy.model/Posto_de_Fiscaliza��o_da_ANTT> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Posto_de_Fiscaliza��o_Rodovi�ria> .
+
+<http://taxonomy.model/Posto_de_Fiscaliza��o_de_OC> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Posto_de_Fiscaliza��o_Rodovi�ria> .
+
+<http://taxonomy.model/Pra�a_Bidirecional> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pra�a_de_Ped�gio> .
+
+<http://taxonomy.model/Pra�a_Unidirecional> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pra�a_de_Ped�gio> .
+
+<http://taxonomy.model/Pra�a_de_Ped�gio_Autorizada> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pra�a_de_Ped�gio> .
+
+<http://taxonomy.model/Pra�a_de_Ped�gio_Auxiliar> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pra�a_de_Ped�gio> .
+
+<http://taxonomy.model/Produto_Adquirido_em_Conv�nio> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Produto> .
+
+<http://taxonomy.model/Produto_Cotado_Coletivamente> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Produto_Cotado> .
+
+<http://taxonomy.model/Produto_Cotado_Individualmente> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Produto_Cotado> .
+
+<http://taxonomy.model/Quota_como_Ativo> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Participa��o_em_Empresa> .
+
+<http://taxonomy.model/Radar> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Aparelho_de_Fiscaliza��o> .
+
+<http://taxonomy.model/Rampa> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Componente_Rodovi�rio>,
+        <http://taxonomy.model/Elemento_Linear> .
+
+<http://taxonomy.model/Rodovia_Arterial> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Rodovia> .
+
+<http://taxonomy.model/Rodovia_Coletora> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Rodovia> .
+
+<http://taxonomy.model/Rodovia_Diagonal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Rodovia_Federal> .
+
+<http://taxonomy.model/Rodovia_Estadual> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Rodovia> .
+
+<http://taxonomy.model/Rodovia_Local> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Rodovia> .
+
+<http://taxonomy.model/Rodovia_Longitudinal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Rodovia_Federal> .
+
+<http://taxonomy.model/Rodovia_Municipal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Rodovia> .
+
+<http://taxonomy.model/Rodovia_Radial> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Rodovia_Federal> .
+
+<http://taxonomy.model/Rodovia_Transversal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Rodovia_Federal> .
+
+<http://taxonomy.model/Rodovia_Vicinal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Rodovia> .
+
+<http://taxonomy.model/Rodovia_com_Fiscaliza��o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Rodovia> .
+
+<http://taxonomy.model/Rodovia_de_Liga��o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Rodovia_Federal> .
+
+<http://taxonomy.model/Rotat�ria> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Interse��o> .
+
+<http://taxonomy.model/Sarjeta> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Obra_de_Arte_Corrente_Pontual> .
+
+<http://taxonomy.model/Segmento_Homog�neo> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Elemento_Linear> .
+
+<http://taxonomy.model/Servi�o_Executado_em_Concess�o_Rodovi�ria> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Servi�o_Executado>,
+        <http://taxonomy.model/Servi�o_em_Concess�o_Rodovi�ria> .
+
+<http://taxonomy.model/Servi�o_de_Conserva��o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Servi�o_com_Interven��o> .
+
+<http://taxonomy.model/Servi�o_de_Manuten��o_Delegado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Servi�o_Delegado>,
+        <http://taxonomy.model/Servi�o_de_Manuten��o> .
+
+<http://taxonomy.model/Servi�o_de_Melhoramento> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Servi�o_com_Interven��o> .
+
+<http://taxonomy.model/Servi�o_de_Monitora��o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Servi�o_de_Opera��o> .
+
+<http://taxonomy.model/Servi�o_de_Recupera��o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Servi�o_com_Interven��o> .
+
+<http://taxonomy.model/Servi�os_de_Aux�lio_aos_Usu�rios> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Servi�o_de_Opera��o> .
+
+<http://taxonomy.model/Seta_Direcional> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Inscri��o_no_Pavimento> .
+
+<http://taxonomy.model/Sinaliza��o_A�rea> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sinaliza��o_por_Placa> .
+
+<http://taxonomy.model/Sinaliza��o_Permanente> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sinaliza��o_Rodovi�ria> .
+
+<http://taxonomy.model/Sinaliza��o_Rodovi�ria_Ideal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sinaliza��o_Rodovi�ria> .
+
+<http://taxonomy.model/Sinaliza��o_Rodovi�ria_com_Defeito> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sinaliza��o_Rodovi�ria> .
+
+<http://taxonomy.model/Sinaliza��o_Semaf�rica> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Elemento_Pontual>,
+        <http://taxonomy.model/Sinaliza��o_Rodovi�ria> .
+
+<http://taxonomy.model/Sinaliza��o_Tempor�ria> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sinaliza��o_Rodovi�ria> .
+
+<http://taxonomy.model/Sinaliza��o_Tur�stica> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sinaliza��o_por_Placa> .
+
+<http://taxonomy.model/Sinaliza��o_Vertical> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sinaliza��o_por_Placa> .
+
+<http://taxonomy.model/Sinaliza��o_de_Advert�ncia> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sinaliza��o_por_Placa> .
+
+<http://taxonomy.model/Sinaliza��o_de_Educa��o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sinaliza��o_por_Placa> .
+
+<http://taxonomy.model/Sinaliza��o_de_Indica��o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sinaliza��o_por_Placa> .
+
+<http://taxonomy.model/Sinaliza��o_de_Obra> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sinaliza��o_por_Placa> .
+
+<http://taxonomy.model/Sinaliza��o_de_Regulamenta��o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sinaliza��o_por_Placa> .
+
+<http://taxonomy.model/Sinaliza��o_de_Servi�o_Auxiliar> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sinaliza��o_por_Placa> .
+
+<http://taxonomy.model/Sistema_de_Drenagem_Ideal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sistema_de_Drenagem> .
+
+<http://taxonomy.model/Sistema_de_Drenagem_com_Defeito> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sistema_de_Drenagem> .
+
+<http://taxonomy.model/S�mbolo> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Inscri��o_no_Pavimento> .
+
+<http://taxonomy.model/Terreno_Alugado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bem_Alugado>,
+        <http://taxonomy.model/Terreno>,
+        <http://taxonomy.model/Terreno_Explorado> .
+
+<http://taxonomy.model/Terreno_Arrendado_Explorado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Terreno_Arrendado>,
+        <http://taxonomy.model/Terreno_Explorado> .
+
+<http://taxonomy.model/Terreno_Arrendado_Imobilizado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Terreno_Arrendado>,
+        <http://taxonomy.model/Terreno_Imobilizado> .
+
+<http://taxonomy.model/Terreno_Cedido> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bem_Cedido>,
+        <http://taxonomy.model/Terreno>,
+        <http://taxonomy.model/Terreno_Explorado> .
+
+<http://taxonomy.model/Terreno_Comprado_Explorado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Terreno_Comprado>,
+        <http://taxonomy.model/Terreno_Explorado> .
+
+<http://taxonomy.model/Terreno_Comprado_Imobilizado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Terreno_Comprado>,
+        <http://taxonomy.model/Terreno_Imobilizado> .
+
+<http://taxonomy.model/Trecho_Duplicado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_com_Canteiro_Central> .
+
+<http://taxonomy.model/Trecho_F�sico_Estadual> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Rodovi�rio_F�sico> .
+
+<http://taxonomy.model/Trecho_F�sico_Federal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Rodovi�rio_F�sico> .
+
+<http://taxonomy.model/Trecho_Multifaixas> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Pavimentado> .
+
+<http://taxonomy.model/Trecho_Natural_Implanta��o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Leito_Natural> .
+
+<http://taxonomy.model/Trecho_Pista_Tripla> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_com_Canteiro_Central> .
+
+<http://taxonomy.model/Trecho_Planejada_Implanta��o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Planejado> .
+
+<http://taxonomy.model/Trecho_Rodovi�rio_Concedido_com_Servi�o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Rodovi�rio_Concedido> .
+
+<http://taxonomy.model/Trecho_Rodovi�rio_F�sico_Ideal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Rodovi�rio_F�sico> .
+
+<http://taxonomy.model/Trecho_Rodovi�rio_F�sico_com_Atendimento> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Rodovi�rio_F�sico> .
+
+<http://taxonomy.model/Trecho_Rodovi�rio_F�sico_com_Defeito> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Rodovi�rio_F�sico> .
+
+<http://taxonomy.model/Trecho_Rodovi�rio_Multipista> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Rodovi�rio_F�sico> .
+
+<http://taxonomy.model/Trecho_Rodovi�rio_com_Acidente> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Rodovi�rio_F�sico> .
+
+<http://taxonomy.model/Trecho_Rodovi�rio_em_Obra> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Rodovi�rio_F�sico> .
+
+<http://taxonomy.model/Trecho_Travessia> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Rodovi�rio_F�sico> .
+
+<http://taxonomy.model/Trecho_com_Coopera��o_T�cnica> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Rodovi�rio_Concedido> .
+
+<http://taxonomy.model/Trecho_com_Manuten��o_Conveniada> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Rodovi�rio_Concedido> .
+
+<http://taxonomy.model/Trecho_de_Monitora��o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Elemento_Linear> .
+
+<http://taxonomy.model/Trecho_em_Obra_de_Duplica��o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Pavimentado> .
+
+<http://taxonomy.model/Trecho_em_Obra_de_Pavimenta��o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Implantado> .
+
+<http://taxonomy.model/Trevo_Completo> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trevo> .
+
+<http://taxonomy.model/Trevo_Incompleto> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trevo> .
+
+<http://taxonomy.model/T�nel_Ideal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/T�nel> .
+
+<http://taxonomy.model/T�nel_com_Defeito> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/T�nel> .
+
+<http://taxonomy.model/Unidade_de_Conserva��o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/�rea_de_Preserva��o_Ambiental> .
+
+<http://taxonomy.model/Variante> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Via_de_Tr�fego_Rodovi�rio> .
+
+<http://taxonomy.model/Via_A�rea> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Via> .
+
+<http://taxonomy.model/Via_Fluvial> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Via_Aqu�tica> .
+
+<http://taxonomy.model/Via_Lacustre> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Via_Aqu�tica> .
+
+<http://taxonomy.model/Via_Lateral> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Via_de_Tr�fego_Rodovi�rio> .
+
+<http://taxonomy.model/Via_Marginal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Via_de_Tr�fego_Rodovi�rio> .
+
+<http://taxonomy.model/Via_Mar�tima> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Via_Aqu�tica> .
+
+<http://taxonomy.model/Via_Modificada_em_Concess�o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Elemento_Rodovi�rio_Modificado_em_Concess�o>,
+        <http://taxonomy.model/Via_de_Tr�fego_Rodovi�rio> .
+
+<http://taxonomy.model/Via_de_Tr�fego_Ferrovi�rio> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Via_Terrestre> .
+
+<http://taxonomy.model/�rea_Destinada_a_Reforma_Agr�ria> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/�rea> .
+
+<http://taxonomy.model/�rea_Estadual> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/�rea_P�blica> .
+
+<http://taxonomy.model/�rea_Ind�gena> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/�rea_Protegida> .
+
+<http://taxonomy.model/�rea_Livre> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/�rea> .
+
+<http://taxonomy.model/�rea_Municipal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/�rea_P�blica> .
+
+<http://taxonomy.model/�rea_Privada> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/�rea> .
+
+<http://taxonomy.model/�rea_Quilombola> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/�rea_Protegida> .
+
+<http://taxonomy.model/�rea_da_Uni�o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/�rea_P�blica> .
+
+<http://taxonomy.model/�rea_de_Interesse_P�blico> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/�rea> .
+
+<http://taxonomy.model/�rea_de_Preserva��o_Permanente> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/�rea_de_Preserva��o_Ambiental> .
+
+<http://taxonomy.model/Bem_da_Concess�o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Explorado> .
+
+<http://taxonomy.model/Elemento_de_Utilidade_P�blica> a owl:Class .
+
+<http://taxonomy.model/Im�vel_Desapropriado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Elemento_de_Utilidade_P�blica>,
+        <http://taxonomy.model/Im�vel_em_�rea_de_Interesse_P�blico> .
+
+<http://taxonomy.model/Im�vel_em_�rea_de_Interesse_P�blico> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Im�vel> .
+
+<http://taxonomy.model/Ponte_Suspensa> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ponte> .
+
+<http://taxonomy.model/Produto_Solicitado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Produto> .
+
+<http://taxonomy.model/Servi�o_Delegado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Servi�o> .
+
+<http://taxonomy.model/Servi�o_Executado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Servi�o> .
+
+<http://taxonomy.model/Servi�o_de_Manuten��o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Servi�o_com_Interven��o> .
+
+<http://taxonomy.model/Trecho_Implantado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Plataforma> .
+
+<http://taxonomy.model/Trecho_Leito_Natural> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Rodovi�rio_F�sico> .
+
+<http://taxonomy.model/Trecho_Planejado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Rodovi�rio_F�sico> .
+
+<http://taxonomy.model/Trecho_Rodovi�rio_em_Lote> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Rodovi�rio_F�sico> .
+
+<http://taxonomy.model/Ativo_Investimento> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Permanente> .
+
+<http://taxonomy.model/A��o> a owl:Class .
+
+<http://taxonomy.model/Balan�a_Fixa> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Balan�a> .
+
+<http://taxonomy.model/Bem_Constru�do> a owl:Class .
+
+<http://taxonomy.model/Bem_Operacional_Arrendado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bem_Arrendado>,
+        <http://taxonomy.model/Bem_Operacional> .
+
+<http://taxonomy.model/Bem_Operacional_Comprado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bem_Comprado>,
+        <http://taxonomy.model/Bem_Operacional> .
+
+<http://taxonomy.model/Bem_Operacional_Imobilizado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Depreci�vel> .
+
+<http://taxonomy.model/Componente_de_Ilumina��o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Componente_Rodovi�rio>,
+        <http://taxonomy.model/Elemento_Pontual> .
+
+<http://taxonomy.model/Elemento_Rodovi�rio_Modificado_em_Concess�o> a owl:Class .
+
+<http://taxonomy.model/Entroncamento> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Interse��o> .
+
+<http://taxonomy.model/Estabelecimento> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Im�vel_Edificado> .
+
+<http://taxonomy.model/Im�vel_Edificado_Arrendado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bem_Arrendado>,
+        <http://taxonomy.model/Im�vel_Edificado> .
+
+<http://taxonomy.model/Im�vel_Edificado_Comprado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bem_Comprado>,
+        <http://taxonomy.model/Im�vel_Edificado> .
+
+<http://taxonomy.model/Im�vel_Edificado_Constru�do> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bem_Constru�do>,
+        <http://taxonomy.model/Im�vel_Edificado> .
+
+<http://taxonomy.model/Marca_Longitudinal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Marca_de_Sinaliza��o> .
+
+<http://taxonomy.model/Obra_de_Arte_Corrente> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Componente_Rodovi�rio> .
+
+<http://taxonomy.model/Obra_de_Arte_Especial> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Componente_Rodovi�rio>,
+        <http://taxonomy.model/Elemento_Linear> .
+
+<http://taxonomy.model/Participa��o_em_Empresa> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Investimento>,
+        <http://taxonomy.model/Bem_Comprado> .
+
+<http://taxonomy.model/Produto_Cotado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Produto_Solicitado> .
+
+<http://taxonomy.model/Servi�o_de_Opera��o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Servi�o_em_Concess�o_Rodovi�ria> .
+
+<http://taxonomy.model/Sinaliza��o_Horizontal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Elemento_Linear>,
+        <http://taxonomy.model/Sinaliza��o_Rodovi�ria> .
+
+<http://taxonomy.model/Terreno_Arrendado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bem_Arrendado>,
+        <http://taxonomy.model/Terreno> .
+
+<http://taxonomy.model/Terreno_Comprado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bem_Comprado>,
+        <http://taxonomy.model/Terreno> .
+
+<http://taxonomy.model/Terreno_Imobilizado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Imobilizado> .
+
+<http://taxonomy.model/Trecho_Plataforma> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Rodovi�rio_F�sico> .
+
+<http://taxonomy.model/Trecho_com_Canteiro_Central> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Pavimentado> .
+
+<http://taxonomy.model/Trevo> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Interse��o> .
+
+<http://taxonomy.model/T�nel> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Obra_de_Arte_Especial> .
+
+<http://taxonomy.model/Via_Terrestre> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Via> .
+
+<http://taxonomy.model/�rea_de_Preserva��o_Ambiental> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/�rea_Protegida> .
+
+<http://taxonomy.model/Aparelho_de_Fiscaliza��o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Componente_Rodovi�rio>,
+        <http://taxonomy.model/Elemento_Pontual> .
+
+<http://taxonomy.model/Ativo_Imobilizado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Permanente> .
+
+<http://taxonomy.model/Bem_Alugado> a owl:Class .
+
+<http://taxonomy.model/Bem_Arrendado> a owl:Class .
+
+<http://taxonomy.model/Bem_Cedido> a owl:Class .
+
+<http://taxonomy.model/Bem_Material> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Produto> .
+
+<http://taxonomy.model/Cruzamento> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Interse��o> .
+
+<http://taxonomy.model/Elemento_Espacial> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Elemento_Georreferenciado> .
+
+<http://taxonomy.model/Elemento_Georreferenciado> a owl:Class .
+
+<http://taxonomy.model/Faixa_de_Dom�nio> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Elemento_Linear> .
+
+<http://taxonomy.model/Im�vel_Edificado_Imobilizado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Depreci�vel>,
+        <http://taxonomy.model/Ativo_Imobilizado> .
+
+<http://taxonomy.model/Inscri��o_no_Pavimento> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sinaliza��o_Horizontal> .
+
+<http://taxonomy.model/Obra_de_Arte_Corrente_Linear> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Elemento_Linear>,
+        <http://taxonomy.model/Obra_de_Arte_Corrente> .
+
+<http://taxonomy.model/Ponte_em_Viga> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ponte> .
+
+<http://taxonomy.model/Posto_de_Fiscaliza��o_Rodovi�ria> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Edifica��o_de_Rodovia> .
+
+<http://taxonomy.model/Posto_de_Pesagem_Veicular> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Edifica��o_de_Rodovia> .
+
+<http://taxonomy.model/Servi�o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Produto> .
+
+<http://taxonomy.model/Servi�o_em_Concess�o_Rodovi�ria> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Servi�o> .
+
+<http://taxonomy.model/Trecho_Pavimentado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Plataforma> .
+
+<http://taxonomy.model/Trecho_Rodovi�rio_Concedido> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Trecho_Rodovi�rio_em_Lote> .
+
+<http://taxonomy.model/Via> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Elemento_Linear> .
+
+<http://taxonomy.model/Via_Aqu�tica> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Via> .
+
+<http://taxonomy.model/�rea_Protegida> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/�rea> .
+
+<http://taxonomy.model/�rea_P�blica> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/�rea> .
+
+<http://taxonomy.model/Ativo_Depreci�vel> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Imobilizado> .
+
+<http://taxonomy.model/Ativo_Intang�vel> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Permanente> .
+
+<http://taxonomy.model/Ativo_Permanente> a owl:Class .
+
+<http://taxonomy.model/Balan�a> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Elemento_Pontual> .
+
+<http://taxonomy.model/Bem_Operacional> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bem_Material> .
+
+<http://taxonomy.model/Bem_Operacional_Explorado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Explorado> .
+
+<http://taxonomy.model/Im�vel> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Elemento_Espacial> .
+
+<http://taxonomy.model/Marca_de_Sinaliza��o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Sinaliza��o_Horizontal> .
+
+<http://taxonomy.model/Pra�a_de_Ped�gio> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Edifica��o_de_Rodovia> .
+
+<http://taxonomy.model/Produto> a owl:Class .
+
+<http://taxonomy.model/Regi�o_Pol�tica> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Elemento_Espacial> .
+
+<http://taxonomy.model/Servi�o_com_Interven��o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Servi�o_em_Concess�o_Rodovi�ria> .
+
+<http://taxonomy.model/Terreno> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Im�vel> .
+
+<http://taxonomy.model/Terreno_Explorado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Explorado> .
+
+<http://taxonomy.model/Ativo_Explorado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Intang�vel> .
+
+<http://taxonomy.model/Im�vel_Edificado_Explorado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Ativo_Explorado> .
+
+<http://taxonomy.model/Rodovia_Federal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Rodovia> .
+
+<http://taxonomy.model/Bem_Comprado> a owl:Class .
+
+<http://taxonomy.model/Obra_de_Arte_Corrente_Pontual> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Elemento_Pontual>,
+        <http://taxonomy.model/Obra_de_Arte_Corrente> .
+
+<http://taxonomy.model/�rea> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Elemento_Espacial> .
+
+<http://taxonomy.model/Im�vel_Edificado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Im�vel> .
+
+<http://taxonomy.model/Sinaliza��o_Rodovi�ria> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Componente_Rodovi�rio> .
+
+<http://taxonomy.model/Sistema_de_Drenagem> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Obra_de_Arte_Corrente_Linear> .
+
+<http://taxonomy.model/Via_de_Tr�fego_Rodovi�rio> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Via_Terrestre> .
+
+<http://taxonomy.model/Rodovia> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Via_de_Tr�fego_Rodovi�rio> .
+
+<http://taxonomy.model/Edifica��o_de_Rodovia> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Componente_Rodovi�rio>,
+        <http://taxonomy.model/Elemento_Pontual>,
+        <http://taxonomy.model/Im�vel_Edificado> .
+
+<http://taxonomy.model/Sinaliza��o_por_Placa> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Elemento_Pontual>,
+        <http://taxonomy.model/Sinaliza��o_Rodovi�ria> .
+
+<http://taxonomy.model/Elemento_Linear> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Elemento_Georreferenciado> .
+
+<http://taxonomy.model/Ponte> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Obra_de_Arte_Especial> .
+
+<http://taxonomy.model/Elemento_Pontual> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Elemento_Georreferenciado> .
+
+<http://taxonomy.model/Interse��o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Componente_Rodovi�rio>,
+        <http://taxonomy.model/Elemento_Linear> .
+
+<http://taxonomy.model/Trecho_Rodovi�rio_F�sico> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Elemento_Linear> .
+
+<http://taxonomy.model/Componente_Rodovi�rio> a owl:Class .
+

@@ -1,0 +1,77 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/CASE_Tool> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Software_Product> .
+
+<http://taxonomy.model/Document> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Artifact> .
+
+<http://taxonomy.model/Document_Template> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Procedure> .
+
+<http://taxonomy.model/Hardware_Resource> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Hardware_Equipment>,
+        <http://taxonomy.model/Resource> .
+
+<http://taxonomy.model/Information_Item> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Artifact> .
+
+<http://taxonomy.model/Method> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Procedure> .
+
+<http://taxonomy.model/Model> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Artifact> .
+
+<http://taxonomy.model/Simple_Artifact> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Artifact> .
+
+<http://taxonomy.model/Software_Item> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Artifact> .
+
+<http://taxonomy.model/Software_Project> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Project> .
+
+<http://taxonomy.model/Software_Resource> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Resource>,
+        <http://taxonomy.model/Software_Product> .
+
+<http://taxonomy.model/Standard_Process_Definition_Document> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Plan_Description> .
+
+<http://taxonomy.model/Technique> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Procedure> .
+
+<http://taxonomy.model/Composite_Artifact> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Artifact> .
+
+<http://taxonomy.model/Hardware_Equipment> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Object> .
+
+<http://taxonomy.model/Plan_Description> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Normative_Description> .
+
+<http://taxonomy.model/Project> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Social_Object> .
+
+<http://taxonomy.model/Normative_Description> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Social_Object> .
+
+<http://taxonomy.model/Resource> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Object> .
+
+<http://taxonomy.model/Social_Object> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Object> .
+
+<http://taxonomy.model/Software_Product> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Artifact>,
+        <http://taxonomy.model/Composite_Artifact> .
+
+<http://taxonomy.model/Procedure> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Normative_Description> .
+
+<http://taxonomy.model/Object> a owl:Class .
+
+<http://taxonomy.model/Artifact> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Object> .
+
