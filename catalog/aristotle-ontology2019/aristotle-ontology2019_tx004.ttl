@@ -1,14 +1,18 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Before&AfterInPlace> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Before&AfterInChange> .
+<http://taxonomy.model/AccidentalParticular-NonSubstantialParticular> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/AccidentalUniversal>,
+        <http://taxonomy.model/Being> .
 
-<http://taxonomy.model/Before&AfterInTime> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Before&After> .
+<http://taxonomy.model/EssentialParticular-PrimarySubstance> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Being> .
 
-<http://taxonomy.model/Before&AfterInChange> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Before&After> .
+<http://taxonomy.model/EssentialUniversal-SecondarySubstance> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Being> .
 
-<http://taxonomy.model/Before&After> a owl:Class .
+<http://taxonomy.model/AccidentalUniversal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Being> .
+
+<http://taxonomy.model/Being> a owl:Class .
 

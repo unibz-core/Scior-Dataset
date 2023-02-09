@@ -1,0 +1,38 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Arriving_Point> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Obstacle_Inner_Bank> .
+
+<http://taxonomy.model/Depositing_Place> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Inner_Bank_with_Deposited_Sediment> .
+
+<http://taxonomy.model/Eroded_Bank> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Outer_Bank> .
+
+<http://taxonomy.model/Erosion_Patient> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Frictionality_Pressed_Outer_Bank> .
+
+<http://taxonomy.model/Obstacle> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Obstacle_Inner_Bank> .
+
+<http://taxonomy.model/Deposition_Bank> a owl:Class .
+
+<http://taxonomy.model/Frictionality_Pressed_Outer_Bank> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Outer_Bank> .
+
+<http://taxonomy.model/Inner_Bank_with_Deposited_Sediment> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Deposition_Bank>,
+        <http://taxonomy.model/Inner_Bank> .
+
+<http://taxonomy.model/Bank> a owl:Class .
+
+<http://taxonomy.model/Inner_Bank> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bank> .
+
+<http://taxonomy.model/Obstacle_Inner_Bank> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Inner_Bank> .
+
+<http://taxonomy.model/Outer_Bank> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bank> .
+

@@ -1,0 +1,46 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Experience_Risk_Assessment> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Experience_Value_Asc.>,
+        <http://taxonomy.model/Risk_Assessment> .
+
+<http://taxonomy.model/Gain_Ascription> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Value_Asc._Component> .
+
+<http://taxonomy.model/Loss_Ascription> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Value_Asc._Component> .
+
+<http://taxonomy.model/Object_Risk_Assess.> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Object_Value_Asc.>,
+        <http://taxonomy.model/Risk_Assessment> .
+
+<http://taxonomy.model/Value_Asc._Ex_Post> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Value_Ascription> .
+
+<http://taxonomy.model/Value_Assertion> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Value_Ascription> .
+
+<http://taxonomy.model/Value_Perception> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Value_Ascription> .
+
+<http://taxonomy.model/Experience_Value_Asc.> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Value_Ascription> .
+
+<http://taxonomy.model/Object_Value_Asc.> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Value_Ascription> .
+
+<http://taxonomy.model/Value_Asc._Ex_Ante> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Value_Ascription> .
+
+<http://taxonomy.model/Relator> a owl:Class .
+
+<http://taxonomy.model/Risk_Assessment> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Value_Asc._Ex_Ante> .
+
+<http://taxonomy.model/Value_Asc._Component> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Relator> .
+
+<http://taxonomy.model/Value_Ascription> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Relator> .
+

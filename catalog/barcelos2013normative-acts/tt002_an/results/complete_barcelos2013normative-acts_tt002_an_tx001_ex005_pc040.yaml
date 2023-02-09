@@ -1,4 +1,4 @@
-Revocation_Clause:
+Article_composed_of_Paragraph:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -43,7 +43,29 @@ Article_composed_of_Item:
   - gufo:RoleMixin
   - gufo:SemiRigidType
 ---
-Article_component_of_Section:
+Article:
+  can_type:
+  - gufo:Category
+  - gufo:Kind
+  - gufo:Mixin
+  - gufo:NonRigidType
+  - gufo:NonSortal
+  - gufo:RigidType
+  - gufo:SemiRigidType
+  - gufo:Sortal
+  - gufo:SubKind
+  detected_in: []
+  input: false
+  is_incomplete: false
+  is_type: []
+  not_type:
+  - gufo:AntiRigidType
+  - gufo:Phase
+  - gufo:PhaseMixin
+  - gufo:Role
+  - gufo:RoleMixin
+---
+Revocation_Clause:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -65,7 +87,7 @@ Article_component_of_Section:
   is_type: []
   not_type: []
 ---
-Composed_Article:
+Ordinary_Article:
   can_type: []
   detected_in:
   - nk_k_sup
@@ -111,7 +133,7 @@ Duration_Clause:
   - gufo:RoleMixin
   - gufo:SemiRigidType
 ---
-Ordinary_Article:
+Article_component_of_Chapter:
   can_type:
   - gufo:AntiRigidType
   - gufo:Category
@@ -133,30 +155,7 @@ Ordinary_Article:
   is_type: []
   not_type: []
 ---
-Article_composed_of_Paragraph:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in:
-  - nk_k_sup
-  input: false
-  is_incomplete: true
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-Article:
+Composed_Article:
   can_type:
   - gufo:Category
   - gufo:Kind
@@ -200,7 +199,7 @@ Simple_Article:
   is_type: []
   not_type: []
 ---
-Article_component_of_Chapter:
+Article_component_of_Section:
   can_type: []
   detected_in:
   - nk_k_sup

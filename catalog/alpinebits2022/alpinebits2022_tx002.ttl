@@ -1,0 +1,154 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Area_Owner> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Agent> .
+
+<http://taxonomy.model/Audio_Object> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Media_Object> .
+
+<http://taxonomy.model/Author> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Agent> .
+
+<http://taxonomy.model/Cancelled> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Event_Plan> .
+
+<http://taxonomy.model/Closed> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Place> .
+
+<http://taxonomy.model/Composite_Area> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Mountain_Area> .
+
+<http://taxonomy.model/Composite_Event> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Event_Plan> .
+
+<http://taxonomy.model/Contributor> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Agent> .
+
+<http://taxonomy.model/Event_Series> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Event_Plan_Category>,
+        <http://taxonomy.model/Named_Entity> .
+
+<http://taxonomy.model/Event_Series_Category> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Category> .
+
+<http://taxonomy.model/Hybrid_Event> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Event_Plan> .
+
+<http://taxonomy.model/Image_Object> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Media_Object> .
+
+<http://taxonomy.model/In-Person_Event> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Event_Plan> .
+
+<http://taxonomy.model/License_Holder> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Agent> .
+
+<http://taxonomy.model/Lift> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Named_Entity>,
+        <http://taxonomy.model/Place> .
+
+<http://taxonomy.model/Lift_Category> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Category> .
+
+<http://taxonomy.model/Media_Object_Category> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Category> .
+
+<http://taxonomy.model/Mountain_Area_Category> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Category> .
+
+<http://taxonomy.model/Operational> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Place> .
+
+<http://taxonomy.model/Organization> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Agent> .
+
+<http://taxonomy.model/Organizer> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Agent> .
+
+<http://taxonomy.model/Permanently_Closed> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Place> .
+
+<http://taxonomy.model/Person> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Agent> .
+
+<http://taxonomy.model/Published> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Event_Plan> .
+
+<http://taxonomy.model/Publisher> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Agent> .
+
+<http://taxonomy.model/SimpleArea> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Mountain_Area> .
+
+<http://taxonomy.model/Simple_Event> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Event_Plan> .
+
+<http://taxonomy.model/Ski_Slope> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Named_Entity>,
+        <http://taxonomy.model/Trail> .
+
+<http://taxonomy.model/Ski_Slope_Category> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Category> .
+
+<http://taxonomy.model/Snow_Measurement> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Geospatial_Feature> .
+
+<http://taxonomy.model/Snowpark> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Named_Entity>,
+        <http://taxonomy.model/Trail> .
+
+<http://taxonomy.model/Snowpark_Category> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Category> .
+
+<http://taxonomy.model/Snowpark_Feature> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Feature> .
+
+<http://taxonomy.model/Sponsor> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Agent> .
+
+<http://taxonomy.model/Trail_Category> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Category> .
+
+<http://taxonomy.model/Venue> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Place> .
+
+<http://taxonomy.model/Video_Object> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Media_Object> .
+
+<http://taxonomy.model/Virtual_Event> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Event_Plan> .
+
+<http://taxonomy.model/Event_Plan_Category> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Category> .
+
+<http://taxonomy.model/Feature> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Named_Entity> .
+
+<http://taxonomy.model/Geospatial_Feature> a owl:Class .
+
+<http://taxonomy.model/Mountain_Area> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Named_Entity>,
+        <http://taxonomy.model/Place> .
+
+<http://taxonomy.model/Trail> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Place> .
+
+<http://taxonomy.model/Media_Object> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Named_Entity> .
+
+<http://taxonomy.model/Event_Plan> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Named_Entity> .
+
+<http://taxonomy.model/Place> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Geospatial_Feature>,
+        <http://taxonomy.model/Named_Entity> .
+
+<http://taxonomy.model/Category> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Named_Entity> .
+
+<http://taxonomy.model/Agent> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Named_Entity> .
+
+<http://taxonomy.model/Named_Entity> a owl:Class .
+

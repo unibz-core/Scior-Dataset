@@ -1,11 +1,20 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Processo_Execuc�o> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Processo> .
+<http://taxonomy.model/Empenho> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Execuc�o_Despesa> .
 
-<http://taxonomy.model/Processo_Licitat�rio> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Processo> .
+<http://taxonomy.model/Execuc�o_sem_Contrato> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Execuc�o_Despesa> .
 
-<http://taxonomy.model/Processo> a owl:Class .
+<http://taxonomy.model/Exeuc�o_com_Contrato> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Execuc�o_Despesa> .
+
+<http://taxonomy.model/Liquidac�o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Execuc�o_Despesa> .
+
+<http://taxonomy.model/Pagamento> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Execuc�o_Despesa> .
+
+<http://taxonomy.model/Execuc�o_Despesa> a owl:Class .
 

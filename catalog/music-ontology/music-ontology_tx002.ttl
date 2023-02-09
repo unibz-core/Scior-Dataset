@@ -1,0 +1,49 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Music_Composer> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Composer> .
+
+<http://taxonomy.model/Musician> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Individual_Artist>,
+        <http://taxonomy.model/Musical_Member> .
+
+<http://taxonomy.model/Orchestra> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Musical_Group> .
+
+<http://taxonomy.model/Publisher> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Person> .
+
+<http://taxonomy.model/Software_Program> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Artist> .
+
+<http://taxonomy.model/Artistic_Group> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Artist>,
+        <http://taxonomy.model/Group> .
+
+<http://taxonomy.model/Composer> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Artist> .
+
+<http://taxonomy.model/Group> a owl:Class .
+
+<http://taxonomy.model/Individual_Artist> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Artist>,
+        <http://taxonomy.model/Artistic_Member>,
+        <http://taxonomy.model/Person> .
+
+<http://taxonomy.model/Member> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Person> .
+
+<http://taxonomy.model/Musical_Group> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Artistic_Group> .
+
+<http://taxonomy.model/Musical_Member> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Artistic_Member> .
+
+<http://taxonomy.model/Artistic_Member> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Member> .
+
+<http://taxonomy.model/Person> a owl:Class .
+
+<http://taxonomy.model/Artist> a owl:Class .
+

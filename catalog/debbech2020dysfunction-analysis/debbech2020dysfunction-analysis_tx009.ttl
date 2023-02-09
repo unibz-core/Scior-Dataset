@@ -1,20 +1,17 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Fault_Emergency_Failure> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Failure> .
+<http://taxonomy.model/Context> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Situation> .
 
-<http://taxonomy.model/Ill-intentional_Stakeholder-caused_Failure> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Stakeholder-caused_Failure> .
+<http://taxonomy.model/Failure_State> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Situation> .
 
-<http://taxonomy.model/Non-intentional_Stakeholder-caused_Failure> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Stakeholder-caused_Failure> .
+<http://taxonomy.model/Hazard> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Situation> .
 
-<http://taxonomy.model/Event> a owl:Class .
+<http://taxonomy.model/Hazardous_State> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Situation> .
 
-<http://taxonomy.model/Failure> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Event> .
-
-<http://taxonomy.model/Stakeholder-caused_Failure> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Failure> .
+<http://taxonomy.model/Situation> a owl:Class .
 

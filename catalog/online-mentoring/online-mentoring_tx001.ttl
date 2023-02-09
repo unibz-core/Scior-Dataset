@@ -1,0 +1,35 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/EducationalInstitution> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Organization> .
+
+<http://taxonomy.model/ParticipantWithQuestion> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Participant> .
+
+<http://taxonomy.model/ParticipantWithanswer> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Participant> .
+
+<http://taxonomy.model/Professor> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Participant> .
+
+<http://taxonomy.model/Tutor> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/ActiveStudent> .
+
+<http://taxonomy.model/ActiveStudent> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Student> .
+
+<http://taxonomy.model/Organization> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Agent> .
+
+<http://taxonomy.model/Person> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Agent> .
+
+<http://taxonomy.model/Student> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Participant> .
+
+<http://taxonomy.model/Agent> a owl:Class .
+
+<http://taxonomy.model/Participant> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Person> .
+

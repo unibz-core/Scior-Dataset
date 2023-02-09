@@ -1,0 +1,45 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Object> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Substantial> .
+
+<http://taxonomy.model/Object_at_Risk> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Value_Object> .
+
+<http://taxonomy.model/Risk_Assessor> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Value_Assessor> .
+
+<http://taxonomy.model/Risk_Enabler> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Value_Enabler> .
+
+<http://taxonomy.model/Risk_Subject> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Value_Subject> .
+
+<http://taxonomy.model/Threat_Agent> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Agent>,
+        <http://taxonomy.model/Threat_Object> .
+
+<http://taxonomy.model/Threat_Object> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Value_Object> .
+
+<http://taxonomy.model/Value_Assessor> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Agent> .
+
+<http://taxonomy.model/Value_Enabler> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Endurant> .
+
+<http://taxonomy.model/Value_Subject> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Agent> .
+
+<http://taxonomy.model/Substantial> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Endurant> .
+
+<http://taxonomy.model/Value_Object> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Endurant> .
+
+<http://taxonomy.model/Agent> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Substantial> .
+
+<http://taxonomy.model/Endurant> a owl:Class .
+

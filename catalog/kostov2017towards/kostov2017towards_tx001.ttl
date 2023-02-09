@@ -1,0 +1,59 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Aerodrome's_Operation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Operation> .
+
+<http://taxonomy.model/Collision> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Safety_Event> .
+
+<http://taxonomy.model/Coordination> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Action> .
+
+<http://taxonomy.model/Decision> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Action> .
+
+<http://taxonomy.model/Deviation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Safety_Event> .
+
+<http://taxonomy.model/Flight> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Event> .
+
+<http://taxonomy.model/Handling> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Action> .
+
+<http://taxonomy.model/Loss_of_function> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Safety_Event> .
+
+<http://taxonomy.model/Near_collision> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Safety_Event> .
+
+<http://taxonomy.model/Process> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Event> .
+
+<http://taxonomy.model/Provision> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Action> .
+
+<http://taxonomy.model/Regulation_Violation_Event> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Safety_Event> .
+
+<http://taxonomy.model/Warning_System_Alarm> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Safety_Event> .
+
+<http://taxonomy.model/Operation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Use> .
+
+<http://taxonomy.model/Reportable_Event> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Event> .
+
+<http://taxonomy.model/Use> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Action> .
+
+<http://taxonomy.model/Event> a owl:Class .
+
+<http://taxonomy.model/Action> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Event> .
+
+<http://taxonomy.model/Safety_Event> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Reportable_Event> .
+

@@ -1,0 +1,29 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Erroneous_User_Action> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/User_Action> .
+
+<http://taxonomy.model/Fault_Manifestation_Failure> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Failure> .
+
+<http://taxonomy.model/Intentional_User-generated_Failure> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/User-generated_Failure> .
+
+<http://taxonomy.model/Non-intentional_User-generated_Failure> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/User-generated_Failure> .
+
+<http://taxonomy.model/Action> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Event_(Perdurant)> .
+
+<http://taxonomy.model/User_Action> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Action> .
+
+<http://taxonomy.model/Event_(Perdurant)> a owl:Class .
+
+<http://taxonomy.model/Failure> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Event_(Perdurant)> .
+
+<http://taxonomy.model/User-generated_Failure> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Failure> .
+

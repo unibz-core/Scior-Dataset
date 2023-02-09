@@ -1,0 +1,45 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Channel_Sculptor> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Water_Stream> .
+
+<http://taxonomy.model/Erosive_Agent> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Frictioning_Water> .
+
+<http://taxonomy.model/Sediment_Receiver> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Tractive_Water> .
+
+<http://taxonomy.model/Still_Water> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Water> .
+
+<http://taxonomy.model/Unloading_Vehicle> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Obstacled_Loaded_Water> .
+
+<http://taxonomy.model/Vehicle> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Tractive_Water> .
+
+<http://taxonomy.model/Frictioning_Water> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/High_Energy_Water> .
+
+<http://taxonomy.model/High_Energy_Water> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Moving_Water> .
+
+<http://taxonomy.model/Low_Energy_Water> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Moving_Water> .
+
+<http://taxonomy.model/Obstacled_Loaded_Water> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Low_Energy_Water>,
+        <http://taxonomy.model/Tractive_Water> .
+
+<http://taxonomy.model/Water_Stream> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Moving_Water> .
+
+<http://taxonomy.model/Water> a owl:Class .
+
+<http://taxonomy.model/Tractive_Water> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Moving_Water> .
+
+<http://taxonomy.model/Moving_Water> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Water> .
+
