@@ -1,0 +1,44 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Artifact> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Technical_object> .
+
+<http://taxonomy.model/Disposed> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Technical_object> .
+
+<http://taxonomy.model/In_distribution> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Employed> .
+
+<http://taxonomy.model/In_maintenance> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Employed> .
+
+<http://taxonomy.model/In_production> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Technical_object> .
+
+<http://taxonomy.model/In_use> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Employed> .
+
+<http://taxonomy.model/Material_source> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Instrument> .
+
+<http://taxonomy.model/Planned> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Technical_object> .
+
+<http://taxonomy.model/Source> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Physical_Object> .
+
+<http://taxonomy.model/Result> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Physical_Object> .
+
+<http://taxonomy.model/Instrument> a owl:Class .
+
+<http://taxonomy.model/Physical_Object> a owl:Class .
+
+<http://taxonomy.model/Employed> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Technical_object> .
+
+<http://taxonomy.model/Technical_object> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Instrument>,
+        <http://taxonomy.model/Result> .
+

@@ -1,0 +1,53 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Cardinal_Nominator> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Pope> .
+
+<http://taxonomy.model/Deacon> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Secular_Clergy_Member> .
+
+<http://taxonomy.model/Layman> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Regular_Clergy_Member> .
+
+<http://taxonomy.model/Ordained_Bishop> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bishop> .
+
+<http://taxonomy.model/Ordinator_of_Bishop> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bishop> .
+
+<http://taxonomy.model/Ordinator_of_Deacon> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bishop> .
+
+<http://taxonomy.model/Ordinator_of_Priest> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Bishop> .
+
+<http://taxonomy.model/Priest> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Secular_Clergy_Member> .
+
+<http://taxonomy.model/Witness_of_Profession> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Clergyman> .
+
+<http://taxonomy.model/Cardinal> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Secular_Clergy_Member> .
+
+<http://taxonomy.model/Clergyman> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Regular_Clergy_Member> .
+
+<http://taxonomy.model/Person> a owl:Class .
+
+<http://taxonomy.model/Pope> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Cardinal> .
+
+<http://taxonomy.model/Clergy_Member> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Person> .
+
+<http://taxonomy.model/Regular_Clergy_Member> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Clergy_Member> .
+
+<http://taxonomy.model/Bishop> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Secular_Clergy_Member> .
+
+<http://taxonomy.model/Secular_Clergy_Member> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Clergy_Member> .
+

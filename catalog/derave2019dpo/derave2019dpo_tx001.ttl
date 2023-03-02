@@ -1,0 +1,190 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Airbnb_Home_Renter> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Airbnb_Home_Seeker>,
+        <http://taxonomy.model/Private_Customer> .
+
+<http://taxonomy.model/B2B_Platform_Customer> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Organization>,
+        <http://taxonomy.model/Platform_Customer> .
+
+<http://taxonomy.model/B2B_Platform_Provider> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Organization>,
+        <http://taxonomy.model/Platform_Provider> .
+
+<http://taxonomy.model/B2C_Platform_Customer> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Person>,
+        <http://taxonomy.model/Platform_Customer> .
+
+<http://taxonomy.model/B2C_Platform_Provider> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Organization>,
+        <http://taxonomy.model/Platform_Provider> .
+
+<http://taxonomy.model/C2C_Platform_Customer> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Peer_User>,
+        <http://taxonomy.model/Person>,
+        <http://taxonomy.model/Platform_Customer> .
+
+<http://taxonomy.model/C2C_Platform_Provider> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Peer_User>,
+        <http://taxonomy.model/Person>,
+        <http://taxonomy.model/Platform_Provider> .
+
+<http://taxonomy.model/Capital-Giving_Agent> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Platform_Customer> .
+
+<http://taxonomy.model/Capital-Seeking_Agent> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Platform_Provider> .
+
+<http://taxonomy.model/Centralized_Platform_Customer> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Centralized_Target_Platform_Customer>,
+        <http://taxonomy.model/Platform_Customer> .
+
+<http://taxonomy.model/Decentralized_Platform_Customer> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Decentralized_Target_Platform_Customer>,
+        <http://taxonomy.model/Platform_Customer> .
+
+<http://taxonomy.model/Immediate_Access_Customer> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Platform_Customer> .
+
+<http://taxonomy.model/Marketplace_Company> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Platform_Company> .
+
+<http://taxonomy.model/Non-Peer_User> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Platform_User> .
+
+<http://taxonomy.model/One-Sided_Platform_User> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Platform_User> .
+
+<http://taxonomy.model/Payment_Provider> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Organization> .
+
+<http://taxonomy.model/Peer_Consumer> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Peer_User> .
+
+<http://taxonomy.model/Peer_Creator> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Peer_User> .
+
+<http://taxonomy.model/Platform_Customer_of_Offline_Physical_Good> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Platform_Customer> .
+
+<http://taxonomy.model/Platform_Service_Provider> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Platform_Provider> .
+
+<http://taxonomy.model/Private_Airbnb_Homeowner> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Airbnb_Homeowner>,
+        <http://taxonomy.model/Person> .
+
+<http://taxonomy.model/SafaRide_Customer> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Logged_In_User> .
+
+<http://taxonomy.model/SafaRide_Trip_Provider> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Logged_In_User> .
+
+<http://taxonomy.model/Subscribed_Platform_User> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Registered_User> .
+
+<http://taxonomy.model/Transaction_Platform_Company> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Platform_Company> .
+
+<http://taxonomy.model/Uber_Eats_Customer> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Peer_User>,
+        <http://taxonomy.model/Person>,
+        <http://taxonomy.model/Platform_Customer> .
+
+<http://taxonomy.model/Uber_Eats_Restaurant> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Offering_Creator>,
+        <http://taxonomy.model/Organization> .
+
+<http://taxonomy.model/Uber_Eats_Rider> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Peer_User>,
+        <http://taxonomy.model/Person> .
+
+<http://taxonomy.model/Worker> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Platform_Customer> .
+
+<http://taxonomy.model/immediate_Access_Provider> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Platform_Provider> .
+
+<http://taxonomy.model/jobDropper> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Platform_Provider> .
+
+<http://taxonomy.model/Airbnb_Home_Seeker> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Peer_User>,
+        <http://taxonomy.model/Person>,
+        <http://taxonomy.model/Platform_Customer>,
+        <http://taxonomy.model/Platform_User> .
+
+<http://taxonomy.model/Airbnb_Homeowner> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Offering_Creator>,
+        <http://taxonomy.model/Peer_User> .
+
+<http://taxonomy.model/Centralized_Target_Platform_Customer> a owl:Class .
+
+<http://taxonomy.model/Content_Consumer> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Platform_User> .
+
+<http://taxonomy.model/Content_Creator> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Platform_User> .
+
+<http://taxonomy.model/Decentralized_Target_Platform_Customer> a owl:Class .
+
+<http://taxonomy.model/Private_Customer> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Person> .
+
+<http://taxonomy.model/Target_Platform_Customer> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Platform_User>,
+        <http://taxonomy.model/Platform_Visitor> .
+
+<http://taxonomy.model/Logged_In_User> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Registered_User> .
+
+<http://taxonomy.model/MS_Platform_User> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Platform_Visitor> .
+
+<http://taxonomy.model/Platform_Company> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Agent> .
+
+<http://taxonomy.model/Target_Platform_User> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Agent> .
+
+<http://taxonomy.model/Offering_Creator> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Content_Creator>,
+        <http://taxonomy.model/MS_Platform_User>,
+        <http://taxonomy.model/Platform_User>,
+        <http://taxonomy.model/Registered_User> .
+
+<http://taxonomy.model/Agent> a owl:Class .
+
+<http://taxonomy.model/Platform_Visitor> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Target_Platform_User> .
+
+<http://taxonomy.model/Registered_User> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Platform_User>,
+        <http://taxonomy.model/Platform_Visitor> .
+
+<http://taxonomy.model/Organization> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Agent> .
+
+<http://taxonomy.model/Platform_Provider> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Offering_Creator>,
+        <http://taxonomy.model/Platform_User> .
+
+<http://taxonomy.model/Peer_User> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Platform_User> .
+
+<http://taxonomy.model/Person> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Agent> .
+
+<http://taxonomy.model/Platform_Customer> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Content_Consumer>,
+        <http://taxonomy.model/MS_Platform_User>,
+        <http://taxonomy.model/Platform_User>,
+        <http://taxonomy.model/Registered_User>,
+        <http://taxonomy.model/Target_Platform_Customer> .
+
+<http://taxonomy.model/Platform_User> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Platform_Visitor>,
+        <http://taxonomy.model/Target_Platform_User> .
+

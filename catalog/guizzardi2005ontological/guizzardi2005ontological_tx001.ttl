@@ -1,0 +1,61 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/ActiveOrganization> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/ActiveAgent>,
+        <http://taxonomy.model/Organization> .
+
+<http://taxonomy.model/Band> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Organization>,
+        <http://taxonomy.model/Performer_Artist> .
+
+<http://taxonomy.model/Band_Member> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Individual_Artist> .
+
+<http://taxonomy.model/Deceased_Person> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Person> .
+
+<http://taxonomy.model/ExtinctOrganization> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Organization> .
+
+<http://taxonomy.model/Father> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Male_Person>,
+        <http://taxonomy.model/Parent> .
+
+<http://taxonomy.model/Living_Person> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/ActiveAgent>,
+        <http://taxonomy.model/Person> .
+
+<http://taxonomy.model/Mother> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Female_Person>,
+        <http://taxonomy.model/Parent> .
+
+<http://taxonomy.model/Offspring> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Person> .
+
+<http://taxonomy.model/Female_Person> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Person> .
+
+<http://taxonomy.model/Individual_Artist> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Performer_Artist>,
+        <http://taxonomy.model/Person> .
+
+<http://taxonomy.model/Male_Person> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Person> .
+
+<http://taxonomy.model/ActiveAgent> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Agent> .
+
+<http://taxonomy.model/Parent> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Person> .
+
+<http://taxonomy.model/Performer_Artist> a owl:Class .
+
+<http://taxonomy.model/Agent> a owl:Class .
+
+<http://taxonomy.model/Organization> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Agent> .
+
+<http://taxonomy.model/Person> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Agent> .
+

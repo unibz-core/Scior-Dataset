@@ -1,0 +1,82 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Base_Table> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Table> .
+
+<http://taxonomy.model/Check_Constraint> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Column_Constraint> .
+
+<http://taxonomy.model/Column_Type_Constraint> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Column_Constraint> .
+
+<http://taxonomy.model/DBMS_Account> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/DBMS_Item> .
+
+<http://taxonomy.model/Data_File> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Software_Item> .
+
+<http://taxonomy.model/Data_Schema> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Schema> .
+
+<http://taxonomy.model/Data_Type_Constraint> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Constraint> .
+
+<http://taxonomy.model/Derived_Table> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Table> .
+
+<http://taxonomy.model/Dictionary> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/DBMS_Item> .
+
+<http://taxonomy.model/Foreign_Key_Constraint> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Column_Constraint> .
+
+<http://taxonomy.model/Information_Schema> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Schema> .
+
+<http://taxonomy.model/Primary_Key_Constraint> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Column_Constraint> .
+
+<http://taxonomy.model/RDBMS> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/DBMS> .
+
+<http://taxonomy.model/Relational_Database> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Database>,
+        <http://taxonomy.model/RDBMS_Item> .
+
+<http://taxonomy.model/Relational_Schema> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/RDBMS_Item>,
+        <http://taxonomy.model/Schema> .
+
+<http://taxonomy.model/Artifact> a owl:Class .
+
+<http://taxonomy.model/DBMS> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Software_System> .
+
+<http://taxonomy.model/Database> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/DBMS_Item> .
+
+<http://taxonomy.model/Software_System> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Software_Item> .
+
+<http://taxonomy.model/Constraint> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/RDBMS_Item> .
+
+<http://taxonomy.model/Table> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/RDBMS_Item> .
+
+<http://taxonomy.model/Schema> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/DBMS_Item> .
+
+<http://taxonomy.model/Software_Item> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Artifact> .
+
+<http://taxonomy.model/Column_Constraint> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Constraint> .
+
+<http://taxonomy.model/RDBMS_Item> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/DBMS_Item> .
+
+<http://taxonomy.model/DBMS_Item> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Software_Item> .
+

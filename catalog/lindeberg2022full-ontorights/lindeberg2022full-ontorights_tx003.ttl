@@ -1,0 +1,191 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://taxonomy.model/Absused_Person> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Monitoring_Event_Participant> .
+
+<http://taxonomy.model/Adult> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Natural_Person> .
+
+<http://taxonomy.model/Child> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Natural_Person> .
+
+<http://taxonomy.model/Common_Member> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Organisation_Member> .
+
+<http://taxonomy.model/Criminal_Organisation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Informal_Organisation> .
+
+<http://taxonomy.model/Deceased_Person> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Natural_Person> .
+
+<http://taxonomy.model/Detained_Group> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Circumstantial_Group>,
+        <http://taxonomy.model/Detained> .
+
+<http://taxonomy.model/Detained_person> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Detained>,
+        <http://taxonomy.model/Natural_Person> .
+
+<http://taxonomy.model/Duty-bearer_representative> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Monitoring_Event_Participant> .
+
+<http://taxonomy.model/E-OPL:_Complex_Organisation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/E-OPL:_Standalone_Organisation> .
+
+<http://taxonomy.model/E-OPL:_Complex_Organisational_Unit> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/E-OPL:_Organisational_Unit> .
+
+<http://taxonomy.model/E-OPL:_Multiorganisation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/E-OPL:_Organisation> .
+
+<http://taxonomy.model/E-OPL:_Simple_Organisation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/E-OPL:_Standalone_Organisation> .
+
+<http://taxonomy.model/E-OPL:_Simple_Organisational_Unit> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/E-OPL:_Organisational_Unit> .
+
+<http://taxonomy.model/E-OPL:_Team> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/UFO-C:_Institutional_Agent> .
+
+<http://taxonomy.model/Ethnic_Group> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Identity_Group> .
+
+<http://taxonomy.model/Force_At_Work> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/UFO-A:_Substantial> .
+
+<http://taxonomy.model/Head_Member> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Organisation_Member> .
+
+<http://taxonomy.model/Human_Rights_Mechanism> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Formal_Organisation>,
+        <http://taxonomy.model/UFO-L:_Legal_Agent> .
+
+<http://taxonomy.model/Information_Exchange_Record> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Monitoring_Record> .
+
+<http://taxonomy.model/Legal_Perpetrator> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Legal_Duty-bearer> .
+
+<http://taxonomy.model/Legal_Victim> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Rights-holder> .
+
+<http://taxonomy.model/Living_Person> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Natural_Person> .
+
+<http://taxonomy.model/Material_Absuser> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Monitoring_Event_Participant> .
+
+<http://taxonomy.model/Monitoring_Staff> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Monitoring_Event_Participant> .
+
+<http://taxonomy.model/Moral_Duty-bearer> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Duty-bearer> .
+
+<http://taxonomy.model/Nation_State> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/UFO-C:_Institutional_Agent> .
+
+<http://taxonomy.model/Observation_Record> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Monitoring_Record> .
+
+<http://taxonomy.model/Official_Legal_Process> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/UFO-L:_Legal_Object> .
+
+<http://taxonomy.model/Official_Legal_Record> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/UFO-L:_Legal_Object> .
+
+<http://taxonomy.model/Religious_Group> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Identity_Group> .
+
+<http://taxonomy.model/State_Authority> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Formal_Organisation> .
+
+<http://taxonomy.model/UFO-C:_Society> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/UFO-C:_Collective_Social_Agent> .
+
+<http://taxonomy.model/UFO-L:_Agentive_Legal_Institution> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/UFO-C:_Institutional_Agent>,
+        <http://taxonomy.model/UFO-L:_Legal_Agent> .
+
+<http://taxonomy.model/UFO-L:_Singular_Legal_Agent> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/UFO-L:_Legal_Agent> .
+
+<http://taxonomy.model/Witness> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Monitoring_Event_Participant> .
+
+<http://taxonomy.model/Circumstantial_Group> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Group> .
+
+<http://taxonomy.model/Informal_Organisation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/E-OPL:_Organisation> .
+
+<http://taxonomy.model/Legal_Duty-bearer> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Duty-bearer> .
+
+<http://taxonomy.model/Rights-holder> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/UFO-C:_Social_Agent> .
+
+<http://taxonomy.model/UFO-A:_Non-Agentive_Substantial> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/UFO-A:_Substantial> .
+
+<http://taxonomy.model/UFO-C:_Human_Agent> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/UFO-C:_Agent> .
+
+<http://taxonomy.model/Detained> a owl:Class .
+
+<http://taxonomy.model/Duty-bearer> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/UFO-L:_Legal_Agent> .
+
+<http://taxonomy.model/E-OPL:_Organisational_Unit> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/UFO-C:_Institutional_Agent> .
+
+<http://taxonomy.model/E-OPL:_Standalone_Organisation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/E-OPL:_Organisation> .
+
+<http://taxonomy.model/Formal_Organisation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/E-OPL:_Organisation> .
+
+<http://taxonomy.model/Group> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/UFO-C:_Collective_Social_Agent> .
+
+<http://taxonomy.model/Identity_Group> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Group> .
+
+<http://taxonomy.model/Monitoring_Record> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/UFO-C:_Social_Object> .
+
+<http://taxonomy.model/Organisation_Member> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Natural_Person> .
+
+<http://taxonomy.model/UFO-C:_Agent> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/UFO-A:_Substantial> .
+
+<http://taxonomy.model/UFO-C:_Collective_Social_Agent> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/UFO-C:_Social_Agent> .
+
+<http://taxonomy.model/UFO-C:_Social_Object> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/UFO-A:_Non-Agentive_Substantial> .
+
+<http://taxonomy.model/UFO-L:_Legal_Object> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/UFO-C:_Social_Object> .
+
+<http://taxonomy.model/UFO-A:_Substantial> a owl:Class .
+
+<http://taxonomy.model/E-OPL:_Organisation> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/UFO-C:_Institutional_Agent> .
+
+<http://taxonomy.model/UFO-C:_Social_Agent> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/UFO-C:_Agent> .
+
+<http://taxonomy.model/UFO-L:_Legal_Agent> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/UFO-C:_Social_Agent> .
+
+<http://taxonomy.model/Monitoring_Event_Participant> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Natural_Person> .
+
+<http://taxonomy.model/UFO-C:_Institutional_Agent> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/UFO-C:_Social_Agent> .
+
+<http://taxonomy.model/Natural_Person> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/UFO-C:_Human_Agent> .
+
