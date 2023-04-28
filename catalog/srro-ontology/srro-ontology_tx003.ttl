@@ -1,11 +1,12 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Postcondition> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Condition> .
+:AlternativeFlow a owl:Class ;
+    rdfs:subClassOf :EventFlow .
 
-<http://taxonomy.model/Precondition> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Condition> .
+:BasicFlow a owl:Class ;
+    rdfs:subClassOf :EventFlow .
 
-<http://taxonomy.model/Condition> a owl:Class .
+:EventFlow a owl:Class .
 

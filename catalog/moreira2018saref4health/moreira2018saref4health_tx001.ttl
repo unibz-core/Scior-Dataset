@@ -1,11 +1,21 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/PersonUnderECGMonitoring> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/LivingPerson> .
+:ECGDevice a owl:Class ;
+    rdfs:subClassOf :Device .
 
-<http://taxonomy.model/BiologicalPerson> a owl:Class .
+:ECGLeadBipolarLimb a owl:Class ;
+    rdfs:subClassOf :ECGLead .
 
-<http://taxonomy.model/LivingPerson> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/BiologicalPerson> .
+:ECGLeadUnipolar a owl:Class ;
+    rdfs:subClassOf :ECGLead .
+
+:Sensor a owl:Class ;
+    rdfs:subClassOf :Device .
+
+:Device a owl:Class .
+
+:ECGLead a owl:Class ;
+    rdfs:subClassOf :Sensor .
 

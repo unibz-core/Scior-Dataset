@@ -1,11 +1,12 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/activity_certificate> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/certification> .
+<http://taxonomy.model/credit/debit_card_payment> a owl:Class ;
+    rdfs:subClassOf :payment .
 
-<http://taxonomy.model/language_certificate> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/certification> .
+:online_payment a owl:Class ;
+    rdfs:subClassOf :payment .
 
-<http://taxonomy.model/certification> a owl:Class .
+:payment a owl:Class .
 

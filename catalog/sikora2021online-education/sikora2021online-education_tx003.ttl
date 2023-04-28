@@ -1,11 +1,21 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Anonymous_Visitor> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/IP_Visitor> .
+:Learning_Manager a owl:Class ;
+    rdfs:subClassOf :Corporate_User .
 
-<http://taxonomy.model/Logged_Visitor> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/IP_Visitor> .
+:Subject a owl:Class ;
+    rdfs:subClassOf :Followable .
 
-<http://taxonomy.model/IP_Visitor> a owl:Class .
+:Tag a owl:Class ;
+    rdfs:subClassOf :Followable .
+
+:Corporate_User a owl:Class ;
+    rdfs:subClassOf :User .
+
+:User a owl:Class ;
+    rdfs:subClassOf :Followable .
+
+:Followable a owl:Class .
 

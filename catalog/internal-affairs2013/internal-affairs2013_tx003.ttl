@@ -1,14 +1,18 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/conclusion> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/sanction> .
+:experience a owl:Class ;
+    rdfs:subClassOf :document .
 
-<http://taxonomy.model/penalty> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/sanction> .
+:message a owl:Class ;
+    rdfs:subClassOf :document .
 
-<http://taxonomy.model/reward> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/sanction> .
+:personal a owl:Class ;
+    rdfs:subClassOf :document .
 
-<http://taxonomy.model/sanction> a owl:Class .
+:public a owl:Class ;
+    rdfs:subClassOf :document .
+
+:document a owl:Class .
 

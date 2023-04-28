@@ -1,17 +1,18 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/hospital> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/nearbyHouseFacilities> .
+:sportOrganization a owl:Class ;
+    rdfs:subClassOf :organization .
 
-<http://taxonomy.model/parkArea> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/nearbyHouseFacilities> .
+:store a owl:Class ;
+    rdfs:subClassOf :organization .
 
-<http://taxonomy.model/pub> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/nearbyHouseFacilities> .
+:university a owl:Class ;
+    rdfs:subClassOf :EducationalOrganization .
 
-<http://taxonomy.model/school> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/nearbyHouseFacilities> .
+:EducationalOrganization a owl:Class ;
+    rdfs:subClassOf :organization .
 
-<http://taxonomy.model/nearbyHouseFacilities> a owl:Class .
+:organization a owl:Class .
 

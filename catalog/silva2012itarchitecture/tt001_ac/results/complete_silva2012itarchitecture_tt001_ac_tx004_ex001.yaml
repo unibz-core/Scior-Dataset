@@ -1,65 +1,230 @@
-UPS:
+Application-based:
   can_type: []
-  detected_in: []
   input: true
-  is_incomplete: false
   is_type:
-  - gufo:Kind
-  - gufo:RigidType
-  - gufo:Sortal
+  - EndurantType
+  - RigidType
+  - Sortal
+  - SubKind
   not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
+  - AntiRigidType
+  - Category
+  - Kind
+  - Mixin
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - Role
+  - RoleMixin
+  - SemiRigidType
 ---
-UPS_Online:
+DBMS-based:
   can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
+  - AntiRigidType
+  - Category
+  - Kind
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - RigidType
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - Sortal
+  - SubKind
   input: false
-  is_incomplete: false
   is_type:
-  - gufo:Sortal
+  - EndurantType
   not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
+  - Mixin
 ---
-UPS_Standby:
+Data_Replication:
   can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
+  - Category
+  - Kind
+  - Mixin
+  - NonRigidType
+  - NonSortal
+  - RigidType
+  - SemiRigidType
+  - Sortal
+  - SubKind
   input: false
-  is_incomplete: false
   is_type:
-  - gufo:Sortal
+  - EndurantType
   not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
+  - AntiRigidType
+  - Phase
+  - PhaseMixin
+  - Role
+  - RoleMixin
+---
+Host-based:
+  can_type:
+  - AntiRigidType
+  - Category
+  - Kind
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - RigidType
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - Sortal
+  - SubKind
+  input: false
+  is_type:
+  - EndurantType
+  not_type:
+  - Mixin
+---
+ITSC_Component:
+  can_type:
+  - Category
+  - Kind
+  - Mixin
+  - NonRigidType
+  - NonSortal
+  - RigidType
+  - SemiRigidType
+  - Sortal
+  - SubKind
+  input: false
+  is_type:
+  - EndurantType
+  not_type:
+  - AntiRigidType
+  - Phase
+  - PhaseMixin
+  - Role
+  - RoleMixin
+---
+Local_Replication:
+  can_type:
+  - AntiRigidType
+  - Category
+  - Kind
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - RigidType
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - Sortal
+  - SubKind
+  input: false
+  is_type:
+  - EndurantType
+  not_type:
+  - Mixin
+---
+Media_Backup/Restore:
+  can_type:
+  - AntiRigidType
+  - Category
+  - Kind
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - RigidType
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - Sortal
+  - SubKind
+  input: false
+  is_type:
+  - EndurantType
+  not_type:
+  - Mixin
+---
+Remote_Replication:
+  can_type:
+  - AntiRigidType
+  - Category
+  - Kind
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - RigidType
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - Sortal
+  - SubKind
+  input: false
+  is_type:
+  - EndurantType
+  not_type:
+  - Mixin
+---
+Resilient_Network:
+  can_type:
+  - AntiRigidType
+  - Category
+  - Kind
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - RigidType
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - Sortal
+  - SubKind
+  input: false
+  is_type:
+  - EndurantType
+  not_type:
+  - Mixin
+---
+Site_Model:
+  can_type:
+  - AntiRigidType
+  - Category
+  - Kind
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - RigidType
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - Sortal
+  - SubKind
+  input: false
+  is_type:
+  - EndurantType
+  not_type:
+  - Mixin
+---
+Storage-based:
+  can_type:
+  - AntiRigidType
+  - Category
+  - Kind
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - RigidType
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - Sortal
+  - SubKind
+  input: false
+  is_type:
+  - EndurantType
+  not_type:
+  - Mixin

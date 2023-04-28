@@ -1,23 +1,21 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Awarded_Work> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Creative_Work> .
+:Commissioned a owl:Class ;
+    rdfs:subClassOf :Ship .
 
-<http://taxonomy.model/Book> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Creative_Work> .
+:Decommissioned a owl:Class ;
+    rdfs:subClassOf :Ship .
 
-<http://taxonomy.model/Copyrighted_Work> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Creative_Work> .
+:On_Route a owl:Class ;
+    rdfs:subClassOf :Ship .
 
-<http://taxonomy.model/Painting> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Creative_Work> .
+:Panama-class_Ship a owl:Class ;
+    rdfs:subClassOf :Ship .
 
-<http://taxonomy.model/Public_Domain_Work> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Creative_Work> .
+:Suez-class_Ship a owl:Class ;
+    rdfs:subClassOf :Ship .
 
-<http://taxonomy.model/Sculpture> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Creative_Work> .
-
-<http://taxonomy.model/Creative_Work> a owl:Class .
+:Ship a owl:Class .
 

@@ -1,14 +1,18 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Governo_Estadual> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Governo> .
+:Empresa_Credor a owl:Class ;
+    rdfs:subClassOf :Credor,
+        :Empresa .
 
-<http://taxonomy.model/Governo_Federal> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Governo> .
+:Pessoa_Credor a owl:Class ;
+    rdfs:subClassOf :Credor,
+        :Pessoa .
 
-<http://taxonomy.model/Governo_Municipal> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Governo> .
+:Empresa a owl:Class .
 
-<http://taxonomy.model/Governo> a owl:Class .
+:Pessoa a owl:Class .
+
+:Credor a owl:Class .
 

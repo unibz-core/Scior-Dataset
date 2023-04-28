@@ -1,17 +1,66 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/ActiveIntellect> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Mind> .
+:Agriculture a owl:Class ;
+    rdfs:subClassOf :ProductiveSciences .
 
-<http://taxonomy.model/Passive_Intellect> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Mind> .
+:AstronomicalTheory a owl:Class ;
+    rdfs:subClassOf :SpecialSciences .
 
-<http://taxonomy.model/PracticalMind> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Mind> .
+:Biology a owl:Class ;
+    rdfs:subClassOf :SpecialSciences .
 
-<http://taxonomy.model/TheoreticalMind> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Mind> .
+:Botany a owl:Class ;
+    rdfs:subClassOf :SpecialSciences .
 
-<http://taxonomy.model/Mind> a owl:Class .
+:Dance a owl:Class ;
+    rdfs:subClassOf :Arts .
+
+:Ethics a owl:Class ;
+    rdfs:subClassOf :PracticalSciences .
+
+:FirstPhilosophy-Metaphysics a owl:Class ;
+    rdfs:subClassOf :TheoreticalSciences .
+
+:Mathematics a owl:Class ;
+    rdfs:subClassOf :TheoreticalSciences .
+
+:Medicine a owl:Class ;
+    rdfs:subClassOf :ProductiveSciences .
+
+:Music a owl:Class ;
+    rdfs:subClassOf :Arts .
+
+:Politics a owl:Class ;
+    rdfs:subClassOf :PracticalSciences .
+
+:Psychology a owl:Class ;
+    rdfs:subClassOf :NaturalPhilosophy-Physics .
+
+:Ship-building a owl:Class ;
+    rdfs:subClassOf :ProductiveSciences .
+
+:Theatre a owl:Class ;
+    rdfs:subClassOf :Arts .
+
+:NaturalPhilosophy-Physics a owl:Class ;
+    rdfs:subClassOf :TheoreticalSciences .
+
+:PracticalSciences a owl:Class ;
+    rdfs:subClassOf :Science-Knowledge .
+
+:Arts a owl:Class ;
+    rdfs:subClassOf :ProductiveSciences .
+
+:Science-Knowledge a owl:Class .
+
+:SpecialSciences a owl:Class ;
+    rdfs:subClassOf :NaturalPhilosophy-Physics .
+
+:TheoreticalSciences a owl:Class ;
+    rdfs:subClassOf :Science-Knowledge .
+
+:ProductiveSciences a owl:Class ;
+    rdfs:subClassOf :Science-Knowledge .
 

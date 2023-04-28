@@ -1,67 +1,62 @@
-t_non_passed:
+Person:
   can_type: []
-  detected_in:
-  - ks_sf_in
-  - nk_k_sup
+  input: false
+  is_type:
+  - EndurantType
+  - Kind
+  - RigidType
+  - Sortal
+  not_type:
+  - AntiRigidType
+  - Category
+  - Mixin
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - SubKind
+---
+Student:
+  can_type: []
   input: true
-  is_incomplete: true
   is_type:
-  - gufo:Phase
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Sortal
+  - AntiRigidType
+  - EndurantType
+  - NonRigidType
+  - Role
+  - Sortal
   not_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonSortal
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
+  - Category
+  - Kind
+  - Mixin
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - RigidType
+  - RoleMixin
+  - SemiRigidType
+  - SubKind
 ---
-t_passed:
+Teacher:
   can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
+  - AntiRigidType
+  - NonRigidType
+  - RigidType
+  - Role
+  - SemiRigidType
+  - SubKind
   input: false
-  is_incomplete: false
   is_type:
-  - gufo:Sortal
+  - EndurantType
+  - Sortal
   not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-Test(t):
-  can_type: []
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Kind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
+  - Category
+  - Kind
+  - Mixin
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - RoleMixin

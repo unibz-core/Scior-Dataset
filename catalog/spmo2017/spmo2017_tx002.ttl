@@ -1,17 +1,18 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Performed_General_Process> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Performed_Process> .
+:General_Intended_Process a owl:Class ;
+    rdfs:subClassOf :Intended_Process .
 
-<http://taxonomy.model/Performed_Specific_Process> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Performed_Process> .
+:Project_Process a owl:Class ;
+    rdfs:subClassOf :Intended_Process .
 
-<http://taxonomy.model/Tracked_Process> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Performed_Project_Process> .
+:Scheduled_Process a owl:Class ;
+    rdfs:subClassOf :Intended_Process .
 
-<http://taxonomy.model/Performed_Project_Process> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Performed_Process> .
+:Specific_Intended_Process a owl:Class ;
+    rdfs:subClassOf :Intended_Process .
 
-<http://taxonomy.model/Performed_Process> a owl:Class .
+:Intended_Process a owl:Class .
 

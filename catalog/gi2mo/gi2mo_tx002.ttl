@@ -1,11 +1,18 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/MinMax_Rating_Range> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Rating_Range> .
+:Commented_Contest a owl:Class ;
+    rdfs:subClassOf :Idea_Contest .
 
-<http://taxonomy.model/Up_Down_Rating_Range> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Rating_Range> .
+:Contest_with_Access_Authorization a owl:Class ;
+    rdfs:subClassOf :Idea_Contest .
 
-<http://taxonomy.model/Rating_Range> a owl:Class .
+:Contest_with_Idea a owl:Class ;
+    rdfs:subClassOf :Idea_Contest .
+
+:Updated_Contest a owl:Class ;
+    rdfs:subClassOf :Idea_Contest .
+
+:Idea_Contest a owl:Class .
 

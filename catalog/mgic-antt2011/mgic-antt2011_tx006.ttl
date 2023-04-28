@@ -1,26 +1,66 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Documento_sobre_Im�vel_do_�rg�o_Ambiental> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Documenta��o_sobre_Im�vel_do_�rg�o_Ambiental> .
+:Advento_do_Termo_Contratual a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Extin��o_da_Concess�o_N�o_Indeniz�vel> .
 
-<http://taxonomy.model/Licen�a_Ambiental_de_Im�vel> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Documenta��o_sobre_Im�vel_do_�rg�o_Ambiental> .
+<http://taxonomy.model/Advert�ncia> a owl:Class ;
+    rdfs:subClassOf :Penalidade .
 
-<http://taxonomy.model/Licen�a_Pr�via> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Licen�a_Ambiental_de_Obra> .
+<http://taxonomy.model/Anula��o> a owl:Class ;
+    rdfs:subClassOf :Penalidade .
 
-<http://taxonomy.model/Licen�a_de_Implanta��o> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Licen�a_Ambiental_de_Obra> .
+<http://taxonomy.model/Anula��o_do_Contrato> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Extin��o_da_Concess�o_Indeniz�vel> .
 
-<http://taxonomy.model/Licen�a_de_Opera��o> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Licen�a_Ambiental_de_Obra> .
+:Caducidade a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Extin��o_da_Concess�o_Indeniz�vel> .
 
-<http://taxonomy.model/Documenta��o_do_�rg�o_Ambiental> a owl:Class .
+<http://taxonomy.model/Cassa��o> a owl:Class ;
+    rdfs:subClassOf :Penalidade .
 
-<http://taxonomy.model/Documenta��o_sobre_Im�vel_do_�rg�o_Ambiental> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Documenta��o_do_�rg�o_Ambiental> .
+<http://taxonomy.model/Declara��o_de_Caducidade> a owl:Class ;
+    rdfs:subClassOf :Penalidade .
 
-<http://taxonomy.model/Licen�a_Ambiental_de_Obra> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Documenta��o_do_�rg�o_Ambiental> .
+<http://taxonomy.model/Declara��o_de_Inidoneidade> a owl:Class ;
+    rdfs:subClassOf :Penalidade .
+
+<http://taxonomy.model/Encampa��o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Extin��o_da_Concess�o_Indeniz�vel>,
+        :Penalidade .
+
+<http://taxonomy.model/Fal�ncia_da_Concession�ria> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Extin��o_da_Concess�o_N�o_Indeniz�vel> .
+
+<http://taxonomy.model/Interven��o> a owl:Class ;
+    rdfs:subClassOf :Penalidade .
+
+:Multa a owl:Class ;
+    rdfs:subClassOf :Penalidade .
+
+:Penalidade_Aplicada a owl:Class ;
+    rdfs:subClassOf :Penalidade .
+
+:Penalidade_Prevista a owl:Class ;
+    rdfs:subClassOf :Penalidade .
+
+<http://taxonomy.model/Rescis�o> a owl:Class ;
+    rdfs:subClassOf :Penalidade .
+
+<http://taxonomy.model/Rescis�o_do_Contrato> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Extin��o_da_Concess�o_Indeniz�vel> .
+
+<http://taxonomy.model/Suspens�o> a owl:Class ;
+    rdfs:subClassOf :Penalidade .
+
+<http://taxonomy.model/Extin��o_da_Concess�o_N�o_Indeniz�vel> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Extin��o_de_Concess�o> .
+
+<http://taxonomy.model/Extin��o_de_Concess�o> a owl:Class .
+
+<http://taxonomy.model/Extin��o_da_Concess�o_Indeniz�vel> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Extin��o_de_Concess�o> .
+
+:Penalidade a owl:Class .
 

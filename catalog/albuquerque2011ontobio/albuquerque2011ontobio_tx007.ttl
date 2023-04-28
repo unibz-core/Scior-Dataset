@@ -1,14 +1,15 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Family> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Taxon> .
+:AverageLuminosity a owl:Class ;
+    rdfs:subClassOf :Luminosity .
 
-<http://taxonomy.model/Genus> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Taxon> .
+:HighLuminosity a owl:Class ;
+    rdfs:subClassOf :Luminosity .
 
-<http://taxonomy.model/Species> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Taxon> .
+:LowLuminosity a owl:Class ;
+    rdfs:subClassOf :Luminosity .
 
-<http://taxonomy.model/Taxon> a owl:Class .
+:Luminosity a owl:Class .
 

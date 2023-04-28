@@ -1,8 +1,75 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Economic_Proposal_in_Specific_Proposal> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Economic_Proposal> .
+:Anulled_Tender a owl:Class ;
+    rdfs:subClassOf :Completed_Tender .
 
-<http://taxonomy.model/Economic_Proposal> a owl:Class .
+:Concession_Tender a owl:Class ;
+    rdfs:subClassOf :Tender .
+
+:Construction_Tender a owl:Class ;
+    rdfs:subClassOf :Tender .
+
+:Disposal_Tender a owl:Class ;
+    rdfs:subClassOf :Tender .
+
+:Empty_Tender a owl:Class ;
+    rdfs:subClassOf :Tender_Without_Winner .
+
+:Failed_Tender a owl:Class ;
+    rdfs:subClassOf :Tender_Without_Winner .
+
+:Lease_Tender a owl:Class ;
+    rdfs:subClassOf :Tender .
+
+:Permission_Tender_in_Auction a owl:Class ;
+    rdfs:subClassOf :Permission_Tender .
+
+:Permission_Tender_in_External_Phase a owl:Class ;
+    rdfs:subClassOf :Tender_in_External_Phase .
+
+:Purchase_Tender a owl:Class ;
+    rdfs:subClassOf :Tender .
+
+:Service_Tender a owl:Class ;
+    rdfs:subClassOf :Tender .
+
+:Suspended_Tender a owl:Class ;
+    rdfs:subClassOf :Tender_in_External_Phase .
+
+:Tended_With_Winner a owl:Class ;
+    rdfs:subClassOf :Completed_Tender .
+
+:Tender_in_Call_for_Tender a owl:Class ;
+    rdfs:subClassOf :Publication_Context,
+        :Tender_in_External_Phase .
+
+:Tender_in_Homologation_Process a owl:Class ;
+    rdfs:subClassOf :Tender_in_External_Phase .
+
+:Tender_in_Internal_Phase a owl:Class ;
+    rdfs:subClassOf :Tender .
+
+:Tender_in_Proposal_Reviewing a owl:Class ;
+    rdfs:subClassOf :Tender_in_External_Phase .
+
+:Tender_in_Qualification a owl:Class ;
+    rdfs:subClassOf :Tender_in_External_Phase .
+
+:Permission_Tender a owl:Class ;
+    rdfs:subClassOf :Tender .
+
+:Publication_Context a owl:Class .
+
+:Tender_Without_Winner a owl:Class ;
+    rdfs:subClassOf :Completed_Tender .
+
+:Completed_Tender a owl:Class ;
+    rdfs:subClassOf :Tender .
+
+:Tender_in_External_Phase a owl:Class ;
+    rdfs:subClassOf :Tender .
+
+:Tender a owl:Class .
 

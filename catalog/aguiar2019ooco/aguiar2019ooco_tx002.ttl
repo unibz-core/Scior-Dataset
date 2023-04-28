@@ -1,103 +1,104 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Abstract_Class> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Class>,
-        <http://taxonomy.model/Extendable_Class> .
+:Abstract_Class a owl:Class ;
+    rdfs:subClassOf :Class,
+        :Extendable_Class .
 
-<http://taxonomy.model/Abstract_Method> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Method_(Member_Function)>,
-        <http://taxonomy.model/Overridable_Method> .
+:Abstract_Method a owl:Class ;
+    rdfs:subClassOf :Method_\(Member_Function\),
+        :Overridable_Method .
 
-<http://taxonomy.model/Accessor_Method> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Instance_Method> .
+:Accessor_Method a owl:Class ;
+    rdfs:subClassOf :Instance_Method .
 
-<http://taxonomy.model/Class_Method> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Concrete_Method>,
-        <http://taxonomy.model/Non-Overridable_Method> .
+:Class_Method a owl:Class ;
+    rdfs:subClassOf :Concrete_Method,
+        :Non-Overridable_Method .
 
-<http://taxonomy.model/Class_Variable> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Attribute_(Member_Variable)> .
+:Class_Variable a owl:Class ;
+    rdfs:subClassOf :Attribute_\(Member_Variable\) .
 
-<http://taxonomy.model/Concrete_Class> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Class> .
+:Concrete_Class a owl:Class ;
+    rdfs:subClassOf :Class .
 
-<http://taxonomy.model/Constructor_Method> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Instance_Method>,
-        <http://taxonomy.model/Non-Overridable_Method> .
+:Constructor_Method a owl:Class ;
+    rdfs:subClassOf :Instance_Method,
+        :Non-Overridable_Method .
 
-<http://taxonomy.model/Destructor_Method> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Instance_Method> .
+:Destructor_Method a owl:Class ;
+    rdfs:subClassOf :Instance_Method .
 
-<http://taxonomy.model/Generic_Class> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Class> .
+:Generic_Class a owl:Class ;
+    rdfs:subClassOf :Class .
 
-<http://taxonomy.model/Generic_Method> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Method_(Member_Function)> .
+:Generic_Method a owl:Class ;
+    rdfs:subClassOf :Method_\(Member_Function\) .
 
-<http://taxonomy.model/Instance_Variable> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Attribute_(Member_Variable)> .
+:Instance_Variable a owl:Class ;
+    rdfs:subClassOf :Attribute_\(Member_Variable\) .
 
-<http://taxonomy.model/Local_Variable> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Method_Variable> .
+:Local_Variable a owl:Class ;
+    rdfs:subClassOf :Method_Variable .
 
-<http://taxonomy.model/Nested_Class> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Class> .
+:Nested_Class a owl:Class ;
+    rdfs:subClassOf :Class .
 
-<http://taxonomy.model/Non-Extendable_Class> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Class> .
+:Non-Extendable_Class a owl:Class ;
+    rdfs:subClassOf :Class .
 
-<http://taxonomy.model/Parameter_Variabe> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Method_Variable> .
+:Parameter_Variabe a owl:Class ;
+    rdfs:subClassOf :Method_Variable .
 
-<http://taxonomy.model/Primitive_Type> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Type> .
+:Primitive_Type a owl:Class ;
+    rdfs:subClassOf :Type .
 
-<http://taxonomy.model/Root_Class> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Extendable_Class> .
+:Root_Class a owl:Class ;
+    rdfs:subClassOf :Extendable_Class .
 
-<http://taxonomy.model/Subclass> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Class> .
+:Subclass a owl:Class ;
+    rdfs:subClassOf :Class .
 
-<http://taxonomy.model/Superclass> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Extendable_Class> .
+:Superclass a owl:Class ;
+    rdfs:subClassOf :Extendable_Class .
 
-<http://taxonomy.model/Overridable_Method> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Method_(Member_Function)> .
+:Overridable_Method a owl:Class ;
+    rdfs:subClassOf :Method_\(Member_Function\) .
 
-<http://taxonomy.model/Attribute_(Member_Variable)> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Member>,
-        <http://taxonomy.model/Variable> .
+:Attribute_\(Member_Variable\) a owl:Class ;
+    rdfs:subClassOf :Member,
+        :Variable .
 
-<http://taxonomy.model/Concrete_Method> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Method_(Member_Function)> .
+:Concrete_Method a owl:Class ;
+    rdfs:subClassOf :Method_\(Member_Function\) .
 
-<http://taxonomy.model/Member> a owl:Class .
+:Member a owl:Class .
 
-<http://taxonomy.model/Method_Variable> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Variable> .
+:Method_Variable a owl:Class ;
+    rdfs:subClassOf :Variable .
 
-<http://taxonomy.model/Non-Overridable_Method> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Method_(Member_Function)> .
+:Non-Overridable_Method a owl:Class ;
+    rdfs:subClassOf :Method_\(Member_Function\) .
 
-<http://taxonomy.model/Type> a owl:Class .
+:Type a owl:Class .
 
-<http://taxonomy.model/Variable> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Named_Element> .
+:Variable a owl:Class ;
+    rdfs:subClassOf :Named_Element .
 
-<http://taxonomy.model/Extendable_Class> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Class> .
+:Extendable_Class a owl:Class ;
+    rdfs:subClassOf :Class .
 
-<http://taxonomy.model/Instance_Method> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Concrete_Method> .
+:Instance_Method a owl:Class ;
+    rdfs:subClassOf :Concrete_Method .
 
-<http://taxonomy.model/Named_Element> a owl:Class .
+:Named_Element a owl:Class .
 
-<http://taxonomy.model/Method_(Member_Function)> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Member>,
-        <http://taxonomy.model/Named_Element> .
+:Method_\(Member_Function\) a owl:Class ;
+    rdfs:subClassOf :Member,
+        :Named_Element .
 
-<http://taxonomy.model/Class> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Named_Element>,
-        <http://taxonomy.model/Type> .
+:Class a owl:Class ;
+    rdfs:subClassOf :Named_Element,
+        :Type .
 

@@ -1,8 +1,190 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Damage> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Impact> .
+:Abiotic_Component a owl:Class ;
+    rdfs:subClassOf :Natural_Component .
 
-<http://taxonomy.model/Impact> a owl:Class .
+:Atomic_Installation a owl:Class ;
+    rdfs:subClassOf :Installation .
+
+:Built_Component a owl:Class ;
+    rdfs:subClassOf :Environmental_Physical_Component .
+
+:Business_Emergency_Human_Resource a owl:Class ;
+    rdfs:subClassOf :Business_Human_Resource .
+
+:Business_Emergency_Material_Resource a owl:Class ;
+    rdfs:subClassOf :Material_Resource .
+
+:Business_Non_Emergency_Human_Resource a owl:Class ;
+    rdfs:subClassOf :Business_Human_Resource,
+        :User .
+
+:Businessman a owl:Class ;
+    rdfs:subClassOf :Holder .
+
+:Civil_Defense_Organization a owl:Class ;
+    rdfs:subClassOf :EP_Agent .
+
+:Complex_Installation a owl:Class ;
+    rdfs:subClassOf :Installation .
+
+:EP_Agent_delegatee a owl:Class ;
+    rdfs:subClassOf :Delegatee,
+        :EP_Agent .
+
+:EP_Agent_delegator a owl:Class ;
+    rdfs:subClassOf :Delegator,
+        :EP_Agent .
+
+:Emergency_Team a owl:Class ;
+    rdfs:subClassOf :Collective_Social_Agent .
+
+:Endangered_Component a owl:Class ;
+    rdfs:subClassOf :Component,
+        :Under_Protection_Component .
+
+:Environmental_Social_Component a owl:Class ;
+    rdfs:subClassOf :Environmental_Component .
+
+:Evacuation_Geographical_Region a owl:Class ;
+    rdfs:subClassOf :Evacuation_Local,
+        :Geographical_Region .
+
+:Evacuation_Installation a owl:Class ;
+    rdfs:subClassOf :Evacuation_Local,
+        :Installation .
+
+:Geographical_Point a owl:Class ;
+    rdfs:subClassOf :Spatial_Location .
+
+:Macro_Political_Region a owl:Class ;
+    rdfs:subClassOf :Political_Region .
+
+:Micro_Political_Region a owl:Class ;
+    rdfs:subClassOf :Political_Region .
+
+:Non_Political_Region a owl:Class ;
+    rdfs:subClassOf :Geographical_Region .
+
+:Organization_Holder a owl:Class ;
+    rdfs:subClassOf :EP_Agent,
+        :Holder,
+        :Organization .
+
+:Owner a owl:Class ;
+    rdfs:subClassOf :Holder .
+
+:Person_Holder a owl:Class ;
+    rdfs:subClassOf :Holder,
+        :Person .
+
+:Political_Body a owl:Class ;
+    rdfs:subClassOf :Authority .
+
+:Protector a owl:Class ;
+    rdfs:subClassOf :Agent_in_Social_Relation .
+
+:Public_Emergency_Human_Resource a owl:Class ;
+    rdfs:subClassOf :Human_Resource .
+
+:Public_Emergency_Material_Resource a owl:Class ;
+    rdfs:subClassOf :Material_Resource .
+
+:Safe_Component a owl:Class ;
+    rdfs:subClassOf :Under_Protection_Component .
+
+:Visitor a owl:Class ;
+    rdfs:subClassOf :User .
+
+:Agent_in_Social_Relation a owl:Class ;
+    rdfs:subClassOf :Agent .
+
+:Authority a owl:Class ;
+    rdfs:subClassOf :Individual_Social_Agent .
+
+:Biotic_Component a owl:Class ;
+    rdfs:subClassOf :Natural_Component .
+
+:Collective_Social_Agent a owl:Class ;
+    rdfs:subClassOf :Social_Agent .
+
+:Component a owl:Class .
+
+:Delegatee a owl:Class .
+
+:Delegator a owl:Class .
+
+:Jurisdiction a owl:Class ;
+    rdfs:subClassOf :Geographical_Region,
+        :Normatized_Social_Object .
+
+:Normatized_Social_Object a owl:Class ;
+    rdfs:subClassOf :Social_Component .
+
+:Organization a owl:Class ;
+    rdfs:subClassOf :Individual_Social_Agent .
+
+:Physical_Agent a owl:Class ;
+    rdfs:subClassOf :Agent .
+
+:Social_Agent a owl:Class ;
+    rdfs:subClassOf :Agent .
+
+:Business_Human_Resource a owl:Class ;
+    rdfs:subClassOf :Human_Resource .
+
+:Environmental_Physical_Component a owl:Class ;
+    rdfs:subClassOf :Environmental_Component .
+
+:Evacuation_Local a owl:Class .
+
+:Human_Resource a owl:Class ;
+    rdfs:subClassOf :Person .
+
+:Individual_Social_Agent a owl:Class .
+
+:Material_Resource a owl:Class ;
+    rdfs:subClassOf :Physical_Component .
+
+:Natural_Component a owl:Class ;
+    rdfs:subClassOf :Environmental_Physical_Component .
+
+:Physical_Component a owl:Class ;
+    rdfs:subClassOf :Environmental_Component .
+
+:Political_Region a owl:Class ;
+    rdfs:subClassOf :Geographical_Region,
+        :Jurisdiction .
+
+:Social_Component a owl:Class .
+
+:Spatial_Location a owl:Class ;
+    rdfs:subClassOf :Social_Component .
+
+:Under_Protection_Component a owl:Class ;
+    rdfs:subClassOf :Environmental_Component .
+
+:User a owl:Class ;
+    rdfs:subClassOf :Person .
+
+:Installation a owl:Class ;
+    rdfs:subClassOf :Physical_Component .
+
+:Person a owl:Class ;
+    rdfs:subClassOf :Biotic_Component,
+        :Physical_Agent .
+
+:Agent a owl:Class .
+
+:EP_Agent a owl:Class ;
+    rdfs:subClassOf :Agent .
+
+:Environmental_Component a owl:Class .
+
+:Geographical_Region a owl:Class ;
+    rdfs:subClassOf :Spatial_Location .
+
+:Holder a owl:Class .
 

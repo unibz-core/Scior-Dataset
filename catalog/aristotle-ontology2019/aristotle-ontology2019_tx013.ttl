@@ -1,23 +1,21 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/ChangeInPlace> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Change> .
+:Health a owl:Class ;
+    rdfs:subClassOf :SubordinateGoal .
 
-<http://taxonomy.model/ChangeInQuality> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Change> .
+:HighestGoal a owl:Class ;
+    rdfs:subClassOf :Goal .
 
-<http://taxonomy.model/ChangeInQuantity> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Change> .
+:Pleasure a owl:Class ;
+    rdfs:subClassOf :SubordinateGoal .
 
-<http://taxonomy.model/ChangeInSubstance> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Change> .
+:Wealth a owl:Class ;
+    rdfs:subClassOf :SubordinateGoal .
 
-<http://taxonomy.model/ForcedMotion> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Change> .
+:Goal a owl:Class .
 
-<http://taxonomy.model/NaturalMotion> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Change> .
-
-<http://taxonomy.model/Change> a owl:Class .
+:SubordinateGoal a owl:Class ;
+    rdfs:subClassOf :Goal .
 

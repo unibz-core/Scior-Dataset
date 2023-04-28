@@ -1,14 +1,21 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/postComment> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/postInteraction> .
+:Profile a owl:Class ;
+    rdfs:subClassOf :creativeWork .
 
-<http://taxonomy.model/postRating> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/postInteraction> .
+:audio a owl:Class ;
+    rdfs:subClassOf :creativeWork .
 
-<http://taxonomy.model/postSearch> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/postInteraction> .
+:image a owl:Class ;
+    rdfs:subClassOf :creativeWork .
 
-<http://taxonomy.model/postInteraction> a owl:Class .
+:text a owl:Class ;
+    rdfs:subClassOf :creativeWork .
+
+:video a owl:Class ;
+    rdfs:subClassOf :creativeWork .
+
+:creativeWork a owl:Class .
 

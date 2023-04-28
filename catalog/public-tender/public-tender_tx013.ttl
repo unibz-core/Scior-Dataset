@@ -1,8 +1,15 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Proof_of_Fleet_in_General_Proposal> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Proof_of_Fleet> .
+:Call_for_Tender_Publication a owl:Class ;
+    rdfs:subClassOf :Publication .
 
-<http://taxonomy.model/Proof_of_Fleet> a owl:Class .
+:Call_for_Tender_Republication a owl:Class ;
+    rdfs:subClassOf :Republication .
+
+:Republication a owl:Class ;
+    rdfs:subClassOf :Publication .
+
+:Publication a owl:Class .
 

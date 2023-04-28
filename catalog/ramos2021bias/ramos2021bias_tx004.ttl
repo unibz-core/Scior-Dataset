@@ -1,8 +1,18 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/ValueBeholder> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Agent> .
+:Reference_Point a owl:Class ;
+    rdfs:subClassOf :Belief .
 
-<http://taxonomy.model/Agent> a owl:Class .
+:Risk_Averse_Preference a owl:Class ;
+    rdfs:subClassOf :Preference .
+
+:Risk_Seeking_Preference a owl:Class ;
+    rdfs:subClassOf :Preference .
+
+:Belief a owl:Class .
+
+:Preference a owl:Class ;
+    rdfs:subClassOf :Belief .
 

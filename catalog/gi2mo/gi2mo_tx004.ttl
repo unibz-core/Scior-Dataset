@@ -1,17 +1,12 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Commented_Contest> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Idea_Contest> .
+:Access_Authorized_Group a owl:Class ;
+    rdfs:subClassOf :User_Group .
 
-<http://taxonomy.model/Contest_with_Access_Authorization> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Idea_Contest> .
+:User_Group_in_a_Group a owl:Class ;
+    rdfs:subClassOf :User_Group .
 
-<http://taxonomy.model/Contest_with_Idea> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Idea_Contest> .
-
-<http://taxonomy.model/Updated_Contest> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Idea_Contest> .
-
-<http://taxonomy.model/Idea_Contest> a owl:Class .
+:User_Group a owl:Class .
 

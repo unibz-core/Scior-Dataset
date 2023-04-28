@@ -1,24 +1,25 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Employee> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Person> .
+:Employee a owl:Class ;
+    rdfs:subClassOf :Person .
 
-<http://taxonomy.model/Organizational_Customer> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Customer>,
-        <http://taxonomy.model/Organization> .
+:Organizational_Customer a owl:Class ;
+    rdfs:subClassOf :Customer,
+        :Organization .
 
-<http://taxonomy.model/Personal_Customer> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Customer>,
-        <http://taxonomy.model/Person> .
+:Personal_Customer a owl:Class ;
+    rdfs:subClassOf :Customer,
+        :Person .
 
-<http://taxonomy.model/Organization> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Agent> .
+:Organization a owl:Class ;
+    rdfs:subClassOf :Agent .
 
-<http://taxonomy.model/Agent> a owl:Class .
+:Agent a owl:Class .
 
-<http://taxonomy.model/Customer> a owl:Class .
+:Customer a owl:Class .
 
-<http://taxonomy.model/Person> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Agent> .
+:Person a owl:Class ;
+    rdfs:subClassOf :Agent .
 

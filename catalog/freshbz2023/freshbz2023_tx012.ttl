@@ -1,14 +1,21 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/profileMessage> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/othersProfileInteraction> .
+:clothing a owl:Class ;
+    rdfs:subClassOf :product .
 
-<http://taxonomy.model/profileSearch> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/othersProfileInteraction> .
+:food a owl:Class ;
+    rdfs:subClassOf :product .
 
-<http://taxonomy.model/profileView> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/othersProfileInteraction> .
+:productDiscount a owl:Class ;
+    rdfs:subClassOf :product .
 
-<http://taxonomy.model/othersProfileInteraction> a owl:Class .
+:productRegularPrice a owl:Class ;
+    rdfs:subClassOf :product .
+
+:services a owl:Class ;
+    rdfs:subClassOf :product .
+
+:product a owl:Class .
 

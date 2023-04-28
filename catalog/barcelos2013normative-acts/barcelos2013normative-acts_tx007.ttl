@@ -1,8 +1,18 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Component_Charter> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Charter> .
+:General_Part a owl:Class ;
+    rdfs:subClassOf :Double_Part .
 
-<http://taxonomy.model/Charter> a owl:Class .
+:Multiple_Part a owl:Class ;
+    rdfs:subClassOf :Part .
+
+:Special_Part a owl:Class ;
+    rdfs:subClassOf :Double_Part .
+
+:Double_Part a owl:Class ;
+    rdfs:subClassOf :Part .
+
+:Part a owl:Class .
 

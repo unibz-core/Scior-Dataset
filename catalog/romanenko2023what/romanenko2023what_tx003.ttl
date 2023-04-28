@@ -1,11 +1,42 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Digitized> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Edition> .
+:Librarian a owl:Class ;
+    rdfs:subClassOf :Employee .
 
-<http://taxonomy.model/Translated_Edition> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Edition> .
+:Library a owl:Class ;
+    rdfs:subClassOf :Organization .
 
-<http://taxonomy.model/Edition> a owl:Class .
+:Man a owl:Class ;
+    rdfs:subClassOf :Person .
+
+:Publisher a owl:Class ;
+    rdfs:subClassOf :Organization .
+
+:Registered_Organization a owl:Class ;
+    rdfs:subClassOf :Client,
+        :Organization .
+
+:Registered_Person a owl:Class ;
+    rdfs:subClassOf :Client,
+        :Person .
+
+:Translator a owl:Class ;
+    rdfs:subClassOf :Person .
+
+:Woman a owl:Class ;
+    rdfs:subClassOf :Person .
+
+:Writer a owl:Class ;
+    rdfs:subClassOf :Person .
+
+:Employee a owl:Class ;
+    rdfs:subClassOf :Person .
+
+:Client a owl:Class .
+
+:Organization a owl:Class .
+
+:Person a owl:Class .
 

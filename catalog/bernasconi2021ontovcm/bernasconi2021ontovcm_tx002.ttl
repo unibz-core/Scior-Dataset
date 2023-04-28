@@ -1,20 +1,45 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Adenine> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Nucleotide> .
+:Analyst a owl:Class ;
+    rdfs:subClassOf :Person .
 
-<http://taxonomy.model/Cytosine> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Nucleotide> .
+:Author a owl:Class ;
+    rdfs:subClassOf :Researcher .
 
-<http://taxonomy.model/Guanine> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Nucleotide> .
+:Bat a owl:Class ;
+    rdfs:subClassOf :Animal .
 
-<http://taxonomy.model/Thymine> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Nucleotide> .
+:In_Vitro_Host a owl:Class ;
+    rdfs:subClassOf :Cell_Line,
+        :Virus_Host .
 
-<http://taxonomy.model/Uracil> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Nucleotide> .
+:Living_Host a owl:Class ;
+    rdfs:subClassOf :Animal,
+        :Virus_Host .
 
-<http://taxonomy.model/Nucleotide> a owl:Class .
+:Project_Participant a owl:Class ;
+    rdfs:subClassOf :Researcher .
+
+:Sampled_Animal a owl:Class ;
+    rdfs:subClassOf :Animal .
+
+:Virus a owl:Class ;
+    rdfs:subClassOf :Biological_Organism .
+
+:Cell_Line a owl:Class .
+
+:Biological_Organism a owl:Class .
+
+:Person a owl:Class ;
+    rdfs:subClassOf :Animal .
+
+:Researcher a owl:Class ;
+    rdfs:subClassOf :Person .
+
+:Virus_Host a owl:Class .
+
+:Animal a owl:Class ;
+    rdfs:subClassOf :Biological_Organism .
 

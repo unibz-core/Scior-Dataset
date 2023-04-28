@@ -1,50 +1,51 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/College_Student> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Student> .
+:College_Student a owl:Class ;
+    rdfs:subClassOf :Student .
 
-<http://taxonomy.model/Educational_Institution> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Employer> .
+:Educational_Institution a owl:Class ;
+    rdfs:subClassOf :Employer .
 
-<http://taxonomy.model/Educational_Supervisor> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Employee> .
+:Educational_Supervisor a owl:Class ;
+    rdfs:subClassOf :Employee .
 
-<http://taxonomy.model/High_School_Student> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Student> .
+:High_School_Student a owl:Class ;
+    rdfs:subClassOf :Student .
 
-<http://taxonomy.model/Insurance_Carrier> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Juridical_Person> .
+:Insurance_Carrier a owl:Class ;
+    rdfs:subClassOf :Juridical_Person .
 
-<http://taxonomy.model/Intern> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Student> .
+:Intern a owl:Class ;
+    rdfs:subClassOf :Student .
 
-<http://taxonomy.model/Internship_Provider_Organization> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Employer>,
-        <http://taxonomy.model/Organization_Insured> .
+:Internship_Provider_Organization a owl:Class ;
+    rdfs:subClassOf :Employer,
+        :Organization_Insured .
 
-<http://taxonomy.model/Post_Graduate_Student> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Student> .
+:Post_Graduate_Student a owl:Class ;
+    rdfs:subClassOf :Student .
 
-<http://taxonomy.model/Supervisor> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Employee> .
+:Supervisor a owl:Class ;
+    rdfs:subClassOf :Employee .
 
-<http://taxonomy.model/Organization_Insured> a owl:Class .
+:Organization_Insured a owl:Class .
 
-<http://taxonomy.model/Employee> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Natural_Person> .
+:Employee a owl:Class ;
+    rdfs:subClassOf :Natural_Person .
 
-<http://taxonomy.model/Employer> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Juridical_Person> .
+:Employer a owl:Class ;
+    rdfs:subClassOf :Juridical_Person .
 
-<http://taxonomy.model/Juridical_Person> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Legal_Person> .
+:Juridical_Person a owl:Class ;
+    rdfs:subClassOf :Legal_Person .
 
-<http://taxonomy.model/Legal_Person> a owl:Class .
+:Legal_Person a owl:Class .
 
-<http://taxonomy.model/Natural_Person> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Legal_Person> .
+:Natural_Person a owl:Class ;
+    rdfs:subClassOf :Legal_Person .
 
-<http://taxonomy.model/Student> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Natural_Person> .
+:Student a owl:Class ;
+    rdfs:subClassOf :Natural_Person .
 

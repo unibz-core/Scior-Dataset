@@ -1,17 +1,34 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Reference_Point> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Belief> .
+:Benefit a owl:Class ;
+    rdfs:subClassOf :Rational_Value_Component .
 
-<http://taxonomy.model/Risk_Averse_Preference> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Preference> .
+:Gain a owl:Class ;
+    rdfs:subClassOf :Psychological_Value,
+        :Psychological_Value_Component .
 
-<http://taxonomy.model/Risk_Seeking_Preference> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Preference> .
+:Loss a owl:Class ;
+    rdfs:subClassOf :Psychological_Value,
+        :Psychological_Value_Component .
 
-<http://taxonomy.model/Belief> a owl:Class .
+:Rational_Value a owl:Class ;
+    rdfs:subClassOf :Value .
 
-<http://taxonomy.model/Preference> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Belief> .
+:Sacrifice a owl:Class ;
+    rdfs:subClassOf :Rational_Value_Component .
+
+:Psychological_Value a owl:Class ;
+    rdfs:subClassOf :Value .
+
+:Psychological_Value_Component a owl:Class ;
+    rdfs:subClassOf :Value_Component .
+
+:Rational_Value_Component a owl:Class ;
+    rdfs:subClassOf :Value_Component .
+
+:Value a owl:Class .
+
+:Value_Component a owl:Class .
 

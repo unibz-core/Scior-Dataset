@@ -1,11 +1,15 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Composed_Letter> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Letter> .
+:Composed_Item a owl:Class ;
+    rdfs:subClassOf :Item .
 
-<http://taxonomy.model/Simple_Letter> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Letter> .
+:Item_component_of_Article a owl:Class ;
+    rdfs:subClassOf :Item .
 
-<http://taxonomy.model/Letter> a owl:Class .
+:Simple_Item a owl:Class ;
+    rdfs:subClassOf :Item .
+
+:Item a owl:Class .
 

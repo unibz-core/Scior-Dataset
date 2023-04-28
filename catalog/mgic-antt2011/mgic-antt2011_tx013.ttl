@@ -1,67 +1,78 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Arrendamento_Financeiro_Imobilizado> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Arrendamento_Financeiro>,
-        <http://taxonomy.model/Investimento_em_Imobilizado> .
+:Assentamento a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Depress�o> .
 
-<http://taxonomy.model/Arrendamento_Financeiro_Intang�vel> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Arrendamento_Financeiro>,
-        <http://taxonomy.model/Investimento_em_Intang�vel> .
+:Buraco a owl:Class ;
+    rdfs:subClassOf :Defeito_no_Pavimento .
 
-<http://taxonomy.model/Arrendamento_Operacional> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Arrendamento>,
-        <http://taxonomy.model/Investimento_em_Intang�vel> .
+<http://taxonomy.model/Defeito_na_Balan�a> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Defeito_de_Trecho_Rodovi�rio> .
 
-<http://taxonomy.model/Cess�o_de_Bens> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Aquisi��o_de_Permanente> .
+:Defeito_na_Drenagem a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Defeito_de_Trecho_Rodovi�rio> .
 
-<http://taxonomy.model/Compra_Especulativa> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Compra_de_Bem> .
+<http://taxonomy.model/Defeito_na_Faixa_de_Dom�nio> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Defeito_de_Trecho_Rodovi�rio> .
 
-<http://taxonomy.model/Compra_Imobilizado> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Compra_de_Bem>,
-        <http://taxonomy.model/Investimento_em_Imobilizado> .
+<http://taxonomy.model/Defeito_na_Interse��o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Defeito_de_Trecho_Rodovi�rio> .
 
-<http://taxonomy.model/Compra_Intang�vel> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Compra_de_Bem>,
-        <http://taxonomy.model/Investimento_em_Intang�vel> .
+:Defeito_na_Ponte a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Defeito_de_Trecho_Rodovi�rio> .
 
-<http://taxonomy.model/Constru��o_de_Imobilizado> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Constru��o>,
-        <http://taxonomy.model/Investimento_em_Imobilizado> .
+<http://taxonomy.model/Defeito_na_Sinaliza��o_Rodovi�ria> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Defeito_de_Trecho_Rodovi�rio> .
 
-<http://taxonomy.model/Constru��o_de_Intang�vel> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Constru��o>,
-        <http://taxonomy.model/Investimento_em_Intang�vel> .
+:Defeito_no_Canteiro_Central a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Defeito_de_Trecho_Rodovi�rio> .
 
-<http://taxonomy.model/Emiss�o_de_Deb�nture> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Obriga��o_Financeira> .
+<http://taxonomy.model/Defeito_no_Componente_de_Ilumina��o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Defeito_de_Trecho_Rodovi�rio> .
 
-<http://taxonomy.model/Empr�stimo> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Obriga��o_Financeira> .
+<http://taxonomy.model/Defeito_no_T�nel> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Defeito_de_Trecho_Rodovi�rio> .
 
-<http://taxonomy.model/Financiamento> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Obriga��o_Financeira> .
+<http://taxonomy.model/Degrada��o> a owl:Class ;
+    rdfs:subClassOf :Defeito_no_Pavimento .
 
-<http://taxonomy.model/Arrendamento> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Aquisi��o_de_Permanente> .
+:Desgaste a owl:Class ;
+    rdfs:subClassOf :Defeito_no_Pavimento .
 
-<http://taxonomy.model/Arrendamento_Financeiro> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Arrendamento>,
-        <http://taxonomy.model/Obriga��o_Financeira> .
+<http://taxonomy.model/Desn�vel> a owl:Class ;
+    rdfs:subClassOf :Defeito_no_Pavimento .
 
-<http://taxonomy.model/Constru��o> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Aquisi��o_de_Permanente> .
+:Escalonamento a owl:Class ;
+    rdfs:subClassOf :Defeito_no_Pavimento .
 
-<http://taxonomy.model/Compra_de_Bem> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Aquisi��o_de_Permanente> .
+:Escorregamento a owl:Class ;
+    rdfs:subClassOf :Defeito_no_Pavimento .
 
-<http://taxonomy.model/Investimento_em_Imobilizado> a owl:Class .
+:Fenda a owl:Class ;
+    rdfs:subClassOf :Defeito_no_Pavimento .
 
-<http://taxonomy.model/Aquisi��o_de_Permanente> a owl:Class .
+:Fissura a owl:Class ;
+    rdfs:subClassOf :Defeito_no_Pavimento .
 
-<http://taxonomy.model/Investimento_em_Intang�vel> a owl:Class .
+<http://taxonomy.model/Ondula��o> a owl:Class ;
+    rdfs:subClassOf :Defeito_no_Pavimento .
 
-<http://taxonomy.model/Obriga��o_Financeira> a owl:Class .
+:Quebra a owl:Class ;
+    rdfs:subClassOf :Defeito_no_Pavimento .
+
+:Trilha_de_Roda a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Depress�o> .
+
+:Trinca a owl:Class ;
+    rdfs:subClassOf :Defeito_no_Pavimento .
+
+<http://taxonomy.model/Depress�o> a owl:Class ;
+    rdfs:subClassOf :Defeito_no_Pavimento .
+
+<http://taxonomy.model/Defeito_de_Trecho_Rodovi�rio> a owl:Class .
+
+:Defeito_no_Pavimento a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Defeito_de_Trecho_Rodovi�rio> .
 

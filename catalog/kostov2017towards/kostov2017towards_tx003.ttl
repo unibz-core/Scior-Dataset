@@ -1,17 +1,18 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Crew> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Flight_Participant> .
+:Aerodrome a owl:Class ;
+    rdfs:subClassOf :Technical_System .
 
-<http://taxonomy.model/Flight_Participant> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/TransportObject> .
+:Aircraft a owl:Class ;
+    rdfs:subClassOf :Technical_System .
 
-<http://taxonomy.model/Physical_Object> a owl:Class .
+:Equipment a owl:Class ;
+    rdfs:subClassOf :Technical_System .
 
-<http://taxonomy.model/Spatial_Object> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Physical_Object> .
+:Vehicle a owl:Class ;
+    rdfs:subClassOf :Technical_System .
 
-<http://taxonomy.model/TransportObject> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Spatial_Object> .
+:Technical_System a owl:Class .
 

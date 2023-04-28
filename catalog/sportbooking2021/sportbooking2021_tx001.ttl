@@ -1,20 +1,21 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Customer> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Account> .
+:Customer a owl:Class ;
+    rdfs:subClassOf :Account .
 
-<http://taxonomy.model/Instructor> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Employee> .
+:Instructor a owl:Class ;
+    rdfs:subClassOf :Employee .
 
-<http://taxonomy.model/Owner> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/ManagementUsers> .
+:Owner a owl:Class ;
+    rdfs:subClassOf :ManagementUsers .
 
-<http://taxonomy.model/Employee> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/ManagementUsers> .
+:Employee a owl:Class ;
+    rdfs:subClassOf :ManagementUsers .
 
-<http://taxonomy.model/Account> a owl:Class .
+:Account a owl:Class .
 
-<http://taxonomy.model/ManagementUsers> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Account> .
+:ManagementUsers a owl:Class ;
+    rdfs:subClassOf :Account .
 

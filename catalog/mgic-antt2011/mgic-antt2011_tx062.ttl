@@ -1,8 +1,18 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Solicita��o_de_Compra_em_CA> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Solicita��o_de_Compra> .
+:Modelo_Cotado_Coletivamente a owl:Class ;
+    rdfs:subClassOf :Modelo_Cotado .
 
-<http://taxonomy.model/Solicita��o_de_Compra> a owl:Class .
+:Modelo_Cotado_Individualmente a owl:Class ;
+    rdfs:subClassOf :Modelo_Cotado .
+
+:Modelo a owl:Class .
+
+:Modelo_Solicitado a owl:Class ;
+    rdfs:subClassOf :Modelo .
+
+:Modelo_Cotado a owl:Class ;
+    rdfs:subClassOf :Modelo_Solicitado .
 

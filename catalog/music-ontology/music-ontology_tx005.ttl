@@ -1,14 +1,30 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Full_Score> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Written_Representation> .
+:Composite_Moviment a owl:Class ;
+    rdfs:subClassOf :Moviment .
 
-<http://taxonomy.model/Part> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Written_Representation> .
+:Dance-like_Moviment a owl:Class ;
+    rdfs:subClassOf :Individual_Moviment .
 
-<http://taxonomy.model/Sketch> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Written_Representation> .
+:Fast_Moviment a owl:Class ;
+    rdfs:subClassOf :Individual_Moviment .
 
-<http://taxonomy.model/Written_Representation> a owl:Class .
+:Long_Moviment a owl:Class ;
+    rdfs:subClassOf :Individual_Moviment .
+
+:Slow_Moviment a owl:Class ;
+    rdfs:subClassOf :Individual_Moviment .
+
+:Suite_Short_Moviment a owl:Class ;
+    rdfs:subClassOf :Short_Moviment .
+
+:Short_Moviment a owl:Class ;
+    rdfs:subClassOf :Individual_Moviment .
+
+:Moviment a owl:Class .
+
+:Individual_Moviment a owl:Class ;
+    rdfs:subClassOf :Moviment .
 

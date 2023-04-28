@@ -1,14 +1,15 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Conventional_File> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/File_in_Disk> .
+:Application_System a owl:Class ;
+    rdfs:subClassOf :IT_Service .
 
-<http://taxonomy.model/Database_File> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/File_in_Disk> .
+:DBMS a owl:Class ;
+    rdfs:subClassOf :IT_Service .
 
-<http://taxonomy.model/Executable_File> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/File_in_Disk> .
+:Email a owl:Class ;
+    rdfs:subClassOf :IT_Service .
 
-<http://taxonomy.model/File_in_Disk> a owl:Class .
+:IT_Service a owl:Class .
 

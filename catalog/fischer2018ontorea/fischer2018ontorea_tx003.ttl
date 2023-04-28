@@ -1,11 +1,24 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Credit_Commitment> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Economic_Commitment> .
+:Asset a owl:Class ;
+    rdfs:subClassOf :Derivative_Instrument,
+        :Economic_Resource .
 
-<http://taxonomy.model/Debit_Commitment> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Economic_Commitment> .
+:Equity a owl:Class ;
+    rdfs:subClassOf :Derivative_Instrument,
+        :Economic_Resource .
 
-<http://taxonomy.model/Economic_Commitment> a owl:Class .
+:Liability a owl:Class ;
+    rdfs:subClassOf :Derivative_Instrument,
+        :Economic_Resource .
+
+:Off_Balance a owl:Class ;
+    rdfs:subClassOf :Derivative_Instrument,
+        :Economic_Resource .
+
+:Derivative_Instrument a owl:Class .
+
+:Economic_Resource a owl:Class .
 

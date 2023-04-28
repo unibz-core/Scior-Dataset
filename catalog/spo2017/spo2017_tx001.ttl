@@ -1,57 +1,31 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Composite_Method_Activity> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Method_Activity> .
+:Organization_Stakeholder a owl:Class ;
+    rdfs:subClassOf :Stakeholder .
 
-<http://taxonomy.model/Composite_Standard_Activity> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Standard_Activity> .
+:Person_Stakeholder a owl:Class ;
+    rdfs:subClassOf :Person,
+        :Stakeholder .
 
-<http://taxonomy.model/General_Standard_Process> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Standard_Process> .
+:Project_Stakeholder a owl:Class ;
+    rdfs:subClassOf :Stakeholder .
 
-<http://taxonomy.model/Hybrid_Standard_Process> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Standard_Process> .
+:Social_Agent a owl:Class ;
+    rdfs:subClassOf :Agent .
 
-<http://taxonomy.model/Method_Workflow> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Complex_Action_Universal> .
+:Team_Stakeholder a owl:Class ;
+    rdfs:subClassOf :Stakeholder .
 
-<http://taxonomy.model/Organizational_Standard_Process> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Standard_Process> .
+:Person a owl:Class ;
+    rdfs:subClassOf :Physical_Agent .
 
-<http://taxonomy.model/Project_Standard_Process> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Standard_Process> .
+:Physical_Agent a owl:Class ;
+    rdfs:subClassOf :Agent .
 
-<http://taxonomy.model/Simple_Method_Activity> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Method_Activity> .
+:Agent a owl:Class .
 
-<http://taxonomy.model/Simple_Standard_Activity> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Standard_Activity> .
-
-<http://taxonomy.model/Specific_Standard_Process> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Standard_Process> .
-
-<http://taxonomy.model/Activity_Universal> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Action_Universal_(Plan)> .
-
-<http://taxonomy.model/Atomic_Action_Universal> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Action_Universal_(Plan)> .
-
-<http://taxonomy.model/Process_Universal> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Atomic_Action_Universal>,
-        <http://taxonomy.model/Complex_Action_Universal> .
-
-<http://taxonomy.model/Complex_Action_Universal> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Action_Universal_(Plan)> .
-
-<http://taxonomy.model/Method_Activity> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Action_Universal_(Plan)> .
-
-<http://taxonomy.model/Standard_Activity> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Activity_Universal> .
-
-<http://taxonomy.model/Action_Universal_(Plan)> a owl:Class .
-
-<http://taxonomy.model/Standard_Process> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Process_Universal> .
+:Stakeholder a owl:Class ;
+    rdfs:subClassOf :Agent .
 

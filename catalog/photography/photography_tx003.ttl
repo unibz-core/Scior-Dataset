@@ -1,11 +1,12 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Archivist> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Individual> .
+:ArchiveManaged a owl:Class ;
+    rdfs:subClassOf :Archive .
 
-<http://taxonomy.model/Operator> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Individual> .
+:Archive a owl:Class ;
+    rdfs:subClassOf :Organization .
 
-<http://taxonomy.model/Individual> a owl:Class .
+:Organization a owl:Class .
 

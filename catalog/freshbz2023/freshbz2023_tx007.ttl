@@ -1,14 +1,15 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/postDeletion> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/postCreation> .
+:postComment a owl:Class ;
+    rdfs:subClassOf :postInteraction .
 
-<http://taxonomy.model/postEditing> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/postCreation> .
+:postRating a owl:Class ;
+    rdfs:subClassOf :postInteraction .
 
-<http://taxonomy.model/postLabeling> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/postCreation> .
+:postSearch a owl:Class ;
+    rdfs:subClassOf :postInteraction .
 
-<http://taxonomy.model/postCreation> a owl:Class .
+:postInteraction a owl:Class .
 

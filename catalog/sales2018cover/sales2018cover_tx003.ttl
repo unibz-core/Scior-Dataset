@@ -1,46 +1,45 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Experience_Risk_Assessment> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Experience_Value_Asc.>,
-        <http://taxonomy.model/Risk_Assessment> .
+:Causal_Likelihood a owl:Class ;
+    rdfs:subClassOf :Likelihood .
 
-<http://taxonomy.model/Gain_Ascription> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Value_Asc._Component> .
+:Intention a owl:Class ;
+    rdfs:subClassOf :Mental_Aspect .
 
-<http://taxonomy.model/Loss_Ascription> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Value_Asc._Component> .
+:Risk a owl:Class ;
+    rdfs:subClassOf :Value .
 
-<http://taxonomy.model/Object_Risk_Assess.> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Object_Value_Asc.>,
-        <http://taxonomy.model/Risk_Assessment> .
+:Threat_Capability a owl:Class ;
+    rdfs:subClassOf :Capability .
 
-<http://taxonomy.model/Value_Asc._Ex_Post> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Value_Ascription> .
+:Triggering_Likelihood a owl:Class ;
+    rdfs:subClassOf :Likelihood .
 
-<http://taxonomy.model/Value_Assertion> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Value_Ascription> .
+:Vulnerability a owl:Class ;
+    rdfs:subClassOf :Disposition .
 
-<http://taxonomy.model/Value_Perception> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Value_Ascription> .
+:Capability a owl:Class ;
+    rdfs:subClassOf :Disposition .
 
-<http://taxonomy.model/Experience_Value_Asc.> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Value_Ascription> .
+:Mental_Aspect a owl:Class ;
+    rdfs:subClassOf :Mode .
 
-<http://taxonomy.model/Object_Value_Asc.> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Value_Ascription> .
+:Value a owl:Class ;
+    rdfs:subClassOf :Quality .
 
-<http://taxonomy.model/Value_Asc._Ex_Ante> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Value_Ascription> .
+:Disposition a owl:Class ;
+    rdfs:subClassOf :Mode .
 
-<http://taxonomy.model/Relator> a owl:Class .
+:Likelihood a owl:Class ;
+    rdfs:subClassOf :Quality .
 
-<http://taxonomy.model/Risk_Assessment> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Value_Asc._Ex_Ante> .
+:Mode a owl:Class ;
+    rdfs:subClassOf :Trope .
 
-<http://taxonomy.model/Value_Asc._Component> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Relator> .
+:Quality a owl:Class ;
+    rdfs:subClassOf :Trope .
 
-<http://taxonomy.model/Value_Ascription> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Relator> .
+:Trope a owl:Class .
 

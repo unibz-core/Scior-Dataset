@@ -1,44 +1,30 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Analyst> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Person> .
+:Coding_Region a owl:Class ;
+    rdfs:subClassOf :Nucleotide_Subsequence .
 
-<http://taxonomy.model/Author> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Researcher> .
+:Codon a owl:Class ;
+    rdfs:subClassOf :Nucleotide_Subsequence .
 
-<http://taxonomy.model/Bat> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Animal> .
+:Full_Consensus_Sequence a owl:Class ;
+    rdfs:subClassOf :Virus_Sequence .
 
-<http://taxonomy.model/In_Vitro_Host> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Cell_Line>,
-        <http://taxonomy.model/Virus_Host> .
+:Protein a owl:Class ;
+    rdfs:subClassOf :Sequence .
 
-<http://taxonomy.model/Living_Host> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Animal>,
-        <http://taxonomy.model/Virus_Host> .
+:Reference_Sequence a owl:Class ;
+    rdfs:subClassOf :Sequence .
 
-<http://taxonomy.model/Project_Participant> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Researcher> .
+:Regular_Sequence a owl:Class ;
+    rdfs:subClassOf :Sequence .
 
-<http://taxonomy.model/Sampled_Animal> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Animal> .
+:Nucleotide_Subsequence a owl:Class ;
+    rdfs:subClassOf :Virus_Sequence .
 
-<http://taxonomy.model/Virus> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Biological_Organism> .
+:Virus_Sequence a owl:Class ;
+    rdfs:subClassOf :Sequence .
 
-<http://taxonomy.model/Cell_Line> a owl:Class .
-
-<http://taxonomy.model/Biological_Organism> a owl:Class .
-
-<http://taxonomy.model/Person> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Animal> .
-
-<http://taxonomy.model/Researcher> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Person> .
-
-<http://taxonomy.model/Virus_Host> a owl:Class .
-
-<http://taxonomy.model/Animal> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Biological_Organism> .
+:Sequence a owl:Class .
 

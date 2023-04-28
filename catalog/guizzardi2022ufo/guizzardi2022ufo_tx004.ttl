@@ -1,8 +1,27 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Wood_Component_Constituent> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Wood_Portion> .
+:Left_Front_Leg a owl:Class ;
+    rdfs:subClassOf :Table_Leg_Component .
 
-<http://taxonomy.model/Wood_Portion> a owl:Class .
+:Left_Rear_Leg a owl:Class ;
+    rdfs:subClassOf :Table_Leg_Component .
+
+:Right_Front_Leg a owl:Class ;
+    rdfs:subClassOf :Table_Leg_Component .
+
+:Right_Rear_Leg a owl:Class ;
+    rdfs:subClassOf :Table_Leg_Component .
+
+:Top_Component a owl:Class ;
+    rdfs:subClassOf :Table_Top_Component .
+
+:Table_Top_Component a owl:Class ;
+    rdfs:subClassOf :Wooden_Table_Component .
+
+:Wooden_Table_Component a owl:Class .
+
+:Table_Leg_Component a owl:Class ;
+    rdfs:subClassOf :Wooden_Table_Component .
 

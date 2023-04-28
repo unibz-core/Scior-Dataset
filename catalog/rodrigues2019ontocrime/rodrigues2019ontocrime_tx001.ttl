@@ -1,100 +1,101 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Crime_Author> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Active_Agent>,
-        <http://taxonomy.model/Criminally_Liable> .
+:Crime_Author a owl:Class ;
+    rdfs:subClassOf :Active_Agent,
+        :Criminally_Liable .
 
-<http://taxonomy.model/Criminally_Incapable> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Natural_Person> .
+:Criminally_Incapable a owl:Class ;
+    rdfs:subClassOf :Natural_Person .
 
-<http://taxonomy.model/Guaranteed> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Physical_Agent> .
+:Guaranteed a owl:Class ;
+    rdfs:subClassOf :Physical_Agent .
 
-<http://taxonomy.model/Guarantor_Able_Person> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Able_Person>,
-        <http://taxonomy.model/Guarantor> .
+:Guarantor_Able_Person a owl:Class ;
+    rdfs:subClassOf :Able_Person,
+        :Guarantor .
 
-<http://taxonomy.model/Jurisdictional_State> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Jurisdiction_Agent>,
-        <http://taxonomy.model/State> .
+:Jurisdictional_State a owl:Class ;
+    rdfs:subClassOf :Jurisdiction_Agent,
+        :State .
 
-<http://taxonomy.model/Mentally_Sick> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Natural_Person> .
+:Mentally_Sick a owl:Class ;
+    rdfs:subClassOf :Natural_Person .
 
-<http://taxonomy.model/Passive_Juridical_Person> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Juridical_Person>,
-        <http://taxonomy.model/Passive_Agent> .
+:Passive_Juridical_Person a owl:Class ;
+    rdfs:subClassOf :Juridical_Person,
+        :Passive_Agent .
 
-<http://taxonomy.model/Passive_Person> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Natural_Person>,
-        <http://taxonomy.model/Passive_Agent> .
+:Passive_Person a owl:Class ;
+    rdfs:subClassOf :Natural_Person,
+        :Passive_Agent .
 
-<http://taxonomy.model/Passive_Society> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Passive_Agent>,
-        <http://taxonomy.model/Society> .
+:Passive_Society a owl:Class ;
+    rdfs:subClassOf :Passive_Agent,
+        :Society .
 
-<http://taxonomy.model/Underage> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Natural_Person> .
+:Underage a owl:Class ;
+    rdfs:subClassOf :Natural_Person .
 
-<http://taxonomy.model/Able_Person> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Natural_Person> .
+:Able_Person a owl:Class ;
+    rdfs:subClassOf :Natural_Person .
 
-<http://taxonomy.model/Active_Agent> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Crime_Agent>,
-        <http://taxonomy.model/Legal_Agent>,
-        <http://taxonomy.model/Natural_Person> .
+:Active_Agent a owl:Class ;
+    rdfs:subClassOf :Crime_Agent,
+        :Legal_Agent,
+        :Natural_Person .
 
-<http://taxonomy.model/Adult> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Natural_Person> .
+:Adult a owl:Class ;
+    rdfs:subClassOf :Natural_Person .
 
-<http://taxonomy.model/Collective_Social_Agent> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Social_Agent> .
+:Collective_Social_Agent a owl:Class ;
+    rdfs:subClassOf :Social_Agent .
 
-<http://taxonomy.model/Criminally_Liable> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Adult>,
-        <http://taxonomy.model/Mentally_Healthy> .
+:Criminally_Liable a owl:Class ;
+    rdfs:subClassOf :Adult,
+        :Mentally_Healthy .
 
-<http://taxonomy.model/Guarantor> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Natural_Person> .
+:Guarantor a owl:Class ;
+    rdfs:subClassOf :Natural_Person .
 
-<http://taxonomy.model/Juridical_Person> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Institutional_Agent> .
+:Juridical_Person a owl:Class ;
+    rdfs:subClassOf :Institutional_Agent .
 
-<http://taxonomy.model/Jurisdiction_Agent> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Legal_Agent> .
+:Jurisdiction_Agent a owl:Class ;
+    rdfs:subClassOf :Legal_Agent .
 
-<http://taxonomy.model/Mentally_Healthy> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Natural_Person> .
+:Mentally_Healthy a owl:Class ;
+    rdfs:subClassOf :Natural_Person .
 
-<http://taxonomy.model/Society> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Collective_Social_Agent> .
+:Society a owl:Class ;
+    rdfs:subClassOf :Collective_Social_Agent .
 
-<http://taxonomy.model/State> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Institutional_Agent> .
+:State a owl:Class ;
+    rdfs:subClassOf :Institutional_Agent .
 
-<http://taxonomy.model/Crime_Agent> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Legal_Agent> .
+:Crime_Agent a owl:Class ;
+    rdfs:subClassOf :Legal_Agent .
 
-<http://taxonomy.model/Institutional_Agent> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Social_Agent> .
+:Institutional_Agent a owl:Class ;
+    rdfs:subClassOf :Social_Agent .
 
-<http://taxonomy.model/Physical_Agent> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Agent> .
+:Physical_Agent a owl:Class ;
+    rdfs:subClassOf :Agent .
 
-<http://taxonomy.model/Social_Agent> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Agent> .
+:Social_Agent a owl:Class ;
+    rdfs:subClassOf :Agent .
 
-<http://taxonomy.model/Passive_Agent> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Crime_Agent>,
-        <http://taxonomy.model/Legal_Agent> .
+:Passive_Agent a owl:Class ;
+    rdfs:subClassOf :Crime_Agent,
+        :Legal_Agent .
 
-<http://taxonomy.model/Agent> a owl:Class .
+:Agent a owl:Class .
 
-<http://taxonomy.model/Legal_Agent> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Agent> .
+:Legal_Agent a owl:Class ;
+    rdfs:subClassOf :Agent .
 
-<http://taxonomy.model/Natural_Person> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Agent>,
-        <http://taxonomy.model/Physical_Agent> .
+:Natural_Person a owl:Class ;
+    rdfs:subClassOf :Agent,
+        :Physical_Agent .
 

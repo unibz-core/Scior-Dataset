@@ -1,8 +1,18 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/location> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/path> .
+:Line_String a owl:Class ;
+    rdfs:subClassOf :geometry .
 
-<http://taxonomy.model/path> a owl:Class .
+:Multi_Line_String a owl:Class ;
+    rdfs:subClassOf :geometry .
+
+:Multi_point a owl:Class ;
+    rdfs:subClassOf :geometry .
+
+:Point a owl:Class ;
+    rdfs:subClassOf :geometry .
+
+:geometry a owl:Class .
 

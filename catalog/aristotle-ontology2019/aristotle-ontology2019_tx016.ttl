@@ -1,23 +1,15 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/ContinentPerson> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Person> .
+:Particular a owl:Class ;
+    rdfs:subClassOf :Species .
 
-<http://taxonomy.model/EvilPerson> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Person> .
+:Genus a owl:Class ;
+    rdfs:subClassOf :SupremeGenus-HighestKind .
 
-<http://taxonomy.model/ImpetuousPerson> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/IncontinentPerson> .
+:Species a owl:Class ;
+    rdfs:subClassOf :Genus .
 
-<http://taxonomy.model/VirtuousPerson> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Person> .
-
-<http://taxonomy.model/WeakPerson> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/IncontinentPerson> .
-
-<http://taxonomy.model/IncontinentPerson> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Person> .
-
-<http://taxonomy.model/Person> a owl:Class .
+:SupremeGenus-HighestKind a owl:Class .
 

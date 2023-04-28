@@ -1,17 +1,24 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Air> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Element> .
+:ContinentPerson a owl:Class ;
+    rdfs:subClassOf :Person .
 
-<http://taxonomy.model/Earth> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Element> .
+:EvilPerson a owl:Class ;
+    rdfs:subClassOf :Person .
 
-<http://taxonomy.model/Fire> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Element> .
+:ImpetuousPerson a owl:Class ;
+    rdfs:subClassOf :IncontinentPerson .
 
-<http://taxonomy.model/Water> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Element> .
+:VirtuousPerson a owl:Class ;
+    rdfs:subClassOf :Person .
 
-<http://taxonomy.model/Element> a owl:Class .
+:WeakPerson a owl:Class ;
+    rdfs:subClassOf :IncontinentPerson .
+
+:IncontinentPerson a owl:Class ;
+    rdfs:subClassOf :Person .
+
+:Person a owl:Class .
 

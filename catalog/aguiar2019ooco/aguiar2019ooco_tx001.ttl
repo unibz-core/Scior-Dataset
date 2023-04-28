@@ -1,23 +1,24 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Object-Oriented_Source_Code> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Source_Code> .
+:Object-Oriented_Source_Code a owl:Class ;
+    rdfs:subClassOf :Source_Code .
 
-<http://taxonomy.model/Program> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Software_Item> .
+:Program a owl:Class ;
+    rdfs:subClassOf :Software_Item .
 
-<http://taxonomy.model/Software_System> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Software_Item> .
+:Software_System a owl:Class ;
+    rdfs:subClassOf :Software_Item .
 
-<http://taxonomy.model/Artifact> a owl:Class .
+:Artifact a owl:Class .
 
-<http://taxonomy.model/Code> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Software_Item> .
+:Code a owl:Class ;
+    rdfs:subClassOf :Software_Item .
 
-<http://taxonomy.model/Source_Code> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Code> .
+:Source_Code a owl:Class ;
+    rdfs:subClassOf :Code .
 
-<http://taxonomy.model/Software_Item> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Artifact> .
+:Software_Item a owl:Class ;
+    rdfs:subClassOf :Artifact .
 

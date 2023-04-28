@@ -1,0 +1,33 @@
+@prefix : <http://taxonomy.model/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Child a owl:Class ;
+    rdfs:subClassOf :Citizen .
+
+:Company a owl:Class ;
+    rdfs:subClassOf :PA_Client .
+
+:Employed a owl:Class ;
+    rdfs:subClassOf :Citizen .
+
+:In_requalification a owl:Class ;
+    rdfs:subClassOf :Unemployed .
+
+:Pupil a owl:Class ;
+    rdfs:subClassOf :Citizen .
+
+:Seeking_for_employment a owl:Class ;
+    rdfs:subClassOf :Unemployed .
+
+:Senior a owl:Class ;
+    rdfs:subClassOf :Citizen .
+
+:PA_Client a owl:Class .
+
+:Unemployed a owl:Class ;
+    rdfs:subClassOf :Citizen .
+
+:Citizen a owl:Class ;
+    rdfs:subClassOf :PA_Client .
+

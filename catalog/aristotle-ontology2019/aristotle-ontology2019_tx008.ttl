@@ -1,17 +1,21 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Future> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Time> .
+:Lawgiver a owl:Class ;
+    rdfs:subClassOf :Politician .
 
-<http://taxonomy.model/Past> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Time> .
+:Non-Citizen a owl:Class ;
+    rdfs:subClassOf :ResidentPerson .
 
-<http://taxonomy.model/Present> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Time> .
+:Ruler a owl:Class ;
+    rdfs:subClassOf :Politician .
 
-<http://taxonomy.model/Number> a owl:Class .
+:Citizen a owl:Class ;
+    rdfs:subClassOf :ResidentPerson .
 
-<http://taxonomy.model/Time> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Number> .
+:Politician a owl:Class ;
+    rdfs:subClassOf :Citizen .
+
+:ResidentPerson a owl:Class .
 

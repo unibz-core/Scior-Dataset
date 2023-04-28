@@ -1,14 +1,21 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/CommunicativeIntention> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/CommunicativeCommitment> .
+:AppStore a owl:Class ;
+    rdfs:subClassOf :FeedbackChannel .
 
-<http://taxonomy.model/InterpretedIntention> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/CommunicativeCommitment> .
+:IssueTrackingSystem a owl:Class ;
+    rdfs:subClassOf :FeedbackChannel .
 
-<http://taxonomy.model/IntentionInternalCommitment> a owl:Class .
+:MailingList a owl:Class ;
+    rdfs:subClassOf :FeedbackChannel .
 
-<http://taxonomy.model/CommunicativeCommitment> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/IntentionInternalCommitment> .
+:MobileTechnology a owl:Class ;
+    rdfs:subClassOf :FeedbackChannel .
+
+:OpenForum a owl:Class ;
+    rdfs:subClassOf :FeedbackChannel .
+
+:FeedbackChannel a owl:Class .
 

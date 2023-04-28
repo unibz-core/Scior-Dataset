@@ -1,38 +1,39 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Captain> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Person> .
+:Captain a owl:Class ;
+    rdfs:subClassOf :Person .
 
-<http://taxonomy.model/Discoverer> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Person> .
+:Discoverer a owl:Class ;
+    rdfs:subClassOf :Person .
 
-<http://taxonomy.model/License_Holder> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Agent> .
+:License_Holder a owl:Class ;
+    rdfs:subClassOf :Agent .
 
-<http://taxonomy.model/Organization> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Agent> .
+:Organization a owl:Class ;
+    rdfs:subClassOf :Agent .
 
-<http://taxonomy.model/Painter> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Author>,
-        <http://taxonomy.model/Person> .
+:Painter a owl:Class ;
+    rdfs:subClassOf :Author,
+        :Person .
 
-<http://taxonomy.model/Publisher> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Agent> .
+:Publisher a owl:Class ;
+    rdfs:subClassOf :Agent .
 
-<http://taxonomy.model/Sculptor> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Author>,
-        <http://taxonomy.model/Person> .
+:Sculptor a owl:Class ;
+    rdfs:subClassOf :Author,
+        :Person .
 
-<http://taxonomy.model/Writer> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Author>,
-        <http://taxonomy.model/Person> .
+:Writer a owl:Class ;
+    rdfs:subClassOf :Author,
+        :Person .
 
-<http://taxonomy.model/Author> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Agent> .
+:Author a owl:Class ;
+    rdfs:subClassOf :Agent .
 
-<http://taxonomy.model/Agent> a owl:Class .
+:Agent a owl:Class .
 
-<http://taxonomy.model/Person> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Agent> .
+:Person a owl:Class ;
+    rdfs:subClassOf :Agent .
 

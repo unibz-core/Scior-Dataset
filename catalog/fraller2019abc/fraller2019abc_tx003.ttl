@@ -1,20 +1,42 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Asset_Account> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/General_Ledger_Account> .
+<http://taxonomy.model/...> a owl:Class ;
+    rdfs:subClassOf :Economic_Resource .
 
-<http://taxonomy.model/Equity_Account> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/General_Ledger_Account> .
+<http://taxonomy.model/....> a owl:Class ;
+    rdfs:subClassOf :Material_Resource .
 
-<http://taxonomy.model/Expense_Account> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/General_Ledger_Account> .
+:Asset a owl:Class ;
+    rdfs:subClassOf :Economic_Resource .
 
-<http://taxonomy.model/Liability_Account> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/General_Ledger_Account> .
+:Claim a owl:Class ;
+    rdfs:subClassOf :Economic_Resource .
 
-<http://taxonomy.model/Revenue_Account> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/General_Ledger_Account> .
+:Equipment a owl:Class ;
+    rdfs:subClassOf :Capacity_Resource .
 
-<http://taxonomy.model/General_Ledger_Account> a owl:Class .
+:Equity a owl:Class ;
+    rdfs:subClassOf :Economic_Resource .
+
+:Finished_Good a owl:Class ;
+    rdfs:subClassOf :Material_Resource .
+
+:Liability a owl:Class ;
+    rdfs:subClassOf :Economic_Resource .
+
+:Personnel a owl:Class ;
+    rdfs:subClassOf :Capacity_Resource .
+
+:Raw_Material a owl:Class ;
+    rdfs:subClassOf :Material_Resource .
+
+:Capacity_Resource a owl:Class ;
+    rdfs:subClassOf :Economic_Resource .
+
+:Material_Resource a owl:Class ;
+    rdfs:subClassOf :Economic_Resource .
+
+:Economic_Resource a owl:Class .
 

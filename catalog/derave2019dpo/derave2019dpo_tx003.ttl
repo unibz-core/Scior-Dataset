@@ -1,11 +1,18 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/End_Time> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Time> .
+:Accommodation a owl:Class ;
+    rdfs:subClassOf :Physical_Good .
 
-<http://taxonomy.model/Start_Time> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Time> .
+:Digital_Good a owl:Class ;
+    rdfs:subClassOf :Good .
 
-<http://taxonomy.model/Time> a owl:Class .
+:Under-Utilized_Product a owl:Class ;
+    rdfs:subClassOf :Physical_Good .
+
+:Good a owl:Class .
+
+:Physical_Good a owl:Class ;
+    rdfs:subClassOf :Good .
 

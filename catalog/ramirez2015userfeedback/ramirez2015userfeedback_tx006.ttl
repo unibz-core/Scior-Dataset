@@ -1,14 +1,15 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Audio> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Attachment> .
+:CommunicativeIntention a owl:Class ;
+    rdfs:subClassOf :CommunicativeCommitment .
 
-<http://taxonomy.model/Image> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Attachment> .
+:InterpretedIntention a owl:Class ;
+    rdfs:subClassOf :CommunicativeCommitment .
 
-<http://taxonomy.model/Video> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Attachment> .
+:IntentionInternalCommitment a owl:Class .
 
-<http://taxonomy.model/Attachment> a owl:Class .
+:CommunicativeCommitment a owl:Class ;
+    rdfs:subClassOf :IntentionInternalCommitment .
 

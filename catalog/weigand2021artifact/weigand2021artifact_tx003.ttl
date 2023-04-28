@@ -1,44 +1,45 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Artifact> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Technical_object> .
+:Artifact a owl:Class ;
+    rdfs:subClassOf :Technical_object .
 
-<http://taxonomy.model/Disposed> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Technical_object> .
+:Disposed a owl:Class ;
+    rdfs:subClassOf :Technical_object .
 
-<http://taxonomy.model/In_distribution> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Employed> .
+:In_distribution a owl:Class ;
+    rdfs:subClassOf :Employed .
 
-<http://taxonomy.model/In_maintenance> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Employed> .
+:In_maintenance a owl:Class ;
+    rdfs:subClassOf :Employed .
 
-<http://taxonomy.model/In_production> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Technical_object> .
+:In_production a owl:Class ;
+    rdfs:subClassOf :Technical_object .
 
-<http://taxonomy.model/In_use> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Employed> .
+:In_use a owl:Class ;
+    rdfs:subClassOf :Employed .
 
-<http://taxonomy.model/Material_source> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Instrument> .
+:Material_source a owl:Class ;
+    rdfs:subClassOf :Instrument .
 
-<http://taxonomy.model/Planned> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Technical_object> .
+:Planned a owl:Class ;
+    rdfs:subClassOf :Technical_object .
 
-<http://taxonomy.model/Source> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Physical_Object> .
+:Source a owl:Class ;
+    rdfs:subClassOf :Physical_Object .
 
-<http://taxonomy.model/Result> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Physical_Object> .
+:Result a owl:Class ;
+    rdfs:subClassOf :Physical_Object .
 
-<http://taxonomy.model/Instrument> a owl:Class .
+:Instrument a owl:Class .
 
-<http://taxonomy.model/Physical_Object> a owl:Class .
+:Physical_Object a owl:Class .
 
-<http://taxonomy.model/Employed> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Technical_object> .
+:Employed a owl:Class ;
+    rdfs:subClassOf :Technical_object .
 
-<http://taxonomy.model/Technical_object> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Instrument>,
-        <http://taxonomy.model/Result> .
+:Technical_object a owl:Class ;
+    rdfs:subClassOf :Instrument,
+        :Result .
 

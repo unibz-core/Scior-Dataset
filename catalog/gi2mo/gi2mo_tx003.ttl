@@ -1,14 +1,12 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Idea_Category> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Category> .
+:Rating_Review a owl:Class ;
+    rdfs:subClassOf :Review .
 
-<http://taxonomy.model/Review_Category> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Category> .
+:Textual_Review a owl:Class ;
+    rdfs:subClassOf :Review .
 
-<http://taxonomy.model/SubCategory> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Category> .
-
-<http://taxonomy.model/Category> a owl:Class .
+:Review a owl:Class .
 

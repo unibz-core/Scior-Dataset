@@ -1,11 +1,27 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Finished> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Loan> .
+:Available a owl:Class ;
+    rdfs:subClassOf :Copy .
 
-<http://taxonomy.model/Ongoing> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Loan> .
+:Borrowed a owl:Class ;
+    rdfs:subClassOf :Copy .
 
-<http://taxonomy.model/Loan> a owl:Class .
+:Damaged a owl:Class ;
+    rdfs:subClassOf :Copy .
+
+:Destroyed a owl:Class ;
+    rdfs:subClassOf :Copy .
+
+:Discarded a owl:Class ;
+    rdfs:subClassOf :Copy .
+
+:Lent_Copy a owl:Class ;
+    rdfs:subClassOf :Copy .
+
+:Undamaged a owl:Class ;
+    rdfs:subClassOf :Copy .
+
+:Copy a owl:Class .
 

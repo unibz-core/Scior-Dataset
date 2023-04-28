@@ -1,11 +1,12 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/CharacterizingTopic> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Topic> .
+:NonTutoredDiscipline a owl:Class ;
+    rdfs:subClassOf :Discipline .
 
-<http://taxonomy.model/NonCharacterizingTopic> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Topic> .
+:TutoredDiscipline a owl:Class ;
+    rdfs:subClassOf :Discipline .
 
-<http://taxonomy.model/Topic> a owl:Class .
+:Discipline a owl:Class .
 

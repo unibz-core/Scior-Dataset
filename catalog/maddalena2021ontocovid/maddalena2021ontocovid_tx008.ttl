@@ -1,11 +1,15 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/COVID-19> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Doen�a_Infecciosa> .
+:SARS-CoV-2 a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/V�rus> .
 
-<http://taxonomy.model/Doen�a> a owl:Class .
+<http://taxonomy.model/Microorganismo_Patog�nicos> a owl:Class ;
+    rdfs:subClassOf :Principal_agente_causador .
 
-<http://taxonomy.model/Doen�a_Infecciosa> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Doen�a> .
+:Principal_agente_causador a owl:Class .
+
+<http://taxonomy.model/V�rus> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Microorganismo_Patog�nicos> .
 

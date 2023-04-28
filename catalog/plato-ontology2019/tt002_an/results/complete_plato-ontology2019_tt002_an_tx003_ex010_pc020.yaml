@@ -1,352 +1,335 @@
-LivingThing:
+AuxiliaryPerson:
   can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
+  - AntiRigidType
+  - Category
+  - Kind
+  - Mixin
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - RigidType
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - Sortal
+  - SubKind
   input: false
-  is_incomplete: false
   is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
+  - EndurantType
+  not_type: []
 ---
-GuardianPerson:
+Citizen:
   can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
+  - AntiRigidType
+  - Category
+  - Kind
+  - Mixin
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - RigidType
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - Sortal
+  - SubKind
   input: false
-  is_incomplete: false
   is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
+  - EndurantType
+  not_type: []
 ---
-Universe:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
+Demiurge:
+  can_type: []
+  input: true
   is_type:
-  - gufo:Sortal
+  - EndurantType
+  - Kind
+  - RigidType
+  - Sortal
   not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
+  - AntiRigidType
+  - Category
+  - Mixin
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - SubKind
 ---
 God:
   can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
+  - Category
+  - Mixin
+  - NonRigidType
+  - RigidType
+  - SemiRigidType
   input: false
-  is_incomplete: false
-  is_type: []
+  is_type:
+  - EndurantType
+  - NonSortal
+  not_type:
+  - AntiRigidType
+  - Kind
+  - Phase
+  - PhaseMixin
+  - Role
+  - RoleMixin
+  - Sortal
+  - SubKind
+---
+GuardianPerson:
+  can_type: []
+  input: true
+  is_type:
+  - AntiRigidType
+  - EndurantType
+  - NonRigidType
+  - Role
+  - Sortal
+  not_type:
+  - Category
+  - Kind
+  - Mixin
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - RigidType
+  - RoleMixin
+  - SemiRigidType
+  - SubKind
+---
+HumanBeing:
+  can_type:
+  - AntiRigidType
+  - Category
+  - Kind
+  - Mixin
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - RigidType
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - Sortal
+  - SubKind
+  input: false
+  is_type:
+  - EndurantType
+  not_type: []
+---
+LesserGod:
+  can_type:
+  - AntiRigidType
+  - Kind
+  - NonRigidType
+  - Phase
+  - RigidType
+  - Role
+  - SemiRigidType
+  - SubKind
+  input: false
+  is_type:
+  - EndurantType
+  - Sortal
+  not_type:
+  - Category
+  - Mixin
+  - NonSortal
+  - PhaseMixin
+  - RoleMixin
+---
+LivingThing:
+  can_type:
+  - AntiRigidType
+  - Category
+  - Kind
+  - Mixin
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - RigidType
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - Sortal
+  - SubKind
+  input: false
+  is_type:
+  - EndurantType
   not_type: []
 ---
 Name:
   can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
+  - AntiRigidType
+  - Category
+  - Kind
+  - Mixin
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - RigidType
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - Sortal
+  - SubKind
   input: false
-  is_incomplete: false
   is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-Philosopher-king:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-LesserGod:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-OriginalName:
-  can_type: []
-  detected_in:
-  - ks_sf_in
-  input: true
-  is_incomplete: true
-  is_type:
-  - gufo:Phase
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonSortal
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-ProducerPerson:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-Demiurge:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
+  - EndurantType
   not_type: []
----
-Particular:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:Kind
-  - gufo:RigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
 ---
 NameBearerObject:
   can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
+  - AntiRigidType
+  - Category
+  - Kind
+  - Mixin
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - RigidType
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - Sortal
+  - SubKind
   input: false
-  is_incomplete: false
   is_type:
-  - gufo:Sortal
+  - EndurantType
+  not_type: []
+---
+OriginalName:
+  can_type:
+  - AntiRigidType
+  - Category
+  - Kind
+  - Mixin
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - RigidType
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - Sortal
+  - SubKind
+  input: false
+  is_type:
+  - EndurantType
+  not_type: []
+---
+Particular:
+  can_type:
+  - AntiRigidType
+  - Category
+  - Kind
+  - Mixin
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - RigidType
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - Sortal
+  - SubKind
+  input: false
+  is_type:
+  - EndurantType
+  not_type: []
+---
+Philosopher-king:
+  can_type: []
+  input: true
+  is_type:
+  - AntiRigidType
+  - EndurantType
+  - NonRigidType
+  - Role
+  - Sortal
   not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
+  - Category
+  - Kind
+  - Mixin
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - RigidType
+  - RoleMixin
+  - SemiRigidType
+  - SubKind
 ---
 PresentName:
   can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
+  - AntiRigidType
+  - Category
+  - Kind
+  - Mixin
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - RigidType
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - Sortal
+  - SubKind
   input: false
-  is_incomplete: false
   is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
+  - EndurantType
+  not_type: []
 ---
-AuxiliaryPerson:
-  can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
-  is_type:
-  - gufo:Role
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Sortal
-  not_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
----
-Citizen:
+ProducerPerson:
   can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
+  - AntiRigidType
+  - Category
+  - Kind
+  - Mixin
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - RigidType
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - Sortal
+  - SubKind
   input: false
-  is_incomplete: false
   is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
+  - EndurantType
+  not_type: []
 ---
-HumanBeing:
+Universe:
   can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
+  - AntiRigidType
+  - Category
+  - Kind
+  - Mixin
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - RigidType
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - Sortal
+  - SubKind
   input: false
-  is_incomplete: false
   is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
+  - EndurantType
+  not_type: []

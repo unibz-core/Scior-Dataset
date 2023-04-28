@@ -1,90 +1,91 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Book> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Resource> .
+:Book a owl:Class ;
+    rdfs:subClassOf :Resource .
 
-<http://taxonomy.model/Collection> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Creatable>,
-        <http://taxonomy.model/Deletable>,
-        <http://taxonomy.model/Editable>,
-        <http://taxonomy.model/Resource> .
+:Collection a owl:Class ;
+    rdfs:subClassOf :Creatable,
+        :Deletable,
+        :Editable,
+        :Resource .
 
-<http://taxonomy.model/Comment> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Commentable>,
-        <http://taxonomy.model/Creatable>,
-        <http://taxonomy.model/Deletable>,
-        <http://taxonomy.model/Editable>,
-        <http://taxonomy.model/Interaction>,
-        <http://taxonomy.model/Upvotable> .
+:Comment a owl:Class ;
+    rdfs:subClassOf :Commentable,
+        :Creatable,
+        :Deletable,
+        :Editable,
+        :Interaction,
+        :Upvotable .
 
-<http://taxonomy.model/Corporate_Resource> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Resource> .
+:Corporate_Resource a owl:Class ;
+    rdfs:subClassOf :Resource .
 
-<http://taxonomy.model/Course> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Resource> .
+:Course a owl:Class ;
+    rdfs:subClassOf :Resource .
 
-<http://taxonomy.model/Creation> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Interaction> .
+:Creation a owl:Class ;
+    rdfs:subClassOf :Interaction .
 
-<http://taxonomy.model/Delete> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Interaction> .
+:Delete a owl:Class ;
+    rdfs:subClassOf :Interaction .
 
-<http://taxonomy.model/Edit> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Interaction> .
+:Edit a owl:Class ;
+    rdfs:subClassOf :Interaction .
 
-<http://taxonomy.model/Follow> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Interaction> .
+:Follow a owl:Class ;
+    rdfs:subClassOf :Interaction .
 
-<http://taxonomy.model/Learning_Path> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Creatable>,
-        <http://taxonomy.model/Deletable>,
-        <http://taxonomy.model/Editable>,
-        <http://taxonomy.model/Resource> .
+:Learning_Path a owl:Class ;
+    rdfs:subClassOf :Creatable,
+        :Deletable,
+        :Editable,
+        :Resource .
 
-<http://taxonomy.model/Link> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Resource> .
+:Link a owl:Class ;
+    rdfs:subClassOf :Resource .
 
-<http://taxonomy.model/Podcast> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Resource> .
+:Podcast a owl:Class ;
+    rdfs:subClassOf :Resource .
 
-<http://taxonomy.model/Private_Interaction> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Interaction> .
+:Private_Interaction a owl:Class ;
+    rdfs:subClassOf :Interaction .
 
-<http://taxonomy.model/Public_Interaction> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Interaction> .
+:Public_Interaction a owl:Class ;
+    rdfs:subClassOf :Interaction .
 
-<http://taxonomy.model/Public_Resource> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Resource> .
+:Public_Resource a owl:Class ;
+    rdfs:subClassOf :Resource .
 
-<http://taxonomy.model/Search> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Interaction> .
+:Search a owl:Class ;
+    rdfs:subClassOf :Interaction .
 
-<http://taxonomy.model/Upvote> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Interaction> .
+:Upvote a owl:Class ;
+    rdfs:subClassOf :Interaction .
 
-<http://taxonomy.model/Video> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Resource> .
+:Video a owl:Class ;
+    rdfs:subClassOf :Resource .
 
-<http://taxonomy.model/View> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Interaction> .
+:View a owl:Class ;
+    rdfs:subClassOf :Interaction .
 
-<http://taxonomy.model/Viewable> a owl:Class .
+:Viewable a owl:Class .
 
-<http://taxonomy.model/Commentable> a owl:Class .
+:Commentable a owl:Class .
 
-<http://taxonomy.model/Upvotable> a owl:Class .
+:Upvotable a owl:Class .
 
-<http://taxonomy.model/Creatable> a owl:Class .
+:Creatable a owl:Class .
 
-<http://taxonomy.model/Deletable> a owl:Class .
+:Deletable a owl:Class .
 
-<http://taxonomy.model/Editable> a owl:Class .
+:Editable a owl:Class .
 
-<http://taxonomy.model/Resource> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Commentable>,
-        <http://taxonomy.model/Upvotable>,
-        <http://taxonomy.model/Viewable> .
+:Resource a owl:Class ;
+    rdfs:subClassOf :Commentable,
+        :Upvotable,
+        :Viewable .
 
-<http://taxonomy.model/Interaction> a owl:Class .
+:Interaction a owl:Class .
 

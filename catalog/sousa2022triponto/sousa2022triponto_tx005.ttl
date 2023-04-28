@@ -1,11 +1,18 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/International_Destination> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Destination> .
+:Boat_Ticket a owl:Class ;
+    rdfs:subClassOf :Ticket .
 
-<http://taxonomy.model/National_Destination> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Destination> .
+:Bus_Ticket a owl:Class ;
+    rdfs:subClassOf :Ticket .
 
-<http://taxonomy.model/Destination> a owl:Class .
+:Plane_Ticket a owl:Class ;
+    rdfs:subClassOf :Ticket .
+
+:Train_Ticket a owl:Class ;
+    rdfs:subClassOf :Ticket .
+
+:Ticket a owl:Class .
 

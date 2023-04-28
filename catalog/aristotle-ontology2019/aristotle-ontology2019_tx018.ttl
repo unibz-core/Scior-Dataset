@@ -1,14 +1,21 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Particular> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Species> .
+:CelestialBody a owl:Class ;
+    rdfs:subClassOf :Object .
 
-<http://taxonomy.model/Genus> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/SupremeGenus-HighestKind> .
+:Moved\(PassiveObject\) a owl:Class ;
+    rdfs:subClassOf :Object .
 
-<http://taxonomy.model/Species> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Genus> .
+:Mover\(ActiveObject\) a owl:Class ;
+    rdfs:subClassOf :Object .
 
-<http://taxonomy.model/SupremeGenus-HighestKind> a owl:Class .
+:SublunaryBody a owl:Class ;
+    rdfs:subClassOf :Object .
+
+:Universe a owl:Class ;
+    rdfs:subClassOf :Object .
+
+:Object a owl:Class .
 

@@ -1,17 +1,18 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Empresa_Credor> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Credor>,
-        <http://taxonomy.model/Empresa> .
+:Contrato_Aditivo a owl:Class ;
+    rdfs:subClassOf :Contrato .
 
-<http://taxonomy.model/Pessoa_Credor> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Credor>,
-        <http://taxonomy.model/Pessoa> .
+:Contrato_com_Dispensa a owl:Class ;
+    rdfs:subClassOf :Contrato_Inicial .
 
-<http://taxonomy.model/Empresa> a owl:Class .
+<http://taxonomy.model/Contrato_com_Licitac�o> a owl:Class ;
+    rdfs:subClassOf :Contrato_Inicial .
 
-<http://taxonomy.model/Pessoa> a owl:Class .
+:Contrato a owl:Class .
 
-<http://taxonomy.model/Credor> a owl:Class .
+:Contrato_Inicial a owl:Class ;
+    rdfs:subClassOf :Contrato .
 

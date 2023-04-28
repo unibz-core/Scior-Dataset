@@ -1,8 +1,12 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/secondary_premisse> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/facto> .
+:individualBase a owl:Class ;
+    rdfs:subClassOf :base .
 
-<http://taxonomy.model/facto> a owl:Class .
+:organizationalBase a owl:Class ;
+    rdfs:subClassOf :base .
+
+:base a owl:Class .
 

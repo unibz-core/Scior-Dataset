@@ -1,35 +1,36 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/EducationalInstitution> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Organization> .
+:EducationalInstitution a owl:Class ;
+    rdfs:subClassOf :Organization .
 
-<http://taxonomy.model/ParticipantWithQuestion> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Participant> .
+:ParticipantWithQuestion a owl:Class ;
+    rdfs:subClassOf :Participant .
 
-<http://taxonomy.model/ParticipantWithanswer> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Participant> .
+:ParticipantWithanswer a owl:Class ;
+    rdfs:subClassOf :Participant .
 
-<http://taxonomy.model/Professor> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Participant> .
+:Professor a owl:Class ;
+    rdfs:subClassOf :Participant .
 
-<http://taxonomy.model/Tutor> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/ActiveStudent> .
+:Tutor a owl:Class ;
+    rdfs:subClassOf :ActiveStudent .
 
-<http://taxonomy.model/ActiveStudent> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Student> .
+:ActiveStudent a owl:Class ;
+    rdfs:subClassOf :Student .
 
-<http://taxonomy.model/Organization> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Agent> .
+:Organization a owl:Class ;
+    rdfs:subClassOf :Agent .
 
-<http://taxonomy.model/Person> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Agent> .
+:Person a owl:Class ;
+    rdfs:subClassOf :Agent .
 
-<http://taxonomy.model/Student> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Participant> .
+:Student a owl:Class ;
+    rdfs:subClassOf :Participant .
 
-<http://taxonomy.model/Agent> a owl:Class .
+:Agent a owl:Class .
 
-<http://taxonomy.model/Participant> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Person> .
+:Participant a owl:Class ;
+    rdfs:subClassOf :Person .
 

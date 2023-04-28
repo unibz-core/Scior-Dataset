@@ -1,17 +1,61 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/AVNodeCells> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/PacemakerCells> .
+:HeartAsBloodContainer a owl:Class ;
+    rdfs:subClassOf :HumanHeart .
 
-<http://taxonomy.model/NonPacemakerCells> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/HeartCells> .
+:HeartAsPump a owl:Class ;
+    rdfs:subClassOf :HumanHeart .
 
-<http://taxonomy.model/SANodeCells> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/PacemakerCells> .
+:HumanBody a owl:Class ;
+    rdfs:subClassOf :Chamber .
 
-<http://taxonomy.model/HeartCells> a owl:Class .
+:LeftAtriumAsBloodContainer a owl:Class ;
+    rdfs:subClassOf :LeftAtrium .
 
-<http://taxonomy.model/PacemakerCells> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/HeartCells> .
+:LeftAtriumAsPump a owl:Class ;
+    rdfs:subClassOf :LeftAtrium .
+
+:LeftVentricleAsBloodContainer a owl:Class ;
+    rdfs:subClassOf :LeftVentricle .
+
+:LeftVentricleAsPump a owl:Class ;
+    rdfs:subClassOf :LeftVentricle .
+
+:RightAtriumAsBloodContainer a owl:Class ;
+    rdfs:subClassOf :RightAtrium .
+
+:RightAtriumAsPump a owl:Class ;
+    rdfs:subClassOf :RightAtrium .
+
+:RightVentricleAsBloodContainer a owl:Class ;
+    rdfs:subClassOf :RightVentricle .
+
+:RightVentricleAsPump a owl:Class ;
+    rdfs:subClassOf :RightVentricle .
+
+:HumanHeart a owl:Class ;
+    rdfs:subClassOf :Chamber,
+        :Muscle .
+
+:LeftAtrium a owl:Class ;
+    rdfs:subClassOf :Chamber,
+        :Muscle .
+
+:LeftVentricle a owl:Class ;
+    rdfs:subClassOf :Chamber,
+        :Muscle .
+
+:RightAtrium a owl:Class ;
+    rdfs:subClassOf :Chamber,
+        :Muscle .
+
+:RightVentricle a owl:Class ;
+    rdfs:subClassOf :Chamber,
+        :Muscle .
+
+:Muscle a owl:Class .
+
+:Chamber a owl:Class .
 

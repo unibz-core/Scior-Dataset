@@ -1,23 +1,21 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/CounterObject> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/ValueObject> .
+:Payment a owl:Class ;
+    rdfs:subClassOf :ValueActivity .
 
-<http://taxonomy.model/DeclaredProvenance> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Provenance> .
+:Production a owl:Class ;
+    rdfs:subClassOf :ValueActivity .
 
-<http://taxonomy.model/EndProduct> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/ValueObject> .
+:Purchase a owl:Class ;
+    rdfs:subClassOf :ValueActivity .
 
-<http://taxonomy.model/GeographicIndication> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Provenance> .
+:Receipt a owl:Class ;
+    rdfs:subClassOf :ValueActivity .
 
-<http://taxonomy.model/RawProduct> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/ValueObject> .
+:Sale a owl:Class ;
+    rdfs:subClassOf :ValueActivity .
 
-<http://taxonomy.model/Provenance> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/ValueObject> .
-
-<http://taxonomy.model/ValueObject> a owl:Class .
+:ValueActivity a owl:Class .
 

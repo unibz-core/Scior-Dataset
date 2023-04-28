@@ -1,11 +1,12 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Patient> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Person> .
+:BandpassFilter a owl:Class ;
+    rdfs:subClassOf :FilteringTecnique .
 
-<http://taxonomy.model/Physician> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Person> .
+:LowpassFilter a owl:Class ;
+    rdfs:subClassOf :FilteringTecnique .
 
-<http://taxonomy.model/Person> a owl:Class .
+:FilteringTecnique a owl:Class .
 

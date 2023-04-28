@@ -1,8 +1,18 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/AppleColorSpace> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/AppleQualitySpace> .
+:PrototypicalApplePathogenSignPhotograph a owl:Class ;
+    rdfs:subClassOf :ApplePathogenInfectionPhotograph .
 
-<http://taxonomy.model/AppleQualitySpace> a owl:Class .
+:PrototypicalAppleSymptomsPhotograph a owl:Class ;
+    rdfs:subClassOf :AppleSymptomsPhotograph .
+
+:ApplePathogenInfectionPhotograph a owl:Class ;
+    rdfs:subClassOf :Photograph .
+
+:AppleSymptomsPhotograph a owl:Class ;
+    rdfs:subClassOf :Photograph .
+
+:Photograph a owl:Class .
 

@@ -1,11 +1,18 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/MacroEnvironment> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Environment> .
+:EtimologicalUmbrellaCollection a owl:Class ;
+    rdfs:subClassOf :CollectionInstrument .
 
-<http://taxonomy.model/MicroEnvironment> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Environment> .
+:NetCollection a owl:Class ;
+    rdfs:subClassOf :CollectionInstrument .
 
-<http://taxonomy.model/Environment> a owl:Class .
+:TrapCollection a owl:Class ;
+    rdfs:subClassOf :CollectionInstrument .
+
+:Instrument a owl:Class .
+
+:CollectionInstrument a owl:Class ;
+    rdfs:subClassOf :Instrument .
 

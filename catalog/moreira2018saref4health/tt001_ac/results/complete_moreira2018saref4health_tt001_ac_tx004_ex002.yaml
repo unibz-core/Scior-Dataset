@@ -1,44 +1,41 @@
-ElectricPotential:
-  can_type: []
-  detected_in: []
+ECGSampleSequence:
+  can_type:
+  - AntiRigidType
+  - NonRigidType
+  - RigidType
+  - Role
+  - SemiRigidType
+  - SubKind
   input: false
-  is_incomplete: false
   is_type:
-  - gufo:Kind
-  - gufo:RigidType
-  - gufo:Sortal
+  - EndurantType
+  - Sortal
   not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
+  - Category
+  - Kind
+  - Mixin
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - RoleMixin
 ---
-UnitOfMeasurement:
+TimeSeriesMeasurements:
   can_type: []
-  detected_in:
-  - ns_s_spe
   input: true
-  is_incomplete: true
   is_type:
-  - gufo:Category
-  - gufo:NonSortal
-  - gufo:RigidType
+  - EndurantType
+  - Kind
+  - RigidType
+  - Sortal
   not_type:
-  - gufo:AntiRigidType
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:Kind
-  - gufo:SubKind
+  - AntiRigidType
+  - Category
+  - Mixin
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - SubKind

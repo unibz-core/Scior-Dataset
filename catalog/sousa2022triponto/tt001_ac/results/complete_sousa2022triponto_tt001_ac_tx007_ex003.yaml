@@ -1,65 +1,188 @@
-Reservation:
+Adult:
+  can_type:
+  - AntiRigidType
+  - Category
+  - Kind
+  - Mixin
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - RigidType
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - Sortal
+  - SubKind
+  input: false
+  is_type:
+  - EndurantType
+  not_type: []
+---
+Child:
+  can_type:
+  - AntiRigidType
+  - Category
+  - Kind
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - RigidType
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - Sortal
+  - SubKind
+  input: false
+  is_type:
+  - EndurantType
+  not_type:
+  - Mixin
+---
+Costumer:
   can_type: []
-  detected_in: []
   input: true
-  is_incomplete: false
   is_type:
-  - gufo:Kind
-  - gufo:RigidType
-  - gufo:Sortal
+  - AntiRigidType
+  - EndurantType
+  - NonRigidType
+  - Role
+  - Sortal
   not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
+  - Category
+  - Kind
+  - Mixin
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - RigidType
+  - RoleMixin
+  - SemiRigidType
+  - SubKind
 ---
-Airbnb_Reservation:
+Driver:
   can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
+  - AntiRigidType
+  - Category
+  - Kind
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - RigidType
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - Sortal
+  - SubKind
   input: false
-  is_incomplete: false
   is_type:
-  - gufo:Sortal
+  - EndurantType
   not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
+  - Mixin
 ---
-Hotel_Reservation:
+International_Tourist:
   can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
+  - AntiRigidType
+  - Category
+  - Kind
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - RigidType
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - Sortal
+  - SubKind
   input: false
-  is_incomplete: false
   is_type:
-  - gufo:Sortal
+  - EndurantType
   not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
+  - Mixin
+---
+National_Tourist:
+  can_type:
+  - AntiRigidType
+  - Category
+  - Kind
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - RigidType
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - Sortal
+  - SubKind
+  input: false
+  is_type:
+  - EndurantType
+  not_type:
+  - Mixin
+---
+Passenger:
+  can_type:
+  - AntiRigidType
+  - Category
+  - Kind
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - RigidType
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - Sortal
+  - SubKind
+  input: false
+  is_type:
+  - EndurantType
+  not_type:
+  - Mixin
+---
+Person:
+  can_type:
+  - AntiRigidType
+  - Category
+  - Kind
+  - Mixin
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - RigidType
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - Sortal
+  - SubKind
+  input: false
+  is_type:
+  - EndurantType
+  not_type: []
+---
+Tourist:
+  can_type:
+  - AntiRigidType
+  - Category
+  - Kind
+  - Mixin
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - RigidType
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - Sortal
+  - SubKind
+  input: false
+  is_type:
+  - EndurantType
+  not_type: []

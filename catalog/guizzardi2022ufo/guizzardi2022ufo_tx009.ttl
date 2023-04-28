@@ -1,23 +1,35 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Jog_State> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Jogging_Event> .
+:Husband a owl:Class ;
+    rdfs:subClassOf :Man,
+        :Spouse .
 
-<http://taxonomy.model/Jogging_Process> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Jogging_Perdurant> .
+:Jogger a owl:Class ;
+    rdfs:subClassOf :Person .
 
-<http://taxonomy.model/Running_While_Jogging> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Jogging_Locomotion> .
+:Student a owl:Class ;
+    rdfs:subClassOf :Person .
 
-<http://taxonomy.model/Walking_While_Jogging> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Jogging_Locomotion> .
+:Teacher a owl:Class ;
+    rdfs:subClassOf :Person .
 
-<http://taxonomy.model/Jogging_Event> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Jogging_Perdurant> .
+:Walker a owl:Class ;
+    rdfs:subClassOf :Person .
 
-<http://taxonomy.model/Jogging_Locomotion> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Jogging_Event> .
+:Wife a owl:Class ;
+    rdfs:subClassOf :Spouse,
+        :Woman .
 
-<http://taxonomy.model/Jogging_Perdurant> a owl:Class .
+:Man a owl:Class ;
+    rdfs:subClassOf :Person .
+
+:Woman a owl:Class ;
+    rdfs:subClassOf :Person .
+
+:Spouse a owl:Class ;
+    rdfs:subClassOf :Person .
+
+:Person a owl:Class .
 

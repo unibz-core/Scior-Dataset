@@ -1,8 +1,15 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/AlbumTrack> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Track> .
+:Belief a owl:Class ;
+    rdfs:subClassOf :MentalState .
 
-<http://taxonomy.model/Track> a owl:Class .
+:Desire a owl:Class ;
+    rdfs:subClassOf :MentalState .
+
+:Intention a owl:Class ;
+    rdfs:subClassOf :MentalState .
+
+:MentalState a owl:Class .
 

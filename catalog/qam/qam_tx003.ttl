@@ -1,11 +1,36 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Appraiser> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Human_Resource> .
+:Corretive_Action a owl:Class ;
+    rdfs:subClassOf :Issue .
 
-<http://taxonomy.model/Human_Resource> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Person> .
+:Effective_Issue a owl:Class ;
+    rdfs:subClassOf :Finished_Issue .
 
-<http://taxonomy.model/Person> a owl:Class .
+:Implementing_Issue a owl:Class ;
+    rdfs:subClassOf :Issue .
+
+:Improvement_Suggestion a owl:Class ;
+    rdfs:subClassOf :Issue .
+
+:NC_Issue a owl:Class ;
+    rdfs:subClassOf :Issue .
+
+:Non_Effective_Issue a owl:Class ;
+    rdfs:subClassOf :Finished_Issue .
+
+:Planned_Issue a owl:Class ;
+    rdfs:subClassOf :Issue .
+
+:Preventive_Action a owl:Class ;
+    rdfs:subClassOf :Issue .
+
+:Problem_Issue a owl:Class ;
+    rdfs:subClassOf :Issue .
+
+:Finished_Issue a owl:Class ;
+    rdfs:subClassOf :Issue .
+
+:Issue a owl:Class .
 

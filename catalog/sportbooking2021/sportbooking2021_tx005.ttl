@@ -1,11 +1,15 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Accepted> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Instructor_confirmation> .
+:Active a owl:Class ;
+    rdfs:subClassOf :User .
 
-<http://taxonomy.model/Cancelled> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Instructor_confirmation> .
+:Inactive a owl:Class ;
+    rdfs:subClassOf :User .
 
-<http://taxonomy.model/Instructor_confirmation> a owl:Class .
+:Person a owl:Class .
+
+:User a owl:Class ;
+    rdfs:subClassOf :Person .
 

@@ -1,11 +1,21 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Animal_Species> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Biological_Species> .
+:Assembling_Laboratory a owl:Class ;
+    rdfs:subClassOf :Research_Laboratory .
 
-<http://taxonomy.model/Virus_Species> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Biological_Species> .
+:Biological_Data_Institution a owl:Class ;
+    rdfs:subClassOf :Organization .
 
-<http://taxonomy.model/Biological_Species> a owl:Class .
+:Sampling_Laboratory a owl:Class ;
+    rdfs:subClassOf :Research_Laboratory .
+
+:Sequencing_Laboratory a owl:Class ;
+    rdfs:subClassOf :Research_Laboratory .
+
+:Organization a owl:Class .
+
+:Research_Laboratory a owl:Class ;
+    rdfs:subClassOf :Organization .
 

@@ -1,43 +1,104 @@
-Component_Charter:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-Charter:
+Double_Part:
   can_type: []
-  detected_in: []
   input: true
-  is_incomplete: false
   is_type:
-  - gufo:Kind
-  - gufo:RigidType
-  - gufo:Sortal
+  - EndurantType
+  - RigidType
+  - Sortal
+  - SubKind
   not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
+  - AntiRigidType
+  - Category
+  - Kind
+  - Mixin
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - Role
+  - RoleMixin
+  - SemiRigidType
+---
+General_Part:
+  can_type:
+  - AntiRigidType
+  - NonRigidType
+  - Phase
+  - RigidType
+  - Role
+  - SemiRigidType
+  - SubKind
+  input: false
+  is_type:
+  - EndurantType
+  - Sortal
+  not_type:
+  - Category
+  - Kind
+  - Mixin
+  - NonSortal
+  - PhaseMixin
+  - RoleMixin
+---
+Multiple_Part:
+  can_type:
+  - AntiRigidType
+  - NonRigidType
+  - Phase
+  - RigidType
+  - Role
+  - SemiRigidType
+  - SubKind
+  input: false
+  is_type:
+  - EndurantType
+  - Sortal
+  not_type:
+  - Category
+  - Kind
+  - Mixin
+  - NonSortal
+  - PhaseMixin
+  - RoleMixin
+---
+Part:
+  can_type: []
+  input: false
+  is_type:
+  - EndurantType
+  - Kind
+  - RigidType
+  - Sortal
+  not_type:
+  - AntiRigidType
+  - Category
+  - Mixin
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - SubKind
+---
+Special_Part:
+  can_type:
+  - AntiRigidType
+  - NonRigidType
+  - Phase
+  - RigidType
+  - Role
+  - SemiRigidType
+  - SubKind
+  input: false
+  is_type:
+  - EndurantType
+  - Sortal
+  not_type:
+  - Category
+  - Kind
+  - Mixin
+  - NonSortal
+  - PhaseMixin
+  - RoleMixin

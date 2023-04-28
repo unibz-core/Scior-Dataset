@@ -1,20 +1,18 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/CelestialBody> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Object> .
+:Future a owl:Class ;
+    rdfs:subClassOf :Time .
 
-<http://taxonomy.model/Moved(PassiveObject)> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Object> .
+:Past a owl:Class ;
+    rdfs:subClassOf :Time .
 
-<http://taxonomy.model/Mover(ActiveObject)> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Object> .
+:Present a owl:Class ;
+    rdfs:subClassOf :Time .
 
-<http://taxonomy.model/SublunaryBody> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Object> .
+:Number a owl:Class .
 
-<http://taxonomy.model/Universe> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Object> .
-
-<http://taxonomy.model/Object> a owl:Class .
+:Time a owl:Class ;
+    rdfs:subClassOf :Number .
 

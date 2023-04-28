@@ -1,14 +1,21 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Sandstone> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Siliciclastic_Rock> .
+:Reservoir a owl:Class ;
+    rdfs:subClassOf :LithologicUnit_qua_sandstone .
 
-<http://taxonomy.model/Shale> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Siliciclastic_Rock> .
+:Seal a owl:Class ;
+    rdfs:subClassOf :LithologicUnit_qua_shale .
 
-<http://taxonomy.model/Rock> a owl:Class .
+:Source_Rock a owl:Class ;
+    rdfs:subClassOf :LithologicUnit_qua_shale .
 
-<http://taxonomy.model/Siliciclastic_Rock> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Rock> .
+:LithologicUnit_qua_sandstone a owl:Class ;
+    rdfs:subClassOf :Lithological_unit .
+
+:LithologicUnit_qua_shale a owl:Class ;
+    rdfs:subClassOf :Lithological_unit .
+
+:Lithological_unit a owl:Class .
 

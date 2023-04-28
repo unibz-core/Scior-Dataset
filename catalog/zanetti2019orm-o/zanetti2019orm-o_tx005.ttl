@@ -1,11 +1,18 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Foreign_Key_Mapping> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Variable_Mapping> .
+:Multiple_Entities_Table a owl:Class ;
+    rdfs:subClassOf :Entity_Table .
 
-<http://taxonomy.model/Primary_Key_Mapping> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Variable_Mapping> .
+:Relationship_Association_Table a owl:Class ;
+    rdfs:subClassOf :Table .
 
-<http://taxonomy.model/Variable_Mapping> a owl:Class .
+:Single_Entity_Table a owl:Class ;
+    rdfs:subClassOf :Entity_Table .
+
+:Entity_Table a owl:Class ;
+    rdfs:subClassOf :Table .
+
+:Table a owl:Class .
 

@@ -1,8 +1,26 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Intention> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Mental_Moment> .
+:Abstract_Object a owl:Class ;
+    rdfs:subClassOf :Crime_Object,
+        :Social_Object .
 
-<http://taxonomy.model/Mental_Moment> a owl:Class .
+:Material_Object a owl:Class ;
+    rdfs:subClassOf :Crime_Object,
+        :Physical_Object .
+
+:Legal_Object a owl:Class ;
+    rdfs:subClassOf :Object .
+
+:Physical_Object a owl:Class ;
+    rdfs:subClassOf :Object .
+
+:Social_Object a owl:Class ;
+    rdfs:subClassOf :Object .
+
+:Crime_Object a owl:Class ;
+    rdfs:subClassOf :Legal_Object .
+
+:Object a owl:Class .
 

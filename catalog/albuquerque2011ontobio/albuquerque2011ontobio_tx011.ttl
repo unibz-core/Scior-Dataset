@@ -1,26 +1,120 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Asexual> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Gender> .
+:AmazonicRegion a owl:Class ;
+    rdfs:subClassOf :PhytophysiognomicRegion .
 
-<http://taxonomy.model/Bisexual> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Gender> .
+:AraucariasRegion a owl:Class ;
+    rdfs:subClassOf :PhytophysiognomicRegion .
 
-<http://taxonomy.model/Female> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Gender> .
+:AtlanticRegion a owl:Class ;
+    rdfs:subClassOf :PhytophysiognomicRegion .
 
-<http://taxonomy.model/Hermaphrodite> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Gender> .
+:CaatingaRegion a owl:Class ;
+    rdfs:subClassOf :PhytophysiognomicRegion .
 
-<http://taxonomy.model/Male> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Gender> .
+:CerradoRegion a owl:Class ;
+    rdfs:subClassOf :PhytophysiognomicRegion .
 
-<http://taxonomy.model/NonExamined> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Gender> .
+:City a owl:Class ;
+    rdfs:subClassOf :SocialPoliticalRegion .
 
-<http://taxonomy.model/Unknown> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Gender> .
+:CityLand a owl:Class ;
+    rdfs:subClassOf :PublicLocation .
 
-<http://taxonomy.model/Gender> a owl:Class .
+:CocaisRegion a owl:Class ;
+    rdfs:subClassOf :PhytophysiognomicRegion .
+
+:CollectionLocation a owl:Class ;
+    rdfs:subClassOf :SpatialLocation .
+
+:Community a owl:Class ;
+    rdfs:subClassOf :Location .
+
+:ConservationUnity a owl:Class ;
+    rdfs:subClassOf :Location .
+
+:CostalRegion a owl:Class ;
+    rdfs:subClassOf :PhytophysiognomicRegion .
+
+:Country a owl:Class ;
+    rdfs:subClassOf :SocialPoliticalRegion .
+
+:DevoluteLand a owl:Class ;
+    rdfs:subClassOf :FederalArea .
+
+:Equatorial a owl:Class ;
+    rdfs:subClassOf :ClimateRegion .
+
+:FederalLand a owl:Class ;
+    rdfs:subClassOf :FederalArea .
+
+:FieldsRegion a owl:Class ;
+    rdfs:subClassOf :PhytophysiognomicRegion .
+
+:GeographicPoint a owl:Class ;
+    rdfs:subClassOf :SpatialLocation .
+
+:HumidSubtropical a owl:Class ;
+    rdfs:subClassOf :ClimateRegion .
+
+:IndiandLand a owl:Class ;
+    rdfs:subClassOf :PublicLocation .
+
+:PatanalRegion a owl:Class ;
+    rdfs:subClassOf :PhytophysiognomicRegion .
+
+:PrivateLocation a owl:Class ;
+    rdfs:subClassOf :Location .
+
+:Semiarid a owl:Class ;
+    rdfs:subClassOf :ClimateRegion .
+
+:Settlement a owl:Class ;
+    rdfs:subClassOf :Location .
+
+:State a owl:Class ;
+    rdfs:subClassOf :SocialPoliticalRegion .
+
+:StateLand a owl:Class ;
+    rdfs:subClassOf :PublicLocation .
+
+:Temperate a owl:Class ;
+    rdfs:subClassOf :ClimateRegion .
+
+:Thorp a owl:Class ;
+    rdfs:subClassOf :Location .
+
+:Tropical a owl:Class ;
+    rdfs:subClassOf :ClimateRegion .
+
+:TropicalWetAndDry a owl:Class ;
+    rdfs:subClassOf :ClimateRegion .
+
+:Village a owl:Class ;
+    rdfs:subClassOf :Location .
+
+:FederalArea a owl:Class ;
+    rdfs:subClassOf :PublicLocation .
+
+:GeographicSpace a owl:Class ;
+    rdfs:subClassOf :SpatialLocation .
+
+:SpatialLocation a owl:Class .
+
+:PublicLocation a owl:Class ;
+    rdfs:subClassOf :Location .
+
+:SocialPoliticalRegion a owl:Class ;
+    rdfs:subClassOf :GeographicSpace .
+
+:ClimateRegion a owl:Class ;
+    rdfs:subClassOf :GeographicSpace .
+
+:Location a owl:Class ;
+    rdfs:subClassOf :SocialPoliticalRegion .
+
+:PhytophysiognomicRegion a owl:Class ;
+    rdfs:subClassOf :GeographicSpace .
 

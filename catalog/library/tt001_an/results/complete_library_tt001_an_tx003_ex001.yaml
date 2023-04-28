@@ -1,110 +1,188 @@
-Periodical:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type: []
-  not_type: []
----
-Book:
+Administrative:
   can_type: []
-  detected_in:
-  - nk_k_sup
   input: true
-  is_incomplete: true
   is_type:
-  - gufo:SubKind
-  - gufo:RigidType
-  - gufo:Sortal
+  - AntiRigidType
+  - EndurantType
+  - NonRigidType
+  - Role
+  - Sortal
   not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
+  - Category
+  - Kind
+  - Mixin
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - RigidType
+  - RoleMixin
+  - SemiRigidType
+  - SubKind
 ---
-Videotape:
+Employee:
   can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
+  - AntiRigidType
+  - Category
+  - Kind
+  - Mixin
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - RigidType
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - Sortal
+  - SubKind
   input: false
-  is_incomplete: false
-  is_type: []
+  is_type:
+  - EndurantType
   not_type: []
 ---
-Work:
+Graduate_Student:
   can_type:
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:RigidType
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
+  - AntiRigidType
+  - Category
+  - Kind
+  - Mixin
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - RigidType
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - Sortal
+  - SubKind
   input: false
-  is_incomplete: false
-  is_type: []
-  not_type:
-  - gufo:AntiRigidType
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
+  is_type:
+  - EndurantType
+  not_type: []
 ---
-Dvd:
+Intern:
   can_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Kind
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:Sortal
-  - gufo:SubKind
-  detected_in: []
+  - AntiRigidType
+  - Kind
+  - NonRigidType
+  - Phase
+  - RigidType
+  - Role
+  - SemiRigidType
+  - SubKind
   input: false
-  is_incomplete: false
-  is_type: []
+  is_type:
+  - EndurantType
+  - Sortal
+  not_type:
+  - Category
+  - Mixin
+  - NonSortal
+  - PhaseMixin
+  - RoleMixin
+---
+Person:
+  can_type:
+  - AntiRigidType
+  - Category
+  - Kind
+  - Mixin
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - RigidType
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - Sortal
+  - SubKind
+  input: false
+  is_type:
+  - EndurantType
+  not_type: []
+---
+Professor:
+  can_type:
+  - AntiRigidType
+  - Category
+  - Kind
+  - Mixin
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - RigidType
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - Sortal
+  - SubKind
+  input: false
+  is_type:
+  - EndurantType
+  not_type: []
+---
+Regular:
+  can_type:
+  - AntiRigidType
+  - Kind
+  - NonRigidType
+  - Phase
+  - RigidType
+  - Role
+  - SemiRigidType
+  - SubKind
+  input: false
+  is_type:
+  - EndurantType
+  - Sortal
+  not_type:
+  - Category
+  - Mixin
+  - NonSortal
+  - PhaseMixin
+  - RoleMixin
+---
+Student:
+  can_type:
+  - AntiRigidType
+  - Category
+  - Kind
+  - Mixin
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - RigidType
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - Sortal
+  - SubKind
+  input: false
+  is_type:
+  - EndurantType
+  not_type: []
+---
+Undergraduate_Student:
+  can_type:
+  - AntiRigidType
+  - Category
+  - Kind
+  - Mixin
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - RigidType
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - Sortal
+  - SubKind
+  input: false
+  is_type:
+  - EndurantType
   not_type: []

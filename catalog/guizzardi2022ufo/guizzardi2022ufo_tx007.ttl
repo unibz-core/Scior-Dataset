@@ -1,8 +1,15 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Jogging_Track> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Track> .
+:Originally_Intended_Destination a owl:Class ;
+    rdfs:subClassOf :Destination .
 
-<http://taxonomy.model/Track> a owl:Class .
+:Redirected_Destination a owl:Class ;
+    rdfs:subClassOf :Destination .
+
+:Place a owl:Class .
+
+:Destination a owl:Class ;
+    rdfs:subClassOf :Place .
 

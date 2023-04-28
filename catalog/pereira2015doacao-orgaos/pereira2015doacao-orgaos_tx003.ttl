@@ -1,8 +1,42 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Sistema_Circulat�rio> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Sistema_Org�nico> .
+:Captador a owl:Class ;
+    rdfs:subClassOf :Pessoa .
 
-<http://taxonomy.model/Sistema_Org�nico> a owl:Class .
+:Doador a owl:Class ;
+    rdfs:subClassOf :Pessoa .
+
+:Homem a owl:Class ;
+    rdfs:subClassOf :Pessoa .
+
+:Mulher a owl:Class ;
+    rdfs:subClassOf :Pessoa .
+
+:Pessoa_Doente a owl:Class ;
+    rdfs:subClassOf :Pessoa_Viva .
+
+<http://taxonomy.model/Pessoa_Saud�vel> a owl:Class ;
+    rdfs:subClassOf :Pessoa_Viva .
+
+:Pessoa_com_ME a owl:Class ;
+    rdfs:subClassOf :Pessoa_Morta .
+
+:Pessoa_com_PCR a owl:Class ;
+    rdfs:subClassOf :Pessoa_Morta .
+
+:Receptor a owl:Class ;
+    rdfs:subClassOf :Pessoa .
+
+:Transplantador a owl:Class ;
+    rdfs:subClassOf :Pessoa .
+
+:Pessoa_Morta a owl:Class ;
+    rdfs:subClassOf :Pessoa .
+
+:Pessoa_Viva a owl:Class ;
+    rdfs:subClassOf :Pessoa .
+
+:Pessoa a owl:Class .
 

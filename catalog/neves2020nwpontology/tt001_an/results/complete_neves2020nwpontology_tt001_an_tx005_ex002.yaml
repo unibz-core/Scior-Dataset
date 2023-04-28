@@ -1,43 +1,62 @@
-Local_Data_Manager:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-Software_Agent:
+Numerical_Weather_Prediction_Models:
   can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
+  input: false
   is_type:
-  - gufo:Kind
-  - gufo:RigidType
-  - gufo:Sortal
+  - EndurantType
+  - Kind
+  - RigidType
+  - Sortal
   not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
+  - AntiRigidType
+  - Category
+  - Mixin
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - SubKind
+---
+Regional_Numerical_Models:
+  can_type: []
+  input: true
+  is_type:
+  - EndurantType
+  - RigidType
+  - Sortal
+  - SubKind
+  not_type:
+  - AntiRigidType
+  - Category
+  - Kind
+  - Mixin
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - Role
+  - RoleMixin
+  - SemiRigidType
+---
+World_Numerical_Models:
+  can_type:
+  - AntiRigidType
+  - NonRigidType
+  - Phase
+  - RigidType
+  - Role
+  - SemiRigidType
+  - SubKind
+  input: false
+  is_type:
+  - EndurantType
+  - Sortal
+  not_type:
+  - Category
+  - Kind
+  - Mixin
+  - NonSortal
+  - PhaseMixin
+  - RoleMixin

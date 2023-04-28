@@ -1,14 +1,18 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Damage> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Impact> .
+:Crew a owl:Class ;
+    rdfs:subClassOf :Flight_Participant .
 
-<http://taxonomy.model/Injury> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Impact> .
+:Flight_Participant a owl:Class ;
+    rdfs:subClassOf :TransportObject .
 
-<http://taxonomy.model/Trope> a owl:Class .
+:Physical_Object a owl:Class .
 
-<http://taxonomy.model/Impact> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Trope> .
+:Spatial_Object a owl:Class ;
+    rdfs:subClassOf :Physical_Object .
+
+:TransportObject a owl:Class ;
+    rdfs:subClassOf :Spatial_Object .
 

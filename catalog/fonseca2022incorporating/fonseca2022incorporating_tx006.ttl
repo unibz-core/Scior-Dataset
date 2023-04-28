@@ -1,17 +1,21 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Extinct_Species> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Bird_Species> .
+:Awarded_Work a owl:Class ;
+    rdfs:subClassOf :Creative_Work .
 
-<http://taxonomy.model/Least_Concern_Species> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Bird_Species> .
+:Copyrighted_Work a owl:Class ;
+    rdfs:subClassOf :Creative_Work .
 
-<http://taxonomy.model/Recognized_Species> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Bird_Species> .
+:Painting a owl:Class ;
+    rdfs:subClassOf :Creative_Work .
 
-<http://taxonomy.model/Threatened_Species> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Bird_Species> .
+:Public_Domain_Work a owl:Class ;
+    rdfs:subClassOf :Creative_Work .
 
-<http://taxonomy.model/Bird_Species> a owl:Class .
+:Sculpture a owl:Class ;
+    rdfs:subClassOf :Creative_Work .
+
+:Creative_Work a owl:Class .
 

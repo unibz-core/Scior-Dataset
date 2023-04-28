@@ -1,17 +1,15 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Accommodation> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Physical_Good> .
+:Centralized_Offering a owl:Class ;
+    rdfs:subClassOf :Offering_On_The_Platform .
 
-<http://taxonomy.model/Digital_Good> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Good> .
+:One-time_listing a owl:Class ;
+    rdfs:subClassOf :Listing .
 
-<http://taxonomy.model/Under-Utilized_Product> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Physical_Good> .
+:Listing a owl:Class ;
+    rdfs:subClassOf :Offering_On_The_Platform .
 
-<http://taxonomy.model/Good> a owl:Class .
-
-<http://taxonomy.model/Physical_Good> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Good> .
+:Offering_On_The_Platform a owl:Class .
 

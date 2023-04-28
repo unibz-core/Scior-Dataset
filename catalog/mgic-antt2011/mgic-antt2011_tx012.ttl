@@ -1,39 +1,68 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/AL_Iniciada_por_Reclama��o> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Autua��o_por_Lavratura> .
+:Arrendamento_Financeiro_Imobilizado a owl:Class ;
+    rdfs:subClassOf :Arrendamento_Financeiro,
+        :Investimento_em_Imobilizado .
 
-<http://taxonomy.model/ATe_por_Lavratura_de_AI> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Autua��o_de_Transporte>,
-        <http://taxonomy.model/Autua��o_por_Lavratura> .
+<http://taxonomy.model/Arrendamento_Financeiro_Intang�vel> a owl:Class ;
+    rdfs:subClassOf :Arrendamento_Financeiro,
+        <http://taxonomy.model/Investimento_em_Intang�vel> .
 
-<http://taxonomy.model/ATe_por_N._Infra��o_Iniciada_por_TAC> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/ATe_por_Notifica��o_de_Infra��o> .
+:Arrendamento_Operacional a owl:Class ;
+    rdfs:subClassOf :Arrendamento,
+        <http://taxonomy.model/Investimento_em_Intang�vel> .
 
-<http://taxonomy.model/ATe_por_Notifica��o_do_Infrator> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Autua��o_de_Transporte> .
+<http://taxonomy.model/Cess�o_de_Bens> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Aquisi��o_de_Permanente> .
 
-<http://taxonomy.model/Autua��o_Proveniente_de_TRO> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Autua��o_de_Transporte> .
+:Compra_Especulativa a owl:Class ;
+    rdfs:subClassOf :Compra_de_Bem .
 
-<http://taxonomy.model/Autua��o_com_Aplica��o_de_MA> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Autua��o_por_Lavratura> .
+:Compra_Imobilizado a owl:Class ;
+    rdfs:subClassOf :Compra_de_Bem,
+        :Investimento_em_Imobilizado .
 
-<http://taxonomy.model/Autua��o_com_Prazo> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Autua��o_de_Transporte> .
+<http://taxonomy.model/Compra_Intang�vel> a owl:Class ;
+    rdfs:subClassOf :Compra_de_Bem,
+        <http://taxonomy.model/Investimento_em_Intang�vel> .
 
-<http://taxonomy.model/Autua��o_de_Tr�nsito> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Autua��o>,
-        <http://taxonomy.model/Autua��o_por_Lavratura> .
+<http://taxonomy.model/Constru��o_de_Imobilizado> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Constru��o>,
+        :Investimento_em_Imobilizado .
 
-<http://taxonomy.model/ATe_por_Notifica��o_de_Infra��o> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Autua��o_de_Transporte> .
+<http://taxonomy.model/Constru��o_de_Intang�vel> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Constru��o>,
+        <http://taxonomy.model/Investimento_em_Intang�vel> .
 
-<http://taxonomy.model/Autua��o> a owl:Class .
+<http://taxonomy.model/Emiss�o_de_Deb�nture> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Obriga��o_Financeira> .
 
-<http://taxonomy.model/Autua��o_por_Lavratura> a owl:Class .
+<http://taxonomy.model/Empr�stimo> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Obriga��o_Financeira> .
 
-<http://taxonomy.model/Autua��o_de_Transporte> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Autua��o> .
+:Financiamento a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Obriga��o_Financeira> .
+
+:Arrendamento a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Aquisi��o_de_Permanente> .
+
+:Arrendamento_Financeiro a owl:Class ;
+    rdfs:subClassOf :Arrendamento,
+        <http://taxonomy.model/Obriga��o_Financeira> .
+
+<http://taxonomy.model/Constru��o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Aquisi��o_de_Permanente> .
+
+:Compra_de_Bem a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Aquisi��o_de_Permanente> .
+
+:Investimento_em_Imobilizado a owl:Class .
+
+<http://taxonomy.model/Aquisi��o_de_Permanente> a owl:Class .
+
+<http://taxonomy.model/Investimento_em_Intang�vel> a owl:Class .
+
+<http://taxonomy.model/Obriga��o_Financeira> a owl:Class .
 

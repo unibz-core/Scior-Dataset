@@ -1,8 +1,21 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Representa��o_N�o_An�nima> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Representa��o> .
+<http://taxonomy.model/Manifesta��o_Com_Localiza��o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Manifesta��o_de_Usu�rio_de_Rodovia> .
 
-<http://taxonomy.model/Representa��o> a owl:Class .
+<http://taxonomy.model/Reclama��o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Manifesta��o_de_Usu�rio_de_Rodovia> .
+
+:Ressarcimento a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Solicita��o> .
+
+<http://taxonomy.model/Sugest�o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Manifesta��o_de_Usu�rio_de_Rodovia> .
+
+<http://taxonomy.model/Solicita��o> a owl:Class ;
+    rdfs:subClassOf <http://taxonomy.model/Manifesta��o_de_Usu�rio_de_Rodovia> .
+
+<http://taxonomy.model/Manifesta��o_de_Usu�rio_de_Rodovia> a owl:Class .
 

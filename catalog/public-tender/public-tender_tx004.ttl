@@ -1,8 +1,18 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Grant_Committee> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Committee> .
+:Bidder_in_Auction a owl:Class ;
+    rdfs:subClassOf :Bidder,
+        :Company_Participant_of_Public_Auction .
 
-<http://taxonomy.model/Committee> a owl:Class .
+:Winner_of_Public_Auction a owl:Class ;
+    rdfs:subClassOf :Company_Participant_of_Public_Auction .
+
+:Bidder a owl:Class ;
+    rdfs:subClassOf :Company .
+
+:Company a owl:Class .
+
+:Company_Participant_of_Public_Auction a owl:Class .
 

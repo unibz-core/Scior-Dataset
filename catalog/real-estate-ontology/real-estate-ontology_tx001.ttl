@@ -1,37 +1,38 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Company_as_Lessor> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Company_as_Owner>,
-        <http://taxonomy.model/Land_Lord_(Lessor)> .
+:Company_as_Lessor a owl:Class ;
+    rdfs:subClassOf :Company_as_Owner,
+        :Land_Lord_\(Lessor\) .
 
-<http://taxonomy.model/Company_as_Tenant> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Company>,
-        <http://taxonomy.model/Tenant_(Lessee)> .
+:Company_as_Tenant a owl:Class ;
+    rdfs:subClassOf :Company,
+        :Tenant_\(Lessee\) .
 
-<http://taxonomy.model/Person_as_Lessor> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Land_Lord_(Lessor)>,
-        <http://taxonomy.model/Person_as_Owner> .
+:Person_as_Lessor a owl:Class ;
+    rdfs:subClassOf :Land_Lord_\(Lessor\),
+        :Person_as_Owner .
 
-<http://taxonomy.model/Person_as_Tenant> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Person>,
-        <http://taxonomy.model/Tenant_(Lessee)> .
+:Person_as_Tenant a owl:Class ;
+    rdfs:subClassOf :Person,
+        :Tenant_\(Lessee\) .
 
-<http://taxonomy.model/Company_as_Owner> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Company>,
-        <http://taxonomy.model/Owner> .
+:Company_as_Owner a owl:Class ;
+    rdfs:subClassOf :Company,
+        :Owner .
 
-<http://taxonomy.model/Person_as_Owner> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Owner>,
-        <http://taxonomy.model/Person> .
+:Person_as_Owner a owl:Class ;
+    rdfs:subClassOf :Owner,
+        :Person .
 
-<http://taxonomy.model/Company> a owl:Class .
+:Company a owl:Class .
 
-<http://taxonomy.model/Land_Lord_(Lessor)> a owl:Class .
+:Land_Lord_\(Lessor\) a owl:Class .
 
-<http://taxonomy.model/Owner> a owl:Class .
+:Owner a owl:Class .
 
-<http://taxonomy.model/Person> a owl:Class .
+:Person a owl:Class .
 
-<http://taxonomy.model/Tenant_(Lessee)> a owl:Class .
+:Tenant_\(Lessee\) a owl:Class .
 

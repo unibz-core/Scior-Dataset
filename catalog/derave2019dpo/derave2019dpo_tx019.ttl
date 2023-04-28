@@ -1,23 +1,44 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Fixed_Fee> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Revenue_Stream> .
+:Booking a owl:Class ;
+    rdfs:subClassOf :Transaction .
 
-<http://taxonomy.model/Revenue_Stream_Payed_by_Customer> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Revenue_Stream> .
+:Centralized_Transaction a owl:Class ;
+    rdfs:subClassOf :Transaction .
 
-<http://taxonomy.model/Revenue_Stream_Payed_by_Provider> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Revenue_Stream> .
+:Decentralized_Transaction a owl:Class ;
+    rdfs:subClassOf :Transaction .
 
-<http://taxonomy.model/Subscription_Fee> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Revenue_Stream> .
+:Immediate_Acces_Transaction a owl:Class ;
+    rdfs:subClassOf :Transaction .
 
-<http://taxonomy.model/Transportation_Cost> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Commission_Fee> .
+:Investment a owl:Class ;
+    rdfs:subClassOf :MS_User_Affiliation .
 
-<http://taxonomy.model/Commission_Fee> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Revenue_Stream> .
+:Quoted_Transaction a owl:Class ;
+    rdfs:subClassOf :Transaction .
 
-<http://taxonomy.model/Revenue_Stream> a owl:Class .
+:Registration a owl:Class ;
+    rdfs:subClassOf :MS_User_Affiliation,
+        :One-Sided_Platform_User_Affiliation,
+        :User_Affiliation_Agreement .
+
+:Subscription a owl:Class ;
+    rdfs:subClassOf :MS_User_Affiliation,
+        :One-Sided_Platform_User_Affiliation,
+        :User_Affiliation_Agreement .
+
+:One-Sided_Platform_User_Affiliation a owl:Class ;
+    rdfs:subClassOf :User_Affiliation_Agreement .
+
+:MS_User_Affiliation a owl:Class ;
+    rdfs:subClassOf :User_Affiliation_Agreement .
+
+:Transaction a owl:Class ;
+    rdfs:subClassOf :MS_User_Affiliation,
+        :User_Affiliation_Agreement .
+
+:User_Affiliation_Agreement a owl:Class .
 

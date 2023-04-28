@@ -1,20 +1,62 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Multiple_Equipment_Composed_Site> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Equipment_Composed_Site> .
+:Client_Section_Layer a owl:Class ;
+    rdfs:subClassOf :Related_Layer_Network,
+        :Section_Layer_Network .
 
-<http://taxonomy.model/Single_Equipment_Site> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Equipment_Composed_Site> .
+:Composed_PM_Layer a owl:Class ;
+    rdfs:subClassOf :Physical_Media_Layer_Network .
 
-<http://taxonomy.model/Sink_Site> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Site> .
+:LC_Composed_Layer_Network a owl:Class ;
+    rdfs:subClassOf :Layer_Network .
 
-<http://taxonomy.model/Source_Site> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Site> .
+:Matrix_Composed_Path_Layer a owl:Class ;
+    rdfs:subClassOf :Path_Layer_Network_2 .
 
-<http://taxonomy.model/Equipment_Composed_Site> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Site> .
+:Path-Path_Client_Layer a owl:Class ;
+    rdfs:subClassOf :Client_Path_Layer .
 
-<http://taxonomy.model/Site> a owl:Class .
+:Path-Section_Client_Layer a owl:Class ;
+    rdfs:subClassOf :Client_Path_Layer .
+
+:Path_Layer_Network a owl:Class ;
+    rdfs:subClassOf :Path_Layer_Network_2 .
+
+:Server_Path_Layer a owl:Class ;
+    rdfs:subClassOf :Path_Layer_Network_2,
+        :Related_Layer_Network .
+
+:Server_Physical_Media_Layer a owl:Class ;
+    rdfs:subClassOf :Physical_Media_Layer_Network,
+        :Related_Layer_Network .
+
+:Server_Section_Layer a owl:Class ;
+    rdfs:subClassOf :Related_Layer_Network,
+        :Section_Layer_Network .
+
+:Subnetwork_Composed_Path_Layer a owl:Class ;
+    rdfs:subClassOf :Path_Layer_Network_2 .
+
+:Client_Path_Layer a owl:Class ;
+    rdfs:subClassOf :Path_Layer_Network_2,
+        :Related_Layer_Network .
+
+:Physical_Media_Layer_Network a owl:Class ;
+    rdfs:subClassOf :Transmission_Media_Layer_Network .
+
+:Section_Layer_Network a owl:Class ;
+    rdfs:subClassOf :Transmission_Media_Layer_Network .
+
+:Transmission_Media_Layer_Network a owl:Class ;
+    rdfs:subClassOf :Layer_Network .
+
+:Layer_Network a owl:Class .
+
+:Path_Layer_Network_2 a owl:Class ;
+    rdfs:subClassOf :Layer_Network .
+
+:Related_Layer_Network a owl:Class ;
+    rdfs:subClassOf :Layer_Network .
 

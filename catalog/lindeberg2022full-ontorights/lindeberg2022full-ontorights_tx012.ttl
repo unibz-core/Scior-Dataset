@@ -1,29 +1,27 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Detainment_Conditions> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/UFO-B:_Situation> .
+:Digital_File a owl:Class ;
+    rdfs:subClassOf :Digital_Media_Object .
 
-<http://taxonomy.model/Real_Consequence_For_Agent> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Consequence_For_Agent> .
+:Digital_Folder a owl:Class ;
+    rdfs:subClassOf :Digital_Media_Object .
 
-<http://taxonomy.model/Risk> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Counter-factual_Consequence_For_Agent> .
+:Original_Media_Object a owl:Class ;
+    rdfs:subClassOf :Media_Object .
 
-<http://taxonomy.model/UFO-B:_Fact> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/UFO-B:_Situation> .
+:Other_Physical_Object a owl:Class ;
+    rdfs:subClassOf :Physical_Media_Object .
 
-<http://taxonomy.model/UFO-C:_Goal> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/UFO-B:_Counter-factual_situation> .
+:Paper_Document a owl:Class ;
+    rdfs:subClassOf :Physical_Media_Object .
 
-<http://taxonomy.model/Counter-factual_Consequence_For_Agent> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Consequence_For_Agent> .
+:Digital_Media_Object a owl:Class ;
+    rdfs:subClassOf :Media_Object .
 
-<http://taxonomy.model/UFO-B:_Counter-factual_situation> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/UFO-B:_Situation> .
+:Physical_Media_Object a owl:Class ;
+    rdfs:subClassOf :Media_Object .
 
-<http://taxonomy.model/Consequence_For_Agent> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/UFO-B:_Situation> .
-
-<http://taxonomy.model/UFO-B:_Situation> a owl:Class .
+:Media_Object a owl:Class .
 

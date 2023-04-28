@@ -1,8 +1,21 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Material_Property> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Property> .
+:Geographic_Coverage a owl:Class ;
+    rdfs:subClassOf :Spatial_Thing .
 
-<http://taxonomy.model/Property> a owl:Class .
+:Line a owl:Class ;
+    rdfs:subClassOf :Geographic_Object .
+
+:Point a owl:Class ;
+    rdfs:subClassOf :Geographic_Object .
+
+:Polygon a owl:Class ;
+    rdfs:subClassOf :Geographic_Object .
+
+:Spatial_Thing a owl:Class .
+
+:Geographic_Object a owl:Class ;
+    rdfs:subClassOf :Spatial_Thing .
 

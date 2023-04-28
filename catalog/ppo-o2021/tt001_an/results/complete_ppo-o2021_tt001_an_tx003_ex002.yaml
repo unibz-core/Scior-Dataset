@@ -1,43 +1,104 @@
-Supervised_Learning_Classification_Task:
-  can_type:
-  - gufo:AntiRigidType
-  - gufo:NonRigidType
-  - gufo:Phase
-  - gufo:RigidType
-  - gufo:Role
-  - gufo:SemiRigidType
-  - gufo:SubKind
-  detected_in: []
-  input: false
-  is_incomplete: false
-  is_type:
-  - gufo:Sortal
-  not_type:
-  - gufo:Kind
-  - gufo:NonSortal
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:PhaseMixin
-  - gufo:RoleMixin
----
-Supervised_Learning_Task:
+Column_Value:
   can_type: []
-  detected_in: []
-  input: true
-  is_incomplete: false
+  input: false
   is_type:
-  - gufo:Kind
-  - gufo:RigidType
-  - gufo:Sortal
+  - EndurantType
+  - Kind
+  - RigidType
+  - Sortal
   not_type:
-  - gufo:AntiRigidType
-  - gufo:Category
-  - gufo:Mixin
-  - gufo:NonRigidType
-  - gufo:NonSortal
-  - gufo:Phase
-  - gufo:PhaseMixin
-  - gufo:Role
-  - gufo:RoleMixin
-  - gufo:SemiRigidType
-  - gufo:SubKind
+  - AntiRigidType
+  - Category
+  - Mixin
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - SubKind
+---
+Data:
+  can_type: []
+  input: true
+  is_type:
+  - Category
+  - EndurantType
+  - NonSortal
+  - RigidType
+  not_type:
+  - AntiRigidType
+  - Kind
+  - Mixin
+  - NonRigidType
+  - Phase
+  - PhaseMixin
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - Sortal
+  - SubKind
+---
+Dataset:
+  can_type: []
+  input: false
+  is_type:
+  - EndurantType
+  - Kind
+  - RigidType
+  - Sortal
+  not_type:
+  - AntiRigidType
+  - Category
+  - Mixin
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - SubKind
+---
+Labeled_Dataset:
+  can_type:
+  - AntiRigidType
+  - NonRigidType
+  - Phase
+  - RigidType
+  - Role
+  - SemiRigidType
+  - SubKind
+  input: false
+  is_type:
+  - EndurantType
+  - Sortal
+  not_type:
+  - Category
+  - Kind
+  - Mixin
+  - NonSortal
+  - PhaseMixin
+  - RoleMixin
+---
+Line:
+  can_type: []
+  input: false
+  is_type:
+  - EndurantType
+  - Kind
+  - RigidType
+  - Sortal
+  not_type:
+  - AntiRigidType
+  - Category
+  - Mixin
+  - NonRigidType
+  - NonSortal
+  - Phase
+  - PhaseMixin
+  - Role
+  - RoleMixin
+  - SemiRigidType
+  - SubKind

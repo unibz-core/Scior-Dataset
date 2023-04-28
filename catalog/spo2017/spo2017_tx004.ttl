@@ -1,17 +1,21 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Document_Type> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Artifact_Type> .
+:General_Intended_Process a owl:Class ;
+    rdfs:subClassOf :Intended_Process .
 
-<http://taxonomy.model/Hardware_Type> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Object_Kind> .
+:Organizational_Intended_Process a owl:Class ;
+    rdfs:subClassOf :Intended_Process .
 
-<http://taxonomy.model/Software_Product_Type> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Artifact_Type> .
+:Project_Process a owl:Class ;
+    rdfs:subClassOf :Intended_Process .
 
-<http://taxonomy.model/Artifact_Type> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Object_Kind> .
+:Scheduled_Process a owl:Class ;
+    rdfs:subClassOf :Intended_Process .
 
-<http://taxonomy.model/Object_Kind> a owl:Class .
+:Specific_Intended_Process a owl:Class ;
+    rdfs:subClassOf :Intended_Process .
+
+:Intended_Process a owl:Class .
 

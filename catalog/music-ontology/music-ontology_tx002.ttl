@@ -1,49 +1,50 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Music_Composer> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Composer> .
+:Music_Composer a owl:Class ;
+    rdfs:subClassOf :Composer .
 
-<http://taxonomy.model/Musician> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Individual_Artist>,
-        <http://taxonomy.model/Musical_Member> .
+:Musician a owl:Class ;
+    rdfs:subClassOf :Individual_Artist,
+        :Musical_Member .
 
-<http://taxonomy.model/Orchestra> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Musical_Group> .
+:Orchestra a owl:Class ;
+    rdfs:subClassOf :Musical_Group .
 
-<http://taxonomy.model/Publisher> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Person> .
+:Publisher a owl:Class ;
+    rdfs:subClassOf :Person .
 
-<http://taxonomy.model/Software_Program> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Artist> .
+:Software_Program a owl:Class ;
+    rdfs:subClassOf :Artist .
 
-<http://taxonomy.model/Artistic_Group> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Artist>,
-        <http://taxonomy.model/Group> .
+:Artistic_Group a owl:Class ;
+    rdfs:subClassOf :Artist,
+        :Group .
 
-<http://taxonomy.model/Composer> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Artist> .
+:Composer a owl:Class ;
+    rdfs:subClassOf :Artist .
 
-<http://taxonomy.model/Group> a owl:Class .
+:Group a owl:Class .
 
-<http://taxonomy.model/Individual_Artist> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Artist>,
-        <http://taxonomy.model/Artistic_Member>,
-        <http://taxonomy.model/Person> .
+:Individual_Artist a owl:Class ;
+    rdfs:subClassOf :Artist,
+        :Artistic_Member,
+        :Person .
 
-<http://taxonomy.model/Member> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Person> .
+:Member a owl:Class ;
+    rdfs:subClassOf :Person .
 
-<http://taxonomy.model/Musical_Group> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Artistic_Group> .
+:Musical_Group a owl:Class ;
+    rdfs:subClassOf :Artistic_Group .
 
-<http://taxonomy.model/Musical_Member> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Artistic_Member> .
+:Musical_Member a owl:Class ;
+    rdfs:subClassOf :Artistic_Member .
 
-<http://taxonomy.model/Artistic_Member> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Member> .
+:Artistic_Member a owl:Class ;
+    rdfs:subClassOf :Member .
 
-<http://taxonomy.model/Person> a owl:Class .
+:Person a owl:Class .
 
-<http://taxonomy.model/Artist> a owl:Class .
+:Artist a owl:Class .
 

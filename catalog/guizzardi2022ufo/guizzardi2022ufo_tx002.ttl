@@ -1,8 +1,18 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Rose> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Flower> .
+:Ongoing_Walk a owl:Class ;
+    rdfs:subClassOf :Walk .
 
-<http://taxonomy.model/Flower> a owl:Class .
+:Redirected_Walk a owl:Class ;
+    rdfs:subClassOf :Finalized_Walk .
+
+:Sucessful_Walk a owl:Class ;
+    rdfs:subClassOf :Finalized_Walk .
+
+:Finalized_Walk a owl:Class ;
+    rdfs:subClassOf :Walk .
+
+:Walk a owl:Class .
 

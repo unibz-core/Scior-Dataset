@@ -1,27 +1,28 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Junior_Detective> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Detective> .
+:Junior_Detective a owl:Class ;
+    rdfs:subClassOf :Detective .
 
-<http://taxonomy.model/Superintendent> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Lead_Detective>,
-        <http://taxonomy.model/Senior_Detective> .
+:Superintendent a owl:Class ;
+    rdfs:subClassOf :Lead_Detective,
+        :Senior_Detective .
 
-<http://taxonomy.model/Suspect> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Person> .
+:Suspect a owl:Class ;
+    rdfs:subClassOf :Person .
 
-<http://taxonomy.model/Witness> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Person> .
+:Witness a owl:Class ;
+    rdfs:subClassOf :Person .
 
-<http://taxonomy.model/Lead_Detective> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Detective> .
+:Lead_Detective a owl:Class ;
+    rdfs:subClassOf :Detective .
 
-<http://taxonomy.model/Senior_Detective> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Detective> .
+:Senior_Detective a owl:Class ;
+    rdfs:subClassOf :Detective .
 
-<http://taxonomy.model/Detective> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Person> .
+:Detective a owl:Class ;
+    rdfs:subClassOf :Person .
 
-<http://taxonomy.model/Person> a owl:Class .
+:Person a owl:Class .
 

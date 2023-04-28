@@ -1,8 +1,43 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Stakeholder_Allocation> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Social_Relator> .
+:CASE_Tool a owl:Class ;
+    rdfs:subClassOf :Software_Product .
 
-<http://taxonomy.model/Social_Relator> a owl:Class .
+:Document a owl:Class ;
+    rdfs:subClassOf :Artifact .
+
+:Hardware_Resource a owl:Class ;
+    rdfs:subClassOf :Hardware_Equipment,
+        :Resource .
+
+:Information_Item a owl:Class ;
+    rdfs:subClassOf :Artifact .
+
+:Model a owl:Class ;
+    rdfs:subClassOf :Artifact .
+
+:Simple_Artifact a owl:Class ;
+    rdfs:subClassOf :Artifact .
+
+:Software_Item a owl:Class ;
+    rdfs:subClassOf :Artifact .
+
+:Software_Resource a owl:Class ;
+    rdfs:subClassOf :Resource,
+        :Software_Product .
+
+:Composite_Artifact a owl:Class ;
+    rdfs:subClassOf :Artifact .
+
+:Hardware_Equipment a owl:Class .
+
+:Resource a owl:Class .
+
+:Software_Product a owl:Class ;
+    rdfs:subClassOf :Artifact,
+        :Composite_Artifact .
+
+:Artifact a owl:Class .
 

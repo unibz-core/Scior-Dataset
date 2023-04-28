@@ -1,23 +1,69 @@
+@prefix : <http://taxonomy.model/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://taxonomy.model/Continuous_Quantitative_Data_Type> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Quantitative_Data_Type> .
+:Column_Selection a owl:Class ;
+    rdfs:subClassOf :Data_Reduction_Preprocessing_Operator .
 
-<http://taxonomy.model/Discreet_Quantitative_Data_Type> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Quantitative_Data_Type> .
+:Cross_Validation a owl:Class ;
+    rdfs:subClassOf :Data_Partition_Preprocessing_Operator .
 
-<http://taxonomy.model/Nominal_Qualitative_Data_Type> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Qualitative_Data_Type> .
+:Data_Coding a owl:Class ;
+    rdfs:subClassOf :Data_Transformation_Preprocessing_Operator .
 
-<http://taxonomy.model/Ordinal_Quantitative_Data_Type> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Qualitative_Data_Type> .
+:Data_Create a owl:Class ;
+    rdfs:subClassOf :Data_Transformation_Preprocessing_Operator .
 
-<http://taxonomy.model/Data_Type> a owl:Class .
+:Data_Discretization a owl:Class ;
+    rdfs:subClassOf :Data_Transformation_Preprocessing_Operator .
 
-<http://taxonomy.model/Qualitative_Data_Type> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Data_Type> .
+:Data_Missing_Imputation a owl:Class ;
+    rdfs:subClassOf :Data_Cleaning_Preprocessing_Operator .
 
-<http://taxonomy.model/Quantitative_Data_Type> a owl:Class ;
-    rdfs:subClassOf <http://taxonomy.model/Data_Type> .
+:Data_Outlier_Treatment a owl:Class ;
+    rdfs:subClassOf :Data_Cleaning_Preprocessing_Operator .
+
+:Data_Preprocessing_Executable_Operator a owl:Class ;
+    rdfs:subClassOf :Operator .
+
+:Data_Standardization a owl:Class ;
+    rdfs:subClassOf :Data_Normalization .
+
+:Data_Type_Convert a owl:Class ;
+    rdfs:subClassOf :Data_Transformation_Preprocessing_Operator .
+
+:Holdout a owl:Class ;
+    rdfs:subClassOf :Data_Partition_Preprocessing_Operator .
+
+:Line_Selection a owl:Class ;
+    rdfs:subClassOf :Data_Reduction_Preprocessing_Operator .
+
+:Oversampling a owl:Class ;
+    rdfs:subClassOf :Data_Sampling_Correction_Preprocessing_Operator .
+
+:Undersampling a owl:Class ;
+    rdfs:subClassOf :Data_Sampling_Correction_Preprocessing_Operator .
+
+:Data_Normalization a owl:Class ;
+    rdfs:subClassOf :Data_Transformation_Preprocessing_Operator .
+
+:Data_Cleaning_Preprocessing_Operator a owl:Class ;
+    rdfs:subClassOf :Data_Preprocessing_Operator .
+
+:Data_Partition_Preprocessing_Operator a owl:Class ;
+    rdfs:subClassOf :Data_Preprocessing_Operator .
+
+:Data_Reduction_Preprocessing_Operator a owl:Class ;
+    rdfs:subClassOf :Data_Preprocessing_Operator .
+
+:Data_Sampling_Correction_Preprocessing_Operator a owl:Class ;
+    rdfs:subClassOf :Data_Preprocessing_Operator .
+
+:Operator a owl:Class .
+
+:Data_Preprocessing_Operator a owl:Class ;
+    rdfs:subClassOf :Operator .
+
+:Data_Transformation_Preprocessing_Operator a owl:Class ;
+    rdfs:subClassOf :Data_Preprocessing_Operator .
 
